@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 120" role="img" aria-label="BabyRock Direct">
+  <rect x="3" y="18" width="634" height="84" rx="42" fill="none" stroke="#161412" stroke-width="3.5"/>
+  <text x="248" y="74" text-anchor="end" fill="#161412" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800" font-size="32" letter-spacing="0.12em">BABYROCK</text>
+  <circle cx="278" cy="60" r="7" fill="#3c9a4e"/>
+  <text x="308" y="74" fill="#161412" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="500" font-size="32" letter-spacing="0.22em">DIRECT</text>
+</svg>

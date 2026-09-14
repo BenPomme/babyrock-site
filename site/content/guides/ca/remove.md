@@ -1,0 +1,44 @@
+## title
+Com eliminar una ressenya de Google (i com denunciar-ne una de falsa)
+
+## dek
+La majoria de ressenyes sinceres de Google no es poden esborrar, ni tan sols les que fan mal. Aquesta guia és per al titular que acaba de veure un 1 estrella que no esperava, i vol el pas legal, no un miracle.
+
+## impact_label
+Per què importa
+
+## impact
+Google diu que no es fica en un conflicte entre un negoci i un client. Una ressenya només cau si trenca les normes: brossa, interaccions falses, incentius, conflicte d’interès o contingut prohibit. Estar en desacord amb la nota no basta.
+
+## body
+Vostè no pot eliminar la ressenya d’un client a la fitxa. Només qui la va escriure, o Google després d’una denúncia, la pot treure. Si el text descriu una visita real, encara que sigui injusta, denunciar-la no servirà. Respongui una vegada, en públic, i torni a la feina.
+
+## Es pot eliminar una ressenya de Google del seu negoci?
+
+No. Google no li dona un botó d’esborrar sobre les ressenyes dels altres. La fitxa no és un mur que vostè modera. Si la visita va existir, encara que sigui injusta, la ressenya es queda. Si creu que trenca les normes, la denuncia. Aquest és tot el camí del titular.
+
+## Es pot eliminar una ressenya de Google que vostè va escriure?
+
+Sí, si és seva. Obri Google Maps, amb el compte que la va publicar, vagi a Les teves contribucions, Ressenyes, premi els tres punts i triï Esborra la ressenya. Aquest és el camí del client. No és una eina del comerç per a les ressenyes dels altres.
+
+## Com denunciar una ressenya falsa de Google
+
+Si sembla falsa, o incompleix les normes, denunciï-la. Obri el perfil d’empresa de Google, vagi a Llegir ressenyes, premi la icona de denunciar al costat de la ressenya, triï un motiu (brossa, grolleries, conflicte d’interès) i enviï-ho. L’eina de gestió de ressenyes de Google fa el mateix i li deixa veure l’estat: pendent, sense infracció, o elevat.
+
+L’espera sol ser de diversos dies. Si la mantenen, té una apel·lació en aquesta mateixa eina. Ompli el formulari amb la norma, no amb la ràbia.
+
+## Què no fer mentre espera
+
+No munti una baralla a la resposta. No esmenti que l’ha denunciada. Una discussió pública confirma que hi ha un conflicte real, i per això fallen moltes baixes.
+
+Què sol valer: una ressenya pagada, escrita per qui no va venir, posada per un competidor, o que fa servir odi, brossa o dades personals. Què no: un 1 estrella d’una taula real un dissabte dolent.
+
+Si la fitxa està sota un xantatge (pagui o publiquem 1 estrelles), Google té un camí a part. Faci-lo servir. Després continuï demanant a tothom, amb el mateix QR, perquè una línia falsa no sigui l’única paraula recent a la fitxa.
+
+## sources
+- [Google: denunciar ressenyes inadequades](https://support.google.com/business/answer/4596773)
+- [Google: contingut prohibit i restringit](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google: gestionar ressenyes de clients](https://support.google.com/business/answer/3474050)
+
+## wa_prefill
+Hola Rosalia, he llegit la guia sobre com eliminar una ressenya de Google.

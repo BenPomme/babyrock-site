@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-label="BabyRock Direct">
+  <circle cx="62" cy="62" r="58" fill="#161412"/>
+  <text x="62" y="82" text-anchor="middle" fill="#fff" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800" font-size="52" letter-spacing="-0.08em">BR</text>
+  <path fill="#3c9a4e" d="M86 92h36c8.3 0 15 6.3 15 14v16c0 7.7-6.7 14-15 14H108l-14 12 3-12h-11c-8.3 0-15-6.3-15-14V106c0-7.7 6.7-14 15-14z"/>
+  <circle cx="100" cy="114" r="4.2" fill="#fff"/>
+  <circle cx="112" cy="114" r="4.2" fill="#fff"/>
+  <circle cx="124" cy="114" r="4.2" fill="#fff"/>
+</svg>

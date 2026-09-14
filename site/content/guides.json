@@ -1,0 +1,104 @@
+{
+  "guides": [
+    {
+      "id": "reply",
+      "img": "guide-reply.jpg",
+      "slugs": {
+        "es": "responder-todas-las-resenas",
+        "ca": "respondre-totes-les-ressenyes",
+        "fr": "repondre-a-tous-les-avis",
+        "en": "reply-to-every-review"
+      }
+    },
+    {
+      "id": "ask",
+      "img": "guide-ask.jpg",
+      "slugs": {
+        "es": "pedir-resenas-sin-romper-las-reglas",
+        "ca": "demanar-ressenyes-sense-trencar-les-regles",
+        "fr": "demander-des-avis-sans-tricher",
+        "en": "ask-for-reviews-without-breaking-the-rules"
+      }
+    },
+    {
+      "id": "qr",
+      "img": "guide-qr.jpg",
+      "slugs": {
+        "es": "codigo-qr-para-resenas-de-google",
+        "ca": "codi-qr-per-a-ressenyes-de-google",
+        "fr": "qr-code-avis-google",
+        "en": "google-review-qr-code"
+      }
+    },
+    {
+      "id": "when",
+      "img": "guide-when.jpg",
+      "slugs": {
+        "es": "cuando-pedir-una-resena",
+        "ca": "quan-demanar-una-ressenya",
+        "fr": "quand-demander-un-avis",
+        "en": "when-to-ask-for-a-review"
+      }
+    },
+    {
+      "id": "volume",
+      "img": "guide-volume.jpg",
+      "slugs": {
+        "es": "por-que-cuenta-el-numero-de-resenas",
+        "ca": "per-que-compta-el-nombre-de-ressenyes",
+        "fr": "pourquoi-le-nombre-davis-compte",
+        "en": "why-review-count-matters"
+      }
+    },
+    {
+      "id": "remove",
+      "img": "guide-remove.jpg",
+      "slugs": {
+        "es": "como-eliminar-una-resena-de-google",
+        "ca": "com-eliminar-una-ressenya-de-google",
+        "fr": "comment-supprimer-un-avis-google",
+        "en": "how-to-remove-a-google-review"
+      }
+    },
+    {
+      "id": "verify",
+      "img": "guide-verify.jpg",
+      "slugs": {
+        "es": "como-verificar-google-business-profile",
+        "ca": "com-verificar-el-perfil-dempresa-de-google",
+        "fr": "comment-verifier-fiche-etablissement-google",
+        "en": "how-to-verify-google-business-profile"
+      }
+    },
+    {
+      "id": "examples",
+      "img": "guide-examples.jpg",
+      "slugs": {
+        "es": "ejemplos-respuesta-resenas-google",
+        "ca": "exemples-resposta-ressenyes-google",
+        "fr": "exemples-reponses-avis-google",
+        "en": "google-review-response-examples"
+      }
+    },
+    {
+      "id": "negative",
+      "img": "guide-negative.jpg",
+      "slugs": {
+        "es": "como-responder-resenas-negativas-google",
+        "ca": "com-respondre-ressenyes-negatives-google",
+        "fr": "comment-repondre-avis-negatifs-google",
+        "en": "how-to-respond-to-negative-google-reviews"
+      }
+    },
+    {
+      "id": "seo",
+      "img": "guide-seo.jpg",
+      "slugs": {
+        "es": "ayudan-las-resenas-google-al-posicionamiento",
+        "ca": "les-ressenyes-google-ajuden-al-posicionament",
+        "fr": "les-avis-google-aident-ils-au-referencement",
+        "en": "do-google-reviews-help-seo"
+      }
+    }
+  ]
+}
