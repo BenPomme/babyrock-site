@@ -793,3 +793,6 @@ Try for free
 
 ## product.social_trial_line
 0 € the first month
+
+## footer.hunt
+Make money with BabyRock

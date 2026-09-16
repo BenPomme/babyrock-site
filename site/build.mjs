@@ -619,6 +619,7 @@ ${hreflangLinks(page, hreflangAbs)}
         <p><a href="${href(locale, "terms", depth)}">${esc(t(copy, "footer.terms"))}</a></p>
         <p><a href="${href(locale, "cookies", depth)}">${esc(t(copy, "footer.cookies"))}</a></p>
         <p><a href="${href(locale, "dpa", depth)}">${esc(t(copy, "footer.dpa"))}</a></p>
+        <p><a href="https://hunt.babyrock.ai/${locale}" target="_blank" rel="noopener">${esc(t(copy, "footer.hunt"))}</a></p>
         <p><a href="${wa}" target="_blank" rel="noopener">${esc(t(copy, "nav.whatsapp"))} · Rosalia</a></p>
         <p><a href="mailto:${esc(config.privacyEmail || "contact@babyrock.ai")}">${esc(config.privacyEmail || "contact@babyrock.ai")}</a></p>
       </div>

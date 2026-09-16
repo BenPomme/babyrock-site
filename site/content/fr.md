@@ -799,3 +799,6 @@ Essayez gratuitement
 
 ## product.social_trial_line
 0 € le premier mois
+
+## footer.hunt
+Gagnez de l’argent avec BabyRock

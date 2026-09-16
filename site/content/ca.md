@@ -799,3 +799,6 @@ Proveu-ho gratis
 
 ## product.social_trial_line
 0 € el primer mes
+
+## footer.hunt
+Guanyeu diners amb BabyRock
