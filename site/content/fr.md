@@ -80,29 +80,19 @@ Accepter
 Refuser
 
 ## home.kicker
-Relation client digitale pour les petits commerces
-
+Avis Google et gestion de fiche pour les petits commerces
 ## home.trust
 Chaque réponse est relue par une personne, dans la langue de l'avis
 
 ## home.headline
-Si vos clients vous trouvent en ligne, vous avez besoin de BabyRock.
+68 % des clients n’entrent que dans un commerce noté 4 étoiles ou plus.
+## home.hero_alt
+Restauratrice en tablier, debout près d'une table de la terrasse, avec des oliviers et les toits de la ville en arrière-plan
 
 ## home.lead
-Vos clients sont sur Google Maps et WhatsApp Business. BabyRock vous aide à mieux échanger avec eux.
+Vous ne pouvez pas changer les étoiles que vous avez déjà. Mais vous pouvez changer ce qui arrive aux suivantes : BabyRock répond à chaque nouvel avis en votre nom, dans la langue du client, et soigne la présentation de votre fiche Google.
 
-Chaque échange compte : il renforce la confiance, développe votre réputation et contribue à la croissance de votre activité. Mais répondre à tous vos clients, au bon moment et avec le bon ton, demande du temps.
-
-## BabyRock Social
-
-Ne laissez plus aucun nouvel avis Google sans réponse. Nous préparons une réponse adaptée, puis une personne de notre équipe en vérifie le ton, la pertinence et la qualité avant de la publier en votre nom. Rien n’est publié automatiquement.
-
-## BabyRock Direct
-
-Faites de WhatsApp Business un canal direct avec vos clients. Gérez vos réservations, envoyez des rappels pour limiter les rendez-vous manqués, recevez des commandes sans commission d’intermédiaire et invitez vos clients à laisser un avis.
-
-Moins de temps passé à gérer les échanges. Plus de temps pour vos clients et votre activité.
-
+Une personne de notre équipe relit chaque réponse avant publication. Rien n’est publié sans qu’une personne l’ait lu.
 ## home.cta_sim
 Simulateur d’impact
 
@@ -182,7 +172,7 @@ Démarrer BabyRock Social
 Chaque nouvel avis, traité
 
 ## product.social_f1
-Nous rattrapons aussi jusqu’à 20 de vos avis sans réponse les plus récents à l’inscription.
+Une fois abonné, nous rattrapons aussi jusqu’à 20 de vos avis sans réponse les plus récents.
 
 ## product.social_f2_title
 La bonne langue, avec un dernier contrôle humain
@@ -605,6 +595,9 @@ Abonnement mensuel, 99 €
 ## sub.plan_year
 Abonnement annuel, 990 €
 
+## sub.cta_pay
+Continuer vers le paiement sécurisé
+
 ## sub.cta_wa
 Commencer sur WhatsApp
 
@@ -674,3 +667,135 @@ Confidentialité
 
 ## terms.link
 Conditions
+
+## home.watch_kicker
+Commencez ici
+
+## home.watch_title
+Est-ce à cela que ressemble votre fiche Google ?
+
+## home.watch_lead
+Avant d’entrer, un client fait deux choses : il lit les derniers avis, et il regarde si quelqu’un a répondu. C’est ce que BabyRock fait pour vous.
+
+## home.watch_stat1_label
+ne lisent que les avis des 3 derniers mois
+
+## home.watch_stat2_label
+n’utilisent pas un commerce avec moins de 20 avis
+
+## home.listing_body
+14 avis sans réponse. Le dernier, il y a deux jours. C’est la première chose que voient vos prochains clients.
+
+## home.listing_lift
+↑ Vos prochains avis, avec une réponse. C’est notre travail.
+
+## home.listing_note
+Nous ne pouvons pas inventer des avis : ce sont vos clients qui décident. Mais rien de récent ne reste sans réponse, et nous vous aidons à obtenir des avis de plus de clients satisfaits.
+
+## home.wa_title
+Vous ne parlez qu’à nous, sur WhatsApp. Il n’y a rien à installer.
+
+## home.wa_item1
+Vous avez juste à nous écrire. Rien à télécharger, ni pour vous ni pour votre équipe.
+
+## home.wa_item2
+Nous ne demandons jamais votre mot de passe Google et nous ne vous donnons pas de logiciel à apprendre.
+
+## home.wa_item3
+Les réponses proposées arrivent écrites dans votre WhatsApp, vous approuvez ou corrigez sur place, et c’est publié.
+
+## home.wa_item4
+99 € par mois, TVA incluse. On annule en une ligne.
+
+## home.wa_chat_alt
+Exemple de conversation WhatsApp avec Rosalia
+
+## home.wa_chat_1
+★★★★☆ « L’attente a été longue et le plat est arrivé froid. Dommage. »
+
+## home.wa_chat_1_meta
+Client · il y a 2 jours
+
+## home.wa_chat_2
+« Bonjour. Ce client a laissé 2 étoiles. Voici la réponse que je propose, en espagnol : “Merci de nous l’avoir dit, cette attente n’était pas à la hauteur. Donnez-nous une autre chance, nous ferons mieux.” Je la publie ? »
+
+## home.wa_chat_2_meta
+Brouillon · relu par une personne
+
+## home.wa_chat_3
+ok, publie-la
+
+## home.wa_chat_4
+Publiée sur votre fiche il y a un instant. Je vous préviens quand la prochaine arrive.
+
+## home.wa_chat_4_meta
+Publié
+
+## home.cta_price
+Voir le prix
+
+## home.watch_stat1_value
+74 %
+
+## home.watch_stat2_value
+47 %
+
+## home.watch_src
+BrightLocal, Local Consumer Review Survey 2026
+
+## home.listing_rating
+★★★★☆
+
+## home.listing_num
+3,9
+
+## home.wa_kicker
+Comment ça marche
+
+## home.wa_item1_title
+Pas d’application
+
+## home.wa_item2_title
+Pas de tableau de bord que personne ne regarde
+
+## home.wa_item3_title
+Pas de réunions
+
+## home.wa_item4_title
+Pas de surprise sur la facture
+
+## home.wa_chat_2_author
+Rosalía
+
+## home.trial_kicker
+Essayez gratuitement
+
+## home.trial_title
+Votre premier mois est à 0 €. Vous décidez ensuite.
+
+## home.trial_lead
+Laissez votre carte, gardez le service complet pendant 30 jours à 0 €, et annulez en une ligne avant le premier prélèvement si cela ne vous convient pas. Sans engagement et sans frais d’ouverture.
+
+## home.trial_opt1_title
+Ce que vous faites
+
+## home.trial_opt1
+Une seule chose : nous inviter comme gestionnaire de votre fiche Google. Un clic, nous ne voyons jamais votre mot de passe, et vous pouvez nous retirer quand vous voulez. Rosalia vous envoie le lien de paiement sécurisé et nous commençons.
+
+## home.trial_opt2_title
+Ce qui se passe pendant le mois
+
+## home.trial_opt2
+Rien n’est facturé pendant le mois d’essai : ni maintenant, ni le 30e jour si vous annulez. Chaque nouvel avis reçoit une réponse, les avis 1 à 3 étoiles vous arrivent pour approbation, et nous rattrapons jusqu’à 20 avis restés sans réponse.
+
+## home.trial_note
+Si vous ne faites rien à la fin du mois, l’abonnement démarre à 99 € par mois, TVA incluse. Si vous annulez avant, vous ne payez rien.
+
+## home.trial_cta
+Commencer mon mois gratuit
+
+## home.cta_trial
+Essayez gratuitement
+
+## product.social_trial_line
+0 € le premier mois

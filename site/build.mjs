@@ -10,6 +10,9 @@ const srcDir = join(root, "src");
 const assetDir = join(root, "assets");
 const outDir = join(root, "..", "docs");
 
+/** The locale the root serves and `x-default` points at (`17-seo-site-brm.md`). */
+const DEFAULT_LOCALE = "es";
+
 const LOCALES = {
   es: {
     name: "ES",
@@ -246,7 +249,7 @@ function hreflangLinks(page, absHrefFor) {
   const tags = Object.keys(LOCALES).map(
     (code) => `  <link rel="alternate" hreflang="${LOCALES[code].html}" href="${url(code)}">`
   );
-  tags.push(`  <link rel="alternate" hreflang="x-default" href="${url("en")}">`);
+  tags.push(`  <link rel="alternate" hreflang="x-default" href="${url(DEFAULT_LOCALE)}">`);
   return tags.join("\n");
 }
 
@@ -392,12 +395,97 @@ function waLink(config, text) {
   return `mailto:${config.email}?subject=${encodeURIComponent("BabyRock Social")}&body=${msg}`;
 }
 
+// The pay flow lives on the factory (app.babyrock.ai / pay.babyrock.ai), never on this site.
+// One value decides it: content/config.json → payUrl. No hardcoded copies per locale.
+function payLink(config, plan) {
+  const base = String(config.payUrl || "").trim().replace(/\/$/, "");
+  if (!base) return "";
+  try {
+    const url = new URL(base);
+    if (plan) url.searchParams.set("plan", plan);
+    return url.toString();
+  } catch {
+    return base;
+  }
+}
+
 function waIcon() {
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
 }
 
 function asset(depth, path) {
   return `${"../".repeat(depth)}assets/${path}`;
+}
+
+/**
+ * Real pixel size of a JPEG, read from the file itself. `width`/`height` on an `<img>` are what
+ * stop the page from jumping while the picture loads, and guessing them is how that breaks.
+ */
+const sizeCache = new Map();
+function imageSize(relPath) {
+  if (sizeCache.has(relPath)) return sizeCache.get(relPath);
+  const buf = readFileSync(join(assetDir, relPath));
+  let i = 2;
+  let size = null;
+  while (i + 9 < buf.length) {
+    if (buf[i] !== 0xff) {
+      i += 1;
+      continue;
+    }
+    const marker = buf[i + 1];
+    // SOF0–SOF15, minus the tables and the arithmetic-coded variants.
+    if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) {
+      size = { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+      break;
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  if (!size) throw new Error(`could not read the JPEG size of ${relPath}`);
+  sizeCache.set(relPath, size);
+  return size;
+}
+
+/**
+ * One illustration, offered in the sizes a phone and a laptop actually need (ticket 09).
+ *
+ * Each `illustrations/<name>.jpg` ships a committed `<name>-640.jpg` derivative — 52–56 KB at
+ * quality 65 instead of ~300 KB, generated with:
+ *
+ *   sips -Z 640 --setProperty formatOptions 65 site/assets/illustrations/<name>.jpg \
+ *     --out site/assets/illustrations/<name>-640.jpg
+ *
+ * `hero.jpg` also gets a `-1024.jpg`. The originals stay for large screens; `sizes` is what keeps
+ * a phone off them.
+ */
+function illustration(depth, file, opts = {}) {
+  const base = `illustrations/${file}`;
+  const small = base.replace(/\.jpg$/, "-640.jpg");
+  const wide = opts.wide ? base.replace(/\.jpg$/, "-1024.jpg") : null;
+  const size = imageSize(base);
+  const srcset = [
+    `${asset(depth, small)} 640w`,
+    ...(wide ? [`${asset(depth, wide)} 1024w`] : []),
+    `${asset(depth, base)} ${size.width}w`,
+  ].join(", ");
+  const attrs = [
+    `src="${asset(depth, small)}"`,
+    `srcset="${srcset}"`,
+    `sizes="${opts.sizes || "(max-width: 640px) 92vw, 640px"}"`,
+    `alt="${esc(opts.alt ?? "")}"`,
+    `width="${size.width}"`,
+    `height="${size.height}"`,
+    `decoding="async"`,
+    opts.eager ? `fetchpriority="high"` : `loading="lazy"`,
+  ];
+  if (opts.className) attrs.unshift(`class="${opts.className}"`);
+  return `<img ${attrs.join(" ")}>`;
+}
+
+/** A head-and-shoulders portrait: 480 px is enough for every place it is displayed. */
+function portraitImage(depth, name, alt) {
+  const size = imageSize(`portraits/${name}.jpg`);
+  const small = asset(depth, `portraits/${name}-480.jpg`);
+  return `<img src="${small}" srcset="${small} 480w, ${asset(depth, `portraits/${name}.jpg`)} ${size.width}w" sizes="(max-width: 900px) 60vw, 320px" alt="${esc(alt)}" width="${size.width}" height="${size.height}" decoding="async" loading="lazy">`;
 }
 
 function cssJs(depth) {
@@ -485,9 +573,6 @@ ${hreflangLinks(page, hreflangAbs)}
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${ogImage}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${css}">
   ${jsonLd(locale, page, copy, config, extraGraph)}
   ${gaSnippet(config)}
@@ -496,7 +581,7 @@ ${hreflangLinks(page, hreflangAbs)}
   <a class="skip" href="#main">${esc(t(copy, "nav.skip") || "Skip")}</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="${href(locale, "home", depth)}"><img class="logo-mark" src="${asset(depth, "favicon-192.png")}" alt="" width="28" height="28">BabyRock</a>
+      <a class="logo" href="${href(locale, "home", depth)}"><img class="logo-mark" src="${asset(depth, "favicon-192.png")}" alt="" width="28" height="28" decoding="async">BabyRock</a>
       <nav class="nav-links">${navHtml}</nav>
       <div class="header-actions">
         <div class="lang">${langSwitcher(locale, page, depth, langHref)}</div>
@@ -563,7 +648,10 @@ function shops(copy, depth) {
   ];
   return items
     .map(
-      ([img, key]) => `<figure class="photo-card"><img src="${asset(depth, "illustrations/" + img)}" alt="" loading="lazy"><figcaption>${esc(t(copy, key))}</figcaption></figure>`
+      ([img, key]) =>
+        `<figure class="photo-card">${illustration(depth, img, {
+          sizes: "(max-width: 640px) 92vw, (max-width: 1000px) 45vw, 300px",
+        })}<figcaption>${esc(t(copy, key))}</figcaption></figure>`
     )
     .join("");
 }
@@ -643,12 +731,37 @@ function homePage(locale, copy, config, depth) {
         <h1 class="hero-title">${esc(t(copy, "home.headline"))}</h1>
         <div class="lead">${homeLead(t(copy, "home.lead"))}</div>
         <div class="cta-row">
-          <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "nav.whatsapp"))}</a>
-          <a class="btn btn-coral" href="${mailLink(config)}">${esc(t(copy, "home.cta_sub"))}</a>
+          <a class="btn btn-wa" href="#trial">${waIcon()} ${esc(t(copy, "home.cta_trial"))}</a>
+          <a class="btn btn-coral" href="#price">${esc(t(copy, "home.cta_price"))}</a>
           <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
         </div>
       </div>
-      <figure class="hero-visual"><img class="hero-photo" src="${asset(depth, "illustrations/hero.jpg")}" alt=""></figure>
+      <figure class="hero-visual">${illustration(depth, "hero.jpg", {
+        className: "hero-photo",
+        wide: true,
+        eager: true,
+        sizes: "(max-width: 900px) 92vw, 640px",
+        alt: t(copy, "home.hero_alt"),
+      })}</figure>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap watch">
+      <div>
+        <p class="kicker">${esc(t(copy, "home.watch_kicker"))}</p>
+        <h2>${esc(t(copy, "home.watch_title"))}</h2>
+        ${paras(t(copy, "home.watch_lead"))}
+        <div class="stat-row">
+          <div class="stat"><b>${esc(t(copy, "home.watch_stat1_value"))}</b><span>${esc(t(copy, "home.watch_stat1_label"))}</span><em>${esc(t(copy, "home.watch_src"))}</em></div>
+          <div class="stat"><b>${esc(t(copy, "home.watch_stat2_value"))}</b><span>${esc(t(copy, "home.watch_stat2_label"))}</span><em>${esc(t(copy, "home.watch_src"))}</em></div>
+        </div>
+      </div>
+      <div class="listing">
+        <div class="listing-rating"><span class="listing-stars">${esc(t(copy, "home.listing_rating"))}</span><span class="listing-num">${esc(t(copy, "home.listing_num"))}</span></div>
+        ${paras(t(copy, "home.listing_body"))}
+        <p class="listing-lift">${esc(t(copy, "home.listing_lift"))}</p>
+        <p class="src">${esc(t(copy, "home.listing_note"))}</p>
+      </div>
     </div>
   </section>
   <section class="section" id="productos">
@@ -676,9 +789,29 @@ function homePage(locale, copy, config, depth) {
       <article class="value-card"><h3>${esc(t(copy, "home.value_rating_title"))}</h3>${paras(t(copy, "home.value_rating"))}</article>
     </div>
   </section>
+  <section class="section section-alt">
+    <div class="wrap watch">
+      <div>
+        <p class="kicker">${esc(t(copy, "home.wa_kicker"))}</p>
+        <h2>${esc(t(copy, "home.wa_title"))}</h2>
+        <ul class="compare-features" style="margin-top:1.2rem">
+          <li>${checkIcon()}<div><strong>${esc(t(copy, "home.wa_item1_title"))}</strong><span>${esc(t(copy, "home.wa_item1"))}</span></div></li>
+          <li>${checkIcon()}<div><strong>${esc(t(copy, "home.wa_item2_title"))}</strong><span>${esc(t(copy, "home.wa_item2"))}</span></div></li>
+          <li>${checkIcon()}<div><strong>${esc(t(copy, "home.wa_item3_title"))}</strong><span>${esc(t(copy, "home.wa_item3"))}</span></div></li>
+          <li>${checkIcon()}<div><strong>${esc(t(copy, "home.wa_item4_title"))}</strong><span>${esc(t(copy, "home.wa_item4"))}</span></div></li>
+        </ul>
+      </div>
+      <div class="chat" role="img" aria-label="${esc(t(copy, "home.wa_chat_alt"))}">
+        <div class="bubble">${esc(t(copy, "home.wa_chat_1"))}<small>${esc(t(copy, "home.wa_chat_1_meta"))}</small></div>
+        <div class="bubble us"><strong>${esc(t(copy, "home.wa_chat_2_author"))}</strong><br />${esc(t(copy, "home.wa_chat_2"))}<small>${esc(t(copy, "home.wa_chat_2_meta"))}</small></div>
+        <div class="bubble">${esc(t(copy, "home.wa_chat_3"))}</div>
+        <div class="bubble us">${esc(t(copy, "home.wa_chat_4"))}<small>${esc(t(copy, "home.wa_chat_4_meta"))}</small></div>
+      </div>
+    </div>
+  </section>
   <section class="section">
     <div class="wrap human">
-      <figure class="portrait"><img src="${asset(depth, "portraits/rosalia.jpg")}" alt="Rosalia"></figure>
+      <figure class="portrait">${portraitImage(depth, "rosalia", "Rosalia")}</figure>
       <div class="human-copy">
         <h2>${esc(t(copy, "home.human_title"))}</h2>
         ${paras(t(copy, "home.human"))}
@@ -686,6 +819,28 @@ function homePage(locale, copy, config, depth) {
       </div>
     </div>
   </section>
+  ${t(copy, "home.trial_title") ? `
+  <section class="section" id="trial">
+    <div class="wrap">
+      <p class="kicker">${esc(t(copy, "home.trial_kicker"))}</p>
+      <h2>${esc(t(copy, "home.trial_title"))}</h2>
+      ${paras(t(copy, "home.trial_lead"))}
+      <div class="compare">
+        <article class="compare-card live">
+          <div class="compare-head"><h2 class="compare-name">${esc(t(copy, "home.trial_opt1_title"))}</h2></div>
+          ${paras(t(copy, "home.trial_opt1"))}
+        </article>
+        <article class="compare-card">
+          <div class="compare-head"><h2 class="compare-name">${esc(t(copy, "home.trial_opt2_title"))}</h2></div>
+          ${paras(t(copy, "home.trial_opt2"))}
+        </article>
+      </div>
+      <div class="cta-row" style="margin-top:1.4rem">
+        <a class="btn btn-coral" href="${waLink(config, t(copy, "home.trial_cta"))}" target="_blank" rel="noopener">${esc(t(copy, "home.trial_cta"))}</a>
+      </div>
+      ${paras(t(copy, "home.trial_note"))}
+    </div>
+  </section>` : ""}
   <section class="section section-alt">
     <div class="wrap">
       <h2>${esc(t(copy, "home.price_title"))}</h2>
@@ -764,14 +919,14 @@ function howPage(locale, copy, depth) {
           const videoLabel = t(copy, "how.step2_video");
           const video = i === 1
             ? `<figure class="story-video">
-          <video controls playsinline preload="metadata" poster="${asset(depth, `videos/manager-${locale}.jpg`)}" title="${esc(videoLabel)}" aria-label="${esc(videoLabel)}" width="1080" height="1920">
+          <video controls playsinline preload="none" poster="${asset(depth, `videos/manager-${locale}.jpg`)}" title="${esc(videoLabel)}" aria-label="${esc(videoLabel)}" width="1080" height="1920">
             <source src="${asset(depth, `videos/manager-${locale}.mp4`)}" type="video/mp4">
           </video>
         </figure>`
             : "";
           return `<details class="story-card"${i === 1 ? " open" : ""}>
         <summary>
-          <img src="${asset(depth, "illustrations/" + img)}" alt="" width="72" height="72" loading="lazy">
+          <img src="${asset(depth, "illustrations/" + img)}" alt="" width="72" height="72" loading="lazy" decoding="async">
           <span class="story-num">${esc(num)}</span>
           <h3>${esc(title)}</h3>
         </summary>
@@ -833,12 +988,12 @@ function aboutPage(copy, depth) {
     <div class="lead">${paras(t(copy, "about.lead"))}</div>
     <div class="team-grid">
       <article>
-        <figure class="portrait"><img src="${asset(depth, "portraits/rosalia.jpg")}" alt="Rosalia"></figure>
+        <figure class="portrait">${portraitImage(depth, "rosalia", "Rosalia")}</figure>
         <h2>${esc(t(copy, "about.rosalia_role"))}</h2>
         ${paras(t(copy, "about.rosalia"))}
       </article>
       <article>
-        <figure class="portrait"><img src="${asset(depth, "portraits/ben.jpg")}" alt="Benjamin Pommeraud"></figure>
+        <figure class="portrait">${portraitImage(depth, "ben", "Benjamin Pommeraud")}</figure>
         <h2>${esc(t(copy, "about.ben_role"))}</h2>
         ${paras(t(copy, "about.ben"))}
       </article>
@@ -888,7 +1043,7 @@ function guidesIndexPage(locale, copy, config, depth) {
   const cards = GUIDES.map((g) => {
     const gcopy = readGuide(locale, g.id);
     return `<article class="guide-card"><a href="${guideHref(locale, g.id, depth)}">
-      <img src="${asset(depth, "illustrations/" + g.img)}" alt="" loading="lazy">
+      ${illustration(depth, g.img, { sizes: "(max-width: 640px) 92vw, (max-width: 1000px) 45vw, 360px" })}
       <h3>${esc(gcopy.title)}</h3>
       <p>${esc(gcopy.dek)}</p>
     </a></article>`;
@@ -910,7 +1065,10 @@ function guideArticlePage(locale, copy, config, depth, id) {
     <p class="kicker"><a href="${href(locale, "guides", depth)}">${esc(t(copy, "nav.guides"))}</a></p>
     <h1>${esc(gcopy.title)}</h1>
     <div class="lead">${paras(gcopy.dek)}</div>
-    <figure class="guide-hero"><img src="${asset(depth, "illustrations/" + g.img)}" alt=""></figure>
+    <figure class="guide-hero">${illustration(depth, g.img, {
+      sizes: "(max-width: 900px) 92vw, 640px",
+      alt: gcopy.title,
+    })}</figure>
     <aside class="impact-box">
       <p class="tiny">${esc(gcopy.impact_label)}</p>
       ${paras(gcopy.impact)}
@@ -943,18 +1101,19 @@ function compareProducts(locale, copy, config, depth) {
   return `<div class="compare">
     <article class="compare-card live">
       <div class="compare-head">
-        <img src="${asset(depth, "logos/social-icon.svg")}" alt="" width="52" height="52">
+        <img src="${asset(depth, "logos/social-icon.svg")}" alt="" width="52" height="52" decoding="async">
         <h2 class="compare-name">${esc(t(copy, "product.social_name"))} <em>${esc(t(copy, "product.social_status"))}</em></h2>
       </div>
       <p class="compare-tag">${esc(t(copy, "product.social_tag"))}</p>
       <p class="compare-price">${esc(config.priceMonth)} € <small>${esc(t(copy, "product.social_price_unit"))}</small></p>
+      <p class="compare-price-note"><strong>${esc(t(copy, "product.social_trial_line"))}</strong></p>
       <p class="compare-price-note">${esc(t(copy, "product.social_price_detail"))}</p>
       <a class="btn btn-coral compare-cta" href="${socialCta}">${esc(t(copy, "products.social_cta"))}</a>
       <ul class="compare-features">${featureItems(copy, "product.social", 5, false)}</ul>
     </article>
     <article class="compare-card soon">
       <div class="compare-head">
-        <img src="${asset(depth, "logos/direct-icon.svg")}" alt="" width="52" height="52">
+        <img src="${asset(depth, "logos/direct-icon.svg")}" alt="" width="52" height="52" decoding="async">
         <h2 class="compare-name">${esc(t(copy, "product.direct_name"))} <em>${esc(t(copy, "product.direct_status"))}</em></h2>
       </div>
       <p class="compare-tag">${esc(t(copy, "product.direct_tag"))}</p>
@@ -977,6 +1136,8 @@ function servicesPage(locale, copy, config, depth) {
 }
 
 function subscribePage(locale, copy, config, depth) {
+  const pay = payLink(config);
+  const waDigits = String(config.whatsapp || "").replace(/\D/g, "");
   return `
   <section class="wrap section">
     <h1>${esc(t(copy, "sub.headline"))}</h1>
@@ -987,9 +1148,10 @@ function subscribePage(locale, copy, config, depth) {
       <article class="price-card featured"><h3>${esc(t(copy, "home.price_year_name"))}</h3><p class="amount">${esc(config.priceYear)} €</p><p>${esc(t(copy, "sub.year"))}</p></article>
     </div>
     <p class="cta-row" style="margin:1.25rem 0 0">
+      ${pay ? `<a class="btn btn-coral" href="${esc(pay)}" data-pay-cta>${esc(t(copy, "sub.cta_pay"))}</a>` : ""}
       <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</a>
     </p>
-    <form class="sim-card form-grid" data-interest-form data-wa="" data-mail="${esc(config.email)}" style="margin-top:1.5rem">
+    <form class="sim-card form-grid" data-interest-form data-pay="${esc(pay)}" data-wa="${esc(waDigits)}" data-mail="${esc(config.email)}" style="margin-top:1.5rem">
       <label>${esc(t(copy, "sub.form_name"))}<input name="business" required></label>
       <label>${esc(t(copy, "sub.form_city"))}<input name="city"></label>
       <label>${esc(t(copy, "sub.form_listing"))}<input name="listing"></label>
@@ -1003,6 +1165,8 @@ function subscribePage(locale, copy, config, depth) {
         </select>
       </label>
       <div class="cta-row">
+        ${pay ? `<button class="btn btn-coral" name="channel" value="pay" type="submit">${esc(t(copy, "sub.cta_pay"))}</button>` : ""}
+        <button class="btn btn-wa" name="channel" value="whatsapp" type="submit">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</button>
         <button class="btn btn-ghost" name="channel" value="email" type="submit">${esc(t(copy, "sub.cta_email"))}</button>
       </div>
     </form>
@@ -1153,36 +1317,16 @@ for (const locale of Object.keys(LOCALES)) {
   }
 }
 
-write(
-  join(outDir, "index.html"),
-  `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>BabyRock Social</title>
-  <meta name="description" content="Thoughtful Google review replies for small businesses. From €99/month.">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="canonical" href="${SITE}/en/">
-  <link rel="alternate" hreflang="en" href="${SITE}/en/">
-  <link rel="alternate" hreflang="es" href="${SITE}/es/">
-  <link rel="alternate" hreflang="ca" href="${SITE}/ca/">
-  <link rel="alternate" hreflang="fr" href="${SITE}/fr/">
-  <link rel="alternate" hreflang="x-default" href="${SITE}/en/">
-  <meta http-equiv="refresh" content="0;url=/en/">
-</head>
-<body>
-  <p><a href="/en/">English</a> · <a href="/es/">Español</a> · <a href="/ca/">Català</a> · <a href="/fr/">Français</a></p>
-<script>
-const map = {es:"es",ca:"ca",fr:"fr",en:"en"};
-const lang = (navigator.languages || [navigator.language || "en"]).map(l => l.slice(0,2).toLowerCase());
-const hit = lang.find(l => map[l]) || "en";
-location.replace("./" + hit + "/");
-</script>
-</body>
-</html>`
-);
+/**
+ * The root is the default locale's home page, served verbatim (ticket 17).
+ *
+ * GitHub Pages cannot answer 301/308 for `/`, so the old meta-refresh + `location.replace`
+ * shell was the only "redirect" — a blank page for anyone without JS and a second, conflicting
+ * signal next to `x-default`. Serving the default locale here (with its own `/es/` canonical,
+ * which `shell()` writes) removes the conflict: `x-default`, the canonical and the visible page
+ * all name the same URL. A true 301 needs the host (Cloudflare rule or leaving Pages); until then
+ * this is the honest version.
+ */
+copyFileSync(join(outDir, DEFAULT_LOCALE, "index.html"), join(outDir, "index.html"));
 
 console.log("Built static site into docs/");

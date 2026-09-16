@@ -172,6 +172,11 @@
       track("whatsapp_click");
     });
   });
+  document.querySelectorAll("[data-pay-cta]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      track("pay_click");
+    });
+  });
 
   document.querySelectorAll(".step-grid details").forEach(function (d) {
     d.addEventListener("toggle", function () {
@@ -185,17 +190,46 @@
   });
 
   document.querySelectorAll("[data-interest-form]").forEach(function (form) {
+    // The pay flow is the only place where a contract is signed; this site only links to it.
+    // Same query contract as the factory's own pay links (plan, city, wa, maps) — no name or
+    // e-mail in the URL, the pay page collects those itself.
+    function payTarget(data) {
+      const base = form.getAttribute("data-pay") || cfg.payUrl || "";
+      if (!base) return "";
+      let url;
+      try {
+        url = new URL(base, location.href);
+      } catch (err) {
+        return base;
+      }
+      const field = function (name) {
+        return String(data.get(name) || "").trim();
+      };
+      if (field("plan")) url.searchParams.set("plan", field("plan"));
+      if (field("city")) url.searchParams.set("city", field("city"));
+      if (/^https?:\/\//i.test(field("listing"))) url.searchParams.set("maps", field("listing"));
+      const digits = field("whatsapp").replace(/\D/g, "");
+      if (digits) url.searchParams.set("wa", digits);
+      return url.toString();
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       const data = new FormData(form);
       const lines = [];
       data.forEach(function (v, k) {
+        if (k === "channel") return;
         if (String(v).trim()) lines.push(k + ": " + v);
       });
       const body = lines.join("\n");
       const wa = form.getAttribute("data-wa");
       const mail = form.getAttribute("data-mail");
-      if (e.submitter && e.submitter.value === "email") {
+      const action = e.submitter ? e.submitter.value : "pay";
+      const pay = action === "pay" ? payTarget(data) : "";
+      if (pay) {
+        track("pay_click");
+        location.href = pay;
+      } else if (action === "email") {
         location.href =
           "mailto:" +
           mail +
@@ -204,6 +238,7 @@
           "&body=" +
           encodeURIComponent(body);
       } else if (wa) {
+        track("whatsapp_click");
         location.href = "https://wa.me/" + wa + "?text=" + encodeURIComponent(body);
       } else {
         location.href =

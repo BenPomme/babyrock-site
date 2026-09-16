@@ -1,3 +1,45 @@
+/*
+ * Fonts are self-hosted (launch-audit ticket 09): no third-party font origin on the critical path,
+ * and no font request leaving the browser to anyone but us. Files live in `assets/fonts/`.
+ *
+ * Inter — © The Inter Project Authors, SIL Open Font License 1.1
+ * Newsreader — © Production Type, SIL Open Font License 1.1
+ * Variable subsets (the latin and latin-ext cuts Google serves), fetched 14 Sep 2026.
+ * Each file covers every weight we use, so one request per family per subset.
+ */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/newsreader-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/newsreader-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --paper: #f4efe6;
   --ink: #161412;
@@ -1126,6 +1168,61 @@ textarea {
 .footer-grid a {
   color: var(--ink);
 }
+
+
+/* Homepage: the listing panel and the WhatsApp block (Ben, 16 Sep 2026). */
+.watch {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .watch { grid-template-columns: 1fr; }
+}
+.listing {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  padding: 1.5rem 1.6rem;
+}
+.listing-rating { display: flex; align-items: baseline; gap: 0.7rem; }
+.listing-stars { color: #d99a00; letter-spacing: 0.12em; font-size: 1.35rem; }
+.listing-num { font-family: "Newsreader", Georgia, serif; font-size: 2.6rem; line-height: 1; }
+.listing-lift { color: #0f6e56; font-weight: 600; margin-top: 0.6rem; }
+.listing .src { font-size: 0.82rem; color: #6b7280; }
+.stat-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 1.6rem;
+}
+.stat {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+  padding: 1.2rem 1.3rem;
+}
+.stat b {
+  display: block;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.stat span { display: block; margin-top: 0.5rem; }
+.stat em { display: block; margin-top: 0.6rem; font-size: 0.78rem; color: #6b7280; font-style: normal; }
+.chat { background: #e7ddd0; border: 1px solid var(--line); border-radius: 1.4rem; padding: 1.1rem; }
+.bubble {
+  max-width: 92%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.9rem;
+  font-size: 0.93rem;
+  margin-bottom: 0.6rem;
+  background: #fff;
+}
+.bubble.us { background: #d9fdd3; margin-left: auto; }
+.bubble small { display: block; margin-top: 0.3rem; color: #6b7280; font-size: 0.72rem; text-align: right; }
 
 .wa-fab {
   position: fixed;

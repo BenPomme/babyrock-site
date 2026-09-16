@@ -80,23 +80,19 @@ Accept
 Refuse
 
 ## home.kicker
-Digital customer engagement for small businesses
-
+Google reviews and profile management for small businesses
 ## home.trust
 Every reply is reviewed by a person, in the language of the review
 
 ## home.headline
-If your customers find you online, you need BabyRock.
+68% of customers only walk into a business rated 4 stars or more.
+## home.hero_alt
+A restaurant owner in an apron standing beside a terrace table, with olive trees and city rooftops behind her
 
 ## home.lead
-BabyRock helps you make the best of your online presence, starting with Google Maps WhatsApp.
+You cannot change the stars you already have. But you can change what happens to the ones that come: BabyRock answers every new review in your name, in the language it was written in, and takes care of how your Google profile looks.
 
-Engaging with customers is essential to build trust and reputation, and to grow revenues. But it is time consuming.
-
-BabyRock Social helps you reply to every new review on your Google Profile. A human on our team checks for quality and authenticity, then publishes it for you, in your name.
-
-BabyRock Direct helps you use WhatsApp to build lasting direct relationships with your customers and improve your business efficiency. From taking bookings, reducing no-shows, taking orders without paying a commission, or asking for reviews, we’re with you on your journey to grow.
-
+Someone on our team reads every reply before it goes live. Nothing is published without a human reading it.
 ## home.cta_sim
 Impact Simulator
 
@@ -176,7 +172,7 @@ Start BabyRock Social
 Every new review, handled
 
 ## product.social_f1
-We also catch up on up to 20 of your most recent unanswered reviews when you join.
+Once you subscribe, we also catch up on up to 20 of your most recent unanswered reviews.
 
 ## product.social_f2_title
 The right language, with a human final check
@@ -599,6 +595,9 @@ Monthly subscription, €99
 ## sub.plan_year
 Yearly subscription, €990
 
+## sub.cta_pay
+Continue to secure payment
+
 ## sub.cta_wa
 Start on WhatsApp
 
@@ -668,3 +667,129 @@ Privacy
 
 ## terms.link
 Terms
+
+## home.watch_kicker
+Start here
+
+## home.watch_title
+Is this what your Google listing looks like?
+
+## home.watch_lead
+Before walking in, a customer does two things: reads the last few reviews, and checks whether anyone answered. That is what we take off your plate.
+
+## home.watch_stat1_label
+only read reviews from the last 3 months
+
+## home.watch_stat2_label
+will not use a business with fewer than 20 reviews
+
+## home.listing_body
+14 reviews without an answer. The last one, two days ago. It is the first thing your next customers see.
+
+## home.listing_lift
+↑ Your next reviews, answered. That is our job.
+
+## home.listing_note
+We cannot invent reviews: your customers decide them. But nothing recent is left unanswered, and we help you get reviews from more happy customers.
+
+## home.wa_title
+You only talk to us on WhatsApp. There is nothing to install.
+
+## home.wa_item1
+You just have to message us. Nothing to download, for you or for your staff.
+
+## home.wa_item2
+We never ask for your Google password, and we do not give you new software to learn.
+
+## home.wa_item3
+The suggested replies arrive written in your WhatsApp, you approve or correct them right there, and they go live.
+
+## home.wa_item4
+99 € a month, VAT included. Cancel with one line.
+
+## home.wa_chat_alt
+Example WhatsApp conversation with Rosalia
+
+## home.wa_chat_1
+★★★★☆ “The wait was long and the food arrived cold. Such a shame.”
+
+## home.wa_chat_1_meta
+Customer · 2 days ago
+
+## home.wa_chat_2
+“Hello. This customer left 2 stars. Here is the reply I propose, in Spanish: ‘Thank you for telling us, that wait was not up to our standard. Give us another chance, we will do better.’ Shall I publish it?”
+
+## home.wa_chat_2_meta
+Draft · reviewed by a person
+
+## home.wa_chat_3
+ok, publish it
+
+## home.wa_chat_4
+Published on your listing a moment ago. I will tell you when the next one arrives.
+
+## home.wa_chat_4_meta
+Published
+
+## home.cta_price
+See the price
+
+## home.watch_stat1_value
+74%
+
+## home.watch_stat2_value
+47%
+
+## home.watch_src
+BrightLocal, Local Consumer Review Survey 2026
+
+## home.listing_rating
+★★★★☆
+
+## home.listing_num
+3.9
+
+## home.wa_kicker
+How it works
+
+## home.wa_item1_title
+No app
+
+## home.wa_item2_title
+No dashboard nobody looks at
+
+## home.wa_item3_title
+No meetings
+
+## home.wa_item4_title
+No billing surprises
+
+## home.wa_chat_2_author
+Rosalía
+
+## home.trial_kicker
+Try us for free
+## home.trial_title
+Your first month is 0 €. You decide after that.
+## home.trial_lead
+Add your card, keep the full service for 30 days at 0 €, and cancel in one line before the first charge if it is not for you. No contract, no setup fee.
+## home.trial_opt1_title
+What you do
+## home.trial_opt1
+One thing: invite us as a manager of your Google listing. It is one click, we never see your password, and you can remove us whenever you want. Rosalía sends you the secure payment link and we start.
+## home.trial_opt2_title
+What happens during the month
+## home.trial_opt2
+Nothing is charged during the trial month, not now and not at day 30 if you cancel. Every new review is answered, 1 to 3 star reviews come to you for approval first, and we catch up on up to 20 reviews you left unanswered.
+## home.trial_note
+If you do nothing at the end of the month, the subscription starts at 99 € a month, VAT included. Cancel before that and you pay nothing.
+## home.trial_cta
+Start my free month
+## home.trial_cta2_unused
+Ask for the free test
+
+## home.cta_trial
+Try for free
+
+## product.social_trial_line
+0 € the first month

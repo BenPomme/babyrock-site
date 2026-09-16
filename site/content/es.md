@@ -80,23 +80,19 @@ Aceptar
 Rechazar
 
 ## home.kicker
-Relación digital con el cliente para pequeños comercios
-
+Reseñas de Google y gestión de ficha para pequeños comercios
 ## home.trust
 Cada respuesta la revisa una persona, en el idioma de la reseña
 
 ## home.headline
-Si sus clientes le encuentran en internet, necesita BabyRock.
+El 68 % de los clientes solo entra en comercios con 4 estrellas o más.
+## home.hero_alt
+Dueña de un restaurante con delantal, de pie junto a una mesa de la terraza, con olivos y tejados de la ciudad al fondo
 
 ## home.lead
-BabyRock le ayuda a sacar el máximo de su presencia en internet, empezando por Google Maps WhatsApp.
+No puede cambiar las estrellas que ya tiene. Pero sí lo que pasa con las que vienen: BabyRock responde a cada reseña nueva en su nombre, en el idioma en que la escribieron, y cuida la presentación de su ficha de Google.
 
-Tratar con los clientes es esencial para generar confianza y reputación, y para hacer crecer los ingresos. Pero lleva tiempo.
-
-BabyRock Social le ayuda a responder a cada reseña nueva en su perfil de Google. Una persona de nuestro equipo comprueba la calidad y la autenticidad, y después la publica por usted, en su nombre.
-
-BabyRock Direct le ayuda a usar WhatsApp para construir relaciones directas y duraderas con sus clientes y a mejorar la eficiencia del negocio. Desde coger reservas, reducir las inasistencias, tomar pedidos sin pagar comisión o pedir reseñas, vamos con usted en el camino de crecer.
-
+Una persona de nuestro equipo lee cada respuesta antes de publicarla. Nada se publica sin que alguien lo haya leído.
 ## home.cta_sim
 Simulador de impacto
 
@@ -176,7 +172,7 @@ Empezar BabyRock Social
 Cada reseña nueva, atendida
 
 ## product.social_f1
-También ponemos al día hasta 20 de sus reseñas sin respuesta más recientes cuando se apunta.
+Cuando se suscribe, ponemos al día hasta 20 de sus reseñas sin respuesta más recientes.
 
 ## product.social_f2_title
 El idioma correcto, con un último control humano
@@ -599,6 +595,9 @@ Suscripción mensual, 99 €
 ## sub.plan_year
 Suscripción anual, 990 €
 
+## sub.cta_pay
+Continuar al pago seguro
+
 ## sub.cta_wa
 Empezar por WhatsApp
 
@@ -668,3 +667,135 @@ Privacidad
 
 ## terms.link
 Condiciones
+
+## home.cta_price
+Ver el precio
+
+## home.watch_kicker
+Empiece por aquí
+
+## home.watch_title
+¿Es así como se ve su ficha de Google?
+
+## home.watch_lead
+Antes de entrar, un cliente hace dos cosas: lee las últimas reseñas y mira si alguien respondió. Eso es lo que le quitamos de encima.
+
+## home.watch_stat1_value
+74 %
+
+## home.watch_stat1_label
+solo lee las reseñas de los últimos 3 meses
+
+## home.watch_stat2_value
+47 %
+
+## home.watch_stat2_label
+no usa un comercio con menos de 20 reseñas
+
+## home.watch_src
+BrightLocal, Local Consumer Review Survey 2026
+
+## home.listing_rating
+★★★★☆
+
+## home.listing_num
+3,9
+
+## home.listing_body
+14 reseñas sin respuesta. La última, hace dos días. Es lo primero que ven sus próximos clientes.
+
+## home.listing_lift
+↑ Sus próximas reseñas, respondidas. De eso nos ocupamos nosotros.
+
+## home.listing_note
+No podemos inventar reseñas: las deciden sus clientes. Pero ninguna reciente se queda sin respuesta, y le ayudamos a conseguir reseñas de más clientes contentos.
+
+## home.wa_kicker
+Cómo funciona
+
+## home.wa_title
+Solo habla con nosotros por WhatsApp. No hay nada que instalar.
+
+## home.wa_item1_title
+Sin aplicación
+
+## home.wa_item1
+Solo tiene que escribirnos. Nada que descargar, ni para usted ni para su equipo.
+
+## home.wa_item2_title
+Sin panel que nadie mira
+
+## home.wa_item2
+Nunca pedimos su contraseña de Google y no le damos un programa nuevo que aprender.
+
+## home.wa_item3_title
+Sin reuniones
+
+## home.wa_item3
+Las respuestas propuestas llegan escritas a su WhatsApp, usted aprueba o corrige ahí mismo, y se publica.
+
+## home.wa_item4_title
+Sin sorpresas en la factura
+
+## home.wa_item4
+99 € al mes, IVA incluido. Se cancela escribiendo una línea.
+
+## home.wa_chat_alt
+Ejemplo de conversación de WhatsApp con Rosalia
+
+## home.wa_chat_1
+★★★★☆ «La espera fue larga y la comida llegó fría. Una pena.»
+
+## home.wa_chat_1_meta
+Cliente · hace 2 días
+
+## home.wa_chat_2_author
+Rosalía
+
+## home.wa_chat_2
+«Hola. Este cliente dejó 2 estrellas. Le propongo esta respuesta, en español: “Gracias por decírnoslo, esa espera no estuvo a la altura. Denos otra oportunidad, lo haremos mejor.” ¿La publico?»
+
+## home.wa_chat_2_meta
+Borrador · revisado por una persona
+
+## home.wa_chat_3
+ok, publícala
+
+## home.wa_chat_4
+Publicada en su ficha hace un momento. Le aviso cuando llegue la próxima.
+
+## home.wa_chat_4_meta
+Publicado
+
+## home.trial_kicker
+Pruébelo gratis
+
+## home.trial_title
+Su primer mes son 0 €. Después decide usted.
+
+## home.trial_lead
+Deje su tarjeta, tenga el servicio completo 30 días por 0 €, y cancele con una línea antes del primer cobro si no le convence. Sin contrato y sin cuota de alta.
+
+## home.trial_opt1_title
+Lo que hace usted
+
+## home.trial_opt1
+Una cosa: invitarnos como gestor de su ficha de Google. Es un clic, nunca vemos su contraseña, y puede quitarnos cuando quiera. Rosalía le envía el enlace de pago seguro y empezamos.
+
+## home.trial_opt2_title
+Qué pasa durante el mes
+
+## home.trial_opt2
+No se cobra nada durante el mes de prueba: ni ahora ni el día 30 si cancela. Respondemos a cada reseña nueva, las de 1 a 3 estrellas le llegan para que las apruebe, y ponemos al día hasta 20 reseñas que quedaron sin respuesta.
+
+## home.trial_note
+Si al final del mes no hace nada, empieza la suscripción de 99 € al mes, IVA incluido. Si cancela antes, no paga nada.
+
+## home.trial_cta
+Empezar mi mes gratis
+
+## home.cta_trial
+Pruébelo gratis
+
+## product.social_trial_line
+0 € el primer mes

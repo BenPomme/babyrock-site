@@ -80,23 +80,19 @@ Acceptar
 Rebutjar
 
 ## home.kicker
-Relació digital amb el client per a petits comerços
-
+Ressenyes de Google i gestió de fitxa per a petits comerços
 ## home.trust
 Cada resposta la revisa una persona, en l'idioma de la ressenya
 
 ## home.headline
-Si els vostres clients us troben en línia, necessiteu BabyRock.
+El 68 % dels clients només entra en comerços amb 4 estrelles o més.
+## home.hero_alt
+Propietària d'un restaurant amb davantal, dreta vora una taula de la terrassa, amb oliveres i teulades de la ciutat al fons
 
 ## home.lead
-BabyRock us ajuda a treure el màxim de la vostra presència en línia, començant per Google Maps WhatsApp.
+No podeu canviar les estrelles que ja teniu. Però sí el que passa amb les que vindran: BabyRock respon cada ressenya nova en el vostre nom, en l’idioma en què la van escriure, i cuida la presentació de la vostra fitxa de Google.
 
-Tractar amb els clients és essencial per generar confiança i reputació, i per fer créixer els ingressos. Però porta temps.
-
-BabyRock Social us ajuda a respondre a cada ressenya nova al vostre perfil de Google. Una persona del nostre equip comprova la qualitat i l’autenticitat, i després la publica per vosaltres, en el vostre nom.
-
-BabyRock Direct us ajuda a fer servir WhatsApp per construir relacions directes i duradores amb els vostres clients i a millorar l’eficiència del negoci. Des de prendre reserves, reduir les inassistències, prendre comandes sense pagar comissió o demanar ressenyes, anem amb vosaltres en el camí de créixer.
-
+Una persona del nostre equip llegeix cada resposta abans de publicar-la. No es publica res sense que algú ho hagi llegit.
 ## home.cta_sim
 Simulador d’impacte
 
@@ -176,7 +172,7 @@ Començar BabyRock Social
 Cada ressenya nova, atesa
 
 ## product.social_f1
-També posem al dia fins a 20 de les vostres ressenyes sense resposta més recents quan us apunteu.
+Quan us subscriviu, posem al dia fins a 20 de les vostres ressenyes sense resposta més recents.
 
 ## product.social_f2_title
 La llengua correcta, amb un darrer control humà
@@ -599,6 +595,9 @@ Subscripció mensual, 99 €
 ## sub.plan_year
 Subscripció anual, 990 €
 
+## sub.cta_pay
+Continuar al pagament segur
+
 ## sub.cta_wa
 Començar per WhatsApp
 
@@ -668,3 +667,135 @@ Privadesa
 
 ## terms.link
 Condicions
+
+## home.watch_kicker
+Comenceu per aquí
+
+## home.watch_title
+És així com es veu la vostra fitxa de Google?
+
+## home.watch_lead
+Abans d’entrar, un client fa dues coses: llegeix les últimes ressenyes i mira si algú ha respost. Això és el que us traiem de sobre.
+
+## home.watch_stat1_label
+només llegeix les ressenyes dels últims 3 mesos
+
+## home.watch_stat2_label
+no fa servir un comerç amb menys de 20 ressenyes
+
+## home.listing_body
+14 ressenyes sense resposta. L’última, fa dos dies. És el primer que veuen els vostres pròxims clients.
+
+## home.listing_lift
+↑ Les vostres pròximes ressenyes, respostes. D’això ens ocupem nosaltres.
+
+## home.listing_note
+No podem inventar ressenyes: les decideixen els vostres clients. Però cap de recent no es queda sense resposta, i us ajudem a aconseguir ressenyes de més clients contents.
+
+## home.wa_title
+Només parleu amb nosaltres per WhatsApp. No hi ha res a instal·lar.
+
+## home.wa_item1
+Només ens heu d’escriure. Res a descarregar, ni per a vós ni per al vostre equip.
+
+## home.wa_item2
+No demanem mai la vostra contrasenya de Google i no us donem cap programa nou per aprendre.
+
+## home.wa_item3
+Les respostes proposades arriben escrites al vostre WhatsApp, vosaltres aprovau o corregiu allà mateix, i es publiquen.
+
+## home.wa_item4
+99 € al mes, IVA inclòs. Es cancel·la escrivint una línia.
+
+## home.wa_chat_alt
+Exemple de conversa de WhatsApp amb Rosalia
+
+## home.wa_chat_1
+★★★★☆ «L’espera va ser llarga i el menjar va arribar fred. Una llàstima.»
+
+## home.wa_chat_1_meta
+Client · fa 2 dies
+
+## home.wa_chat_2
+«Hola. Aquest client ha deixat 2 estrelles. Us proposo aquesta resposta, en castellà: “Gràcies per dir-nos-ho, aquella espera no va estar a l’altura. Doneu-nos una altra oportunitat, ho farem millor.” La publico?»
+
+## home.wa_chat_2_meta
+Esborrany · revisat per una persona
+
+## home.wa_chat_3
+ok, publica-la
+
+## home.wa_chat_4
+Publicada a la vostra fitxa fa un moment. Us aviso quan arribi la propera.
+
+## home.wa_chat_4_meta
+Publicat
+
+## home.cta_price
+Veure el preu
+
+## home.watch_stat1_value
+74 %
+
+## home.watch_stat2_value
+47 %
+
+## home.watch_src
+BrightLocal, Local Consumer Review Survey 2026
+
+## home.listing_rating
+★★★★☆
+
+## home.listing_num
+3,9
+
+## home.wa_kicker
+Com funciona
+
+## home.wa_item1_title
+Sense aplicació
+
+## home.wa_item2_title
+Sense panell que ningú mira
+
+## home.wa_item3_title
+Sense reunions
+
+## home.wa_item4_title
+Sense sorpreses a la factura
+
+## home.wa_chat_2_author
+Rosalía
+
+## home.trial_kicker
+Proveu-ho gratis
+
+## home.trial_title
+El primer mes són 0 €. Després decidiu vós.
+
+## home.trial_lead
+Deixeu la targeta, tingueu el servei complet 30 dies per 0 €, i cancel·leu amb una línia abans del primer cobrament si no us convenç. Sense contracte i sense quota d’alta.
+
+## home.trial_opt1_title
+Què feu vós
+
+## home.trial_opt1
+Una cosa: convidar-nos com a gestor de la vostra fitxa de Google. És un clic, no veiem mai la vostra contrasenya, i ens podeu treure quan vulgueu. Rosalia us envia l’enllaç de pagament segur i comencem.
+
+## home.trial_opt2_title
+Què passa durant el mes
+
+## home.trial_opt2
+No es cobra res durant el mes de prova: ni ara ni el dia 30 si cancel·leu. Responem cada ressenya nova, les d’1 a 3 estrelles us arriben per aprovar-les, i posem al dia fins a 20 ressenyes que van quedar sense resposta.
+
+## home.trial_note
+Si al final del mes no feu res, comença la subscripció de 99 € al mes, IVA inclòs. Si cancel·leu abans, no pagueu res.
+
+## home.trial_cta
+Començar el meu mes gratis
+
+## home.cta_trial
+Proveu-ho gratis
+
+## product.social_trial_line
+0 € el primer mes
