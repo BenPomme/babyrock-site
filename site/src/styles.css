@@ -163,12 +163,15 @@ textarea {
 
 .nav-links {
   display: none;
-  gap: 1.35rem;
+  /* A label that wraps pushes the whole bar out of rhythm, so the gaps give way instead. */
+  gap: clamp(0.55rem, 1.05vw, 1.15rem);
+  white-space: nowrap;
   align-items: center;
 }
 .nav-links a {
   text-decoration: none;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
   color: var(--muted);
 }
 .nav-links a[aria-current="page"],
@@ -191,7 +194,7 @@ textarea {
 }
 .lang a {
   text-decoration: none;
-  padding: 0.28rem 0.42rem;
+  padding: 0.28rem 0.34rem;
   border-radius: 999px;
   color: var(--muted);
 }
@@ -944,6 +947,116 @@ textarea {
   margin: 0.35rem 0 0;
 }
 
+/* The product cards read as one row: equal height, one calm price size, and the call to action
+   pinned to the bottom so the four buttons line up whatever the length of the benefits. */
+.compare {
+  align-items: stretch;
+}
+.compare-card {
+  display: flex;
+  flex-direction: column;
+}
+.compare-card .compare-price {
+  font-size: 1.65rem;
+  line-height: 1.15;
+}
+.compare-card .compare-price-note {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.compare-card .compare-cta {
+  margin-top: auto;
+}
+
+/* The button breathes the same amount above and below in every box: the space between the last
+   line of text and the button equals the space between the button and the bottom of the card. */
+.compare-card .compare-features {
+  margin-bottom: 1.45rem;
+}
+.compare-card .compare-more {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--accent, #3c9a4e);
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 0 0 1rem;
+}
+.compare-card .compare-cta {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* In-page anchors land below the sticky header instead of under it. */
+#productos,
+#price,
+#trial {
+  scroll-margin-top: 96px;
+}
+
+/* The three offers are chosen by clicking the card, not by opening a menu. One card is recommended,
+   marked with an accent outline and a badge rather than a black block. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px
+  ;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.plan-choices {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.plan-choice {
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.plan-choice:hover {
+  border-color: var(--accent, #3c9a4e);
+  transform: translateY(-2px);
+}
+.plan-choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.plan-choice:has(input:checked),
+.plan-choice.selected {
+  border: 2px solid var(--accent, #3c9a4e);
+  box-shadow: 0 6px 18px rgba(60, 154, 78, 0.18);
+}
+.plan-choice:has(input:focus-visible) {
+  outline: 3px solid rgba(60, 154, 78, 0.45);
+  outline-offset: 2px;
+}
+.plan-choice .badge {
+  position: absolute;
+  top: -0.7rem;
+  left: 1.45rem;
+  background: var(--accent, #3c9a4e);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+/* The featured plan card is light, like its neighbours, with the accent doing the talking.
+   The doubled class beats the black rule further down the file, whatever the order. */
+.price-card.featured.featured {
+  background: var(--panel);
+  color: inherit;
+  border-color: var(--accent, #3c9a4e);
+}
+.price-grid .price-card .amount {
+  font-size: 1.9rem;
+}
+
 .price-card {
   background: var(--panel);
   border-radius: var(--radius);
@@ -1084,6 +1197,31 @@ textarea {
 .research article p,
 .prose p {
   max-width: 42rem;
+}
+
+/* About and research are prose, not a landing page: a calmer heading scale than the home sections,
+   an introduction that reads as an introduction, and a line length that stays comfortable. */
+.research article h2,
+.about-page .team-grid article h2,
+.about-page .note h2 {
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  margin: 0 0 0.4rem;
+}
+.research .lead,
+.about-page .lead {
+  font-size: 1.15rem;
+  max-width: 42rem;
+}
+.research article {
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.research article p,
+.about-page .team-grid article p,
+.about-page .note p {
+  max-width: 42rem;
+  line-height: 1.65;
 }
 
 .sim-hero {
@@ -1340,7 +1478,10 @@ textarea {
   .value-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .price-grid,
+  .price-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
   .product-grid,
   .compare,
   .guide-grid,

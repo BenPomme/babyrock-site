@@ -34,16 +34,17 @@ Las [guías](https://www.babyrock.ai/es/guias/) del sitio explican hábitos que 
 
 ## 4. Precio, IVA y factura
 
-Precios en euros, **IVA incluido** para España:
+Precios en euros, **sin IVA** para España; el IVA del 21 % se añade en la factura:
 
-- 99 € al mes (81,82 € + 17,18 € de IVA al 21 %), suscripción mensual que se renueva sola.
-- 990 € al año (818,18 € + 171,82 € de IVA), suscripción anual que se renueva sola.
+- **Lite**: 9,99 € al mes sin IVA (9,99 € + 2,10 € de IVA al 21 % = 12,09 €), suscripción mensual que se renueva sola. Incluye 10 respuestas automáticas al mes; cada respuesta extra son 1,99 € sin IVA. Un año: 99,90 € sin IVA, en un solo pago.
+- **Plus**: 39,99 € al mes sin IVA (39,99 € + 8,40 € de IVA al 21 % = 48,39 €), suscripción mensual que se renueva sola. Una persona de nuestro equipo revisa cada respuesta, hasta 25 al mes; cada respuesta extra son 2,50 € sin IVA. Un año: 399,90 € sin IVA, en un solo pago.
+- **Pro**: 99,99 € al mes sin IVA (99,99 € + 21,00 € de IVA al 21 % = 120,99 €), suscripción mensual que se renueva sola. Para un comercio con varios locales: 60 respuestas revisadas por una persona en total al mes; cada respuesta extra son 2,50 € sin IVA. Un año: 999,90 € sin IVA, en un solo pago.
 
 Francia y resto de la UE, empresario con NIF IVA: autoliquidación; usted paga el importe sin IVA español.
 
 La factura sale a nombre de la razón social y el NIF que usted indique en el pago. Sin NIF, facturamos a la persona o al correo del alta. El PDF lo emite Stripe.
 
-Sant Cugat del Vallès: primer mes 0 € (prueba Stripe de 30 días con método de pago), rattrapage de 3 meses de reseñas, después 99 € al mes. Otras pruebas (por ejemplo un mes referido por un introducer) no se acumulan: un solo mes gratis.
+Prueba gratuita y sin tarjeta: el comercio añade reviews@babyrock.ai como gestor de su ficha de Google y respondemos tres reseñas, solo de 4 y 5 estrellas. No se cobra nada y no hay nada que cancelar. Si el comercio prefiere probar el servicio completo con tarjeta, Lite incluye dos semanas gratis y Plus y Pro un mes gratis, y puede cancelar antes de que terminen sin pagar nada. Las pruebas no se acumulan.
 
 La puesta en servicio es 0 € si usted añade el gestor.
 

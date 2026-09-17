@@ -34,16 +34,17 @@ The site [guides](https://www.babyrock.ai/en/guides/) teach habits you can do yo
 
 ## 4. Price, VAT and invoice
 
-Prices in euros, **VAT included** for Spain:
+Prices in euros, **excluding VAT** for Spain; 21 % VAT is added on the invoice:
 
-- €99 a month (€81.82 + €17.18 VAT at 21%), monthly subscription that renews by itself.
-- €990 a year (€818.18 + €171.82 VAT), yearly subscription that renews by itself.
+- **Lite**: €9.99 a month excluding VAT (€9.99 + €2.10 VAT at 21% = €12.09), monthly subscription that renews by itself. It includes 10 automatic replies a month; each extra reply is €1.99 excluding VAT. A year: €99.90 excluding VAT, in one payment.
+- **Plus**: €39.99 a month excluding VAT (€39.99 + €8.40 VAT at 21% = €48.39), monthly subscription that renews by itself. A person on our team checks every reply, up to 25 a month; each extra reply is €2.50 excluding VAT. A year: €399.90 excluding VAT, in one payment.
+- **Pro**: €99.99 a month excluding VAT (€99.99 + €21.00 VAT at 21% = €120.99), monthly subscription that renews by itself. For a business with several places: 60 replies checked by a person in total each month; each extra reply is €2.50 excluding VAT. A year: €999.90 excluding VAT, in one payment.
 
 France and the rest of the EU, a business with a VAT number: reverse charge; you pay the amount without Spanish VAT.
 
 The invoice is in the legal name and tax ID you enter at payment. Without a tax ID, we invoice the person or the sign-up email. Stripe issues the PDF.
 
-Sant Cugat del Vallès: first month €0 (30-day Stripe trial with a payment method), 3 months of catch-up reviews, then €99 a month. Other trials do not stack: one free month.
+Free trial without a card: the business adds reviews@babyrock.ai as a manager of its Google listing and we answer three reviews, 4 and 5 stars only. Nothing is charged and there is nothing to cancel. If it would rather try the full service with a card, Lite includes two weeks free and Plus and Pro one month free, and it can cancel before the end at no cost. Trials do not stack.
 
 Set-up is €0 if you add the manager.
 

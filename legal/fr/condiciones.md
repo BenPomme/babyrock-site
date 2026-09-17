@@ -36,14 +36,15 @@ Les [guides](https://www.babyrock.ai/fr/guides/) du site expliquent des habitude
 
 Prix en euros, **TVA comprise** pour l’Espagne :
 
-- 99 € par mois (81,82 € + 17,18 € de TVA à 21 %), abonnement mensuel qui se renouvelle tout seul.
-- 990 € par an (818,18 € + 171,82 € de TVA), abonnement annuel qui se renouvelle tout seul.
+- **Lite** : 9,99 € par mois hors taxes (9,99 € + 2,10 € de TVA à 21 % = 12,09 €), abonnement mensuel qui se renouvelle tout seul. Comprend 10 réponses automatiques par mois ; chaque réponse supplémentaire coûte 1,99 € hors taxes. Une année : 99,90 € hors taxes, en un seul paiement.
+- **Plus** : 39,99 € par mois hors taxes (39,99 € + 8,40 € de TVA à 21 % = 48,39 €), abonnement mensuel qui se renouvelle tout seul. Une personne de notre équipe relit chaque réponse, jusqu'à 25 par mois ; chaque réponse supplémentaire coûte 2,50 € hors taxes. Une année : 399,90 € hors taxes, en un seul paiement.
+- **Pro** : 99,99 € par mois hors taxes (99,99 € + 21,00 € de TVA à 21 % = 120,99 €), abonnement mensuel qui se renouvelle tout seul. Pour un commerce avec plusieurs établissements : 60 réponses relues par une personne au total par mois ; chaque réponse supplémentaire coûte 2,50 € hors taxes. Une année : 999,90 € hors taxes, en un seul paiement.
 
 France et reste de l’UE, professionnel avec n° de TVA : autoliquidation ; vous payez le montant hors TVA espagnole.
 
 La facture est au nom de la raison sociale et du NIF que vous indiquez au paiement. Sans NIF, nous facturons la personne ou l’e-mail de l’inscription. Le PDF est émis par Stripe.
 
-Sant Cugat del Vallès : premier mois 0 € (essai Stripe de 30 jours avec moyen de paiement), rattrapage de 3 mois d’avis, puis 99 € par mois. Les autres essais ne se cumulent pas : un seul mois gratuit.
+Essai gratuit et sans carte : le commerce ajoute reviews@babyrock.ai comme gestionnaire de sa fiche Google et nous répondons à trois avis, uniquement de 4 et 5 étoiles. Rien n'est facturé et il n'y a rien à annuler. S'il préfère essayer le service complet avec carte, Lite comprend deux semaines gratuites et Plus et Pro un mois gratuit, et il peut annuler avant la fin sans payer. Les essais ne se cumulent pas.
 
 La mise en service est 0 € si vous ajoutez le gestionnaire.
 

@@ -2,7 +2,7 @@
 Réponses aux avis Google pour les petits commerces | BabyRock Social
 
 ## meta.description
-Nous répondons à chaque avis Google de votre fiche. Une personne vérifie le texte et le publie. À partir de 99 € par mois, TTC.
+Nous répondons à chaque avis Google de votre fiche. Sur Lite automatiquement, sur Plus et Pro avec une personne qui relit chaque réponse. À partir de 9,99 € par mois, hors taxes.
 
 ## nav.simulator
 Calculateur d’impact
@@ -44,7 +44,7 @@ Passer
 Bonjour Rosalia, je voudrais en savoir plus sur BabyRock Social.
 
 ## footer.tagline
-BabyRock Social répond aux avis Google de votre fiche. Une personne de l’équipe vérifie chaque réponse et la publie. Vous nous parlez sur WhatsApp.
+BabyRock Social répond aux avis Google de votre fiche. Sur Lite les réponses sont automatiques et vous validez celles de 1 à 3 étoiles ; sur Plus et Pro, en plus, une personne de l'équipe relit chaque réponse avant publication. Vous nous parlez sur WhatsApp.
 
 ## footer.privacy
 Confidentialité
@@ -82,7 +82,7 @@ Refuser
 ## home.kicker
 Avis Google et gestion de fiche pour les petits commerces
 ## home.trust
-Chaque réponse est relue par une personne, dans la langue de l'avis
+Réponses automatiques sur Lite, relues par une personne sur Plus et Pro
 
 ## home.headline
 68 % des clients n’entrent que dans un commerce noté 4 étoiles ou plus.
@@ -92,7 +92,7 @@ Restauratrice en tablier, debout près d'une table de la terrasse, avec des oliv
 ## home.lead
 Vous ne pouvez pas changer les étoiles que vous avez déjà. Mais vous pouvez changer ce qui arrive aux suivantes : BabyRock répond à chaque nouvel avis en votre nom, dans la langue du client, et soigne la présentation de votre fiche Google.
 
-Une personne de notre équipe relit chaque réponse avant publication. Rien n’est publié sans qu’une personne l’ait lu.
+Sur Lite les réponses sont automatiques et vous validez celles de 1 à 3 étoiles. Sur Plus et Pro, une personne de notre équipe relit chaque réponse avant publication.
 ## home.cta_sim
 Simulateur d’impact
 
@@ -150,7 +150,7 @@ Bonjour Rosalia, je suis intéressé par BabyRock Direct quand ce sera prêt.
 Construisez la confiance sur Google aujourd’hui. Construisez des relations clients directes sur WhatsApp ensuite.
 
 ## products.lead
-BabyRock Social s’occupe des réponses à vos avis Google, vous fait gagner du temps et montre aux clients suivants que vous écoutez. Chaque réponse est relue par une personne, et vous validez chaque réponse sensible.
+BabyRock Social s’occupe des réponses à vos avis Google, vous fait gagner du temps et montre aux clients suivants que vous écoutez. Sur Lite nous répondons automatiquement et vous validez les avis sensibles ; sur Plus et Pro une personne relit chaque réponse.
 
 BabyRock Direct, bientôt, aidera vos clients à réserver et à recevoir des messages de suivi via le numéro WhatsApp de votre commerce.
 
@@ -445,7 +445,7 @@ Extra annuel, haut
 de votre année
 
 ## sim.note
-Extra brut. BabyRock Social à partir de 990 € par an.
+Extra brut. BabyRock Social à partir de 9,99 € par mois, hors taxes.
 
 ## sim.cta
 Que l’on s’occupe de mes avis
@@ -463,7 +463,7 @@ Il n’y a pas d’autre tableau de bord, pas d’application en plus, et nous n
 1. Parlez-nous de votre commerce
 
 ## how.step1
-Envoyez à Rosalia le nom du commerce et la fiche Google par WhatsApp ou e-mail. Choisissez l’abonnement mensuel à 99 € ou l’abonnement annuel à 990 €. Elle répond aux questions et envoie un lien de paiement sécurisé.
+Envoyez à Rosalia le nom du commerce et la fiche Google par WhatsApp ou e-mail. Choisissez Lite, Plus ou Pro. Elle répond aux questions et envoie un lien de paiement sécurisé.
 
 ## how.step2_title
 2. Ajoutez-nous comme gestionnaire, pas comme propriétaire
@@ -524,7 +524,7 @@ Au-dessus des no-shows récupérés, nous ajoutons WhatsApp comme canal de rése
 Les pourcentages que nous utilisons
 
 ## research.formula
-Extra annuel = chiffre d’affaires mensuel × 12 × le pourcentage de votre type et produit. Chiffres bruts. BabyRock Social à partir de 990 € par an.
+Extra annuel = chiffre d’affaires mensuel × 12 × le pourcentage de votre type et produit. Chiffres bruts. BabyRock Social à partir de 9,99 € par mois, hors taxes.
 
 ## research.what_we_use
 Votre commerce peut sortir de la fourchette. Nous préférons un chiffre commercial clair, avec les sources à côté, qu’une formule à 0,84 % que personne ne sent.
@@ -557,10 +557,10 @@ Nous utilisons l’IA pour préparer un premier brouillon et pour travailler dan
 Nous ne vous demandons pas d’installer une autre application. Vous écrivez à Rosalia, ou à la personne qui tient la conversation, sur WhatsApp.
 
 ## sub.headline
-Que chaque nouvel avis Google soit traité, à partir de 99 € par mois.
+Que chaque nouvel avis Google soit traité, à partir de 9,99 € par mois, hors taxes.
 
 ## sub.lead
-Envoyez-nous le nom du commerce et la fiche Google. Rosalia répondra aux questions, vous aidera à choisir la formule mensuelle ou annuelle, et vous enverra le lien de paiement sécurisé. Ensuite, ajoutez-nous comme gestionnaire et nous commençons.
+Envoyez-nous le nom du commerce et la fiche Google. Rosalia répondra aux questions, vous aidera à choisir entre Lite, Plus et Pro, et vous enverra le lien de paiement sécurisé. Ensuite, ajoutez-nous comme gestionnaire et nous commençons.
 
 ## sub.month
 99 €/mois, TTC
@@ -590,10 +590,10 @@ Chiffre d’affaires mensuel, si vous avez utilisé le calculateur (facultatif)
 Formule souhaitée
 
 ## sub.plan_month
-Abonnement mensuel, 99 €
+Lite, 9,99 € par mois hors taxes
 
 ## sub.plan_year
-Abonnement annuel, 990 €
+Plus, 39,99 € par mois hors taxes
 
 ## sub.cta_pay
 Continuer vers le paiement sécurisé
@@ -629,7 +629,7 @@ Chaque paiement produit une facture, avec TVA, envoyée à votre e-mail. Besoin 
 Comment vous payez
 
 ## account.pay
-Rosalia envoie un lien de paiement sécurisé pour la formule choisie : 99 € par mois (abonnement mensuel) ou 990 € par an (abonnement annuel). Pas de frais de mise en service si vous ajoutez vous-même le gestionnaire Google.
+Rosalia envoie un lien de paiement sécurisé pour la formule choisie : Lite 9,99 €, Plus 39,99 € ou Pro 99,99 € par mois, hors taxes. Pas de frais de mise en service si vous ajoutez vous-même le gestionnaire Google.
 
 ## account.cancel_title
 Comment résilier
@@ -658,7 +658,7 @@ Nous utilisons des outils d’IA pour aider à préparer des brouillons. Une per
 Conditions
 
 ## terms.body
-BabyRock Social gère les réponses d’une fiche d’établissement Google à 99 € par mois TTC (abonnement mensuel), ou 990 € par an TTC (abonnement annuel). En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit chaque réponse et contrôle le moment où elle apparaît en public.
+BabyRock Social gère les réponses d’une fiche d’établissement Google à Lite 9,99 €, Plus 39,99 € ou Pro 99,99 € par mois, hors taxes, selon la formule choisie par le commerce. En vous abonnant et en nous invitant comme gestionnaire, vous nous autorisez à rédiger, relire, envoyer, modifier et, si nécessaire, supprimer des réponses sur cette fiche. L’IA peut aider au premier brouillon ; une personne vérifie et envoie chaque réponse. Les réponses aux avis 4 et 5 étoiles peuvent être envoyées avec cette autorisation continue. Celles des avis 1, 2 et 3 étoiles sont envoyées seulement après que vous les avez approuvées ou modifiées sur WhatsApp. Google relit chaque réponse et contrôle le moment où elle apparaît en public.
 
 Vous pouvez résilier à la fin de la période payée en écrivant à Rosalia. Quand le service s’arrête, nous retirons notre accès gestionnaire. Nous pouvons suspendre le service si un paiement échoue. Le droit espagnol et les tribunaux de Barcelone s’appliquent, sauf règle impérative de consommation contraire.
 
@@ -705,7 +705,7 @@ Nous ne demandons jamais votre mot de passe Google et nous ne vous donnons pas d
 Les réponses proposées arrivent écrites dans votre WhatsApp, vous approuvez ou corrigez sur place, et c’est publié.
 
 ## home.wa_item4
-99 € par mois, TVA incluse. On annule en une ligne.
+Lite à partir de 9,99 €, Plus 39,99 € et Pro 99,99 € par mois, hors taxes. On annule en une ligne.
 
 ## home.wa_chat_alt
 Exemple de conversation WhatsApp avec Rosalia
@@ -771,28 +771,28 @@ Rosalía
 Essayez gratuitement
 
 ## home.trial_title
-Votre premier mois est à 0 €. Vous décidez ensuite.
+Commencez gratuitement et sans carte : trois avis traités
 
 ## home.trial_lead
-Laissez votre carte, gardez le service complet pendant 30 jours à 0 €, et annulez en une ligne avant le premier prélèvement si cela ne vous convient pas. Sans engagement et sans frais d’ouverture.
+Ajoutez reviews@babyrock.ai comme gestionnaire de votre fiche et nous répondons à trois avis, uniquement de 4 et 5 étoiles. Rien n'est facturé et il n'y a rien à annuler. Si vous voulez le service complet dès le premier jour, avec carte : deux semaines gratuites sur Lite et un mois gratuit sur Plus et Pro.
 
 ## home.trial_opt1_title
 Ce que vous faites
 
 ## home.trial_opt1
-Une seule chose : nous inviter comme gestionnaire de votre fiche Google. Un clic, nous ne voyons jamais votre mot de passe, et vous pouvez nous retirer quand vous voulez. Rosalia vous envoie le lien de paiement sécurisé et nous commençons.
+Une seule chose : nous inviter comme gestionnaire de votre fiche Google. Un clic, nous ne voyons jamais votre mot de passe, et vous pouvez nous retirer quand vous voulez. Rosalia vous accompagne sur WhatsApp pendant toute la mise en route.
 
 ## home.trial_opt2_title
-Ce qui se passe pendant le mois
+Ce qui se passe pendant l'essai
 
 ## home.trial_opt2
-Rien n’est facturé pendant le mois d’essai : ni maintenant, ni le 30e jour si vous annulez. Chaque nouvel avis reçoit une réponse, les avis 1 à 3 étoiles vous arrivent pour approbation, et nous rattrapons jusqu’à 20 avis restés sans réponse.
+Sans carte, nous répondons à trois avis de 4 ou 5 étoiles, et les avis de 1 à 3 étoiles vous arrivent pour approbation. Avec carte, vous essayez le service complet : jusqu'à 10 réponses par mois sur Lite et jusqu'à 25 sur Plus, avec le résumé du lundi. Vous annulez avant la fin de l'essai et vous ne payez rien.
 
 ## home.trial_note
-Si vous ne faites rien à la fin du mois, l’abonnement démarre à 99 € par mois, TVA incluse. Si vous annulez avant, vous ne payez rien.
+À la fin de l'essai, si vous n'annulez pas, l'abonnement que vous avez choisi démarre : Lite 9,99 €, Plus 39,99 € ou Pro 99,99 € par mois, hors taxes. Vous annulez en une ligne.
 
 ## home.trial_cta
-Commencer mon mois gratuit
+Commencer l'essai gratuit
 
 ## home.cta_trial
 Essayez gratuitement
@@ -802,3 +802,135 @@ Essayez gratuitement
 
 ## footer.hunt
 Gagnez de l’argent avec BabyRock
+
+## product.social_lite_name
+BabyRock Social Lite
+
+## product.social_lite_price
+9,99 € par mois, hors taxes
+
+## product.social_lite_trial
+Essai gratuit et sans carte : nous répondons à trois avis, uniquement de 4 et 5 étoiles. Ou deux semaines gratuites avec carte.
+
+## product.social_lite_f1
+Nous répondons automatiquement à vos avis Google, jusqu'à 10 par mois.
+
+## product.social_lite_f2
+Les avis de 1 à 3 étoiles attendent votre accord avant publication.
+
+## product.social_lite_f3
+Chaque réponse supplémentaire coûte 1,99 € hors taxes.
+
+## product.social_lite_f4
+Pas de mot de passe Google et aucun nouveau tableau de bord à apprendre.
+
+## product.social_lite_cta
+Commencer avec Lite
+
+## product.social_plus_name
+BabyRock Social Plus
+
+## product.social_plus_price
+39,99 € par mois, hors taxes
+
+## product.social_plus_trial
+Essai gratuit et sans carte : nous répondons à trois avis. Ou un mois gratuit avec carte.
+
+## product.social_plus_inherits
+Tout ce qui est inclus dans Lite, et en plus :
+
+## product.social_plus_f1
+Une personne de notre équipe relit chaque réponse avant publication.
+
+## product.social_plus_f2
+Jusqu'à 25 réponses par mois.
+
+## product.social_plus_f3
+Nous remettons à jour vos 10 avis les plus récents sans réponse.
+
+## product.social_plus_f4
+Un résumé chaque lundi de votre fiche et de vos avis.
+
+## product.social_plus_f5
+Une mise à jour de votre fiche Google par semaine (nouvelles photos, etc.).
+
+## product.social_plus_cta
+Commencer avec Plus
+
+## product.social_pro_name
+BabyRock Social Pro
+
+## product.social_pro_price
+99,99 € par mois, hors taxes
+
+## product.social_pro_trial
+Essai gratuit et sans carte : nous répondons à trois avis. Ou un mois gratuit avec carte.
+
+## product.social_pro_inherits
+Tout ce qui est inclus dans Plus, et en plus :
+
+## product.social_pro_f1
+Tous vos établissements sur un seul compte, avec une seule facture.
+
+## product.social_pro_f2
+60 réponses relues par une personne au total chaque mois.
+
+## product.social_pro_f3
+Support prioritaire : nous répondons le jour même.
+
+## product.social_pro_f4
+Aucun coût supplémentaire par nouvel établissement du même groupe.
+
+## product.social_pro_f5
+Modifications illimitées de vos fiches Google Business Profile.
+
+## product.social_pro_cta
+Commencer avec Pro
+
+## product.price_unit
+/ mois
+
+## sub.recommended
+Recommandé
+
+## product.and_more
+Et plus…
+
+## product.social_lite_f5
+Nous répondons dans la langue de l'avis : espagnol, catalan, français ou anglais.
+
+## product.social_lite_f6
+Pas de mot de passe Google : vous nous ajoutez comme gestionnaire de votre fiche, et vous pouvez nous retirer quand vous voulez.
+
+## product.social_plus_f6
+Nous répondons dans la langue de l'avis, et les avis sensibles attendent votre accord.
+
+## product.social_plus_f7
+Support WhatsApp, réponse en quatre heures ouvrées.
+
+## product.social_plus_f8
+Une année représente dix mensualités, en un seul paiement.
+
+## product.social_pro_f6
+Publications et photos préparées avec vous et publiées sur votre fiche.
+
+## product.social_pro_f7
+Rapport mensuel : appels, demandes d'itinéraire, recherches et évolution des avis.
+
+## product.social_pro_f8
+Nous surveillons votre fiche et vous prévenons le jour même si Google ou un visiteur propose une modification.
+
+## product.social_pro_f9
+Un contact nommé qui connaît votre compte.
+
+## product.social_pro_f10
+Tout, dans toutes les langues où nous répondons, avec le même soin.
+
+## home.tier_lite_annual
+Ou 99,90 € par an, hors taxes, en un seul paiement.
+
+## home.tier_plus_annual
+Ou 399,90 € par an, hors taxes, en un seul paiement.
+
+## home.tier_pro_annual
+Ou 999,90 € par an, hors taxes, en un seul paiement.

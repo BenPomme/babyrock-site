@@ -34,16 +34,17 @@ Les [guies](https://www.babyrock.ai/ca/guies/) del lloc expliquen hàbits que po
 
 ## 4. Preu, IVA i factura
 
-Preus en euros, **IVA inclòs** per a Espanya:
+Preus en euros, **sense IVA** per a Espanya; l'IVA del 21 % s'afegeix a la factura:
 
-- 99 € al mes (81,82 € + 17,18 € d’IVA al 21 %), subscripció mensual que es renova sola.
-- 990 € a l’any (818,18 € + 171,82 € d’IVA), subscripció anual que es renova sola.
+- **Lite**: 9,99 € al mes sense IVA (9,99 € + 2,10 € d'IVA al 21 % = 12,09 €), subscripció mensual que es renova sola. Inclou 10 respostes automàtiques al mes; cada resposta extra són 1,99 € sense IVA. Un any: 99,90 € sense IVA, en un sol pagament.
+- **Plus**: 39,99 € al mes sense IVA (39,99 € + 8,40 € d'IVA al 21 % = 48,39 €), subscripció mensual que es renova sola. Una persona del nostre equip revisa cada resposta, fins a 25 al mes; cada resposta extra són 2,50 € sense IVA. Un any: 399,90 € sense IVA, en un sol pagament.
+- **Pro**: 99,99 € al mes sense IVA (99,99 € + 21,00 € d'IVA al 21 % = 120,99 €), subscripció mensual que es renova sola. Per a un comerç amb diversos locals: 60 respostes revisades per una persona en total al mes; cada resposta extra són 2,50 € sense IVA. Un any: 999,90 € sense IVA, en un sol pagament.
 
 França i resta de la UE, empresari amb NIF IVA: autoliquidació; pagueu l’import sense IVA espanyol.
 
 La factura surt a nom de la raó social i el NIF que indiqueu al pagament. Sense NIF, facturem a la persona o al correu de l’alta. El PDF l’emet Stripe.
 
-Sant Cugat del Vallès: primer mes 0 € (prova Stripe de 30 dies amb mètode de pagament), posada al dia de 3 mesos de ressenyes, després 99 € al mes. Altres proves no s’acumulen: un sol mes gratis.
+Prova gratuïta i sense targeta: el comerç afegeix reviews@babyrock.ai com a gestor de la seva fitxa de Google i responem tres ressenyes, només de 4 i 5 estrelles. No es cobra res i no hi ha res a cancel·lar. Si prefereix provar el servei complet amb targeta, Lite inclou dues setmanes gratis i Plus i Pro un mes gratis, i pot cancel·lar abans que acabin sense pagar res. Les proves no s'acumulen.
 
 La posada en servei és 0 € si afegiu el gestor.
 

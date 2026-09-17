@@ -2,7 +2,7 @@
 Respostes a ressenyes de Google per a petits comerços | BabyRock Social
 
 ## meta.description
-Responem a cada ressenya de Google de la vostra fitxa. Una persona comprova el text i el publica. Des de 99 € al mes, IVA inclòs.
+Responem a cada ressenya de Google de la vostra fitxa. A Lite automàticament, a Plus i Pro amb una persona que revisa cada resposta. Des de 9,99 € al mes, sense IVA.
 
 ## nav.simulator
 Calculadora d’impacte
@@ -44,7 +44,7 @@ Omet
 Hola Rosalia, vull saber més de BabyRock Social.
 
 ## footer.tagline
-BabyRock Social respon a les ressenyes de Google de la vostra fitxa. Una persona de l’equip comprova cada resposta i la publica. Parleu amb nosaltres per WhatsApp.
+BabyRock Social respon a les ressenyes de Google de la vostra fitxa. A Lite les respostes són automàtiques i vosaltres aproveu les d'1 a 3 estrelles; a Plus i Pro, a més, una persona de l'equip revisa cada resposta abans de publicar-la. Parleu amb nosaltres per WhatsApp.
 
 ## footer.privacy
 Privadesa
@@ -82,7 +82,7 @@ Rebutjar
 ## home.kicker
 Ressenyes de Google i gestió de fitxa per a petits comerços
 ## home.trust
-Cada resposta la revisa una persona, en l'idioma de la ressenya
+Respostes automàtiques a Lite, revisades per una persona a Plus i Pro
 
 ## home.headline
 El 68 % dels clients només entra en comerços amb 4 estrelles o més.
@@ -92,7 +92,7 @@ Propietària d'un restaurant amb davantal, dreta vora una taula de la terrassa, 
 ## home.lead
 No podeu canviar les estrelles que ja teniu. Però sí el que passa amb les que vindran: BabyRock respon cada ressenya nova en el vostre nom, en l’idioma en què la van escriure, i cuida la presentació de la vostra fitxa de Google.
 
-Una persona del nostre equip llegeix cada resposta abans de publicar-la. No es publica res sense que algú ho hagi llegit.
+A Lite les respostes són automàtiques i vosaltres aproveu les d'1 a 3 estrelles. A Plus i Pro, una persona del nostre equip revisa cada resposta abans de publicar-la.
 ## home.cta_sim
 Simulador d’impacte
 
@@ -150,7 +150,7 @@ Hola Rosalia, m’interessa BabyRock Direct quan estigui a punt.
 Construïu confiança a Google avui. Construïu relacions directes amb els clients al WhatsApp després.
 
 ## products.lead
-BabyRock Social s’ocupa de les respostes a les vostres ressenyes de Google, us estalvia temps i mostra als clients següents que escolteu. Cada resposta la revisa una persona, i vosaltres aproveu cada resposta sensible.
+BabyRock Social s’ocupa de les respostes a les vostres ressenyes de Google, us estalvia temps i mostra als clients següents que escolteu. A Lite responem automàticament i vosaltres aproveu les ressenyes sensibles; a Plus i Pro una persona revisa cada resposta.
 
 BabyRock Direct, pròximament, ajudarà els clients a reservar i a rebre missatges de seguiment a través del número de WhatsApp del vostre comerç.
 
@@ -445,7 +445,7 @@ Extra a l’any, alta
 del vostre any
 
 ## sim.note
-Ingressos extra bruts. BabyRock Social des de 990 € a l’any.
+Ingressos extra bruts. BabyRock Social des de 9,99 € al mes, sense IVA.
 
 ## sim.cta
 Que s’ocupin de les meves ressenyes
@@ -463,7 +463,7 @@ No hi ha un altre tauler, no hi ha una altra aplicació, i mai no demanem la con
 1. Expliqueu-nos el negoci
 
 ## how.step1
-Envieu a la Rosalia el nom del negoci i la fitxa de Google per WhatsApp o correu. Trieu la subscripció mensual de 99 € o l’anual de 990 €. Ella respon les preguntes i envia un enllaç de pagament segur.
+Envieu a la Rosalia el nom del negoci i la fitxa de Google per WhatsApp o correu. Trieu Lite, Plus o Pro. Ella respon les preguntes i envia un enllaç de pagament segur.
 
 ## how.step2_title
 2. Afegiu-nos com a gestor, no com a propietari
@@ -524,7 +524,7 @@ Damunt de les absències recuperades sumem WhatsApp com a canal de reserva i de 
 Els percentatges que fem servir
 
 ## research.formula
-Extra anual = facturació mensual × 12 × el percentatge del vostre tipus i producte. Xifres brutes. BabyRock Social des de 990 € a l’any.
+Extra anual = facturació mensual × 12 × el percentatge del vostre tipus i producte. Xifres brutes. BabyRock Social des de 9,99 € al mes, sense IVA.
 
 ## research.what_we_use
 El vostre comerç pot quedar fora del rang. Preferim un número comercial clar, amb les fonts al costat, que una fórmula del 0,84 % que ningú no sent.
@@ -557,10 +557,10 @@ Fem servir la IA per preparar un primer esborrany i per treballar en diverses ll
 No us demanem que instal·leu una altra aplicació. Escriviu a la Rosalia, o a qui cobreixi la conversa, per WhatsApp.
 
 ## sub.headline
-Que cada ressenya nova de Google quedi atesa, des de 99 € al mes.
+Que cada ressenya nova de Google quedi atesa, des de 9,99 € al mes, sense IVA.
 
 ## sub.lead
-Envieu-nos el nom del negoci i la fitxa de Google. La Rosalia respondrà les preguntes, us ajudarà a triar el pla mensual o anual, i us enviarà l’enllaç de pagament segur. Després ens afegiu com a gestor i comencem.
+Envieu-nos el nom del negoci i la fitxa de Google. La Rosalia respondrà les preguntes, us ajudarà a triar entre Lite, Plus i Pro, i us enviarà l’enllaç de pagament segur. Després ens afegiu com a gestor i comencem.
 
 ## sub.month
 99 €/mes, IVA inclòs
@@ -590,10 +590,10 @@ Facturació mensual, si heu fet servir la calculadora (opcional)
 Pla preferit
 
 ## sub.plan_month
-Subscripció mensual, 99 €
+Lite, 9,99 € al mes sense IVA
 
 ## sub.plan_year
-Subscripció anual, 990 €
+Plus, 39,99 € al mes sense IVA
 
 ## sub.cta_pay
 Continuar al pagament segur
@@ -629,7 +629,7 @@ Cada pagament produeix una factura, amb IVA, enviada al vostre correu. Necessite
 Com es paga
 
 ## account.pay
-La Rosalia envia un enllaç de pagament segur per al pla triat: 99 € al mes (subscripció mensual) o 990 € a l’any (subscripció anual). No hi ha quota d’alta si vosaltres mateixos afegiu el gestor de Google.
+La Rosalia envia un enllaç de pagament segur per al pla triat: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sense IVA. No hi ha quota d'alta si vosaltres mateixos afegiu el gestor de Google.
 
 ## account.cancel_title
 Com cancel·lar
@@ -658,7 +658,7 @@ Fem servir eines d’IA per ajudar a preparar esborranys. Una persona revisa i, 
 Condicions
 
 ## terms.body
-BabyRock Social gestiona les respostes d’una fitxa d’empresa de Google a 99 € al mes IVA inclòs (subscripció mensual), o 990 € a l’any IVA inclòs (subscripció anual). En subscriure-us i convidar-nos com a gestor, ens autoritzeu a redactar, revisar, enviar, editar i, si cal, esborrar respostes en aquesta fitxa. La IA pot ajudar amb el primer esborrany; una persona comprova i envia cada resposta. Les respostes a ressenyes de 4 i 5 estrelles es poden enviar amb aquesta autorització contínua. Les d’1, 2 i 3 estrelles s’envien només després que les aproveu o les canvieu per WhatsApp. Google revisa cada resposta i controla quan es veu en públic.
+BabyRock Social gestiona les respostes d’una fitxa d’empresa de Google a Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sense IVA, amb el pla que triï el comerç. En subscriure-us i convidar-nos com a gestor, ens autoritzeu a redactar, revisar, enviar, editar i, si cal, esborrar respostes en aquesta fitxa. La IA pot ajudar amb el primer esborrany; una persona comprova i envia cada resposta. Les respostes a ressenyes de 4 i 5 estrelles es poden enviar amb aquesta autorització contínua. Les d’1, 2 i 3 estrelles s’envien només després que les aproveu o les canvieu per WhatsApp. Google revisa cada resposta i controla quan es veu en públic.
 
 Podeu cancel·lar al final del període pagat escrivint a la Rosalia. Quan s’acaba el servei, treiem el nostre accés de gestor. Podem pausar el servei si un pagament falla. S’aplica la llei espanyola i els jutjats de Barcelona, llevat de norma imperativa de consum en un altre sentit.
 
@@ -705,7 +705,7 @@ No demanem mai la vostra contrasenya de Google i no us donem cap programa nou pe
 Les respostes proposades arriben escrites al vostre WhatsApp, vosaltres aprovau o corregiu allà mateix, i es publiquen.
 
 ## home.wa_item4
-99 € al mes, IVA inclòs. Es cancel·la escrivint una línia.
+Lite des de 9,99 €, Plus 39,99 € i Pro 99,99 € al mes, sense IVA. Es cancel·la escrivint una línia.
 
 ## home.wa_chat_alt
 Exemple de conversa de WhatsApp amb Rosalia
@@ -771,28 +771,28 @@ Rosalía
 Proveu-ho gratis
 
 ## home.trial_title
-El primer mes són 0 €. Després decidiu vós.
+Comenceu gratis i sense targeta: tres ressenyes respostes
 
 ## home.trial_lead
-Deixeu la targeta, tingueu el servei complet 30 dies per 0 €, i cancel·leu amb una línia abans del primer cobrament si no us convenç. Sense contracte i sense quota d’alta.
+Afegiu reviews@babyrock.ai com a gestor de la vostra fitxa i responem tres ressenyes, només de 4 i 5 estrelles. No es cobra res i no hi ha res a cancel·lar. Si voleu el servei complet des del primer dia, amb targeta: dues setmanes gratis a Lite i un mes gratis a Plus i Pro.
 
 ## home.trial_opt1_title
 Què feu vós
 
 ## home.trial_opt1
-Una cosa: convidar-nos com a gestor de la vostra fitxa de Google. És un clic, no veiem mai la vostra contrasenya, i ens podeu treure quan vulgueu. Rosalia us envia l’enllaç de pagament segur i comencem.
+Una cosa: convidar-nos com a gestor de la vostra fitxa de Google. És un clic, no veiem mai la vostra contrasenya, i ens podeu treure quan vulgueu. La Rosalia us acompanya per WhatsApp durant tot el procés.
 
 ## home.trial_opt2_title
-Què passa durant el mes
+Què passa mentre proveu
 
 ## home.trial_opt2
-No es cobra res durant el mes de prova: ni ara ni el dia 30 si cancel·leu. Responem cada ressenya nova, les d’1 a 3 estrelles us arriben per aprovar-les, i posem al dia fins a 20 ressenyes que van quedar sense resposta.
+Sense targeta responem tres ressenyes de 4 o 5 estrelles, i les d'1 a 3 estrelles us arriben perquè les aproveu. Amb targeta proveu el servei complet: fins a 10 respostes al mes a Lite i fins a 25 a Plus, amb el resum dels dilluns. Es cancel·la abans que acabi la prova i no es paga res.
 
 ## home.trial_note
-Si al final del mes no feu res, comença la subscripció de 99 € al mes, IVA inclòs. Si cancel·leu abans, no pagueu res.
+En acabar la prova, si no cancel·leu, comença la subscripció que hàgiu triat: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sense IVA. Es cancel·la escrivint una línia.
 
 ## home.trial_cta
-Començar el meu mes gratis
+Començar la prova gratis
 
 ## home.cta_trial
 Proveu-ho gratis
@@ -802,3 +802,135 @@ Proveu-ho gratis
 
 ## footer.hunt
 Guanyeu diners amb BabyRock
+
+## product.social_lite_name
+BabyRock Social Lite
+
+## product.social_lite_price
+9,99 € al mes, sense IVA
+
+## product.social_lite_trial
+Prova gratuïta i sense targeta: responem tres ressenyes, només de 4 i 5 estrelles. O dues setmanes gratis amb targeta.
+
+## product.social_lite_f1
+Responem automàticament les seves ressenyes de Google, fins a 10 al mes.
+
+## product.social_lite_f2
+Les ressenyes d'1 a 3 estrelles esperen el seu OK abans de publicar-se.
+
+## product.social_lite_f3
+Cada resposta extra costa 1,99 € sense IVA.
+
+## product.social_lite_f4
+Un mes gratis amb targeta, i sense contrasenya de Google ni cap panell nou.
+
+## product.social_lite_cta
+Començar amb Lite
+
+## product.social_plus_name
+BabyRock Social Plus
+
+## product.social_plus_price
+39,99 € al mes, sense IVA
+
+## product.social_plus_trial
+Prova gratuïta i sense targeta: responem tres ressenyes. O un mes gratis amb targeta.
+
+## product.social_plus_inherits
+Tot el de Lite, i a més:
+
+## product.social_plus_f1
+Una persona del nostre equip revisa cada resposta abans de publicar-la.
+
+## product.social_plus_f2
+Fins a 25 respostes al mes.
+
+## product.social_plus_f3
+Posem al dia les seves 10 ressenyes més recents sense resposta.
+
+## product.social_plus_f4
+Resum cada dilluns de la seva fitxa i de les seves ressenyes.
+
+## product.social_plus_f5
+Una actualització de la seva fitxa de Google cada setmana (fotos noves, etc.).
+
+## product.social_plus_cta
+Començar amb Plus
+
+## product.social_pro_name
+BabyRock Social Pro
+
+## product.social_pro_price
+99,99 € al mes, sense IVA
+
+## product.social_pro_trial
+Prova gratuïta i sense targeta: responem tres ressenyes. O un mes gratis amb targeta.
+
+## product.social_pro_inherits
+Tot el de Plus, i a més:
+
+## product.social_pro_f1
+Tots els seus locals en un sol compte, amb una sola factura.
+
+## product.social_pro_f2
+60 respostes revisades per una persona en total cada mes.
+
+## product.social_pro_f3
+Atenció prioritària: contestem el mateix dia.
+
+## product.social_pro_f4
+Sense cost afegit per cada local nou del mateix grup.
+
+## product.social_pro_f5
+Canvis il·limitats en les seves fitxes de Google Business Profile.
+
+## product.social_pro_cta
+Començar amb Pro
+
+## product.price_unit
+/ mes
+
+## sub.recommended
+Recomanat
+
+## product.and_more
+I més…
+
+## product.social_lite_f5
+Responem en l'idioma de la ressenya: castellà, català, francès o anglès.
+
+## product.social_lite_f6
+Sense contrasenya de Google: ens afegiu com a gestor de la vostra fitxa i ens podeu treure quan vulgueu.
+
+## product.social_plus_f6
+Responem en l'idioma de la ressenya, i les sensibles esperen el vostre OK.
+
+## product.social_plus_f7
+Suport per WhatsApp, amb resposta en quatre hores laborables.
+
+## product.social_plus_f8
+Un any són deu mensualitats, en un sol pagament.
+
+## product.social_pro_f6
+Publicacions i fotos preparades amb vós i publicades a la vostra fitxa.
+
+## product.social_pro_f7
+Informe mensual: trucades, sol·licituds de ruta, cerques i evolució de les ressenyes.
+
+## product.social_pro_f8
+Vigilem la vostra fitxa i us avisem el mateix dia si Google o un visitant proposa un canvi.
+
+## product.social_pro_f9
+Un contacte amb nom que coneix el vostre compte.
+
+## product.social_pro_f10
+Tot, en tots els idiomes en què responem, amb la mateixa cura.
+
+## home.tier_lite_annual
+O 99,90 € l'any, sense IVA, en un sol pagament.
+
+## home.tier_plus_annual
+O 399,90 € l'any, sense IVA, en un sol pagament.
+
+## home.tier_pro_annual
+O 999,90 € l'any, sense IVA, en un sol pagament.

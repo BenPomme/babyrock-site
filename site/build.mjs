@@ -279,8 +279,13 @@ function jsonLd(locale, page, copy, config, extraGraph) {
       provider: { "@id": SITE + "/#org" },
       areaServed: ["ES", "FR"],
       offers: [
-        { "@type": "Offer", price: String(config.priceMonth), priceCurrency: "EUR", unitText: "MONTH" },
-        { "@type": "Offer", price: String(config.priceYear), priceCurrency: "EUR", unitText: "YEAR" },
+        ...config.tiers.map((tier) => ({
+          "@type": "Offer",
+          name: `BabyRock Social ${tier.name}`,
+          price: String(tier.priceMonthHt),
+          priceCurrency: "EUR",
+          unitText: "MONTH",
+        })),
       ],
     });
     graph.push({
@@ -293,13 +298,15 @@ function jsonLd(locale, page, copy, config, extraGraph) {
     });
   }
   if (page === "subscribe") {
-    graph.push({
-      "@type": "Offer",
-      name: "BabyRock Social",
-      price: String(config.priceMonth),
-      priceCurrency: "EUR",
-      url: absUrl(locale, "subscribe"),
-    });
+    graph.push(
+      ...config.tiers.map((tier) => ({
+        "@type": "Offer",
+        name: `BabyRock Social ${tier.name}`,
+        price: String(tier.priceMonthHt),
+        priceCurrency: "EUR",
+        url: absUrl(locale, "subscribe"),
+      })),
+    );
   }
   if (extraGraph && extraGraph.length) graph.push(...extraGraph);
   return `<script type="application/ld+json">${JSON.stringify({
@@ -361,7 +368,7 @@ function langSwitcher(locale, page, depth, hrefFor) {
     .map((code) => {
       const current = code === locale ? ' aria-current="true"' : "";
       const url = hrefFor ? hrefFor(code, depth) : href(code, page, depth);
-      return `<a href="${url}"${current}>${LOCALES[code].name}</a>`;
+      return `<a href="${url}" data-lang="${code}"${current}>${LOCALES[code].name}</a>`;
     })
     .join("");
 }
@@ -733,7 +740,7 @@ function homePage(locale, copy, config, depth) {
         <div class="lead">${homeLead(t(copy, "home.lead"))}</div>
         <div class="cta-row">
           <a class="btn btn-wa" href="#trial">${waIcon()} ${esc(t(copy, "home.cta_trial"))}</a>
-          <a class="btn btn-coral" href="#price">${esc(t(copy, "home.cta_price"))}</a>
+          <a class="btn btn-coral" href="#productos">${esc(t(copy, "home.cta_price"))}</a>
           <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
         </div>
       </div>
@@ -846,16 +853,17 @@ function homePage(locale, copy, config, depth) {
     <div class="wrap">
       <h2>${esc(t(copy, "home.price_title"))}</h2>
       <div class="price-grid">
-        <article class="price-card">
-          <h3>${esc(t(copy, "home.price_month_name"))}</h3>
-          <p class="amount">${esc(config.priceMonth)} €</p>
-          ${paras(t(copy, "home.price_month_detail"))}
-        </article>
-        <article class="price-card featured">
-          <h3>${esc(t(copy, "home.price_year_name"))} <span class="save">${esc(t(copy, "home.price_year_save"))}</span></h3>
-          <p class="amount">${esc(config.priceYear)} €</p>
-          ${paras(t(copy, "home.price_year_detail"))}
-        </article>
+        ${config.tiers
+          .map(
+            (tier) => `<article class="price-card${tier.featured ? " featured" : ""}">
+          <h3>${esc(t(copy, `product.social_${tier.id}_name`))}</h3>
+          <p class="amount">${esc(tier.priceMonthHt.toString().replace(".", locale === "en" ? "." : ","))} € <small>${esc(t(copy, "product.price_unit"))}</small></p>
+          <p class="compare-price-note">${esc(t(copy, `home.tier_${tier.id}_annual`))}</p>
+          <ul class="compare-features">${tierFeatures(copy, `product.social_${tier.id}`, 4)}</ul>
+          <a class="btn ${tier.featured ? "btn-wa" : "btn-coral"} compare-cta" href="${href(locale, "subscribe", depth)}">${esc(t(copy, `product.social_${tier.id}_cta`))}</a>
+        </article>`,
+          )
+          .join("")}
       </div>
       ${paras(t(copy, "home.price_setup"))}
     </div>
@@ -984,7 +992,7 @@ function researchPage(copy, config) {
 
 function aboutPage(copy, depth) {
   return `
-  <section class="wrap section">
+  <section class="wrap section about-page">
     <h1>${esc(t(copy, "about.headline"))}</h1>
     <div class="lead">${paras(t(copy, "about.lead"))}</div>
     <div class="team-grid">
@@ -1096,22 +1104,47 @@ function featureItems(copy, prefix, n, soon) {
   }).join("");
 }
 
-function compareProducts(locale, copy, config, depth) {
+/** One line per benefit, for the three versions of BabyRock Social. */
+function tierFeatures(copy, prefix, n) {
+  return Array.from({ length: n }, (_, i) => {
+    const line = t(copy, `${prefix}_f${i + 1}`);
+    return `<li>${checkIcon(false)}<div><span>${esc(line)}</span></div></li>`;
+  })
+    .filter((li) => !li.includes("<span></span>"))
+    .join("");
+}
+
+function compareProducts(locale, copy, config, depth, opts = {}) {
   const socialCta = href(locale, "subscribe", depth);
   const directCta = waLink(config, t(copy, "product.direct_prefill"));
-  return `<div class="compare">
-    <article class="compare-card live">
+  // Three versions of BabyRock Social, then BabyRock Direct. The grid is the same two-column
+  // layout the section already uses, so four cards read as two rows and nothing else moves.
+  const tierCard = (id) => {
+    const tier = config.tiers.find((t) => t.id === id);
+    const amount = String(tier.priceMonthHt);
+    const price = `${locale === "en" ? amount : amount.replace(".", ",")} €`;
+    const inherits = id === "lite" ? "" : `<p class="compare-tag">${esc(t(copy, `product.social_${id}_inherits`))}</p>`;
+    return `<article class="compare-card live">
       <div class="compare-head">
         <img src="${asset(depth, "logos/social-icon.svg")}" alt="" width="52" height="52" decoding="async">
-        <h2 class="compare-name">${esc(t(copy, "product.social_name"))} <em>${esc(t(copy, "product.social_status"))}</em></h2>
+        <h2 class="compare-name">${esc(t(copy, `product.social_${id}_name`))}</h2>
       </div>
-      <p class="compare-tag">${esc(t(copy, "product.social_tag"))}</p>
-      <p class="compare-price">${esc(config.priceMonth)} € <small>${esc(t(copy, "product.social_price_unit"))}</small></p>
-      <p class="compare-price-note"><strong>${esc(t(copy, "product.social_trial_line"))}</strong></p>
-      <p class="compare-price-note">${esc(t(copy, "product.social_price_detail"))}</p>
-      <a class="btn btn-coral compare-cta" href="${socialCta}">${esc(t(copy, "products.social_cta"))}</a>
-      <ul class="compare-features">${featureItems(copy, "product.social", 5, false)}</ul>
-    </article>
+        <p class="compare-price">${esc(price)} <small>${esc(t(copy, "product.price_unit"))}</small></p>
+      <p class="compare-price-note"><strong>${esc(t(copy, `product.social_${id}_trial`))}</strong></p>
+      ${inherits}
+      <ul class="compare-features">${tierFeatures(copy, `product.social_${id}`, opts.long ? tier.featuresLong : tier.features)}</ul>
+      ${
+        opts.long || id === "lite"
+          ? ""
+          : `<a class="compare-more" href="${href(locale, "services", depth)}#${id}">${esc(t(copy, "product.and_more"))}</a>`
+      }
+      <a class="btn btn-coral compare-cta" href="${socialCta}">${esc(t(copy, `product.social_${id}_cta`))}</a>
+    </article>`;
+  };
+  return `<div class="compare">
+    ${tierCard("lite")}
+    ${tierCard("plus")}
+    ${tierCard("pro")}
     <article class="compare-card soon">
       <div class="compare-head">
         <img src="${asset(depth, "logos/direct-icon.svg")}" alt="" width="52" height="52" decoding="async">
@@ -1122,8 +1155,7 @@ function compareProducts(locale, copy, config, depth) {
       <ul class="compare-features">${featureItems(copy, "product.direct", 4, true)}</ul>
       <p class="compare-later">${esc(t(copy, "product.direct_later"))}</p>
     </article>
-  </div>
-  <p class="compare-offer">${esc(t(copy, "products.offer"))}</p>`;
+  </div>`;
 }
 
 function servicesPage(locale, copy, config, depth) {
@@ -1132,7 +1164,7 @@ function servicesPage(locale, copy, config, depth) {
     <p class="kicker">${esc(t(copy, "nav.services"))}</p>
     <h1 class="products-title">${esc(t(copy, "products.headline"))}</h1>
     <div class="lead products-lead">${paras(t(copy, "products.lead"))}</div>
-    ${compareProducts(locale, copy, config, depth)}
+    ${compareProducts(locale, copy, config, depth, { long: true })}
   </section>`;
 }
 
@@ -1144,27 +1176,32 @@ function subscribePage(locale, copy, config, depth) {
     <h1>${esc(t(copy, "sub.headline"))}</h1>
     <div class="lead">${paras(t(copy, "sub.lead"))}</div>
     <p class="note">${esc(t(copy, "product.social_name"))}: ${esc(t(copy, "product.social_status"))}. ${esc(t(copy, "product.direct_name"))}: ${esc(t(copy, "product.direct_status"))}.</p>
-    <div class="price-grid">
-      <article class="price-card"><h3>${esc(t(copy, "home.price_month_name"))}</h3><p class="amount">${esc(config.priceMonth)} €</p><p>${esc(t(copy, "sub.month"))}</p></article>
-      <article class="price-card featured"><h3>${esc(t(copy, "home.price_year_name"))}</h3><p class="amount">${esc(config.priceYear)} €</p><p>${esc(t(copy, "sub.year"))}</p></article>
-    </div>
+    <fieldset class="price-grid plan-choices">
+      <legend class="sr-only">${esc(t(copy, "sub.form_plan"))}</legend>
+      ${config.tiers
+        .map(
+          (tier) => `<label class="price-card plan-choice${tier.featured ? " recommended" : ""}">
+        <input type="radio" name="plan" value="${tier.id}"${tier.featured ? " checked" : ""}>
+        ${tier.featured ? `<span class="badge">${esc(t(copy, "sub.recommended"))}</span>` : ""}
+        <h3>${esc(t(copy, `product.social_${tier.id}_name`))}</h3>
+        <p class="amount">${esc(tier.priceMonthHt.toString().replace(".", locale === "en" ? "." : ","))} € <small>${esc(t(copy, "product.price_unit"))}</small></p>
+        <p>${esc(t(copy, `home.tier_${tier.id}_annual`))}</p>
+        <p>${esc(t(copy, `product.social_${tier.id}_trial`))}</p>
+      </label>`,
+        )
+        .join("")}
+    </fieldset>
     <p class="cta-row" style="margin:1.25rem 0 0">
       ${pay ? `<a class="btn btn-coral" href="${esc(pay)}" data-pay-cta>${esc(t(copy, "sub.cta_pay"))}</a>` : ""}
       <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</a>
     </p>
     <form class="sim-card form-grid" data-interest-form data-pay="${esc(pay)}" data-wa="${esc(waDigits)}" data-mail="${esc(config.email)}" style="margin-top:1.5rem">
-      <label>${esc(t(copy, "sub.form_name"))}<input name="business" required></label>
-      <label>${esc(t(copy, "sub.form_city"))}<input name="city"></label>
-      <label>${esc(t(copy, "sub.form_listing"))}<input name="listing"></label>
-      <label>${esc(t(copy, "sub.form_email"))}<input name="email" type="email" required></label>
-      <label>${esc(t(copy, "sub.form_wa"))}<input name="whatsapp"></label>
+      <label>${esc(t(copy, "sub.form_name"))}<input name="business" data-label="${esc(t(copy, "sub.form_name"))}" required></label>
+      <label>${esc(t(copy, "sub.form_city"))}<input name="city" data-label="${esc(t(copy, "sub.form_city"))}"></label>
+      <label>${esc(t(copy, "sub.form_listing"))}<input name="listing" data-label="${esc(t(copy, "sub.form_listing"))}"></label>
+      <label>${esc(t(copy, "sub.form_email"))}<input name="email" type="email" data-label="${esc(t(copy, "sub.form_email"))}" required></label>
+      <label>${esc(t(copy, "sub.form_wa"))}<input name="whatsapp" data-label="${esc(t(copy, "sub.form_wa"))}"></label>
       <label>${esc(t(copy, "sub.form_revenue"))}<input name="revenue" inputmode="numeric"></label>
-      <label>${esc(t(copy, "sub.form_plan"))}
-        <select name="plan">
-          <option value="month">${esc(t(copy, "sub.plan_month"))}</option>
-          <option value="year">${esc(t(copy, "sub.plan_year"))}</option>
-        </select>
-      </label>
       <div class="cta-row">
         ${pay ? `<button class="btn btn-coral" name="channel" value="pay" type="submit">${esc(t(copy, "sub.cta_pay"))}</button>` : ""}
         <button class="btn btn-wa" name="channel" value="whatsapp" type="submit">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</button>
@@ -1328,6 +1365,55 @@ for (const locale of Object.keys(LOCALES)) {
  * all name the same URL. A true 301 needs the host (Cloudflare rule or leaving Pages); until then
  * this is the honest version.
  */
-copyFileSync(join(outDir, DEFAULT_LOCALE, "index.html"), join(outDir, "index.html"));
+// The root is a language gate, not the Spanish page: a visitor lands on the language their browser
+// asks for, and a choice they made earlier wins over the browser. Without JavaScript the links below
+// still reach every language.
+writeFileSync(join(outDir, "index.html"), langRedirectPage(), "utf8");
+
+function langRedirectPage() {
+  const links = Object.keys(LOCALES)
+    .map((code) => `<a href="/${code}/">${LOCALES[code].name}</a>`)
+    .join(" · ");
+  const alternates = Object.keys(LOCALES)
+    .map((code) => `<link rel="alternate" hreflang="${code}" href="${SITE}/${code}/">`)
+    .join("\n");
+  return `<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BabyRock Social</title>
+<link rel="canonical" href="${SITE}/es/">
+${alternates}
+<link rel="alternate" hreflang="x-default" href="${SITE}/es/">
+<script>
+(function () {
+  var supported = { es: 1, ca: 1, fr: 1, en: 1 };
+  function stored() {
+    try {
+      var saved = localStorage.getItem("brmsocial.lang");
+      return saved && supported[saved] ? saved : null;
+    } catch (e) {
+      return null;
+    }
+  }
+  function fromBrowser() {
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var code = String(list[i] || "").toLowerCase().split("-")[0];
+      if (supported[code]) return code;
+    }
+    return null;
+  }
+  location.replace("/" + (stored() || fromBrowser() || "es") + "/");
+})();
+</script>
+</head>
+<body>
+<p>${links}</p>
+</body>
+</html>
+`;
+}
 
 console.log("Built static site into docs/");

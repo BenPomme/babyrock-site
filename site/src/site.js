@@ -217,9 +217,16 @@
       e.preventDefault();
       const data = new FormData(form);
       const lines = [];
+      // The message Rosalia receives is written in the language of the page, using the label the
+      // visitor just read, never the raw field name.
+      const labels = {};
+      form.querySelectorAll("[data-label]").forEach(function (el) {
+        labels[el.name] = el.getAttribute("data-label");
+      });
       data.forEach(function (v, k) {
         if (k === "channel") return;
-        if (String(v).trim()) lines.push(k + ": " + v);
+        if (!String(v).trim()) return;
+        lines.push((labels[k] || k) + ": " + String(v).trim());
       });
       const body = lines.join("\n");
       const wa = form.getAttribute("data-wa");
@@ -249,6 +256,30 @@
           "&body=" +
           encodeURIComponent(body);
       }
+    });
+  });
+
+  // Remember the language a visitor picked, so the root gate sends them back to it next time.
+  document.querySelectorAll("[data-lang]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      try {
+        localStorage.setItem("brmsocial.lang", link.getAttribute("data-lang"));
+      } catch (e) {
+        /* private mode: the browser language decides */
+      }
+    });
+  });
+
+  // In-page links scroll on the click itself, so a fragment jump cannot be lost to a late layout
+  // shift, and the heading lands below the sticky header.
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      var id = link.getAttribute("href").slice(1);
+      var target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", "#" + id);
     });
   });
 })();

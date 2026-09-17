@@ -13,12 +13,48 @@
   "vatId": "B88957212",
   "streetAddress": "Avenida Ramon Escayola 129",
   "postalCode": "08197",
-  "priceMonth": 99,
-  "priceYear": 990,
-  "priceYearFull": 1188,
-  "yearDiscountPct": 17,
+  "tiers": [
+    {
+      "id": "lite",
+      "name": "Lite",
+      "priceMonthHt": 9.99,
+      "priceMonthTtc": 12.09,
+      "priceYearHt": 99.9,
+      "included": 10,
+      "features": 4,
+      "featuresLong": 6,
+      "overageHt": 1.99
+    },
+    {
+      "id": "plus",
+      "name": "Plus",
+      "featured": true,
+      "priceMonthHt": 39.99,
+      "priceMonthTtc": 48.39,
+      "priceYearHt": 399.9,
+      "included": 25,
+      "features": 5,
+      "featuresLong": 8,
+      "overageHt": 2.5
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "priceMonthHt": 99.99,
+      "priceMonthTtc": 120.99,
+      "priceYearHt": 999.9,
+      "included": 60,
+      "features": 5,
+      "featuresLong": 10,
+      "overageHt": 2.5
+    }
+  ],
+  "trials": {
+    "noCard": { "replies": 3, "ratings": [4, 5] },
+    "withCard": { "liteDays": 14, "plusDays": 30, "proDays": 30 }
+  },
   "currency": "EUR",
-  "vatNote": "IVA included in Spain.",
+  "vatNote": "Prices are HT. Spanish IVA at 21 % is added on the invoice.",
   "gaId": "G-252L7M2L2P",
   "formula": {
     "lucaMid": 0.07,

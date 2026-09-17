@@ -2,7 +2,7 @@
 Google review replies for small businesses | BabyRock Social
 
 ## meta.description
-We reply to every Google review on your listing. A person checks the wording and publishes it. From €99 a month, including VAT.
+We reply to every Google review on your listing. On Lite automatically, on Plus and Pro with a person who checks each reply. From 9.99 € a month, VAT excluded.
 
 ## nav.simulator
 Impact calculator
@@ -44,7 +44,7 @@ Skip
 Hi Rosalia, I want to know more about BabyRock Social.
 
 ## footer.tagline
-BabyRock Social replies to the Google reviews on your listing. A person on our team checks each reply and publishes it. You talk to us on WhatsApp.
+BabyRock Social replies to the Google reviews on your listing. On Lite the replies are automatic and you approve the 1 to 3 star ones; on Plus and Pro, in addition, a person on our team reviews every reply before it goes out. You talk to us on WhatsApp.
 
 ## footer.privacy
 Privacy
@@ -82,7 +82,7 @@ Refuse
 ## home.kicker
 Google reviews and profile management for small businesses
 ## home.trust
-Every reply is reviewed by a person, in the language of the review
+Automatic replies on Lite, reviewed by a person on Plus and Pro
 
 ## home.headline
 68% of customers only walk into a business rated 4 stars or more.
@@ -92,7 +92,7 @@ A restaurant owner in an apron standing beside a terrace table, with olive trees
 ## home.lead
 You cannot change the stars you already have. But you can change what happens to the ones that come: BabyRock answers every new review in your name, in the language it was written in, and takes care of how your Google profile looks.
 
-Someone on our team reads every reply before it goes live. Nothing is published without a human reading it.
+On Lite the replies are automatic and you approve the 1 to 3 star ones. On Plus and Pro, a person on our team reviews every reply before it goes out.
 ## home.cta_sim
 Impact Simulator
 
@@ -150,7 +150,7 @@ Hi Rosalia, I am interested in BabyRock Direct when it is ready.
 Build trust on Google today. Build direct customer relationships on WhatsApp next.
 
 ## products.lead
-BabyRock Social takes care of your Google review replies, saving you time and showing future customers that you listen. Every reply is checked by a person, and you approve every sensitive response.
+BabyRock Social takes care of your Google review replies, saving you time and showing future customers that you listen. On Lite we answer automatically and you approve the sensitive reviews; on Plus and Pro a person checks every reply.
 
 BabyRock Direct, coming soon, will help customers book and receive follow-up messages through your business’s own WhatsApp number.
 
@@ -445,7 +445,7 @@ Yearly extra, high
 of your year
 
 ## sim.note
-Gross extra revenue. BabyRock Social from 990 € a year.
+Gross extra revenue. BabyRock Social from 9.99 € a month, VAT excluded.
 
 ## sim.cta
 Get my reviews handled
@@ -463,7 +463,7 @@ There is no new dashboard, no extra app, and we never ask for your Google passwo
 1. Tell us about your business
 
 ## how.step1
-Send Rosalia your business name and Google listing by WhatsApp or email. Choose the €99 monthly subscription or the €990 yearly subscription. She answers your questions and sends a secure payment link.
+Send Rosalia your business name and Google listing by WhatsApp or email. Choose Lite, Plus or Pro. She answers your questions and sends a secure payment link.
 
 ## how.step2_title
 2. Add us as a manager, not as an owner
@@ -524,7 +524,7 @@ On top of recovered no-shows we add WhatsApp as a booking and order channel. Com
 The percentages we use
 
 ## research.formula
-Yearly extra = monthly revenue × 12 × the percentage for your type and product. Figures are gross. BabyRock Social starts at 990 € a year.
+Yearly extra = monthly revenue × 12 × the percentage for your type and product. Figures are gross. BabyRock Social starts at 9.99 € a month, VAT excluded.
 
 ## research.what_we_use
 Your shop can land outside the range. We would rather show a clear commercial number with the sources next to it than a 0.84% formula nobody can feel.
@@ -557,10 +557,10 @@ We use AI to prepare a first draft and to work across languages. Your customers 
 We do not ask you to install another app. You write to Rosalia, or to whoever is covering the conversation, on WhatsApp.
 
 ## sub.headline
-Get every new Google review handled from €99 a month.
+Get every new Google review handled from 9.99 € a month, VAT excluded.
 
 ## sub.lead
-Send us your business name and Google listing. Rosalia will answer your questions, help you choose the monthly or annual plan, and send your secure payment link. Then add us as a manager and we begin.
+Send us your business name and Google listing. Rosalia will answer your questions, help you choose between Lite, Plus and Pro, and send your secure payment link. Then add us as a manager and we begin.
 
 ## sub.month
 €99/month, including VAT
@@ -590,10 +590,10 @@ Monthly revenue, if you used the calculator (optional)
 Preferred plan
 
 ## sub.plan_month
-Monthly subscription, €99
+Lite, 9.99 € a month, VAT excluded
 
 ## sub.plan_year
-Yearly subscription, €990
+Plus, 39.99 € a month, VAT excluded
 
 ## sub.cta_pay
 Continue to secure payment
@@ -629,7 +629,7 @@ Each payment produces an invoice, including VAT, sent to your email. Need anothe
 How you pay
 
 ## account.pay
-Rosalia sends a secure payment link for your chosen plan: €99 per month (monthly subscription) or €990 per year (yearly subscription). There is no setup fee when you add the Google manager yourself.
+Rosalia sends a secure payment link for your chosen plan: Lite 9.99 €, Plus 39.99 € or Pro 99.99 € per month, VAT excluded. There is no setup fee when you add the Google manager yourself.
 
 ## account.cancel_title
 How to cancel
@@ -658,7 +658,7 @@ We use AI tools to help prepare reply drafts. A person reviews and, where needed
 Terms
 
 ## terms.body
-BabyRock Social manages replies for one Google Business Profile at €99 per month including VAT (monthly subscription), or €990 per year including VAT (yearly subscription). By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews each reply and controls when it goes public.
+BabyRock Social manages replies for one Google Business Profile at Lite €9.99, Plus €39.99 or Pro €99.99 per month excluding VAT, on the plan the business chooses. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews each reply and controls when it goes public.
 
 You can cancel at the end of the paid period by writing to Rosalia. When the service ends, we remove our manager access. We may pause the service if a payment fails. Spanish law and the courts of Barcelona apply, unless a mandatory consumer rule says otherwise.
 
@@ -705,7 +705,7 @@ We never ask for your Google password, and we do not give you new software to le
 The suggested replies arrive written in your WhatsApp, you approve or correct them right there, and they go live.
 
 ## home.wa_item4
-99 € a month, VAT included. Cancel with one line.
+Lite from 9.99 €, Plus 39.99 € and Pro 99.99 € a month, VAT excluded. Cancel in one line.
 
 ## home.wa_chat_alt
 Example WhatsApp conversation with Rosalia
@@ -770,21 +770,21 @@ Rosalía
 ## home.trial_kicker
 Try us for free
 ## home.trial_title
-Your first month is 0 €. You decide after that.
+Start free, without a card: three reviews answered
 ## home.trial_lead
-Add your card, keep the full service for 30 days at 0 €, and cancel in one line before the first charge if it is not for you. No contract, no setup fee.
+Add reviews@babyrock.ai as a manager of your listing and we answer three reviews, 4 and 5 stars only. Nothing is charged and there is nothing to cancel. If you want the full service from day one, with a card: two weeks free on Lite and one month free on Plus and Pro.
 ## home.trial_opt1_title
 What you do
 ## home.trial_opt1
-One thing: invite us as a manager of your Google listing. It is one click, we never see your password, and you can remove us whenever you want. Rosalía sends you the secure payment link and we start.
+One thing: invite us as a manager of your Google listing. It is one click, we never see your password, and you can remove us whenever you want. Rosalía stays with you on WhatsApp through the whole set-up.
 ## home.trial_opt2_title
-What happens during the month
+What happens during the trial
 ## home.trial_opt2
-Nothing is charged during the trial month, not now and not at day 30 if you cancel. Every new review is answered, 1 to 3 star reviews come to you for approval first, and we catch up on up to 20 reviews you left unanswered.
+Without a card we answer three reviews of 4 or 5 stars, and the 1 to 3 star ones come to you for approval. With a card you try the full service: up to 10 replies a month on Lite and up to 25 on Plus, with the Monday summary. Cancel before the trial ends and you pay nothing.
 ## home.trial_note
-If you do nothing at the end of the month, the subscription starts at 99 € a month, VAT included. Cancel before that and you pay nothing.
+At the end of the trial, unless you cancel, the subscription you chose starts: Lite 9.99 €, Plus 39.99 € or Pro 99.99 € per month, VAT excluded. Cancel in one line.
 ## home.trial_cta
-Start my free month
+Start the free trial
 ## home.trial_cta2_unused
 Ask for the free test
 
@@ -796,3 +796,135 @@ Try for free
 
 ## footer.hunt
 Make money with BabyRock
+
+## product.social_lite_name
+BabyRock Social Lite
+
+## product.social_lite_price
+9.99 € per month, VAT excluded
+
+## product.social_lite_trial
+Two weeks free trial.
+
+## product.social_lite_f1
+We answer your Google reviews automatically, up to 10 a month.
+
+## product.social_lite_f2
+Answers to reviews with 1 to 3 stars are sent to your WhatsApp for approval before they are published.
+
+## product.social_lite_f3
+Each extra reply costs 1.99 € VAT excluded.
+
+## product.social_lite_f4
+No new app to install, or new dashboard to use
+
+## product.social_lite_cta
+Start with Lite
+
+## product.social_plus_name
+BabyRock Social Plus
+
+## product.social_plus_price
+39.99 € per month, VAT excluded
+
+## product.social_plus_trial
+One month free trial.
+
+## product.social_plus_inherits
+Everything in Lite, plus:
+
+## product.social_plus_f1
+A person on our team checks every reply before it goes out.
+
+## product.social_plus_f2
+Up to 25 replies a month.
+
+## product.social_plus_f3
+We answer your 10 most recent unanswered reviews.
+
+## product.social_plus_f4
+A summary every Monday of your listing and your reviews.
+
+## product.social_plus_f5
+One Google profile update a week (new photos, etc.)
+
+## product.social_plus_cta
+Start with Plus
+
+## product.social_pro_name
+BabyRock Social Pro
+
+## product.social_pro_price
+99.99 € per month, VAT excluded
+
+## product.social_pro_trial
+One month free trial.
+
+## product.social_pro_inherits
+Everything in Plus, plus:
+
+## product.social_pro_f1
+As many establishments as you want on one account, with a single invoice.
+
+## product.social_pro_f2
+60 replies checked by a person in total each month.
+
+## product.social_pro_f3
+Priority human support: we answer the same day.
+
+## product.social_pro_f4
+No extra cost for each new place in the same group.
+
+## product.social_pro_f5
+Unlimited changes in your Google Business Profiles
+
+## product.social_pro_cta
+Start with Pro
+
+## product.price_unit
+/ month
+
+## product.and_more
+And more…
+
+## product.social_lite_f5
+We reply in the language of the review: Spanish, Catalan, French or English.
+
+## product.social_lite_f6
+No Google password: you add us as a manager of your listing, and you can remove us whenever you want.
+
+## product.social_plus_f6
+We reply in the language of the review, and the sensitive ones wait for your OK.
+
+## product.social_plus_f7
+WhatsApp support, answered within four business hours.
+
+## product.social_plus_f8
+A year costs ten monthly payments, in one charge.
+
+## product.social_pro_f6
+Posts and photos prepared with you and published on your profile.
+
+## product.social_pro_f7
+A monthly report: calls, direction requests, searches and review movement.
+
+## product.social_pro_f8
+We watch your profile and tell you the same day if Google or a visitor suggests a change.
+
+## product.social_pro_f9
+One named contact who knows your account.
+
+## product.social_pro_f10
+Everything in every language we reply in, with the same care.
+
+## sub.recommended
+Recommended
+
+## home.tier_lite_annual
+Or 99.90 € a year, VAT excluded, in one payment.
+
+## home.tier_plus_annual
+Or 399.90 € a year, VAT excluded, in one payment.
+
+## home.tier_pro_annual
+Or 999.90 € a year, VAT excluded, in one payment.
