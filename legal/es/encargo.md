@@ -41,7 +41,7 @@ El encargado no usa esos datos para anunciar otros productos, ni para entrenar u
 - Google (Google Business Profile / reseñas).
 - xAI (ayuda al borrador).
 - Alojamiento de la aplicación y de la base de datos en la UE.
-- Meta, solo si un extracto de reseña viaja en el WhatsApp de 1–3 estrellas hacia usted (usted ya es el responsable de ese hilo).
+- Meta, solo si un extracto de reseña viaja en el WhatsApp de 1 a 3 estrellas hacia usted (usted ya es el responsable de ese hilo).
 
 Hoy no hay operadores fuera del EEE. Si los hay, se añadirán aquí con la herramienta de transferencia correspondiente.
 

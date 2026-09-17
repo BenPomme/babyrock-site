@@ -8,8 +8,8 @@ El lloc públic www.babyrock.ai no necessita galetes per mostrar les pàgines. D
 
 Si **accepteu**, activem Google Analytics 4 (identificador G-252L7M2L2P). Aleshores Google pot instal·lar, entre d’altres:
 
-- `_ga` — distingir visitants; sol durar 2 anys; Google LLC.
-- `_ga_252L7M2L2P` (o l’identificador de flux equivalent) — estat de la sessió; sol durar 2 anys; Google LLC.
+- `_ga`: distingir visitants; sol durar 2 anys; Google LLC.
+- `_ga_252L7M2L2P` (o l’identificador de flux equivalent): estat de la sessió; sol durar 2 anys; Google LLC.
 
 Google pot tractar aquestes dades als Estats Units. No fem servir galetes de publicitat. El consentiment per defecte és **denegat**.
 

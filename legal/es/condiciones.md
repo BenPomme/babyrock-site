@@ -21,7 +21,7 @@ BabyRock Social consiste en redactar y publicar respuestas a las reseñas de Goo
 - Una persona autorizada por nosotros lee cada respuesta y, si hace falta, la corrige, antes de publicarla. La inteligencia artificial puede ayudar al primer borrador. Nadie publica un texto que una persona no haya visto.
 - Reseñas de 4 y 5 estrellas: se publican con la autorización continua que usted da al suscribirse y al invitarnos como gestor.
 - Reseñas de 1, 2 y 3 estrellas: se publican solo después de que usted apruebe o envíe el texto por el WhatsApp de BabyRock (Fil Babyrock). El silencio no es un sí.
-- Incluye un WhatsApp nuestro con usted (borradores 1–3 estrellas, recapitulativo, facturación, avisos de la ficha), el recapitulativo del lunes, el aviso el mismo día si cambian horario, nombre, teléfono, dirección o estado de la ficha, y el aviso si una reseña que teníamos en el diario desaparece de la ficha (no la republicamos).
+- Incluye un WhatsApp nuestro con usted (borradores 1 a 3 estrellas, recapitulativo, facturación, avisos de la ficha), el recapitulativo del lunes, el aviso el mismo día si cambian horario, nombre, teléfono, dirección o estado de la ficha, y el aviso si una reseña que teníamos en el diario desaparece de la ficha (no la republicamos).
 - Festivos: le avisamos. Usted dice CERRADO (lo marcamos por API) o lo cambia usted en Google. El operador no cambia el horario por su cuenta.
 
 Usted invita a reviews@babyrock.ai como **gestor**, no como propietario. Nunca pedimos la contraseña de Google.
@@ -82,7 +82,7 @@ Usamos herramientas de IA para ayudar a preparar borradores. Una persona revisa 
 
 - Darnos datos de facturación veraces.
 - Invitar al gestor y no revocarlo mientras quiera el servicio.
-- Responder en un plazo razonable a los borradores de 1–3 estrellas. Si no hay respuesta, no publicamos esa reseña.
+- Responder en un plazo razonable a los borradores de 1 a 3 estrellas. Si no hay respuesta, no publicamos esa reseña.
 - No pedirnos que publiquemos algo falso, que compremos reseñas, que filtremos por estrellas al pedir opiniones, o que incumpla las reglas de Google.
 - Usar el Fil Babyrock para este comercio, no para escribir a sus clientes finales.
 

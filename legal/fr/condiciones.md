@@ -21,7 +21,7 @@ BabyRock Social consiste à rédiger et publier des réponses aux avis Google d�
 - Une personne autorisée par nous lit chaque réponse et, au besoin, la corrige avant publication. L’IA peut aider le premier brouillon. Personne ne publie un texte qu’un humain n’a pas vu.
 - Avis 4 et 5 étoiles : publiés avec l’autorisation continue que vous donnez en vous abonnant et en nous invitant comme gestionnaire.
 - Avis 1, 2 et 3 étoiles : publiés seulement après que vous avez approuvé ou renvoyé le texte sur le WhatsApp BabyRock (Fil Babyrock). Le silence n’est pas un oui.
-- Inclus : un WhatsApp entre nous (brouillons 1–3 étoiles, récap, facturation, alertes fiche), le récap du lundi, l’alerte le jour même si horaires, nom, téléphone, adresse ou statut changent, et l’alerte si un avis de notre journal disparaît de la fiche (nous ne le republicons pas).
+- Inclus : un WhatsApp entre nous (brouillons 1 et 3 étoiles, récap, facturation, alertes fiche), le récap du lundi, l’alerte le jour même si horaires, nom, téléphone, adresse ou statut changent, et l’alerte si un avis de notre journal disparaît de la fiche (nous ne le republicons pas).
 - Jours fériés : nous vous prévenons. Vous dites CERRADO (nous le marquons par API) ou vous le changez dans Google. L’opérateur ne change pas les horaires de son propre chef.
 
 Vous invitez reviews@babyrock.ai comme **gestionnaire**, pas comme propriétaire. Nous ne demandons jamais le mot de passe Google.
@@ -82,7 +82,7 @@ Nous utilisons des outils d’IA pour aider à préparer les brouillons. Une per
 
 - Nous donner des données de facturation exactes.
 - Inviter le gestionnaire et ne pas le révoquer tant que vous voulez le service.
-- Répondre dans un délai raisonnable aux brouillons 1–3 étoiles. Sans réponse, nous ne publions pas cet avis.
+- Répondre dans un délai raisonnable aux brouillons 1 et 3 étoiles. Sans réponse, nous ne publions pas cet avis.
 - Ne pas nous demander de publier quelque chose de faux, d’acheter des avis, de filtrer par étoiles en demandant des opinions, ou d’enfreindre les règles de Google.
 - Utiliser le Fil Babyrock pour ce commerce, pas pour écrire à vos clients finaux.
 

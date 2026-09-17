@@ -8,8 +8,8 @@ Le site public www.babyrock.ai n’a pas besoin de cookies pour afficher les pag
 
 Si vous **acceptez**, nous activons Google Analytics 4 (identifiant G-252L7M2L2P). Google peut alors installer, notamment :
 
-- `_ga` — distinguer les visiteurs ; dure en général 2 ans ; Google LLC.
-- `_ga_252L7M2L2P` (ou l’identifiant de flux équivalent) — état de la session ; dure en général 2 ans ; Google LLC.
+- `_ga`: distinguer les visiteurs ; dure en général 2 ans ; Google LLC.
+- `_ga_252L7M2L2P` (ou l’identifiant de flux équivalent): état de la session ; dure en général 2 ans ; Google LLC.
 
 Google peut traiter ces données aux États-Unis. Nous n’utilisons pas de cookies publicitaires. Le consentement par défaut est **refusé**.
 

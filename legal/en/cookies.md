@@ -8,8 +8,8 @@ The public site www.babyrock.ai does not need cookies to show the pages. We stor
 
 If you **accept**, we turn on Google Analytics 4 (id G-252L7M2L2P). Google may then set, among others:
 
-- `_ga` — tell visitors apart; usually 2 years; Google LLC.
-- `_ga_252L7M2L2P` (or the equivalent stream id) — session state; usually 2 years; Google LLC.
+- `_ga`: tell visitors apart; usually 2 years; Google LLC.
+- `_ga_252L7M2L2P` (or the equivalent stream id): session state; usually 2 years; Google LLC.
 
 Google may process that data in the United States. We do not use advertising cookies. Default consent is **denied**.
 

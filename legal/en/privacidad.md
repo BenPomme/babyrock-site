@@ -24,13 +24,13 @@ We never ask for the owner’s Google password.
 
 **Payment.** Stripe processes card data. We receive the payment result, the Stripe customer id and, if Stripe sends it, a card fingerprint (not the number). Basis: contract and legal duty.
 
-**WhatsApp and email with you.** The Fil Babyrock thread (1–3 star drafts, recap, billing). Basis: contract. Meta carries the message.
+**WhatsApp and email with you.** The Fil Babyrock thread (1 to 3 star drafts, recap, billing). Basis: contract. Meta carries the message.
 
 **Prospecting.** If a shop has a business email or WhatsApp **on its website**, we may write once per channel, with a way to object (STOP / BAJA). We do not use the Maps phone as WhatsApp unless it is published as a business channel. Basis: legitimate interest in offering a B2B service (art. 6(1)(f)) and LSSI article 21. You may object at any time.
 
 **Public site.** Pages visited, language, device. If you accept analytics cookies, Google Analytics. Basis: consent (art. 6(1)(a)). Detail: [cookies](https://www.babyrock.ai/en/cookies/).
 
-**Service journal (as processor — see the processing agreement).** Review text, the author’s public name on Google, stars, drafts, published text, who clicked publish. Needed to provide the service and to show what was published if there is a dispute.
+**Service journal (as processor, see the processing agreement).** Review text, the author’s public name on Google, stars, drafts, published text, who clicked publish. Needed to provide the service and to show what was published if there is a dispute.
 
 We do not sell data. We do not profile you in a way that produces legal effects.
 

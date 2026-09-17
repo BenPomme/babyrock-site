@@ -24,7 +24,7 @@ Nous ne demandons jamais le mot de passe Google du titulaire.
 
 **Paiement.** Stripe traite les données de carte. Nous recevons le résultat du paiement, l’identifiant client Stripe et, si Stripe l’envoie, une empreinte de carte (pas le numéro). Base : contrat et obligation légale.
 
-**WhatsApp et e-mail avec vous.** Le fil Fil Babyrock (brouillons 1–3 étoiles, récap, facturation). Base : contrat. Meta transporte le message.
+**WhatsApp et e-mail avec vous.** Le fil Fil Babyrock (brouillons 1 et 3 étoiles, récap, facturation). Base : contrat. Meta transporte le message.
 
 **Prospection.** Si un commerce a un e-mail ou un WhatsApp d’entreprise **sur son site**, nous pouvons écrire une fois par canal, avec un moyen de s’opposer (STOP / BAJA). Nous n’utilisons pas le téléphone Maps comme WhatsApp s’il n’est pas affiché comme canal d’entreprise. Base : intérêt légitime à proposer un service B2B (art. 6.1.f) et article 21 LSSI. Vous pouvez vous y opposer à tout moment.
 

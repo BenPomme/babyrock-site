@@ -21,7 +21,7 @@ BabyRock Social consisteix a redactar i publicar respostes a les ressenyes de Go
 - Una persona autoritzada per nosaltres llegeix cada resposta i, si cal, la corregeix, abans de publicar-la. La intel·ligència artificial pot ajudar el primer esborrany. Ningú no publica un text que una persona no hagi vist.
 - Ressenyes de 4 i 5 estrelles: es publiquen amb l’autorització contínua que doneu en subscriure-us i en convidar-nos com a gestor.
 - Ressenyes d’1, 2 i 3 estrelles: es publiquen només després que les aproveu o envieu el text pel WhatsApp de BabyRock (Fil Babyrock). El silenci no és un sí.
-- Inclou un WhatsApp nostre amb vosaltres (esborranys 1–3 estrelles, recapitulatiu, facturació, avisos de la fitxa), el recapitulatiu del dilluns, l’avís el mateix dia si canvien horari, nom, telèfon, adreça o estat de la fitxa, i l’avís si una ressenya que teníem al diari desapareix de la fitxa (no la republicem).
+- Inclou un WhatsApp nostre amb vosaltres (esborranys 1 i 3 estrelles, recapitulatiu, facturació, avisos de la fitxa), el recapitulatiu del dilluns, l’avís el mateix dia si canvien horari, nom, telèfon, adreça o estat de la fitxa, i l’avís si una ressenya que teníem al diari desapareix de la fitxa (no la republicem).
 - Festius: us avisem. Vosaltres dieu CERRADO (ho marquem per API) o ho canvieu a Google. L’operador no canvia l’horari pel seu compte.
 
 Convideu reviews@babyrock.ai com a **gestor**, no com a propietari. Mai no demanem la contrasenya de Google.
@@ -82,7 +82,7 @@ Fem servir eines d’IA per ajudar a preparar esborranys. Una persona revisa i, 
 
 - Donar-nos dades de facturació veraces.
 - Convidar el gestor i no revocar-lo mentre vulgueu el servei.
-- Respondre en un termini raonable als esborranys d’1–3 estrelles. Si no hi ha resposta, no publiquem aquesta ressenya.
+- Respondre en un termini raonable als esborranys d’1 i 3 estrelles. Si no hi ha resposta, no publiquem aquesta ressenya.
 - No demanar-nos que publiquem res de fals, que comprem ressenyes, que filtrem per estrelles en demanar opinions, o que incompleixi les regles de Google.
 - Fer servir el Fil Babyrock per a aquest comerç, no per escriure als vostres clients finals.
 

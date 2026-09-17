@@ -24,7 +24,7 @@ Mai no demanem la contrasenya de Google del titular.
 
 **Pagament.** Stripe tracta les dades de la targeta. Nosaltres rebem el resultat del pagament, l’identificador de client Stripe i, si Stripe l’envia, una empremta de la targeta (no el número). Base: contracte i obligació legal.
 
-**WhatsApp i correu amb vosaltres.** El fil del Fil Babyrock (esborranys 1–3 estrelles, recapitulatiu, facturació). Base: contracte. Meta és el transportista del missatge.
+**WhatsApp i correu amb vosaltres.** El fil del Fil Babyrock (esborranys 1 i 3 estrelles, recapitulatiu, facturació). Base: contracte. Meta és el transportista del missatge.
 
 **Prospecció.** Si un comerç té correu o WhatsApp d’empresa **al seu lloc web**, podem escriure un cop per canal, amb forma d’oposar-s’hi (STOP / BAJA). No fem servir el telèfon de Maps com a WhatsApp si no està publicat com a canal d’empresa. Base: interès legítim a oferir un servei B2B (art. 6.1.f) i article 21 LSSI. Us hi podeu oposar en qualsevol moment.
 

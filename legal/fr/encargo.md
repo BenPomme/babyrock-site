@@ -41,7 +41,7 @@ Le sous-traitant n’utilise pas ces données pour vanter d’autres produits, n
 - Google (Google Business Profile / avis).
 - xAI (aide au brouillon).
 - Hébergement de l’application et de la base dans l’UE.
-- Meta, seulement si un extrait d’avis voyage dans le WhatsApp 1–3 étoiles vers vous (vous êtes déjà responsable de ce fil).
+- Meta, seulement si un extrait d’avis voyage dans le WhatsApp 1 et 3 étoiles vers vous (vous êtes déjà responsable de ce fil).
 
 Il n’y a pas aujourd’hui d’opérateurs hors EEE. S’il y en a, ils seront ajoutés ici avec l’outil de transfert correspondant.
 

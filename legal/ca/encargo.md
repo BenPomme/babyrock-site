@@ -41,7 +41,7 @@ L’encarregat no fa servir aquestes dades per anunciar altres productes, ni per
 - Google (Google Business Profile / ressenyes).
 - xAI (ajuda a l’esborrany).
 - Allotjament de l’aplicació i de la base de dades a la UE.
-- Meta, només si un extracte de ressenya viatja en el WhatsApp d’1–3 estrelles cap a vosaltres (vosaltres ja sou el responsable d’aquest fil).
+- Meta, només si un extracte de ressenya viatja en el WhatsApp d’1 i 3 estrelles cap a vosaltres (vosaltres ja sou el responsable d’aquest fil).
 
 Avui no hi ha operadors fora de l’EEE. Si n’hi ha, s’afegiran aquí amb l’eina de transferència corresponent.
 

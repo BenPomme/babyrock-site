@@ -21,7 +21,7 @@ BabyRock Social means drafting and publishing replies to Google reviews on **one
 - A person we authorise reads every reply and, if needed, edits it before it is published. AI may help with the first draft. Nobody publishes text a person has not seen.
 - 4- and 5-star reviews: published under the standing authorisation you give by subscribing and inviting us as manager.
 - 1-, 2- and 3-star reviews: published only after you approve or send the text on BabyRock WhatsApp (Fil Babyrock). Silence is not yes.
-- Included: a WhatsApp thread with you (1–3 star drafts, recap, billing, listing alerts), the Monday recap, a same-day ping if hours, name, phone, address or status change, and a ping if a review in our journal disappears from the listing (we do not republish it).
+- Included: a WhatsApp thread with you (1 to 3 star drafts, recap, billing, listing alerts), the Monday recap, a same-day ping if hours, name, phone, address or status change, and a ping if a review in our journal disappears from the listing (we do not republish it).
 - Public holidays: we tell you. You say CERRADO (we patch via API) or you change it in Google. The operator does not change hours on their own.
 
 You invite reviews@babyrock.ai as **manager**, not as owner. We never ask for the Google password.
@@ -82,7 +82,7 @@ We use AI tools to help prepare drafts. A person reviews and, if needed, edits e
 
 - Give us truthful billing details.
 - Invite the manager and do not revoke them while you want the service.
-- Answer 1–3 star drafts in a reasonable time. If there is no answer, we do not publish that review.
+- Answer 1 to 3 star drafts in a reasonable time. If there is no answer, we do not publish that review.
 - Do not ask us to publish something false, to buy reviews, to filter by stars when asking for opinions, or to break Google’s rules.
 - Use Fil Babyrock for this shop, not to write to your end customers.
 

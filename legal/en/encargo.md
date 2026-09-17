@@ -41,7 +41,7 @@ The processor does not use that data to advertise other products, or to train a 
 - Google (Google Business Profile / reviews).
 - xAI (help with the draft).
 - Hosting of the app and database in the EU.
-- Meta, only if a review extract travels in the 1–3 star WhatsApp to you (you are already controller of that thread).
+- Meta, only if a review extract travels in the 1 to 3 star WhatsApp to you (you are already controller of that thread).
 
 There are no operators outside the EEA today. If there are, they will be added here with the matching transfer tool.
 

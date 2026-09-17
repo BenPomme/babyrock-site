@@ -8,8 +8,8 @@ El sitio público www.babyrock.ai no necesita cookies para mostrar las páginas.
 
 Si usted **acepta**, activamos Google Analytics 4 (identificador G-252L7M2L2P). Entonces Google puede instalar, entre otras:
 
-- `_ga` — distinguir visitantes; suele durar 2 años; Google LLC.
-- `_ga_252L7M2L2P` (o el identificador de flujo equivalente) — estado de la sesión; suele durar 2 años; Google LLC.
+- `_ga`: distinguir visitantes; suele durar 2 años; Google LLC.
+- `_ga_252L7M2L2P` (o el identificador de flujo equivalente): estado de la sesión; suele durar 2 años; Google LLC.
 
 Google puede tratar esos datos en Estados Unidos. No usamos cookies de publicidad. El consentimiento por defecto es **denegado** (almacenamiento de analítica, de anuncios y de datos de anuncios: denied).
 
