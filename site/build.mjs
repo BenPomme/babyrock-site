@@ -244,6 +244,24 @@ function absUrl(locale, page) {
   return slug ? `${SITE}/${locale}/${slug}/` : `${SITE}/${locale}/`;
 }
 
+/**
+ * The subscribe page, with the level the visitor already chose. A "Start with Plus" button that
+ * opens a page presenting Lite first is the same lost choice as a pay page that forgets the plan.
+ */
+function subscribeHref(locale, depth, plan) {
+  const base = href(locale, "subscribe", depth);
+  return plan ? `${base}?plan=${encodeURIComponent(payPlanId(plan))}` : base;
+}
+
+/**
+ * A tier as the pay flow names it. The catalogue here calls them lite, plus and pro, and the factory
+ * wants lite_month and its siblings, because a plan is a level AND an interval. The card grid picks
+ * the level, so the monthly plan is what a card starts; the yearly one is chosen on the pay page.
+ */
+function payPlanId(tierId) {
+  return `${tierId}_month`;
+}
+
 function hreflangLinks(page, absHrefFor) {
   const url = (code) => (absHrefFor ? absHrefFor(code) : absUrl(code, page));
   const tags = Object.keys(LOCALES).map(
@@ -404,12 +422,15 @@ function waLink(config, text) {
 
 // The pay flow lives on the factory (app.babyrock.ai / pay.babyrock.ai), never on this site.
 // One value decides it: content/config.json → payUrl. No hardcoded copies per locale.
-function payLink(config, plan) {
+// `plan` and `lang` travel with the link: the pay page opens on the level the visitor chose and in
+// the language they were reading, instead of falling back to the featured level and to Spanish.
+function payLink(config, plan, locale) {
   const base = String(config.payUrl || "").trim().replace(/\/$/, "");
   if (!base) return "";
   try {
     const url = new URL(base);
     if (plan) url.searchParams.set("plan", plan);
+    if (locale) url.searchParams.set("lang", locale);
     return url.toString();
   } catch {
     return base;
@@ -860,7 +881,7 @@ function homePage(locale, copy, config, depth) {
           <p class="amount">${esc(tier.priceMonthHt.toString().replace(".", locale === "en" ? "." : ","))} € <small>${esc(t(copy, "product.price_unit"))}</small></p>
           <p class="compare-price-note">${esc(t(copy, `home.tier_${tier.id}_annual`))}</p>
           <ul class="compare-features">${tierFeatures(copy, `product.social_${tier.id}`, 4)}</ul>
-          <a class="btn ${tier.featured ? "btn-wa" : "btn-coral"} compare-cta" href="${href(locale, "subscribe", depth)}">${esc(t(copy, `product.social_${tier.id}_cta`))}</a>
+          <a class="btn ${tier.featured ? "btn-wa" : "btn-coral"} compare-cta" href="${subscribeHref(locale, depth, tier.id)}">${esc(t(copy, `product.social_${tier.id}_cta`))}</a>
         </article>`,
           )
           .join("")}
@@ -1138,7 +1159,7 @@ function compareProducts(locale, copy, config, depth, opts = {}) {
           ? ""
           : `<a class="compare-more" href="${href(locale, "services", depth)}#${id}">${esc(t(copy, "product.and_more"))}</a>`
       }
-      <a class="btn btn-coral compare-cta" href="${socialCta}">${esc(t(copy, `product.social_${id}_cta`))}</a>
+      <a class="btn btn-coral compare-cta" href="${subscribeHref(locale, depth, id)}">${esc(t(copy, `product.social_${id}_cta`))}</a>
     </article>`;
   };
   return `<div class="compare">
@@ -1169,14 +1190,17 @@ function servicesPage(locale, copy, config, depth) {
 }
 
 function subscribePage(locale, copy, config, depth) {
-  const pay = payLink(config);
+  const featured = config.tiers.find((tier) => tier.featured) ?? config.tiers[0];
+  // Without JavaScript the button still starts the level the page presents first. With it, the
+  // chosen card wins (see site.js).
+  const pay = payLink(config, payPlanId(featured.id), locale);
   const waDigits = String(config.whatsapp || "").replace(/\D/g, "");
   return `
   <section class="wrap section">
     <h1>${esc(t(copy, "sub.headline"))}</h1>
     <div class="lead">${paras(t(copy, "sub.lead"))}</div>
     <p class="note">${esc(t(copy, "product.social_name"))}: ${esc(t(copy, "product.social_status"))}. ${esc(t(copy, "product.direct_name"))}: ${esc(t(copy, "product.direct_status"))}.</p>
-    <fieldset class="price-grid plan-choices">
+    <fieldset class="price-grid plan-choices" data-plan-choices>
       <legend class="sr-only">${esc(t(copy, "sub.form_plan"))}</legend>
       ${config.tiers
         .map(
@@ -1192,7 +1216,7 @@ function subscribePage(locale, copy, config, depth) {
         .join("")}
     </fieldset>
     <p class="cta-row" style="margin:1.25rem 0 0">
-      ${pay ? `<a class="btn btn-coral" href="${esc(pay)}" data-pay-cta>${esc(t(copy, "sub.cta_pay"))}</a>` : ""}
+      ${pay ? `<a class="btn btn-coral" href="${esc(pay)}" data-pay-cta data-pay-base="${esc(pay)}">${esc(t(copy, "sub.cta_pay"))}</a>` : ""}
       <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</a>
     </p>
     <form class="sim-card form-grid" data-interest-form data-pay="${esc(pay)}" data-wa="${esc(waDigits)}" data-mail="${esc(config.email)}" style="margin-top:1.5rem">

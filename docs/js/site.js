@@ -178,6 +178,45 @@
     });
   });
 
+  // The level cards are the choice, so the pay button has to carry it. Without this the visitor
+  // picked Lite, landed on the pay page, and found Plus selected.
+  document.querySelectorAll("[data-plan-choices]").forEach(function (fieldset) {
+    const cta = document.querySelector("[data-pay-cta]");
+    if (!cta) return;
+    const base = cta.getAttribute("data-pay-base") || cta.getAttribute("href") || "";
+    // Arriving from a card that already said which level, so honour it before anything is clicked.
+    const asked = new URLSearchParams(location.search).get("plan");
+    if (asked) {
+      const radio = fieldset.querySelector("input[name=plan][value='" + asked.replace(/['\\]/g, "") + "']");
+      if (radio) {
+        radio.checked = true;
+      } else {
+        // The link names a plan (lite_month), the cards name a level (lite): take the level.
+        const level = asked.replace(/_(month|year)$/, "");
+        const byLevel = fieldset.querySelector("input[name=plan][value='" + level.replace(/['\\]/g, "") + "']");
+        if (byLevel) byLevel.checked = true;
+      }
+    }
+    function selected() {
+      const picked = fieldset.querySelector("input[name=plan]:checked");
+      return picked ? picked.value : "";
+    }
+    function sync() {
+      const plan = selected();
+      if (!base || !plan) return;
+      try {
+        const url = new URL(base, location.href);
+        // The pay flow wants a level AND an interval.
+        url.searchParams.set("plan", /_(month|year)$/.test(plan) ? plan : plan + "_month");
+        cta.setAttribute("href", url.toString());
+      } catch (err) {
+        /* keep the fallback link */
+      }
+    }
+    fieldset.addEventListener("change", sync);
+    sync();
+  });
+
   document.querySelectorAll(".step-grid details").forEach(function (d) {
     d.addEventListener("toggle", function () {
       if (!d.open) return;
