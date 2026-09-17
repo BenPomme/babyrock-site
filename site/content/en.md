@@ -598,6 +598,9 @@ Plus, 39.99 € a month, VAT excluded
 ## sub.cta_pay
 Continue to secure payment
 
+## sub.cta_trial
+Start the free test, no card
+
 ## sub.cta_wa
 Start on WhatsApp
 

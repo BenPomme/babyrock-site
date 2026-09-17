@@ -598,6 +598,9 @@ Plus, 39,99 € al mes sense IVA
 ## sub.cta_pay
 Continuar al pagament segur
 
+## sub.cta_trial
+Començar la prova gratuïta, sense targeta
+
 ## sub.cta_wa
 Començar per WhatsApp
 

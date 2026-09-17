@@ -598,6 +598,9 @@ Plus, 39,99 € par mois hors taxes
 ## sub.cta_pay
 Continuer vers le paiement sécurisé
 
+## sub.cta_trial
+Commencer le test gratuit, sans carte
+
 ## sub.cta_wa
 Commencer sur WhatsApp
 

@@ -259,6 +259,8 @@ function subscribeHref(locale, depth, plan) {
  * the level, so the monthly plan is what a card starts; the yearly one is chosen on the pay page.
  */
 function payPlanId(tierId) {
+  if (tierId === "free_trial") return "free_trial";
+  if (/_(month|year)$/.test(tierId)) return tierId;
   return `${tierId}_month`;
 }
 
@@ -1194,6 +1196,9 @@ function subscribePage(locale, copy, config, depth) {
   // Without JavaScript the button still starts the level the page presents first. With it, the
   // chosen card wins (see site.js).
   const pay = payLink(config, payPlanId(featured.id), locale);
+  // The other door: three of the reviews the shop already has, no card and nothing to cancel. It is
+  // what the trial section of the home page promises, so the page that sells has to offer it.
+  const trial = payLink(config, "free_trial", locale);
   const waDigits = String(config.whatsapp || "").replace(/\D/g, "");
   return `
   <section class="wrap section">
@@ -1217,6 +1222,7 @@ function subscribePage(locale, copy, config, depth) {
     </fieldset>
     <p class="cta-row" style="margin:1.25rem 0 0">
       ${pay ? `<a class="btn btn-coral" href="${esc(pay)}" data-pay-cta data-pay-base="${esc(pay)}">${esc(t(copy, "sub.cta_pay"))}</a>` : ""}
+      ${trial ? `<a class="btn btn-ghost" href="${esc(trial)}">${esc(t(copy, "sub.cta_trial"))}</a>` : ""}
       <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</a>
     </p>
     <form class="sim-card form-grid" data-interest-form data-pay="${esc(pay)}" data-wa="${esc(waDigits)}" data-mail="${esc(config.email)}" style="margin-top:1.5rem">

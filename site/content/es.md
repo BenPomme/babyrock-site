@@ -598,6 +598,9 @@ Suscripción anual, 990 €
 ## sub.cta_pay
 Continuar al pago seguro
 
+## sub.cta_trial
+Empezar la prueba gratis, sin tarjeta
+
 ## sub.cta_wa
 Empezar por WhatsApp
 
