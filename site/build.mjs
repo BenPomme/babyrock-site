@@ -872,25 +872,6 @@ function homePage(locale, copy, config, depth) {
       ${paras(t(copy, "home.trial_note"))}
     </div>
   </section>` : ""}
-  <section class="section section-alt">
-    <div class="wrap">
-      <h2>${esc(t(copy, "home.price_title"))}</h2>
-      <div class="price-grid">
-        ${config.tiers
-          .map(
-            (tier) => `<article class="price-card${tier.featured ? " featured" : ""}">
-          <h3>${esc(t(copy, `product.social_${tier.id}_name`))}</h3>
-          <p class="amount">${esc(tier.priceMonthHt.toString().replace(".", locale === "en" ? "." : ","))} € <small>${esc(t(copy, "product.price_unit"))}</small></p>
-          <p class="compare-price-note">${esc(t(copy, `home.tier_${tier.id}_annual`))}</p>
-          <ul class="compare-features">${tierFeatures(copy, `product.social_${tier.id}`, 4)}</ul>
-          <a class="btn ${tier.featured ? "btn-wa" : "btn-coral"} compare-cta" href="${subscribeHref(locale, depth, tier.id)}">${esc(t(copy, `product.social_${tier.id}_cta`))}</a>
-        </article>`,
-          )
-          .join("")}
-      </div>
-      ${paras(t(copy, "home.price_setup"))}
-    </div>
-  </section>
   <section class="section">
     <div class="wrap faq">
       <h2>${esc(t(copy, "home.faq_title"))}</h2>

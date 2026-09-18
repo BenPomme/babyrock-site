@@ -315,27 +315,6 @@ Fem servir la IA per redactar més de pressa i per no deixar caps solts. Despré
 ## home.whatsapp_line
 Si cal explicar el que va passar, canviar el text o fer una pregunta, escriviu a la Rosalia per WhatsApp. Ja teniu l’aplicació. No cal un altre inici de sessió.
 
-## home.price_title
-BabyRock Social: les fórmules
-
-## home.price_month_name
-Subscripció mensual
-
-## home.price_month_detail
-99 € al mes, IVA inclòs. Es cobra cada mes. Si canceleu abans del cobrament següent, el servei acaba al final del mes ja pagat.
-
-## home.price_year_name
-Subscripció anual
-
-## home.price_year_detail
-990 € a l’any, IVA inclòs. Es cobra cada any. 198 € menys que pagar 12 mesos a 99 €.
-
-## home.price_year_save
-Estalvieu 198 €
-
-## home.price_setup
-Sense quota d’alta si vosaltres mateixos ens afegiu a la fitxa d’empresa de Google. En aquest web no es cobra: la Rosalia us envia un enllaç de pagament segur.
-
 ## home.faq_title
 Preguntes que ens fan els propietaris
 

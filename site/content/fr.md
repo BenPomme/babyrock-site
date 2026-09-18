@@ -315,27 +315,6 @@ Nous utilisons l’IA pour rédiger plus vite et pour ne rien laisser passer. Pu
 ## home.whatsapp_line
 S’il faut expliquer ce qui s’est passé, changer le texte ou poser une question, écrivez à Rosalia sur WhatsApp. Vous avez déjà l’application. Pas besoin d’un autre identifiant.
 
-## home.price_title
-BabyRock Social : les formules
-
-## home.price_month_name
-Abonnement mensuel
-
-## home.price_month_detail
-99 € par mois, TTC. Prélevé chaque mois. Si vous résiliez avant le prochain prélèvement, le service s’arrête à la fin du mois déjà payé.
-
-## home.price_year_name
-Abonnement annuel
-
-## home.price_year_detail
-990 € par an, TTC. Prélevé chaque année. 198 € de moins que 12 mois à 99 €.
-
-## home.price_year_save
-Économisez 198 €
-
-## home.price_setup
-Pas de frais de mise en service si vous nous ajoutez vous-même à votre fiche d’établissement Google. On ne prélève rien sur ce site : Rosalia vous envoie un lien de paiement sécurisé.
-
 ## home.faq_title
 Questions que nous posent les patrons
 

@@ -315,27 +315,6 @@ We use AI to draft faster and to make sure we don't drop the ball. Then a person
 ## home.whatsapp_line
 If you need to explain what happened, change the wording, or ask a question, write to Rosalia on WhatsApp. You already have the app. You do not need a new login.
 
-## home.price_title
-BabyRock Social: the plans
-
-## home.price_month_name
-Monthly subscription
-
-## home.price_month_detail
-€99 per month, including VAT. Billed every month. Cancel before the next charge and the service ends when the current paid month finishes.
-
-## home.price_year_name
-Yearly subscription
-
-## home.price_year_detail
-€990 a year, including VAT. Billed every year. €198 less than paying 12 months at €99.
-
-## home.price_year_save
-Save €198
-
-## home.price_setup
-No setup fee when you add us to your Google Business Profile yourself. You will not be charged on this website: Rosalia sends you a secure payment link.
-
 ## home.faq_title
 Questions business owners ask us
 
