@@ -328,6 +328,7 @@
           question: value(data, "question"),
           revenue: value(data, "revenue"),
           plan: selectedPlan(),
+          intent: form.getAttribute("data-intent") || "",
           lang: document.documentElement.lang || "",
         }),
       })

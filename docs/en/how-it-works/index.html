@@ -84,7 +84,7 @@
   <main id="main">
   <section class="wrap section">
     <h1>How to start</h1>
-    <div class="lead"><p>There is no new dashboard, no extra app, and we never ask for your Google password. Write to Rosalia on WhatsApp, choose a plan, add us as a manager of your Google Business Profile, and we take it from there.</p></div>
+    <div class="lead"><p>There is no new dashboard, no extra app, and we never ask for your Google password. Write to Rosalia on WhatsApp, start the free trial or choose a plan, add us as a manager of your Google Business Profile, and we take it from there.</p></div>
     <div class="step-grid">
       <details class="story-card">
         <summary>
@@ -133,6 +133,20 @@
       </details>
     </div>
     <div class="note" style="margin-top:1.5rem"><p>AI gives us a first draft so we can keep up with volume. A person decides what to say, checks it, and publishes the reply. Nothing goes live automatically.</p><p>The same WhatsApp conversation is where you can request a wording change, explain what happened, ask for an invoice, pause the service or cancel.</p></div>
+    <form class="sim-card form-grid" data-interest-form data-intent="trial" data-api="https://app.babyrock.ai" data-pay="https://pay.babyrock.ai/pay?plan=free_trial&amp;lang=en" data-wa="34711520944" data-mail="rosalia@babyrock.ai" data-msg-need-contact="Add an email or a WhatsApp number so we can answer." data-msg-need-email="For email, add your email address, or use Start on WhatsApp next to it." data-msg-sending="Sending…" data-msg-sent="Message received. Rosalia answers by email, usually the same day." data-msg-error="Sending failed. Try again, or write to us directly." style="margin-top:1.5rem">
+      <h2>Start the free trial here</h2>
+      <p>Leave your business, your Google listing, an email and a WhatsApp number. Rosalia starts your free trial, answers your questions, and sends you the video below.</p>
+      <label>Business name<input name="business" data-label="Business name" required></label>
+      <label>Google listing name or link<input name="listing" data-label="Google listing name or link" required></label>
+      <label>Email<input name="email" type="email" data-label="Email" required></label>
+      <label>WhatsApp number<input name="whatsapp" data-label="WhatsApp number" required></label>
+      <p class="form-error" data-form-error hidden></p>
+      <p class="form-sent" data-form-sent hidden></p>
+      <div class="cta-row">
+        <button class="btn btn-coral" name="channel" value="email" type="submit">Start the free trial</button>
+      </div>
+      <p><a class="form-fallback" data-form-fallback hidden>Write to Rosalia directly</a></p>
+    </form>
   </section></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">

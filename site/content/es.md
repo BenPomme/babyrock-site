@@ -436,7 +436,16 @@ De dónde salen estos números
 Cómo empezar
 
 ## how.lead
-No hay otro panel, no hay otra aplicación, y nunca pedimos su contraseña de Google. Escriba a Rosalia por WhatsApp, elija un plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.
+No hay otro panel, no hay otra aplicación, y nunca pedimos su contraseña de Google. Escriba a Rosalia por WhatsApp, empiece la prueba gratis o elija un plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.
+
+## how.trial_form_title
+Empiece aquí la prueba gratis
+
+## how.trial_form_note
+Deje su negocio, su ficha de Google, un correo y un número de WhatsApp. Rosalia empieza su prueba gratis, responde sus preguntas y le envía el vídeo de abajo.
+
+## how.trial_form_cta
+Empezar la prueba gratis
 
 ## how.step1_title
 1. Cuéntenos su negocio
@@ -777,25 +786,46 @@ Pruébelo gratis
 Empiece gratis y sin tarjeta: tres reseñas respondidas
 
 ## home.trial_lead
-Añada reviews@babyrock.ai como gestor de su ficha y respondemos tres reseñas, solo de 4 y 5 estrellas. No se le cobra nada y no hay nada que cancelar. Si quiere el servicio completo desde el primer día, con tarjeta: dos semanas gratis en Lite y un mes gratis en Plus y Pro.
+Primero escriba a Rosalía: ella toma sus datos y su ficha de Google. Después nos añade como gestor de su ficha, y respondemos tres reseñas, solo de 4 y 5 estrellas. No se cobra nada y no hay nada que cancelar.
 
 ## home.trial_opt1_title
-Lo que hace usted
+1. Escriba primero a Rosalía
 
 ## home.trial_opt1
-Una cosa: invitarnos como gestor de su ficha de Google. Es un clic, nunca vemos su contraseña, y puede quitarnos cuando quiera. Rosalía le acompaña por WhatsApp en todo el proceso.
+Envíele el nombre de su negocio, su ficha de Google y cómo localizarle: por WhatsApp y con un correo. Ella empieza su prueba gratis, responde sus preguntas y le acompaña en la puesta en marcha.
 
 ## home.trial_opt2_title
-Qué pasa mientras prueba
+2. Después, un clic
 
 ## home.trial_opt2
-Sin tarjeta respondemos tres reseñas de 4 o 5 estrellas, y las de 1 a 3 estrellas le llegan a usted para que las apruebe. Con tarjeta prueba el servicio completo: hasta 10 respuestas al mes en Lite y hasta 25 en Plus, con el resumen de los lunes. Se cancela antes de que acabe la prueba y no se paga nada.
+Añada reviews@babyrock.ai como gestor de su ficha de empresa de Google, nunca como propietario. Nunca vemos su contraseña y puede quitarnos cuando quiera.
+
+## home.trial_video
+Ver el vídeo de un minuto
+
+## home.trial_opt3_title
+3. Tres reseñas respondidas
+
+## home.trial_opt3
+Respondemos tres de sus reseñas de 4 y 5 estrellas, sobre reseñas que ya tiene. Las de 1 a 3 estrellas le llegan siempre para que las apruebe.
 
 ## home.trial_note
-Al terminar la prueba, si no cancela, empieza la suscripción que haya elegido: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sin IVA. Se cancela escribiendo una línea.
+La prueba sin tarjeta termina sola: no se cobra nada y no empieza ninguna suscripción. Solo la prueba con tarjeta continúa en un plan: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sin IVA, y se cancela en una línea.
 
 ## home.trial_cta
 Empezar la prueba gratis
+
+## home.trial_cta_wa
+Empezar por WhatsApp
+
+## home.trial_cta_form
+o rellenar el formulario
+
+## home.trial_cta_whatsapp
+o escribir a Rosalía por WhatsApp
+
+## home.trial_wa_prefill
+Hola Rosalia, quiero la prueba gratis de tres reseñas. Mi negocio es ... y mi ficha de Google es ...
 
 ## home.cta_trial
 Pruébelo gratis

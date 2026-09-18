@@ -436,7 +436,16 @@ D’où viennent ces chiffres
 Comment commencer
 
 ## how.lead
-Il n’y a pas d’autre tableau de bord, pas d’application en plus, et nous ne demandons jamais votre mot de passe Google. Écrivez à Rosalia sur WhatsApp, choisissez une formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.
+Il n’y a pas d’autre tableau de bord, pas d’application en plus, et nous ne demandons jamais votre mot de passe Google. Écrivez à Rosalia sur WhatsApp, commencez l’essai gratuit ou choisissez une formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.
+
+## how.trial_form_title
+Commencez ici l’essai gratuit
+
+## how.trial_form_note
+Laissez votre commerce, votre fiche Google, un e-mail et un numéro WhatsApp. Rosalia lance votre essai gratuit, répond à vos questions et vous envoie la vidéo ci-dessous.
+
+## how.trial_form_cta
+Commencer l’essai gratuit
 
 ## how.step1_title
 1. Parlez-nous de votre commerce
@@ -777,25 +786,46 @@ Essayez gratuitement
 Commencez gratuitement et sans carte : trois avis traités
 
 ## home.trial_lead
-Ajoutez reviews@babyrock.ai comme gestionnaire de votre fiche et nous répondons à trois avis, uniquement de 4 et 5 étoiles. Rien n'est facturé et il n'y a rien à annuler. Si vous voulez le service complet dès le premier jour, avec carte : deux semaines gratuites sur Lite et un mois gratuit sur Plus et Pro.
+Écrivez d’abord à Rosalia : elle prend vos coordonnées et votre fiche Google. Ensuite vous nous ajoutez comme gestionnaire de votre fiche, et nous répondons à trois avis, uniquement de 4 et 5 étoiles. Rien n’est facturé et il n’y a rien à annuler.
 
 ## home.trial_opt1_title
-Ce que vous faites
+1. Écrivez d’abord à Rosalia
 
 ## home.trial_opt1
-Une seule chose : nous inviter comme gestionnaire de votre fiche Google. Un clic, nous ne voyons jamais votre mot de passe, et vous pouvez nous retirer quand vous voulez. Rosalia vous accompagne sur WhatsApp pendant toute la mise en route.
+Envoyez-lui le nom de votre commerce, votre fiche Google et comment vous joindre : par WhatsApp et avec une adresse e-mail. Elle lance votre essai gratuit, répond à vos questions et vous accompagne pendant la mise en route.
 
 ## home.trial_opt2_title
-Ce qui se passe pendant l'essai
+2. Ensuite, un clic
 
 ## home.trial_opt2
-Sans carte, nous répondons à trois avis de 4 ou 5 étoiles, et les avis de 1 à 3 étoiles vous arrivent pour approbation. Avec carte, vous essayez le service complet : jusqu'à 10 réponses par mois sur Lite et jusqu'à 25 sur Plus, avec le résumé du lundi. Vous annulez avant la fin de l'essai et vous ne payez rien.
+Ajoutez reviews@babyrock.ai comme gestionnaire de votre fiche d’établissement Google, jamais comme propriétaire. Nous ne voyons jamais votre mot de passe et vous pouvez nous retirer quand vous voulez.
+
+## home.trial_video
+Voir la vidéo d’une minute
+
+## home.trial_opt3_title
+3. Trois avis traités
+
+## home.trial_opt3
+Nous répondons à trois de vos avis de 4 et 5 étoiles, sur des avis que vous avez déjà. Les avis de 1 à 3 étoiles vous arrivent toujours pour approbation.
 
 ## home.trial_note
-À la fin de l'essai, si vous n'annulez pas, l'abonnement que vous avez choisi démarre : Lite 9,99 €, Plus 39,99 € ou Pro 99,99 € par mois, hors taxes. Vous annulez en une ligne.
+L’essai sans carte s’arrête tout seul : rien n’est facturé et aucun abonnement ne démarre. Seul l’essai avec carte continue en formule : Lite 9,99 €, Plus 39,99 € ou Pro 99,99 € par mois, hors taxes, et vous annulez en une ligne.
 
 ## home.trial_cta
 Commencer l'essai gratuit
+
+## home.trial_cta_wa
+Commencer sur WhatsApp
+
+## home.trial_cta_form
+ou remplir le formulaire
+
+## home.trial_cta_whatsapp
+ou écrire à Rosalia sur WhatsApp
+
+## home.trial_wa_prefill
+Bonjour Rosalia, je voudrais l’essai gratuit de trois avis. Mon commerce est ... et ma fiche Google est ...
 
 ## home.cta_trial
 Essayez gratuitement

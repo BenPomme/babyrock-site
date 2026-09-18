@@ -84,7 +84,7 @@
   <main id="main">
   <section class="wrap section">
     <h1>Comment commencer</h1>
-    <div class="lead"><p>Il n’y a pas d’autre tableau de bord, pas d’application en plus, et nous ne demandons jamais votre mot de passe Google. Écrivez à Rosalia sur WhatsApp, choisissez une formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.</p></div>
+    <div class="lead"><p>Il n’y a pas d’autre tableau de bord, pas d’application en plus, et nous ne demandons jamais votre mot de passe Google. Écrivez à Rosalia sur WhatsApp, commencez l’essai gratuit ou choisissez une formule, ajoutez-nous comme gestionnaire de votre fiche d’établissement Google, et nous nous en occupons.</p></div>
     <div class="step-grid">
       <details class="story-card">
         <summary>
@@ -133,6 +133,20 @@
       </details>
     </div>
     <div class="note" style="margin-top:1.5rem"><p>L’IA nous donne un premier brouillon pour suivre le volume. Une personne décide quoi dire, vérifie, et publie la réponse. Rien n’est publié tout seul.</p><p>La même conversation WhatsApp sert à demander un changement de texte, expliquer ce qui s’est passé, demander une facture, mettre en pause ou résilier.</p></div>
+    <form class="sim-card form-grid" data-interest-form data-intent="trial" data-api="https://app.babyrock.ai" data-pay="https://pay.babyrock.ai/pay?plan=free_trial&amp;lang=fr" data-wa="34711520944" data-mail="rosalia@babyrock.ai" data-msg-need-contact="Ajoutez un e-mail ou un numéro WhatsApp pour que nous puissions répondre." data-msg-need-email="Pour l’e-mail, ajoutez votre adresse, ou utilisez Commencer sur WhatsApp juste à côté." data-msg-sending="Envoi…" data-msg-sent="Message reçu. Rosalia répond par e-mail, en général le jour même." data-msg-error="L’envoi a échoué. Réessayez, ou écrivez-nous directement." style="margin-top:1.5rem">
+      <h2>Commencez ici l’essai gratuit</h2>
+      <p>Laissez votre commerce, votre fiche Google, un e-mail et un numéro WhatsApp. Rosalia lance votre essai gratuit, répond à vos questions et vous envoie la vidéo ci-dessous.</p>
+      <label>Nom du commerce<input name="business" data-label="Nom du commerce" required></label>
+      <label>Nom ou lien de la fiche Google<input name="listing" data-label="Nom ou lien de la fiche Google" required></label>
+      <label>E-mail<input name="email" type="email" data-label="E-mail" required></label>
+      <label>Numéro WhatsApp<input name="whatsapp" data-label="Numéro WhatsApp" required></label>
+      <p class="form-error" data-form-error hidden></p>
+      <p class="form-sent" data-form-sent hidden></p>
+      <div class="cta-row">
+        <button class="btn btn-coral" name="channel" value="email" type="submit">Commencer l’essai gratuit</button>
+      </div>
+      <p><a class="form-fallback" data-form-fallback hidden>Écrire directement à Rosalia</a></p>
+    </form>
   </section></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">

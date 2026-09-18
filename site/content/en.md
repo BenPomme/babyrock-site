@@ -436,7 +436,16 @@ How we get these numbers
 How to start
 
 ## how.lead
-There is no new dashboard, no extra app, and we never ask for your Google password. Write to Rosalia on WhatsApp, choose a plan, add us as a manager of your Google Business Profile, and we take it from there.
+There is no new dashboard, no extra app, and we never ask for your Google password. Write to Rosalia on WhatsApp, start the free trial or choose a plan, add us as a manager of your Google Business Profile, and we take it from there.
+
+## how.trial_form_title
+Start the free trial here
+
+## how.trial_form_note
+Leave your business, your Google listing, an email and a WhatsApp number. Rosalia starts your free trial, answers your questions, and sends you the video below.
+
+## how.trial_form_cta
+Start the free trial
 
 ## how.step1_title
 1. Tell us about your business
@@ -775,19 +784,46 @@ Try us for free
 ## home.trial_title
 Start free, without a card: three reviews answered
 ## home.trial_lead
-Add reviews@babyrock.ai as a manager of your listing and we answer three reviews, 4 and 5 stars only. Nothing is charged and there is nothing to cancel. If you want the full service from day one, with a card: two weeks free on Lite and one month free on Plus and Pro.
+First write to Rosalía: she takes your details and your Google listing. Then you add us as a manager of your listing, and we answer three reviews, 4 and 5 stars only. Nothing is charged and there is nothing to cancel.
+
 ## home.trial_opt1_title
-What you do
+1. Write to Rosalía first
+
 ## home.trial_opt1
-One thing: invite us as a manager of your Google listing. It is one click, we never see your password, and you can remove us whenever you want. Rosalía stays with you on WhatsApp through the whole set-up.
+Send her your business name, your Google listing and how to reach you, by WhatsApp and with an email address. She starts your free trial, answers your questions and stays with you through the set-up.
+
 ## home.trial_opt2_title
-What happens during the trial
+2. Then, the one click
+
 ## home.trial_opt2
-Without a card we answer three reviews of 4 or 5 stars, and the 1 to 3 star ones come to you for approval. With a card you try the full service: up to 10 replies a month on Lite and up to 25 on Plus, with the Monday summary. Cancel before the trial ends and you pay nothing.
+Invite reviews@babyrock.ai as a manager of your Google Business Profile, never as an owner. We never see your password, and you can remove us whenever you want.
+
+## home.trial_video
+Watch the one-minute video
+
+## home.trial_opt3_title
+3. Three reviews answered
+
+## home.trial_opt3
+We answer three of your 4 and 5 star reviews, on reviews you already have. The 1 to 3 star ones come to you for approval, always.
+
 ## home.trial_note
-At the end of the trial, unless you cancel, the subscription you chose starts: Lite 9.99 €, Plus 39.99 € or Pro 99.99 € per month, VAT excluded. Cancel in one line.
+The trial without a card ends by itself: nothing is charged and no subscription starts. Only the trial with a card continues into a plan: Lite 9.99 €, Plus 39.99 € or Pro 99.99 € per month, VAT excluded, and you cancel it in one line.
+
 ## home.trial_cta
 Start the free trial
+
+## home.trial_cta_wa
+Start on WhatsApp
+
+## home.trial_cta_form
+or fill the form
+
+## home.trial_cta_whatsapp
+or write to Rosalía on WhatsApp
+
+## home.trial_wa_prefill
+Hello Rosalia, I would like the free trial with three reviews. My business is ... and my Google listing is ...
 ## home.trial_cta2_unused
 Ask for the free test
 

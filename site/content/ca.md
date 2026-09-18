@@ -436,7 +436,16 @@ D’on surten aquests números
 Com començar
 
 ## how.lead
-No hi ha un altre tauler, no hi ha una altra aplicació, i mai no demanem la contrasenya de Google. Escriviu a la Rosalia per WhatsApp, trieu un pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.
+No hi ha un altre tauler, no hi ha una altra aplicació, i mai no demanem la contrasenya de Google. Escriviu a la Rosalia per WhatsApp, comenceu la prova gratuïta o trieu un pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.
+
+## how.trial_form_title
+Comenceu aquí la prova gratuïta
+
+## how.trial_form_note
+Deixeu el vostre negoci, la fitxa de Google, un correu i un número de WhatsApp. La Rosalia comença la prova gratuïta, respon les vostres preguntes i us envia el vídeo de sota.
+
+## how.trial_form_cta
+Començar la prova gratis
 
 ## how.step1_title
 1. Expliqueu-nos el negoci
@@ -777,25 +786,46 @@ Proveu-ho gratis
 Comenceu gratis i sense targeta: tres ressenyes respostes
 
 ## home.trial_lead
-Afegiu reviews@babyrock.ai com a gestor de la vostra fitxa i responem tres ressenyes, només de 4 i 5 estrelles. No es cobra res i no hi ha res a cancel·lar. Si voleu el servei complet des del primer dia, amb targeta: dues setmanes gratis a Lite i un mes gratis a Plus i Pro.
+Primer escriviu a la Rosalia: ella pren les vostres dades i la vostra fitxa de Google. Després ens afegiu com a gestor de la fitxa, i responem tres ressenyes, només de 4 i 5 estrelles. No es cobra res i no hi ha res a cancel·lar.
 
 ## home.trial_opt1_title
-Què feu vós
+1. Escriviu primer a la Rosalia
 
 ## home.trial_opt1
-Una cosa: convidar-nos com a gestor de la vostra fitxa de Google. És un clic, no veiem mai la vostra contrasenya, i ens podeu treure quan vulgueu. La Rosalia us acompanya per WhatsApp durant tot el procés.
+Envieu-li el nom del negoci, la fitxa de Google i com localitzar-vos: per WhatsApp i amb un correu. Ella comença la prova gratuïta, respon les vostres preguntes i us acompanya en la posada en marxa.
 
 ## home.trial_opt2_title
-Què passa mentre proveu
+2. Després, un clic
 
 ## home.trial_opt2
-Sense targeta responem tres ressenyes de 4 o 5 estrelles, i les d'1 a 3 estrelles us arriben perquè les aproveu. Amb targeta proveu el servei complet: fins a 10 respostes al mes a Lite i fins a 25 a Plus, amb el resum dels dilluns. Es cancel·la abans que acabi la prova i no es paga res.
+Afegiu reviews@babyrock.ai com a gestor de la fitxa d’empresa de Google, mai com a propietari. No veiem mai la contrasenya i ens podeu treure quan vulgueu.
+
+## home.trial_video
+Veure el vídeo d’un minut
+
+## home.trial_opt3_title
+3. Tres ressenyes respostes
+
+## home.trial_opt3
+Responem tres de les vostres ressenyes de 4 i 5 estrelles, sobre ressenyes que ja teniu. Les d’1 a 3 estrelles us arriben sempre perquè les aproveu.
 
 ## home.trial_note
-En acabar la prova, si no cancel·leu, comença la subscripció que hàgiu triat: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sense IVA. Es cancel·la escrivint una línia.
+La prova sense targeta s’acaba sola: no es cobra res i no comença cap subscripció. Només la prova amb targeta continua en un pla: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sense IVA, i es cancel·la en una línia.
 
 ## home.trial_cta
 Començar la prova gratis
+
+## home.trial_cta_wa
+Començar per WhatsApp
+
+## home.trial_cta_form
+o omplir el formulari
+
+## home.trial_cta_whatsapp
+o escriure a la Rosalia per WhatsApp
+
+## home.trial_wa_prefill
+Hola Rosalia, vull la prova gratuïta de tres ressenyes. El meu negoci és ... i la meva fitxa de Google és ...
 
 ## home.cta_trial
 Proveu-ho gratis

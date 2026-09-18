@@ -84,7 +84,7 @@
   <main id="main">
   <section class="wrap section">
     <h1>Com començar</h1>
-    <div class="lead"><p>No hi ha un altre tauler, no hi ha una altra aplicació, i mai no demanem la contrasenya de Google. Escriviu a la Rosalia per WhatsApp, trieu un pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.</p></div>
+    <div class="lead"><p>No hi ha un altre tauler, no hi ha una altra aplicació, i mai no demanem la contrasenya de Google. Escriviu a la Rosalia per WhatsApp, comenceu la prova gratuïta o trieu un pla, afegiu-nos com a gestor de la fitxa d’empresa de Google, i ens n’ocupem.</p></div>
     <div class="step-grid">
       <details class="story-card">
         <summary>
@@ -133,6 +133,20 @@
       </details>
     </div>
     <div class="note" style="margin-top:1.5rem"><p>La IA ens dóna un primer esborrany per seguir el ritme. Una persona decideix què dir, ho comprova i publica la resposta. Res no es publica sol.</p><p>La mateixa conversa de WhatsApp serveix per demanar un canvi de text, explicar el que va passar, demanar una factura, pausar o cancel·lar.</p></div>
+    <form class="sim-card form-grid" data-interest-form data-intent="trial" data-api="https://app.babyrock.ai" data-pay="https://pay.babyrock.ai/pay?plan=free_trial&amp;lang=ca" data-wa="34711520944" data-mail="rosalia@babyrock.ai" data-msg-need-contact="Afegiu un correu o un número de WhatsApp perquè us puguem respondre." data-msg-need-email="Per al correu, afegiu la vostra adreça, o feu servir Començar per WhatsApp del costat." data-msg-sending="S’està enviant…" data-msg-sent="Missatge rebut. La Rosalia respon per correu, normalment el mateix dia." data-msg-error="No s’ha pogut enviar. Torneu-ho a provar o escriviu-nos directament." style="margin-top:1.5rem">
+      <h2>Comenceu aquí la prova gratuïta</h2>
+      <p>Deixeu el vostre negoci, la fitxa de Google, un correu i un número de WhatsApp. La Rosalia comença la prova gratuïta, respon les vostres preguntes i us envia el vídeo de sota.</p>
+      <label>Nom del negoci<input name="business" data-label="Nom del negoci" required></label>
+      <label>Nom o enllaç de la fitxa de Google<input name="listing" data-label="Nom o enllaç de la fitxa de Google" required></label>
+      <label>Correu<input name="email" type="email" data-label="Correu" required></label>
+      <label>Número de WhatsApp<input name="whatsapp" data-label="Número de WhatsApp" required></label>
+      <p class="form-error" data-form-error hidden></p>
+      <p class="form-sent" data-form-sent hidden></p>
+      <div class="cta-row">
+        <button class="btn btn-coral" name="channel" value="email" type="submit">Començar la prova gratis</button>
+      </div>
+      <p><a class="form-fallback" data-form-fallback hidden>Escriure a la Rosalia directament</a></p>
+    </form>
   </section></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">

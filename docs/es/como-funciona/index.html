@@ -84,7 +84,7 @@
   <main id="main">
   <section class="wrap section">
     <h1>Cómo empezar</h1>
-    <div class="lead"><p>No hay otro panel, no hay otra aplicación, y nunca pedimos su contraseña de Google. Escriba a Rosalia por WhatsApp, elija un plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.</p></div>
+    <div class="lead"><p>No hay otro panel, no hay otra aplicación, y nunca pedimos su contraseña de Google. Escriba a Rosalia por WhatsApp, empiece la prueba gratis o elija un plan, añádanos como gestor de su ficha de empresa de Google, y nos ocupamos.</p></div>
     <div class="step-grid">
       <details class="story-card">
         <summary>
@@ -133,6 +133,20 @@
       </details>
     </div>
     <div class="note" style="margin-top:1.5rem"><p>La IA nos da un primer borrador para seguir el ritmo. Una persona decide qué decir, lo comprueba y publica la respuesta. Nada se publica solo.</p><p>La misma conversación de WhatsApp sirve para pedir un cambio de texto, explicar lo que pasó, pedir una factura, pausar o cancelar.</p></div>
+    <form class="sim-card form-grid" data-interest-form data-intent="trial" data-api="https://app.babyrock.ai" data-pay="https://pay.babyrock.ai/pay?plan=free_trial&amp;lang=es" data-wa="34711520944" data-mail="rosalia@babyrock.ai" data-msg-need-contact="Añada un correo o un número de WhatsApp para que podamos responder." data-msg-need-email="Para el correo, añada su dirección, o use Empezar por WhatsApp aquí al lado." data-msg-sending="Enviando…" data-msg-sent="Mensaje recibido. Rosalia responde por correo, normalmente el mismo día." data-msg-error="No se ha podido enviar. Inténtelo otra vez o escríbanos directamente." style="margin-top:1.5rem">
+      <h2>Empiece aquí la prueba gratis</h2>
+      <p>Deje su negocio, su ficha de Google, un correo y un número de WhatsApp. Rosalia empieza su prueba gratis, responde sus preguntas y le envía el vídeo de abajo.</p>
+      <label>Nombre del negocio<input name="business" data-label="Nombre del negocio" required></label>
+      <label>Nombre o enlace de la ficha de Google<input name="listing" data-label="Nombre o enlace de la ficha de Google" required></label>
+      <label>Correo<input name="email" type="email" data-label="Correo" required></label>
+      <label>Número de WhatsApp<input name="whatsapp" data-label="Número de WhatsApp" required></label>
+      <p class="form-error" data-form-error hidden></p>
+      <p class="form-sent" data-form-sent hidden></p>
+      <div class="cta-row">
+        <button class="btn btn-coral" name="channel" value="email" type="submit">Empezar la prueba gratis</button>
+      </div>
+      <p><a class="form-fallback" data-form-fallback hidden>Escribir a Rosalia directamente</a></p>
+    </form>
   </section></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">

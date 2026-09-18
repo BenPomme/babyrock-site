@@ -861,13 +861,21 @@ function homePage(locale, copy, config, depth) {
           <div class="compare-head"><h2 class="compare-name">${esc(t(copy, "home.trial_opt1_title"))}</h2></div>
           ${paras(t(copy, "home.trial_opt1"))}
         </article>
-        <article class="compare-card">
+        <article class="compare-card live">
           <div class="compare-head"><h2 class="compare-name">${esc(t(copy, "home.trial_opt2_title"))}</h2></div>
           ${paras(t(copy, "home.trial_opt2"))}
+          <p><a href="${href(locale, "how", depth)}">${esc(t(copy, "home.trial_video"))}</a></p>
+        </article>
+        <article class="compare-card live">
+          <div class="compare-head"><h2 class="compare-name">${esc(t(copy, "home.trial_opt3_title"))}</h2></div>
+          ${paras(t(copy, "home.trial_opt3"))}
         </article>
       </div>
       <div class="cta-row" style="margin-top:1.4rem">
-        <a class="btn btn-coral" href="${waLink(config, t(copy, "home.trial_cta"))}" target="_blank" rel="noopener">${esc(t(copy, "home.trial_cta"))}</a>
+        <a class="btn btn-coral trial-cta-form" href="${payLink(config, "free_trial", locale)}">${esc(t(copy, "home.trial_cta"))}</a>
+        <a class="btn btn-ghost trial-cta-form-secondary" href="${waLink(config, t(copy, "home.trial_wa_prefill"))}" target="_blank" rel="noopener">${esc(t(copy, "home.trial_cta_whatsapp"))}</a>
+        <a class="btn btn-wa trial-cta-mobile" href="${waLink(config, t(copy, "home.trial_wa_prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "home.trial_cta_wa"))}</a>
+        <a class="btn btn-ghost trial-cta-mobile-secondary" href="${payLink(config, "free_trial", locale)}">${esc(t(copy, "home.trial_cta_form"))}</a>
       </div>
       ${paras(t(copy, "home.trial_note"))}
     </div>
@@ -913,7 +921,7 @@ function simulatorPage(locale, copy, depth) {
   </section>`;
 }
 
-function howPage(locale, copy, depth) {
+function howPage(locale, copy, config, depth) {
   const steps = [
     ["step-whatsapp.jpg", "how.step1_title", "how.step1"],
     ["step-manager.jpg", "how.step2_title", "how.step2"],
@@ -952,6 +960,20 @@ function howPage(locale, copy, depth) {
         .join("")}
     </div>
     <div class="note" style="margin-top:1.5rem">${paras(t(copy, "how.ai_box"))}${paras(t(copy, "how.whatsapp"))}</div>
+    <form class="sim-card form-grid" data-interest-form data-intent="trial" data-api="${esc(config.apiUrl || "https://app.babyrock.ai")}" data-pay="${esc(payLink(config, "free_trial", locale))}" data-wa="${esc(String(config.whatsapp || "").replace(/\D/g, ""))}" data-mail="${esc(config.email)}" data-msg-need-contact="${esc(t(copy, "sub.form_need_contact"))}" data-msg-need-email="${esc(t(copy, "sub.form_need_email"))}" data-msg-sending="${esc(t(copy, "sub.form_sending"))}" data-msg-sent="${esc(t(copy, "sub.form_sent"))}" data-msg-error="${esc(t(copy, "sub.form_error"))}" style="margin-top:1.5rem">
+      <h2>${esc(t(copy, "how.trial_form_title"))}</h2>
+      <p>${esc(t(copy, "how.trial_form_note"))}</p>
+      <label>${esc(t(copy, "sub.form_name"))}<input name="business" data-label="${esc(t(copy, "sub.form_name"))}" required></label>
+      <label>${esc(t(copy, "sub.form_listing"))}<input name="listing" data-label="${esc(t(copy, "sub.form_listing"))}" required></label>
+      <label>${esc(t(copy, "sub.form_email"))}<input name="email" type="email" data-label="${esc(t(copy, "sub.form_email"))}" required></label>
+      <label>${esc(t(copy, "sub.form_wa"))}<input name="whatsapp" data-label="${esc(t(copy, "sub.form_wa"))}" required></label>
+      <p class="form-error" data-form-error hidden></p>
+      <p class="form-sent" data-form-sent hidden></p>
+      <div class="cta-row">
+        <button class="btn btn-coral" name="channel" value="email" type="submit">${esc(t(copy, "how.trial_form_cta"))}</button>
+      </div>
+      <p><a class="form-fallback" data-form-fallback hidden>${esc(t(copy, "sub.form_fallback_mail"))}</a></p>
+    </form>
   </section>`;
 }
 
@@ -1128,7 +1150,7 @@ function compareProducts(locale, copy, config, depth, opts = {}) {
     const amount = String(tier.priceMonthHt);
     const price = `${locale === "en" ? amount : amount.replace(".", ",")} €`;
     const inherits = id === "lite" ? "" : `<p class="compare-tag">${esc(t(copy, `product.social_${id}_inherits`))}</p>`;
-    return `<article class="compare-card live">
+    return `<article class="compare-card live" id="${id}">
       <div class="compare-head">
         <img src="${asset(depth, "logos/social-icon.svg")}" alt="" width="52" height="52" decoding="async">
         <h2 class="compare-name">${esc(t(copy, `product.social_${id}_name`))}</h2>
@@ -1315,7 +1337,7 @@ for (const locale of Object.keys(LOCALES)) {
     services: { depth: 2, body: servicesPage(locale, copy, config, 2) },
     guides: { depth: 2, body: guidesIndexPage(locale, copy, config, 2) },
     simulator: { depth: 2, body: simulatorPage(locale, copy, 2) },
-    how: { depth: 2, body: howPage(locale, copy, 2) },
+    how: { depth: 2, body: howPage(locale, copy, config, 2) },
     research: { depth: 2, body: researchPage(copy, config) },
     about: { depth: 2, body: aboutPage(copy, 2) },
     subscribe: { depth: 2, body: subscribePage(locale, copy, config, 2) },

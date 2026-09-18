@@ -659,6 +659,24 @@ textarea {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* The free trial follows the device: the form on a computer, WhatsApp on a phone. */
+.trial-cta-mobile,
+.trial-cta-mobile-secondary {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .trial-cta-form,
+  .trial-cta-form-secondary {
+    display: none;
+  }
+
+  .trial-cta-mobile,
+  .trial-cta-mobile-secondary {
+    display: inline-flex;
+  }
+}
 .sim-result {
   margin-top: 0.4rem;
   padding: 1.05rem 1.15rem;
