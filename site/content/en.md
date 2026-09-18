@@ -562,6 +562,27 @@ Email
 ## sub.form_wa
 WhatsApp number
 
+## sub.form_question
+Your question (optional)
+
+## sub.form_need_contact
+Add an email or a WhatsApp number so we can answer.
+
+## sub.form_need_email
+For email, add your email address, or use Start on WhatsApp next to it.
+
+## sub.form_sending
+Sending…
+
+## sub.form_sent
+Message received. Rosalia answers by email, usually the same day.
+
+## sub.form_error
+Sending failed. Try again, or write to us directly.
+
+## sub.form_fallback_mail
+Write to Rosalia directly
+
 ## sub.form_revenue
 Monthly revenue, if you used the calculator (optional)
 

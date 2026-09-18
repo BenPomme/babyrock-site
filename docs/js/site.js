@@ -229,9 +229,51 @@
   });
 
   document.querySelectorAll("[data-interest-form]").forEach(function (form) {
-    // The pay flow is the only place where a contract is signed; this site only links to it.
-    // Same query contract as the factory's own pay links (plan, city, wa, maps) — no name or
-    // e-mail in the URL, the pay page collects those itself.
+    const errorEl = form.querySelector("[data-form-error]");
+    const sentEl = form.querySelector("[data-form-sent]");
+    const fallbackEl = form.querySelector("[data-form-fallback]");
+    const api = (form.getAttribute("data-api") || cfg.apiUrl || "").replace(/\/$/, "");
+    const message = function (key, fallback) {
+      return form.getAttribute("data-msg-" + key) || fallback;
+    };
+    function showError(key, fallback) {
+      if (!errorEl) return;
+      errorEl.textContent = message(key, fallback);
+      errorEl.hidden = false;
+    }
+    function clearError() {
+      if (!errorEl) return;
+      errorEl.hidden = true;
+      errorEl.textContent = "";
+    }
+    function value(data, name) {
+      return String(data.get(name) || "").trim();
+    }
+    function selectedPlan() {
+      const checked = document.querySelector("[data-plan-choices] input[name=plan]:checked");
+      return checked ? checked.value : "";
+    }
+    function labels(form) {
+      const map = {};
+      form.querySelectorAll("[data-label]").forEach(function (el) {
+        map[el.name] = el.getAttribute("data-label");
+      });
+      return map;
+    }
+    function messageBody(data) {
+      const lines = [];
+      const map = labels(form);
+      data.forEach(function (v, k) {
+        if (k === "channel") return;
+        if (!String(v).trim()) return;
+        lines.push((map[k] || k) + ": " + String(v).trim());
+      });
+      return lines.join("\n");
+    }
+
+    // The pay flow is the only place where a contract is signed; this site only links to it. The
+    // pay page prefills from the same query contract the factory uses (plan, city, wa, maps,
+    // email, name).
     function payTarget(data) {
       const base = form.getAttribute("data-pay") || cfg.payUrl || "";
       if (!base) return "";
@@ -241,59 +283,112 @@
       } catch (err) {
         return base;
       }
-      const field = function (name) {
-        return String(data.get(name) || "").trim();
-      };
-      if (field("plan")) url.searchParams.set("plan", field("plan"));
-      if (field("city")) url.searchParams.set("city", field("city"));
-      if (/^https?:\/\//i.test(field("listing"))) url.searchParams.set("maps", field("listing"));
-      const digits = field("whatsapp").replace(/\D/g, "");
+      const plan = selectedPlan();
+      // The pay page wants a level AND an interval, like the card links above.
+      if (plan) url.searchParams.set("plan", /_(month|year)$/.test(plan) ? plan : plan + "_month");
+      if (value(data, "city")) url.searchParams.set("city", value(data, "city"));
+      if (/^https?:\/\//i.test(value(data, "listing"))) url.searchParams.set("maps", value(data, "listing"));
+      if (value(data, "email")) url.searchParams.set("email", value(data, "email"));
+      if (value(data, "business")) url.searchParams.set("name", value(data, "business"));
+      const digits = value(data, "whatsapp").replace(/\D/g, "");
       if (digits) url.searchParams.set("wa", digits);
       return url.toString();
     }
 
+    function fallbackMailto(body) {
+      return (
+        "mailto:" +
+        (form.getAttribute("data-mail") || "") +
+        "?subject=" +
+        encodeURIComponent("BabyRock Social") +
+        "&body=" +
+        encodeURIComponent(body)
+      );
+    }
+
+    // The Email button posts to the factory: no mail client needed, and the lead exists even if
+    // the visitor never opens an inbox.
+    function postToFactory(data, email, body) {
+      const buttons = form.querySelectorAll("button[type=submit]");
+      const emailButton = form.querySelector("button[value=email]");
+      const original = emailButton ? emailButton.textContent : "";
+      buttons.forEach(function (b) {
+        b.disabled = true;
+      });
+      if (emailButton) emailButton.textContent = message("sending", "…");
+      fetch(api + "/api/interest", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          business: value(data, "business"),
+          city: value(data, "city"),
+          listing: value(data, "listing"),
+          email: email,
+          whatsapp: value(data, "whatsapp"),
+          question: value(data, "question"),
+          revenue: value(data, "revenue"),
+          plan: selectedPlan(),
+          lang: document.documentElement.lang || "",
+        }),
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("http " + res.status);
+          return res.json();
+        })
+        .then(function () {
+          if (sentEl) {
+            sentEl.textContent = message("sent", "Message received.");
+            sentEl.hidden = false;
+          }
+          form.querySelectorAll("input, textarea, button").forEach(function (n) {
+            n.disabled = true;
+          });
+        })
+        .catch(function () {
+          buttons.forEach(function (b) {
+            b.disabled = false;
+          });
+          if (emailButton) emailButton.textContent = original;
+          showError("error", "Something went wrong.");
+          if (fallbackEl) {
+            fallbackEl.setAttribute("href", fallbackMailto(body));
+            fallbackEl.hidden = false;
+          }
+        });
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      clearError();
       const data = new FormData(form);
-      const lines = [];
-      // The message Rosalia receives is written in the language of the page, using the label the
-      // visitor just read, never the raw field name.
-      const labels = {};
-      form.querySelectorAll("[data-label]").forEach(function (el) {
-        labels[el.name] = el.getAttribute("data-label");
-      });
-      data.forEach(function (v, k) {
-        if (k === "channel") return;
-        if (!String(v).trim()) return;
-        lines.push((labels[k] || k) + ": " + String(v).trim());
-      });
-      const body = lines.join("\n");
+      const body = messageBody(data);
       const wa = form.getAttribute("data-wa");
-      const mail = form.getAttribute("data-mail");
+      const email = value(data, "email");
+      const waDigits = value(data, "whatsapp").replace(/\D/g, "");
       const action = e.submitter ? e.submitter.value : "pay";
+      if (!email && waDigits.length < 9) {
+        showError("need-contact", "Add an email or a WhatsApp number so we can answer.");
+        const first = form.querySelector("input[name=email]");
+        if (first) first.focus();
+        return;
+      }
       const pay = action === "pay" ? payTarget(data) : "";
       if (pay) {
         track("pay_click");
         location.href = pay;
       } else if (action === "email") {
-        location.href =
-          "mailto:" +
-          mail +
-          "?subject=" +
-          encodeURIComponent("BabyRock Social") +
-          "&body=" +
-          encodeURIComponent(body);
+        if (!email) {
+          showError("need-email", "Add your email, or use Start on WhatsApp.");
+          const field = form.querySelector("input[name=email]");
+          if (field) field.focus();
+          return;
+        }
+        postToFactory(data, email, body);
       } else if (wa) {
         track("whatsapp_click");
-        location.href = "https://wa.me/" + wa + "?text=" + encodeURIComponent(body);
+        location.href = "https://wa.me/" + String(wa).replace(/\D/g, "") + "?text=" + encodeURIComponent(body);
       } else {
-        location.href =
-          "mailto:" +
-          mail +
-          "?subject=" +
-          encodeURIComponent("BabyRock Social") +
-          "&body=" +
-          encodeURIComponent(body);
+        location.href = fallbackMailto(body);
       }
     });
   });

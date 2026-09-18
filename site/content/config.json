@@ -6,6 +6,7 @@
   "privacyEmail": "contact@babyrock.ai",
   "whatsapp": "34711520944",
   "payUrl": "https://pay.babyrock.ai/pay",
+  "apiUrl": "https://app.babyrock.ai",
   "factory": "https://github.com/BenPomme/brmsocialbackend",
   "reviewsManager": "reviews@babyrock.ai",
   "city": "Sant Cugat del Vallès",

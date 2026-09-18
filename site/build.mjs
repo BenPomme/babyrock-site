@@ -1206,18 +1206,22 @@ function subscribePage(locale, copy, config, depth) {
       ${trial ? `<a class="btn btn-ghost" href="${esc(trial)}">${esc(t(copy, "sub.cta_trial"))}</a>` : ""}
       <a class="btn btn-wa" href="${waLink(config, t(copy, "wa.prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</a>
     </p>
-    <form class="sim-card form-grid" data-interest-form data-pay="${esc(pay)}" data-wa="${esc(waDigits)}" data-mail="${esc(config.email)}" style="margin-top:1.5rem">
-      <label>${esc(t(copy, "sub.form_name"))}<input name="business" data-label="${esc(t(copy, "sub.form_name"))}" required></label>
+    <form class="sim-card form-grid" data-interest-form data-api="${esc(config.apiUrl || "https://app.babyrock.ai")}" data-pay="${esc(pay)}" data-wa="${esc(waDigits)}" data-mail="${esc(config.email)}" data-msg-need-contact="${esc(t(copy, "sub.form_need_contact"))}" data-msg-need-email="${esc(t(copy, "sub.form_need_email"))}" data-msg-sending="${esc(t(copy, "sub.form_sending"))}" data-msg-sent="${esc(t(copy, "sub.form_sent"))}" data-msg-error="${esc(t(copy, "sub.form_error"))}" style="margin-top:1.5rem">
+      <label>${esc(t(copy, "sub.form_name"))}<input name="business" data-label="${esc(t(copy, "sub.form_name"))}"></label>
       <label>${esc(t(copy, "sub.form_city"))}<input name="city" data-label="${esc(t(copy, "sub.form_city"))}"></label>
       <label>${esc(t(copy, "sub.form_listing"))}<input name="listing" data-label="${esc(t(copy, "sub.form_listing"))}"></label>
-      <label>${esc(t(copy, "sub.form_email"))}<input name="email" type="email" data-label="${esc(t(copy, "sub.form_email"))}" required></label>
+      <label>${esc(t(copy, "sub.form_email"))}<input name="email" type="email" data-label="${esc(t(copy, "sub.form_email"))}"></label>
       <label>${esc(t(copy, "sub.form_wa"))}<input name="whatsapp" data-label="${esc(t(copy, "sub.form_wa"))}"></label>
+      <label>${esc(t(copy, "sub.form_question"))}<textarea name="question" rows="3" maxlength="1000" data-label="${esc(t(copy, "sub.form_question"))}"></textarea></label>
       <label>${esc(t(copy, "sub.form_revenue"))}<input name="revenue" inputmode="numeric"></label>
+      <p class="form-error" data-form-error hidden></p>
+      <p class="form-sent" data-form-sent hidden></p>
       <div class="cta-row">
         ${pay ? `<button class="btn btn-coral" name="channel" value="pay" type="submit">${esc(t(copy, "sub.cta_pay"))}</button>` : ""}
         <button class="btn btn-wa" name="channel" value="whatsapp" type="submit">${waIcon()} ${esc(t(copy, "sub.cta_wa"))}</button>
         <button class="btn btn-ghost" name="channel" value="email" type="submit">${esc(t(copy, "sub.cta_email"))}</button>
       </div>
+      <p><a class="form-fallback" data-form-fallback hidden>${esc(t(copy, "sub.form_fallback_mail"))}</a></p>
     </form>
     ${paras(t(copy, "sub.after"))}
   </section>`;

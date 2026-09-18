@@ -562,6 +562,27 @@ Correu
 ## sub.form_wa
 Número de WhatsApp
 
+## sub.form_question
+La vostra pregunta (opcional)
+
+## sub.form_need_contact
+Afegiu un correu o un número de WhatsApp perquè us puguem respondre.
+
+## sub.form_need_email
+Per al correu, afegiu la vostra adreça, o feu servir Començar per WhatsApp del costat.
+
+## sub.form_sending
+S’està enviant…
+
+## sub.form_sent
+Missatge rebut. La Rosalia respon per correu, normalment el mateix dia.
+
+## sub.form_error
+No s’ha pogut enviar. Torneu-ho a provar o escriviu-nos directament.
+
+## sub.form_fallback_mail
+Escriure a la Rosalia directament
+
 ## sub.form_revenue
 Facturació mensual, si heu fet servir la calculadora (opcional)
 
