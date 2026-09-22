@@ -146,6 +146,7 @@ textarea {
   align-items: center;
   gap: 0.5rem;
   padding: 0.28rem 0.7rem 0.28rem 0.28rem;
+  flex: 0 0 auto;
 }
 .logo-mark {
   width: 1.55rem;
@@ -166,6 +167,9 @@ textarea {
   align-items: center;
   gap: 0.45rem;
   min-width: 0;
+  /* The wordmark and the BETA mark travel as one block, so no width can squeeze them into each
+     other. Ben caught a render where the pill sat on top of the wordmark (22 Sep 2026). */
+  flex: 0 0 auto;
 }
 
 /*
@@ -176,6 +180,7 @@ textarea {
 .beta-pill {
   display: inline-flex;
   align-items: center;
+  flex: 0 0 auto;
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0.14rem 0.5rem;
