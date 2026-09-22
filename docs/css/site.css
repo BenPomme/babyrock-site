@@ -208,6 +208,8 @@ textarea {
 
 .nav-links {
   display: none;
+  /* Separation from the wordmark and the BETA mark, so a full row can never look like one word. */
+  margin-inline: 0.6rem;
   /* A label that wraps pushes the whole bar out of rhythm, so the gaps give way instead. */
   gap: clamp(0.55rem, 1.05vw, 1.15rem);
   white-space: nowrap;
@@ -1613,10 +1615,11 @@ textarea {
   }
 }
 
-@media (min-width: 1100px) {
-  /* French and Spanish carry the longest labels, and their nav plus the language switcher fill the
-     row exactly here, so the desktop nav starts at 1100 and the two buttons join it later. Below
-     1100 the menu button takes over, and the mobile nav repeats both buttons, so nothing is lost. */
+@media (min-width: 1250px) {
+  /* The BETA mark added width next to the wordmark, and English labels are the longest of the four,
+     so the desktop nav now starts at 1250 instead of 1100. Below that the menu button takes over and
+     the mobile nav repeats both buttons, so nothing is lost. Ben caught the pill touching "Products"
+     at 1425 in English (22 Sep 2026). */
   .nav-links {
     display: flex;
   }
