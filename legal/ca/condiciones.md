@@ -1,6 +1,6 @@
 # Condicions de contractació de BabyRock Social
 
-Versió del 9 de setembre de 2026. Contracte entre BABYROCK MINERALS, S.L. i el comerç que s’hi subscriu.
+Versió del 22 de setembre de 2026. Contracte entre BABYROCK MINERALS, S.L. i el comerç que s’hi subscriu.
 
 Aquestes condicions s’accepten en marcar la casella a la pàgina de pagament (app.babyrock.ai/pay) i completar el pagament o l’alta de la prova amb mètode de pagament. L’[avís legal](https://www.babyrock.ai/ca/avis-legal/), la [privadesa](https://www.babyrock.ai/ca/privadesa/) i l’[encàrrec de tractament](https://www.babyrock.ai/ca/encarrec/) formen part del contracte.
 
@@ -64,7 +64,9 @@ Si la prova no es converteix en pagament, parem la feina de respostes.
 
 Si un cobrament falla, podem pausar el servei fins que es regularitzi.
 
-No hi ha reemborsament del període en curs, llevat que una norma imperativa ho exigeixi.
+**Servei en fase beta (BETA).** BabyRock Social està en fase beta: podem pausar o acabar el servei amb un avís per escrit de 30 dies per correu electrònic i per WhatsApp. Des del dia de l’avís deixem de vendre subscripcions noves. La subscripció mensual arriba fins al final del mes ja pagat i no es reemborsa. La subscripció anual es reemborsa de forma proporcional pels mesos no servits. Les dades s’exporten si vosaltres les demaneu.
+
+No hi ha reemborsament del període en curs, llevat del reemborsament proporcional de la subscripció anual previst al paràgraf de la fase beta i llevat que una norma imperativa ho exigeixi.
 
 ## 7. Autorització sobre la fitxa de Google
 

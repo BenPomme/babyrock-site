@@ -40,6 +40,15 @@ WhatsApp
 ## nav.skip
 Skip
 
+## beta.pill
+Beta
+
+## beta.pill_title
+The service is in beta: we may pause or end it with 30 days written notice. The terms explain this, in article 6.
+
+## beta.line
+We are in beta: the service works and shops pay for it, but it may change, and we may pause or end it with 30 days written notice. The details are in the terms.
+
 ## wa.prefill
 Hi Rosalia, I want to know more about BabyRock Social.
 

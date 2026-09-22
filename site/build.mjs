@@ -566,6 +566,23 @@ function trustBar(copy) {
   return `<div class="trust-wrap"><p class="wrap trust-bar">${esc(raw)}</p></div>`;
 }
 
+/**
+ * The BETA mark: one word, one treatment, on the public site and the hunter site. It is a link, not a
+ * decoration, because the mark only means something next to the clause that explains it (article 6 of
+ * the terms). The word and the hover line live in the content files, one entry per locale.
+ */
+function betaPill(copy, locale, depth) {
+  const word = t(copy, "beta.pill") || "Beta";
+  const note = t(copy, "beta.pill_title");
+  return `<a class="beta-pill" href="${href(locale, "terms", depth)}"${note ? ` title="${esc(note)}"` : ""}>${esc(word)}</a>`;
+}
+
+/** One quiet line, in the plans section and in the trial block, so BETA is not just a badge. */
+function betaLine(copy) {
+  const line = t(copy, "beta.line");
+  return line ? `<p class="beta-line">${esc(line)}</p>` : "";
+}
+
 function faviconLinks(depth) {
   const root = depth ? "../".repeat(depth) : "./";
   return `  <link rel="icon" href="${root}favicon.ico" sizes="any">
@@ -611,7 +628,10 @@ ${hreflangLinks(page, hreflangAbs)}
   <a class="skip" href="#main">${esc(t(copy, "nav.skip") || "Skip")}</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="${href(locale, "home", depth)}"><img class="logo-mark" src="${asset(depth, "favicon-192.png")}" alt="" width="28" height="28" decoding="async">BabyRock</a>
+      <div class="logo-group">
+        <a class="logo" href="${href(locale, "home", depth)}"><img class="logo-mark" src="${asset(depth, "favicon-192.png")}" alt="" width="28" height="28" decoding="async">BabyRock</a>
+        ${betaPill(copy, locale, depth)}
+      </div>
       <nav class="nav-links">${navHtml}</nav>
       <div class="header-actions">
         <div class="lang">${langSwitcher(locale, page, depth, langHref)}</div>
@@ -762,7 +782,7 @@ function homePage(locale, copy, config, depth) {
         <h1 class="hero-title">${esc(t(copy, "home.headline"))}</h1>
         <div class="lead">${homeLead(t(copy, "home.lead"))}</div>
         <div class="cta-row">
-          <a class="btn btn-wa" href="#trial">${waIcon()} ${esc(t(copy, "home.cta_trial"))}</a>
+          <a class="btn btn-wa" href="${waLink(config, t(copy, "home.trial_wa_prefill"))}" target="_blank" rel="noopener">${waIcon()} ${esc(t(copy, "home.cta_trial"))}</a>
           <a class="btn btn-coral" href="#productos">${esc(t(copy, "home.cta_price"))}</a>
           <a class="btn btn-ghost" href="${href(locale, "simulator", depth)}">${esc(t(copy, "home.cta_sim"))}</a>
         </div>
@@ -801,6 +821,7 @@ function homePage(locale, copy, config, depth) {
       ${paras(t(copy, "home.products_lead"))}
       ${compareProducts(locale, copy, config, depth)}
       <p style="margin-top:1rem"><a href="${href(locale, "services", depth)}">${esc(t(copy, "nav.services"))}</a></p>
+      ${betaLine(copy)}
     </div>
   </section>
   <section class="section">
@@ -878,6 +899,7 @@ function homePage(locale, copy, config, depth) {
         <a class="btn btn-ghost trial-cta-mobile-secondary" href="${payLink(config, "free_trial", locale)}">${esc(t(copy, "home.trial_cta_form"))}</a>
       </div>
       ${paras(t(copy, "home.trial_note"))}
+      ${betaLine(copy)}
     </div>
   </section>` : ""}
   <section class="section">
@@ -1223,6 +1245,7 @@ function subscribePage(locale, copy, config, depth) {
         )
         .join("")}
     </fieldset>
+    ${betaLine(copy)}
     <p class="cta-row" style="margin:1.25rem 0 0">
       ${pay ? `<a class="btn btn-coral" href="${esc(pay)}" data-pay-cta data-pay-base="${esc(pay)}">${esc(t(copy, "sub.cta_pay"))}</a>` : ""}
       ${trial ? `<a class="btn btn-ghost" href="${esc(trial)}">${esc(t(copy, "sub.cta_trial"))}</a>` : ""}
@@ -1284,6 +1307,15 @@ function legalPage(locale, page, copy) {
 }
 
 function write(path, content) {
+  // The BETA mark belongs to the frame, not to one section: if a template edit drops it from the
+  // header of any generated page, the build fails here instead of shipping an unmarked site.
+  if (
+    path.endsWith(".html") &&
+    content.includes('<header class="site-header">') &&
+    !content.includes('class="beta-pill"')
+  ) {
+    throw new Error(`page written without the BETA mark: ${path}`);
+  }
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, content);
 }

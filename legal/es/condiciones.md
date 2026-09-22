@@ -1,6 +1,6 @@
 # Condiciones de contratación de BabyRock Social
 
-Versión del 9 de septiembre de 2026. Contrato entre BABYROCK MINERALS, S.L. y el comercio que se suscribe.
+Versión del 22 de septiembre de 2026. Contrato entre BABYROCK MINERALS, S.L. y el comercio que se suscribe.
 
 Estas condiciones se aceptan al marcar la casilla en la página de pago (app.babyrock.ai/pay) y completar el pago o el alta de la prueba con método de pago. El [aviso legal](https://www.babyrock.ai/es/aviso-legal/), la [privacidad](https://www.babyrock.ai/es/privacidad/) y el [encargo de tratamiento](https://www.babyrock.ai/es/encargo/) forman parte del contrato.
 
@@ -64,7 +64,9 @@ Si la prueba no se convierte en pago, paramos el trabajo de respuestas.
 
 Si un cobro falla, podemos pausar el servicio hasta que se regularice.
 
-No hay reembolso del periodo en curso, salvo que una norma imperativa lo exija.
+**Servicio en fase beta (BETA).** BabyRock Social está en fase beta: podemos pausar o terminar el servicio con un aviso por escrito de 30 días por correo electrónico y por WhatsApp. Desde el día del aviso dejamos de vender nuevas suscripciones. La suscripción mensual llega hasta el final del mes ya pagado y no se reembolsa. La suscripción anual se reembolsa de forma proporcional por los meses no servidos. Los datos se exportan si usted los pide.
+
+No hay reembolso del periodo en curso, salvo el reembolso proporcional de la suscripción anual previsto en el párrafo de la fase beta y salvo que una norma imperativa lo exija.
 
 ## 7. Autorización sobre la ficha de Google
 

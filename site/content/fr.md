@@ -40,6 +40,15 @@ WhatsApp
 ## nav.skip
 Passer
 
+## beta.pill
+Beta
+
+## beta.pill_title
+Service en phase beta : nous pouvons suspendre ou arrêter le service avec un préavis écrit de 30 jours. Les conditions l’expliquent, à l’article 6.
+
+## beta.line
+Nous sommes en phase beta : le service fonctionne et se paie, mais il peut changer, et nous pouvons le suspendre ou l’arrêter avec un préavis écrit de 30 jours. Les détails sont dans les conditions.
+
 ## wa.prefill
 Bonjour Rosalia, je voudrais en savoir plus sur BabyRock Social.
 

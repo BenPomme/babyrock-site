@@ -1,6 +1,6 @@
 # BabyRock Social terms
 
-Version of 9 September 2026. Contract between BABYROCK MINERALS, S.L. and the shop that subscribes.
+Version of 22 September 2026. Contract between BABYROCK MINERALS, S.L. and the shop that subscribes.
 
 These terms are accepted when you tick the box on the payment page (app.babyrock.ai/pay) and complete payment or a trial with a payment method. The [legal notice](https://www.babyrock.ai/en/legal-notice/), [privacy policy](https://www.babyrock.ai/en/privacy/) and [processing agreement](https://www.babyrock.ai/en/dpa/) form part of the contract.
 
@@ -64,7 +64,9 @@ If a trial does not convert to payment, we stop reply work.
 
 If a charge fails, we may pause the service until it is regularised.
 
-No refund of the current period, unless a mandatory rule requires it.
+**Beta phase (BETA).** BabyRock Social is in beta: we may pause or end the service with 30 days written notice by email and WhatsApp. From the day of the notice we stop selling new subscriptions. A monthly subscription runs to the end of the month already paid and is not refunded. An annual subscription is refunded pro rata for the months not served. Data is exported on request.
+
+No refund of the current period, except the pro rata refund of the annual subscription set out in the beta paragraph and unless a mandatory rule requires it.
 
 ## 7. Authorisation on the Google listing
 
