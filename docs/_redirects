@@ -1,4 +1,2 @@
 # The root answers the default language over real HTTP, with no script in between.
 / /es/ 301
-# The apex serves www, so one hostname owns every canonical address.
-https://babyrock.ai/* https://www.babyrock.ai/:splat 301

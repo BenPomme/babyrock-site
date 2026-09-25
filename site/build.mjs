@@ -3133,8 +3133,12 @@ writeFileSync(
   [
     "# The root answers the default language over real HTTP, with no script in between.",
     "/ /es/ 301",
-    "# The apex serves www, so one hostname owns every canonical address.",
-    "https://babyrock.ai/* https://www.babyrock.ai/:splat 301",
+    /*
+     * Only relative rules belong here: Cloudflare refuses an absolute URL in `_redirects` with "Only
+     * relative URLs are allowed" and then refuses the whole deployment (found on 25 September 2026,
+     * the first real Worker deploy). The apex to www redirect is not this file's job: it is a
+     * zone-level Cloudflare redirect rule, already in place, and the host that serves this file is www.
+     */
     "",
   ].join("\n"),
 );
@@ -3183,6 +3187,21 @@ if (!/^[a-f0-9]{8,128}$/i.test(indexNowKey)) {
   );
 }
 writeFileSync(join(outDir, `${indexNowKey}.txt`), indexNowKey);
+
+
+/*
+ * `_redirects` rules must be relative paths. An absolute URL makes Cloudflare refuse the whole
+ * deployment ("Only relative URLs are allowed"), which is a failure nobody sees until the site is
+ * pushed, so the build checks its own output.
+ */
+for (const [index, line] of readFileSync(join(outDir, "_redirects"), "utf8").split("\n").entries()) {
+  const rule = line.trim();
+  if (!rule || rule.startsWith("#")) continue;
+  const from = rule.split(/\s+/)[0];
+  if (/^https?:\/\//i.test(from)) {
+    throw new Error(`_redirects line ${index + 1} starts with a full URL ("${from}"): Cloudflare only accepts relative rules. Move it to a zone-level redirect rule.`);
+  }
+}
 
 console.log("Built static site into docs/");
 console.log(
