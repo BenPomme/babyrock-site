@@ -1,0 +1,17 @@
+{
+  // The public site, served as Worker static assets.
+  //
+  // `directory` points at the built site, which is what `docs/_redirects` and `docs/_headers` live in:
+  // Workers reads both files from the asset directory and applies them to static responses, which is
+  // why the site moved here (a real 301 for the root, and response headers).
+  //
+  // Nothing is built here on purpose. The factory builds the site and publishes it with
+  // `scripts/publish-site.sh`; Cloudflare only deploys what that push contains.
+  "name": "babyrock-site",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    "directory": "./docs",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
