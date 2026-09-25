@@ -1,0 +1,237 @@
+{
+  "_note": "Ticket 26 (site-seo 07), the comparison pages. One row per page: the shop comparing, the alternative named under an honest name, the claims about it, and, for every claim, the alternative's own page the claim comes from with the date it was read. The build refuses a claim with no source, a source a reader cannot open, a source older than `maxAgeDays`, fewer than three claims, fewer than two things the alternative does better, and a page that closes on anything other than the audit or the trial. For the French words, the file uses the typographic apostrophe, and no em dash or en dash appears anywhere, in any language.",
+  "maxAgeDays": 180,
+  "pages": [
+    {
+      "id": "agency",
+      "locale": "es",
+      "slug": "alternativas/agencia-local",
+      "title": "Alternativa a una agencia local",
+      "alternative": "una agencia de marketing de su ciudad",
+      "lead": "Lo que hace una agencia de su ciudad y lo que cuesta, en sus propias palabras y con sus propias tarifas, y lo que hacemos nosotros en su lugar. Sin descalificar a nadie: quien compara, decide mejor.",
+      "claims": [
+        {
+          "text": "Las agencias que publican sus precios los publican por paquetes mensuales: Serseo anuncia el Pack Starter a 269 € al mes y el Pack Basic desde 379 € al mes, y Aeuroweb anuncia la gestión de redes sociales desde 250 € al mes por cuatro publicaciones.",
+          "sources": [
+            { "url": "https://serseo.es/tabla-tarifas-precios-servicios-marketing-digital-pymes/", "label": "Serseo, tabla de tarifas", "readOn": "2026-09-24" },
+            { "url": "https://www.aeuroweb.com/precios-gestion-redes-sociales/", "label": "Aeuroweb, precios de gestión de redes sociales", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "La puesta en marcha se cobra aparte del paquete mensual: Aeuroweb pide 200 € por la estrategia inicial y 200 € por la sesión de fotos en el local, y su contrato es de tres meses, con 30 días de aviso para no renovar.",
+          "sources": [
+            { "url": "https://www.aeuroweb.com/precios-gestion-redes-sociales/", "label": "Aeuroweb, precios de gestión de redes sociales", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Publicar el precio no es lo que hace el sector: Seo4Pymes lo escribe en su propia página de precios, «casi ninguna publica lo que cobra», y sitúa la horquilla habitual del servicio continuo entre 300 y 800 € al mes.",
+          "sources": [
+            { "url": "https://seo4pymes.com/precios/", "label": "Seo4Pymes, precios", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Cuidar solo la ficha de Google y responder todas las reseñas tiene un precio propio en el sector: Social Plan lo anuncia por 89 € al mes, con las reseñas respondidas en 24 horas.",
+          "sources": [
+            { "url": "https://www.socialplangroup.com/precios-marketing-restaurantes/", "label": "Social Plan, precios de marketing para restaurantes", "readOn": "2026-09-24" }
+          ]
+        }
+      ],
+      "better": [
+        "Va a su local: Aeuroweb cobra la sesión de fotos de hora y media en el negocio y Social Plan ofrece un creador de contenido en el local.",
+        "Puede coger todo lo que nosotros no hacemos: publicidad en Google y en Meta, web, logotipo, papelería o formación. Nuestros cuatro niveles cubren la ficha de Google con sus reseñas, Instagram, Facebook y su web, y nada más.",
+        "Puede ajustar el alcance a medida, tienda por tienda, en lugar de elegir entre cuatro niveles cerrados.",
+        "Está en su ciudad: se puede ver la cara, firmar en persona y llamar por teléfono."
+      ],
+      "cta": "audit"
+    },
+    {
+      "id": "software",
+      "locale": "es",
+      "slug": "alternativas/qamarero",
+      "title": "Alternativa a Qamarero",
+      "alternative": "Qamarero, el software de hostelería que estaba mirando",
+      "lead": "Lo que Qamarero publica en su propia página de precios, y lo que hacemos nosotros en su lugar. Los dos caminos son válidos, pero no son el mismo producto: uno es un programa y el otro es un servicio.",
+      "claims": [
+        {
+          "text": "Qamarero publica sus planes en su propia página de precios: «Planes desde 119€/mes», el Pack Duo (Basic más un módulo) a 199 € al mes y el plan Total, todo incluido, a 249 € al mes.",
+          "sources": [
+            { "url": "https://qamarero.com/precios/", "label": "Qamarero, precios", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Por ese precio se compra el sistema con el que se opera el restaurante, no un servicio de reseñas: la misma página lista TPV, carta digital, comandero, pantalla de cocina, reparto, reservas, CRM, fidelización y página web.",
+          "sources": [
+            { "url": "https://qamarero.com/precios/", "label": "Qamarero, precios", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Se maneja desde su panel: su propia página de preguntas explica que cada plan desbloquea una fase y que los módulos se activan «desde tu panel, sin penalizaciones».",
+          "sources": [
+            { "url": "https://qamarero.com/precios/", "label": "Qamarero, precios", "readOn": "2026-09-24" }
+          ]
+        }
+      ],
+      "better": [
+        "Lleva la operación entera: cobra, comanda, cocina, reparte, reserva y fideliza. Nosotros no vendemos nada de eso.",
+        "Es su cuenta y son sus datos, y se gobierna desde su panel, sin depender de nadie.",
+        "Publica sus planes y sus precios antes de hablar con nadie, igual que nosotros.",
+        "Los planes se cambian desde el panel, sin penalizaciones, cuando el negocio lo pida."
+      ],
+      "cta": "audit"
+    },
+    {
+      "id": "franchise",
+      "locale": "es",
+      "slug": "alternativas/uberall",
+      "title": "Alternativa a Uberall, la plataforma de su franquicia",
+      "alternative": "Uberall, la plataforma que su franquicia despliega en todas sus tiendas",
+      "lead": "Si su marca trabaja con Uberall, la ficha de su tienda ya vive dentro de una plataforma de red. Esto es lo que Uberall publica sobre sí misma, y lo que hacemos nosotros para una sola tienda.",
+      "claims": [
+        {
+          "text": "Uberall se vende a las cadenas: su página de franquicias se titula «Software de marketing para franquicias multilocalización», y su portada lista clientes como KFC, Barceló, Pizzaville o Pret A Manger.",
+          "sources": [
+            { "url": "https://www.uberall.com/es/solutions/franchise", "label": "Uberall, software de marketing para franquicias", "readOn": "2026-09-24" },
+            { "url": "https://www.uberall.com/es/", "label": "Uberall, portada en español", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Su página de precios enseña los planes (Show Up, Stand Out y Connect) sin ninguna cifra: cada botón pide una demo o «solicitar precios».",
+          "sources": [
+            { "url": "https://www.uberall.com/es/pricing", "label": "Uberall, precios", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Para una red, la propia plataforma anuncia respuestas a las reseñas aprobadas por la marca, plantillas editables con textos e imágenes validados antes, alertas de reseñas por tienda y un panel con informes automáticos para la dirección.",
+          "sources": [
+            { "url": "https://www.uberall.com/es/solutions/franchise", "label": "Uberall, software de marketing para franquicias", "readOn": "2026-09-24" }
+          ]
+        }
+      ],
+      "better": [
+        "La sede ve la red entera: rendimiento por tienda, comparación entre ubicaciones e informes automáticos para dirección.",
+        "Cubre superficies que nosotros no tocamos: Apple, TikTok, directorios, anuncios sociales y una página propia por tienda.",
+        "Suele venir decidida y pagada por la marca, y la ficha de su tienda ya está dentro.",
+        "Es una plataforma con integraciones, permisos y soporte para toda la red, no un servicio de una sola tienda."
+      ],
+      "cta": "audit"
+    },
+    {
+      "id": "agency",
+      "locale": "fr",
+      "slug": "alternatives/agence-locale",
+      "title": "Alternative à une agence locale",
+      "alternative": "une agence de marketing locale",
+      "lead": "Ce qu’une agence locale fait et ce qu’elle facture, avec ses propres tarifs et ses propres conditions, et ce que nous faisons à la place. Sans dénigrer personne : mieux vaut comparer avant de signer.",
+      "claims": [
+        {
+          "text": "Les agences qui publient leurs prix les publient au forfait : Komunike affiche 149,90 € HT par mois et par fiche Google Business Profile, formule Starter de 1 à 5 fiches, et annonce un engagement de 12 mois.",
+          "sources": [
+            { "url": "https://komunike.fr/tarifs/", "label": "Komunike, tarifs", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "La fourchette du marché, publiée par une agence elle-même : 100 à 500 € HT par mois pour la gestion d’une fiche, et 200 à 800 € HT pour l’optimisation initiale.",
+          "sources": [
+            { "url": "https://komunike.fr/prix-gestion-google-my-business/", "label": "Komunike, prix de la gestion Google Business Profile", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Chez un indépendant, le tarif suit le volume : la grille publiée par Plateya place le plancher à 300 € HT par mois, et Sandra Doucet publie trois formules de 320 à 600 € HT par mois selon le nombre de publications.",
+          "sources": [
+            { "url": "https://www.plateya.fr/blog/detail/tarif-community-manager-freelance-grille-2026-tjm-forfaits-plateya", "label": "Plateya, grille tarifaire 2026", "readOn": "2026-09-24" },
+            { "url": "https://freelance-sandra-doucet.fr/tarifs-community-manager-2026/", "label": "Sandra Doucet, tarifs community manager", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Le site internet reste une prestation à part : Komunike annonce de 1 200 à 4 500 € HT pour un site, ce que nos niveaux ne vendent pas.",
+          "sources": [
+            { "url": "https://komunike.fr/tarifs/", "label": "Komunike, tarifs", "readOn": "2026-09-24" }
+          ]
+        }
+      ],
+      "better": [
+        "Elle se déplace : Komunike propose la captation photo et vidéo tournée chez le commerçant.",
+        "Elle prend ce que nous ne faisons pas : site internet, Google Ads, Meta Ads, formation, supports imprimés.",
+        "Elle s’engage dans la durée et l’écrit, 12 mois chez Komunike, donc elle porte la responsabilité du résultat dans le temps.",
+        "Elle a une adresse, un téléphone et une personne au bout du fil."
+      ],
+      "cta": "audit"
+    },
+    {
+      "id": "software",
+      "locale": "fr",
+      "slug": "alternatives/restomatik",
+      "title": "Alternative à Restomatik",
+      "alternative": "Restomatik, le logiciel de réservation que vous alliez prendre",
+      "lead": "Ce que Restomatik publie sur sa propre page de tarifs, et ce que nous faisons à la place. Les deux chemins se défendent, mais ce ne sont pas les mêmes métiers : l’un est un logiciel, l’autre un service.",
+      "claims": [
+        {
+          "text": "Restomatik publie ses trois formules : 49 € HT, 79 € HT et 109 € HT par mois, 0 commission sur les couverts, sans engagement, avec un essai accompagné de 30 jours.",
+          "sources": [
+            { "url": "https://restomatik.fr/tarifs", "label": "Restomatik, tarifs", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Le site internet connecté est une option à 12 € HT de plus par mois, et il ne se souscrit pas seul.",
+          "sources": [
+            { "url": "https://restomatik.fr/tarifs", "label": "Restomatik, tarifs", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "La demande d’avis après la visite et les réponses aux avis assistées par IA existent « selon configuration », à partir de la formule Pro, à 79 € HT par mois.",
+          "sources": [
+            { "url": "https://restomatik.fr/tarifs", "label": "Restomatik, tarifs", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "La bande de prix du secteur est la même : Malou, autre plateforme du marché, publie un tarif à partir de 99 € par établissement et par mois.",
+          "sources": [
+            { "url": "https://www.malou.io/tarifs", "label": "Malou, tarifs", "readOn": "2026-09-24" }
+          ]
+        }
+      ],
+      "better": [
+        "Il tient la salle : réservations, plan de salle, anti no-show, caisse, CRM et site. Nous ne vendons rien de tout cela.",
+        "Vous gardez la main sur vos réservations et vos données, sans commission sur les couverts.",
+        "Un interlocuteur unique et un support 7 jours sur 7 accompagnent l’abonnement.",
+        "L’essai de 30 jours accompagné permet de décider sans s’engager."
+      ],
+      "cta": "audit"
+    },
+    {
+      "id": "franchise",
+      "locale": "fr",
+      "slug": "alternatives/partoo",
+      "title": "Alternative à Partoo, la plateforme du réseau",
+      "alternative": "Partoo, la plateforme que votre franchise déploie dans tous ses points de vente",
+      "lead": "Si votre marque travaille avec Partoo, la fiche de votre boutique vit déjà dans une plateforme de réseau. Voici ce que Partoo publie sur elle-même, et ce que nous faisons pour une boutique.",
+      "claims": [
+        {
+          "text": "Partoo se vend aux réseaux : sa page de tarifs s’intitule « Nos tarifs, Partoo pour les entreprises et réseaux », et elle sépare les TPE et PME des grandes entreprises.",
+          "sources": [
+            { "url": "https://www.partoo.fr/tarifs/", "label": "Partoo, tarifs", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Ses formules Starter et Pro sont affichées, mais chaque bouton dit « Demander un devis » : le prix n’est pas publié.",
+          "sources": [
+            { "url": "https://www.partoo.fr/tarifs/", "label": "Partoo, tarifs", "readOn": "2026-09-24" }
+          ]
+        },
+        {
+          "text": "Ce que la plateforme annonce : diffusion des informations, gestion des avis Google, Facebook et Tripadvisor avec modèles et réponses automatiques, collecte d’avis par SMS et QR code par établissement, et messages (SMS, Messenger, WhatsApp Business).",
+          "sources": [
+            { "url": "https://www.partoo.fr/tarifs/", "label": "Partoo, tarifs", "readOn": "2026-09-24" }
+          ]
+        }
+      ],
+      "better": [
+        "Le réseau pilote tout depuis un écran, avec les mêmes informations et les mêmes modèles de réponse pour tous les établissements.",
+        "La collecte d’avis par SMS et le QR code sont fournis pour chaque établissement.",
+        "C’est la marque qui choisit la plateforme, et souvent qui la paie, pas la boutique.",
+        "Une plateforme avec ses intégrations, ses permissions et son support, plutôt qu’un prestataire de quartier."
+      ],
+      "cta": "audit"
+    }
+  ]
+}

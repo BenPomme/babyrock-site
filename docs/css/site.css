@@ -871,6 +871,26 @@ textarea {
 .guide-article h2:first-of-type {
   margin-top: 0.4rem;
 }
+/* Ticket 09: the closing block of a guide. The piece, its method and its sources stay above it; this
+   is the plain line that says who covers the subject, and where to measure the shop first. */
+.guide-next {
+  margin-top: 2rem;
+  padding: 1.15rem 1.3rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.guide-next p {
+  margin: 0.5rem 0 0;
+  max-width: 42rem;
+  color: var(--muted);
+}
+.guide-next p:first-child {
+  margin-top: 0;
+}
+.guide-next a {
+  font-weight: 600;
+}
 
 .products-title {
   font-size: clamp(1.55rem, 3.2vw, 2.35rem);

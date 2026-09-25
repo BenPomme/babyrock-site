@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.babyrock.ai/es/</loc></url>
   <url><loc>https://www.babyrock.ai/es/servicios/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/auditoria/</loc></url>
   <url><loc>https://www.babyrock.ai/es/guias/</loc></url>
   <url><loc>https://www.babyrock.ai/es/simulador/</loc></url>
   <url><loc>https://www.babyrock.ai/es/como-funciona/</loc></url>
@@ -13,6 +14,10 @@
   <url><loc>https://www.babyrock.ai/es/aviso-legal/</loc></url>
   <url><loc>https://www.babyrock.ai/es/cookies/</loc></url>
   <url><loc>https://www.babyrock.ai/es/encargo/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/precios/lite/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/precios/plus/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/precios/pro/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/precios/enterprise/</loc></url>
   <url><loc>https://www.babyrock.ai/es/guias/responder-todas-las-resenas/</loc></url>
   <url><loc>https://www.babyrock.ai/es/guias/pedir-resenas-sin-romper-las-reglas/</loc></url>
   <url><loc>https://www.babyrock.ai/es/guias/codigo-qr-para-resenas-de-google/</loc></url>
@@ -23,8 +28,15 @@
   <url><loc>https://www.babyrock.ai/es/guias/ejemplos-respuesta-resenas-google/</loc></url>
   <url><loc>https://www.babyrock.ai/es/guias/como-responder-resenas-negativas-google/</loc></url>
   <url><loc>https://www.babyrock.ai/es/guias/ayudan-las-resenas-google-al-posicionamiento/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/peluquerias-sant-cugat/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/restaurantes-sant-cugat/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/peluquerias-barcelona/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/alternativas/agencia-local/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/alternativas/qamarero/</loc></url>
+  <url><loc>https://www.babyrock.ai/es/alternativas/uberall/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/serveis/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/auditoria/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/guies/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/simulador/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/com-funciona/</loc></url>
@@ -36,6 +48,10 @@
   <url><loc>https://www.babyrock.ai/ca/avis-legal/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/galetes/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/encarrec/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/preus/lite/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/preus/plus/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/preus/pro/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/preus/enterprise/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/guies/respondre-totes-les-ressenyes/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/guies/demanar-ressenyes-sense-trencar-les-regles/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/guies/codi-qr-per-a-ressenyes-de-google/</loc></url>
@@ -46,8 +62,12 @@
   <url><loc>https://www.babyrock.ai/ca/guies/exemples-resposta-ressenyes-google/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/guies/com-respondre-ressenyes-negatives-google/</loc></url>
   <url><loc>https://www.babyrock.ai/ca/guies/les-ressenyes-google-ajuden-al-posicionament/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/perruqueries-sant-cugat/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/restaurants-sant-cugat/</loc></url>
+  <url><loc>https://www.babyrock.ai/ca/perruqueries-barcelona/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/services/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/audit/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/guides/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/simulateur/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/comment-ca-marche/</loc></url>
@@ -59,6 +79,10 @@
   <url><loc>https://www.babyrock.ai/fr/mentions-legales/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/cookies/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/accord-traitement/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/tarifs/lite/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/tarifs/plus/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/tarifs/pro/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/tarifs/enterprise/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/guides/repondre-a-tous-les-avis/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/guides/demander-des-avis-sans-tricher/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/guides/qr-code-avis-google/</loc></url>
@@ -69,8 +93,16 @@
   <url><loc>https://www.babyrock.ai/fr/guides/exemples-reponses-avis-google/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/guides/comment-repondre-avis-negatifs-google/</loc></url>
   <url><loc>https://www.babyrock.ai/fr/guides/les-avis-google-aident-ils-au-referencement/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/coiffeurs-toulouse/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/restaurants-toulouse/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/garages-lyon/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/restaurants-lyon/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/alternatives/agence-locale/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/alternatives/restomatik/</loc></url>
+  <url><loc>https://www.babyrock.ai/fr/alternatives/partoo/</loc></url>
   <url><loc>https://www.babyrock.ai/en/</loc></url>
   <url><loc>https://www.babyrock.ai/en/services/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/audit/</loc></url>
   <url><loc>https://www.babyrock.ai/en/guides/</loc></url>
   <url><loc>https://www.babyrock.ai/en/simulator/</loc></url>
   <url><loc>https://www.babyrock.ai/en/how-it-works/</loc></url>
@@ -82,6 +114,10 @@
   <url><loc>https://www.babyrock.ai/en/legal-notice/</loc></url>
   <url><loc>https://www.babyrock.ai/en/cookies/</loc></url>
   <url><loc>https://www.babyrock.ai/en/dpa/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/pricing/lite/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/pricing/plus/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/pricing/pro/</loc></url>
+  <url><loc>https://www.babyrock.ai/en/pricing/enterprise/</loc></url>
   <url><loc>https://www.babyrock.ai/en/guides/reply-to-every-review/</loc></url>
   <url><loc>https://www.babyrock.ai/en/guides/ask-for-reviews-without-breaking-the-rules/</loc></url>
   <url><loc>https://www.babyrock.ai/en/guides/google-review-qr-code/</loc></url>

@@ -24,7 +24,7 @@ Two products: **BabyRock Social** (live, review replies) and **BabyRock Direct**
 
 In `config.json`:
 
-- `tiers` — the three versions of BabyRock Social, each with its HT monthly price, its TTC amount, its annual price, its included replies and its overage rate. `trials` carries both trial paths. This is the only place a price is written.
+- `tiers`: the four levels of BabyRock Social, each with its HT monthly price, its TTC amount, its annual price and the country grid it belongs to. The build refuses a figure here that disagrees with `src/lib/skus.ts`, which is the only place a price is really written. `trials` carries the free test without a card and the one free month with a card.
 - `whatsapp` — digits with country code, no `+` (example: `34612345678`). If this is empty, the WhatsApp buttons fall back to email. **Never** the Meta test number `+1 555…`. Production WABA only. Inbound is handled by [brmsocialbackend](https://github.com/BenPomme/brmsocialbackend) (`/api/webhooks/whatsapp`).
 - `email` — Rosalia
 - `payUrl` — the pay flow on the factory (`https://pay.babyrock.ai/pay`). Every "pagar" button on the

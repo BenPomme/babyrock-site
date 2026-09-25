@@ -14,11 +14,18 @@ Aquestes condicions s’adrecen a **empresaris i professionals**, inclòs l’au
 
 ## 2. Què és el servei
 
-BabyRock Social consisteix a redactar i publicar respostes a les ressenyes de Google d’**una** fitxa d’empresa, amb aquestes regles:
+BabyRock Social manté la presència en línia d’**un** comerç des del WhatsApp que ja teniu, en quatre versions acumulatives:
+
+- **Lite**: contestem cada ressenya de la vostra fitxa de Google i de Maps, cuidem les dades i les fotos de la fitxa i publiquem a Instagram i Facebook a partir del que ens envieu.
+- **Plus**: tot el de Lite, amb una persona del nostre equip revisant cada resposta abans de publicar-la, els vostres horaris i vacances vigilats a Google, i dotze publicacions al mes a Instagram i Facebook.
+- **Pro**: tot el de Plus, amb els missatges privats d’Instagram i Facebook contestats, quatre novetats al mes a la fitxa de Google i el vostre web mantingut (contingut al dia i una comprovació cada setmana).
+- **Enterprise**: tot el de Pro, amb diversos locals en un sol compte, prioritat a la cua i un vídeo curt al mes.
+
+Les ressenyes segueixen aquestes regles, en totes les versions:
 
 - Importem ressenyes sense resposta (fins a 20 de les més recents en començar, llevat d’oferta distinta; després, el flux).
 - L’esborrany s’escriu en l’idioma de la ressenya (espanyol, català, francès o anglès).
-- Una persona autoritzada per nosaltres llegeix cada resposta i, si cal, la corregeix, abans de publicar-la. La intel·ligència artificial pot ajudar el primer esborrany. Ningú no publica un text que una persona no hagi vist.
+- A Plus, Pro i Enterprise, una persona autoritzada per nosaltres llegeix cada resposta i, si cal, la corregeix, abans de publicar-la. La intel·ligència artificial pot ajudar el primer esborrany. Ningú no publica un text que una persona no hagi vist. A Lite, la revisió de les ressenyes d’1 a 3 estrelles la feu vosaltres.
 - Ressenyes de 4 i 5 estrelles: es publiquen amb l’autorització contínua que doneu en subscriure-us i en convidar-nos com a gestor.
 - Ressenyes d’1, 2 i 3 estrelles: es publiquen només després que les aproveu o envieu el text pel WhatsApp de BabyRock (Fil Babyrock). El silenci no és un sí.
 - Inclou un WhatsApp nostre amb vosaltres (esborranys 1 i 3 estrelles, recapitulatiu, facturació, avisos de la fitxa), el recapitulatiu del dilluns, l’avís el mateix dia si canvien horari, nom, telèfon, adreça o estat de la fitxa, i l’avís si una ressenya que teníem al diari desapareix de la fitxa (no la republicem).
@@ -28,23 +35,28 @@ Convideu reviews@babyrock.ai com a **gestor**, no com a propietari. Mai no deman
 
 ## 3. Què no inclou
 
-Publicitat, lloc web, fotos, TheFork, caixa, trucades comercials, copiar i enganxar a un assistent, el WhatsApp **del comerç** amb els seus clients (BabyRock Direct, no es ven), demanar ressenyes després d’una visita, llistes de telèfons, **promesa de més ressenyes o de millor nota**, espionatge de competidors, directoris fora de Google, atributs de la fitxa ni publicacions «Local Post» de Google.
+Publicitat de pagament, sessions de fotos o vídeo al vostre local, col·laboracions amb influencers, gestió de reserves, botigues en línia, plataformes de tercers com TheFork o TripAdvisor, trucades comercials, copiar i enganxar a un assistent, el WhatsApp **del comerç** amb els seus clients (BabyRock Direct, que avui no es ven), demanar ressenyes després d’una visita, llistes de telèfons, **promesa de més ressenyes o de millor nota**, espionatge de competidors, directoris fora de Google, atributs de la fitxa ni publicacions «Local Post» de Google.
 
 Les [guies](https://www.babyrock.ai/ca/guies/) del lloc expliquen hàbits que podeu fer vosaltres. No formen part d’aquest contracte.
 
 ## 4. Preu, IVA i factura
 
-Preus en euros, **sense IVA** per a Espanya; l'IVA del 21 % s'afegeix a la factura:
+Preus en euros, **sense IVA**; l'IVA del país s'afegeix a la factura: {vat:ES} a Espanya i {vat:FR} a França.
 
-- **Lite**: 9,99 € al mes sense IVA (9,99 € + 2,10 € d'IVA al 21 % = 12,09 €), subscripció mensual que es renova sola. Inclou 10 respostes automàtiques al mes; cada resposta extra són 1,99 € sense IVA. Un any: 99,90 € sense IVA, en un sol pagament.
-- **Plus**: 39,99 € al mes sense IVA (39,99 € + 8,40 € d'IVA al 21 % = 48,39 €), subscripció mensual que es renova sola. Una persona del nostre equip revisa cada resposta, fins a 25 al mes; cada resposta extra són 2,50 € sense IVA. Un any: 399,90 € sense IVA, en un sol pagament.
-- **Pro**: 99,99 € al mes sense IVA (99,99 € + 21,00 € d'IVA al 21 % = 120,99 €), subscripció mensual que es renova sola. Per a un comerç amb diversos locals: 60 respostes revisades per una persona en total al mes; cada resposta extra són 2,50 € sense IVA. Un any: 999,90 € sense IVA, en un sol pagament.
+- **Lite**: {price:lite_month} al mes sense IVA, {price_ttc:lite_month} amb IVA, subscripció mensual que es renova sola. Un any: {price:lite_year} sense IVA, en un sol pagament.
+- **Plus**: {price:plus_month} al mes sense IVA, {price_ttc:plus_month} amb IVA, subscripció mensual que es renova sola, amb una persona del nostre equip revisant cada resposta. Un any: {price:plus_year} sense IVA, en un sol pagament.
+- **Pro**: {price:pro_month} al mes sense IVA, {price_ttc:pro_month} amb IVA, subscripció mensual que es renova sola. Un any: {price:pro_year} sense IVA, en un sol pagament.
+- **Enterprise**: {price:enterprise_month} al mes sense IVA, {price_ttc:enterprise_month} amb IVA, subscripció mensual que es renova sola, per a un comerç amb diversos locals en un sol compte. Un any: {price:enterprise_year} sense IVA, en un sol pagament.
 
-França i resta de la UE, empresari amb NIF IVA: autoliquidació; pagueu l’import sense IVA espanyol.
+El que inclou cada versió es detalla a la pàgina de serveis: https://www.babyrock.ai/ca/serveis/.
+
+França i resta de la UE, empresari amb NIF IVA: autoliquidació; pagueu l’import sense impostos.
 
 La factura surt a nom de la raó social i el NIF que indiqueu al pagament. Sense NIF, facturem a la persona o al correu de l’alta. El PDF l’emet Stripe.
 
-Prova gratuïta i sense targeta: el comerç afegeix reviews@babyrock.ai com a gestor de la seva fitxa de Google i responem tres ressenyes, només de 4 i 5 estrelles. No es cobra res i no hi ha res a cancel·lar. Si prefereix provar el servei complet amb targeta, Lite inclou dues setmanes gratis i Plus i Pro un mes gratis, i pot cancel·lar abans que acabin sense pagar res. Les proves no s'acumulen.
+**Prova d’un mes.** El primer mes és gratis una sola vegada per client, en la versió que triï i amb targeta des de l’alta. El primer cobrament es fa automàticament el dia 30; si no vol continuar, cancel·li abans d’aquesta data per WhatsApp o per correu i no se li cobrarà res. Si cancel·la i torna més endavant, el mes gratis no es repeteix. La prova sense targeta de tres ressenyes segueix disponible per invitació, no consumeix aquest mes gratis i s’acaba sola.
+
+**Auditoria gratuïta de la fitxa.** Si ens la demana per WhatsApp, llegim les dades públiques de la seva fitxa d’empresa de Google i li donem una nota sobre 100 i els tres arranjaments que més es noten. És gratis i no obliga a contractar. Per contestar-li guardem l’adreça de la seva fitxa, el canal que ens dona (WhatsApp o correu) i el resultat, amb el seu consentiment, que es demana a la conversa i pot retirar quan vulgui. Si no contracta, esborrem aquestes dades als 12 mesos. El detall és a la [privadesa](https://www.babyrock.ai/ca/privadesa/).
 
 La posada en servei és 0 € si afegiu el gestor.
 

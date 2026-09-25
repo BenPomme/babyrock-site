@@ -12,6 +12,8 @@ Versión del 9 de septiembre de 2026. Artículo 28 del RGPD. Anexo de las [condi
 
 El encargado trata, solo para prestar BabyRock Social, el contenido de las reseñas de Google de esa ficha (texto, estrellas, fecha, nombre público del autor en Google) y los borradores y textos de respuesta, incluido el diario de quién validó y qué se publicó.
 
+Con el producto actual, el encargado trata además el contenido que el comercio le envía o le conecta para su presencia: publicaciones, comentarios y mensajes privados de Instagram y Facebook, las fotos y textos que el comercio envía por WhatsApp, y el contenido de su web (horarios, servicios y datos de contacto).
+
 No trata datos de salud, ni listas de teléfonos de los clientes del comercio, ni el WhatsApp del local con esos clientes.
 
 ## 3. Duración
@@ -20,7 +22,7 @@ Mientras dure el contrato de BabyRock Social y 24 meses después, salvo obligaci
 
 ## 4. Instrucciones
 
-El encargado solo trata esos datos para: leer reseñas, redactar borradores, pedir el visto bueno en reseñas de 1 a 3 estrellas, publicar, editar o borrar respuestas en la ficha, avisar de un cambio de ficha o de una reseña desaparecida, y defender un reclamo sobre un texto publicado.
+El encargado solo trata esos datos para: leer reseñas, redactar borradores, pedir el visto bueno en reseñas de 1 a 3 estrellas, publicar, editar o borrar respuestas en la ficha, avisar de un cambio de ficha o de una reseña desaparecida, y defender un reclamo sobre un texto publicado. En los niveles que incluyen redes sociales y web, además: publicar y contestar comentarios y mensajes privados, mantener la ficha de Google y la web al día, y avisar al comercio de lo que necesita su aprobación.
 
 Una persona autorizada por el encargado revisa cada respuesta antes de publicarla. La IA puede ayudar al borrador.
 

@@ -14,11 +14,18 @@ Ces conditions s’adressent aux **professionnels**, y compris l’indépendant 
 
 ## 2. Le service
 
-BabyRock Social consiste à rédiger et publier des réponses aux avis Google d’**une** fiche d’établissement, selon ces règles :
+BabyRock Social gère la présence en ligne d’**un** commerce depuis le WhatsApp que vous avez déjà, en quatre formules cumulatives :
+
+- **Lite** : nous répondons à chaque avis de votre fiche Google et Maps, nous tenons à jour les informations et les photos de la fiche et nous publions sur Instagram et Facebook à partir de ce que vous nous envoyez.
+- **Plus** : tout Lite, avec une personne de notre équipe qui relit chaque réponse avant publication, vos horaires et vos congés surveillés sur Google, et douze publications par mois sur Instagram et Facebook.
+- **Pro** : tout Plus, avec les messages privés d’Instagram et de Facebook traités, quatre nouveautés par mois sur la fiche Google et votre site entretenu (contenu à jour et une vérification chaque semaine).
+- **Enterprise** : tout Pro, avec plusieurs établissements sur un seul compte, la priorité dans la file et une courte vidéo par mois.
+
+Les avis suivent ces règles, dans toutes les formules :
 
 - Nous importons les avis sans réponse (jusqu’à 20 des plus récents au démarrage, sauf offre différente ; ensuite le flux).
 - Le brouillon est écrit dans la langue de l’avis (espagnol, catalan, français ou anglais).
-- Une personne autorisée par nous lit chaque réponse et, au besoin, la corrige avant publication. L’IA peut aider le premier brouillon. Personne ne publie un texte qu’un humain n’a pas vu.
+- En Plus, Pro et Enterprise, une personne autorisée par nous lit chaque réponse et, au besoin, la corrige avant publication. L’IA peut aider le premier brouillon. Personne ne publie un texte qu’un humain n’a pas vu. En Lite, c’est vous qui validez les réponses aux avis de 1 à 3 étoiles.
 - Avis 4 et 5 étoiles : publiés avec l’autorisation continue que vous donnez en vous abonnant et en nous invitant comme gestionnaire.
 - Avis 1, 2 et 3 étoiles : publiés seulement après que vous avez approuvé ou renvoyé le texte sur le WhatsApp BabyRock (Fil Babyrock). Le silence n’est pas un oui.
 - Inclus : un WhatsApp entre nous (brouillons 1 et 3 étoiles, récap, facturation, alertes fiche), le récap du lundi, l’alerte le jour même si horaires, nom, téléphone, adresse ou statut changent, et l’alerte si un avis de notre journal disparaît de la fiche (nous ne le republicons pas).
@@ -28,23 +35,28 @@ Vous invitez reviews@babyrock.ai comme **gestionnaire**, pas comme propriétaire
 
 ## 3. Ce qui n’est pas inclus
 
-Publicité, site, photos, TheFork, caisse, appels commerciaux, copier-coller vers un assistant, le WhatsApp **du commerce** avec ses clients (BabyRock Direct, non vendu), demande d’avis après une visite, listes de numéros, **promesse de plus d’avis ou de meilleure note**, espionnage de concurrents, annuaires hors Google, attributs de la fiche, ni Local Posts Google.
+Publicité payante, séances photo ou vidéo dans votre établissement, collaborations avec des influenceurs, gestion des réservations, boutiques en ligne, plateformes tierces comme TheFork ou TripAdvisor, appels commerciaux, copier-coller vers un assistant, le WhatsApp **du commerce** avec ses clients (BabyRock Direct, non vendu), demande d’avis après une visite, listes de numéros, **promesse de plus d’avis ou de meilleure note**, espionnage de concurrents, annuaires hors Google, attributs de la fiche, ni Local Posts Google.
 
 Les [guides](https://www.babyrock.ai/fr/guides/) du site expliquent des habitudes que vous pouvez faire vous-même. Ils ne font pas partie de ce contrat.
 
 ## 4. Prix, TVA et facture
 
-Prix en euros, **TVA comprise** pour l’Espagne :
+Prix en euros, **hors taxes** ; la TVA du pays s’ajoute sur la facture : {vat:ES} en Espagne et {vat:FR} en France.
 
-- **Lite** : 9,99 € par mois hors taxes (9,99 € + 2,10 € de TVA à 21 % = 12,09 €), abonnement mensuel qui se renouvelle tout seul. Comprend 10 réponses automatiques par mois ; chaque réponse supplémentaire coûte 1,99 € hors taxes. Une année : 99,90 € hors taxes, en un seul paiement.
-- **Plus** : 39,99 € par mois hors taxes (39,99 € + 8,40 € de TVA à 21 % = 48,39 €), abonnement mensuel qui se renouvelle tout seul. Une personne de notre équipe relit chaque réponse, jusqu'à 25 par mois ; chaque réponse supplémentaire coûte 2,50 € hors taxes. Une année : 399,90 € hors taxes, en un seul paiement.
-- **Pro** : 99,99 € par mois hors taxes (99,99 € + 21,00 € de TVA à 21 % = 120,99 €), abonnement mensuel qui se renouvelle tout seul. Pour un commerce avec plusieurs établissements : 60 réponses relues par une personne au total par mois ; chaque réponse supplémentaire coûte 2,50 € hors taxes. Une année : 999,90 € hors taxes, en un seul paiement.
+- **Lite** : {price:lite_month} par mois hors taxes, {price_ttc:lite_month} TVA comprise, abonnement mensuel qui se renouvelle tout seul. Une année : {price:lite_year} hors taxes, en un seul paiement.
+- **Plus** : {price:plus_month} par mois hors taxes, {price_ttc:plus_month} TVA comprise, abonnement mensuel qui se renouvelle tout seul, avec une personne de notre équipe qui relit chaque réponse. Une année : {price:plus_year} hors taxes, en un seul paiement.
+- **Pro** : {price:pro_month} par mois hors taxes, {price_ttc:pro_month} TVA comprise, abonnement mensuel qui se renouvelle tout seul. Une année : {price:pro_year} hors taxes, en un seul paiement.
+- **Enterprise** : {price:enterprise_month} par mois hors taxes, {price_ttc:enterprise_month} TVA comprise, abonnement mensuel qui se renouvelle tout seul, pour un commerce avec plusieurs établissements sur un seul compte. Une année : {price:enterprise_year} hors taxes, en un seul paiement.
 
-France et reste de l’UE, professionnel avec n° de TVA : autoliquidation ; vous payez le montant hors TVA espagnole.
+Ce que chaque formule comprend est détaillé sur la page services : https://www.babyrock.ai/fr/services/.
+
+France et reste de l’UE, professionnel avec n° de TVA : autoliquidation ; vous payez le montant hors taxes.
 
 La facture est au nom de la raison sociale et du NIF que vous indiquez au paiement. Sans NIF, nous facturons la personne ou l’e-mail de l’inscription. Le PDF est émis par Stripe.
 
-Essai gratuit et sans carte : le commerce ajoute reviews@babyrock.ai comme gestionnaire de sa fiche Google et nous répondons à trois avis, uniquement de 4 et 5 étoiles. Rien n'est facturé et il n'y a rien à annuler. S'il préfère essayer le service complet avec carte, Lite comprend deux semaines gratuites et Plus et Pro un mois gratuit, et il peut annuler avant la fin sans payer. Les essais ne se cumulent pas.
+**Essai d’un mois.** Le premier mois est offert une seule fois par client, dans la formule choisie et avec carte dès l’inscription. Le premier prélèvement est automatique le 30e jour ; si vous ne voulez pas continuer, annulez avant cette date par WhatsApp ou par e-mail et rien ne vous sera facturé. Si vous annulez et revenez plus tard, le mois offert ne revient pas. L’essai sans carte de trois avis reste disponible sur invitation, ne consomme pas ce mois offert et s’arrête tout seul.
+
+**Audit gratuit de la fiche.** Si vous le demandez par WhatsApp, nous lisons les données publiques de votre fiche d’établissement Google et vous donnons une note sur 100 et les trois corrections les plus utiles. C’est gratuit et sans obligation de contrat. Pour vous répondre, nous conservons l’adresse de votre fiche, le canal que vous nous donnez (WhatsApp ou e-mail) et le résultat, avec votre consentement, demandé dans la conversation et retirable à tout moment. Si vous ne contractez pas, ces données sont supprimées au bout de 12 mois. Le détail est dans la [confidentialité](https://www.babyrock.ai/fr/confidentialite/).
 
 La mise en service est 0 € si vous ajoutez le gestionnaire.
 

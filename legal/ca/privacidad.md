@@ -28,6 +28,8 @@ Mai no demanem la contrasenya de Google del titular.
 
 **Prospecció.** Si un comerç té correu o WhatsApp d’empresa **al seu lloc web**, podem escriure un cop per canal, amb forma d’oposar-s’hi (STOP / BAJA). No fem servir el telèfon de Maps com a WhatsApp si no està publicat com a canal d’empresa. Base: interès legítim a oferir un servei B2B (art. 6.1.f) i article 21 LSSI. Us hi podeu oposar en qualsevol moment.
 
+**Auditoria gratuïta de la fitxa.** Si ens la demana, tractem l’adreça pública de la seva fitxa de Google, el canal pel qual ens escriu (WhatsApp o correu) i la nota i els arranjaments que li tornem, per contestar-li i, si vol, per parlar després del servei. Base: el seu consentiment (art. 6.1.a RGPD), que es demana a la conversa i pot retirar quan vulgui. Aquestes dades no es cedeixen a ningú per a publicitat.
+
 **Lloc públic.** Pàgines visitades, idioma, dispositiu. Si accepteu galetes d’analítica, Google Analytics. Base: consentiment (art. 6.1.a). Detall: [galetes](https://www.babyrock.ai/ca/galetes/).
 
 **Diari del servei (com a encarregats, vegeu l’encàrrec).** Text de la ressenya, nom públic de l’autor a Google, estrelles, esborranys, text publicat, qui va prémer publicar. Cal per prestar el servei i per poder demostrar què es va publicar si hi ha una disputa.
@@ -60,6 +62,7 @@ Google, Meta, Stripe, xAI i GitHub poden tractar dades als Estats Units o en alt
 - Factures i dades fiscals: 6 anys (article 30 del Codi de comerç), o el termini més llarg que imposi una norma tributària.
 - Compte, WhatsApp i diari del servei: mentre dura el contracte i **24 mesos** després, llevat que hi hagi un litigi obert.
 - Prospectes que no contracten: 12 mesos des de l’últim contacte, o fins que s’hi oposin.
+- Auditoria gratuïta que no acaba en contracte: 12 mesos des de l’última conversa.
 - Consentiment de galetes: fins que el retireu, o 12 mesos, i aleshores tornem a preguntar.
 
 En acabar, traiem l’accés de gestor. El text ja publicat a Google no l’esborrem: és la vostra fitxa.

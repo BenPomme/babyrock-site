@@ -28,6 +28,8 @@ We never ask for the owner’s Google password.
 
 **Prospecting.** If a shop has a business email or WhatsApp **on its website**, we may write once per channel, with a way to object (STOP / BAJA). We do not use the Maps phone as WhatsApp unless it is published as a business channel. Basis: legitimate interest in offering a B2B service (art. 6(1)(f)) and LSSI article 21. You may object at any time.
 
+**Free listing audit.** If you ask for it, we process the public address of your Google listing, the channel you write to us from (WhatsApp or email) and the score and fixes we return, to answer you and, if you wish, to talk about the service afterwards. Basis: your consent (art. 6(1)(a) GDPR), asked in the conversation and withdrawable at any time. We do not give that data to anyone for advertising.
+
 **Public site.** Pages visited, language, device. If you accept analytics cookies, Google Analytics. Basis: consent (art. 6(1)(a)). Detail: [cookies](https://www.babyrock.ai/en/cookies/).
 
 **Service journal (as processor, see the processing agreement).** Review text, the author’s public name on Google, stars, drafts, published text, who clicked publish. Needed to provide the service and to show what was published if there is a dispute.
@@ -60,6 +62,7 @@ Google, Meta, Stripe, xAI and GitHub may process data in the United States or ot
 - Invoices and tax data: 6 years (article 30 of the Spanish Commercial Code), or any longer tax period.
 - Account, WhatsApp and service journal: for the life of the contract and **24 months** after, unless a dispute is open.
 - Prospects who never subscribe: 12 months after last contact, or until they object.
+- A free listing audit that does not lead to a contract: 12 months from the last conversation.
 - Cookie consent: until you withdraw it, or 12 months, after which we ask again.
 
 When we stop, we remove manager access. We do not delete text already published on Google: it is your listing.

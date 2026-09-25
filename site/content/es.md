@@ -1,8 +1,8 @@
 ## meta.title
-Respuestas a reseñas de Google para pequeños comercios | BabyRock Social
+Su presencia en Google, Instagram, Facebook y su web, gestionada desde WhatsApp | BabyRock
 
 ## meta.description
-Respondemos a cada reseña de Google de su ficha. En Lite automáticamente, en Plus y Pro con una persona que revisa cada respuesta. Desde 9,99 € al mes, sin IVA.
+Cuatro niveles desde {price:lite_month} al mes, sin IVA: cada reseña contestada, la ficha de Google y Maps cuidada, publicaciones en Instagram y Facebook y su web mantenida. Un mes gratis, una vez por cliente.
 
 ## nav.simulator
 Calculadora de impacto
@@ -94,14 +94,14 @@ Reseñas de Google y gestión de ficha para pequeños comercios
 Respuestas automáticas en Lite, revisadas por una persona en Plus y Pro
 
 ## home.headline
-El 68 % de los clientes solo entra en comercios con 4 estrellas o más.
+Google, Instagram, Facebook y su web: toda su presencia, gestionada desde WhatsApp.
 ## home.hero_alt
 Dueña de un restaurante con delantal, de pie junto a una mesa de la terraza, con olivos y tejados de la ciudad al fondo
 
 ## home.lead
-No puede cambiar las estrellas que ya tiene. Pero sí lo que pasa con las que vienen: BabyRock responde a cada reseña nueva en su nombre, en el idioma en que la escribieron, y cuida la presentación de su ficha de Google.
+BabyRock cuida la ficha de Google y Maps de su comercio, contesta cada reseña, publica en Instagram y Facebook y mantiene su web. Usted recibe un mensaje cuando algo necesita su visto bueno, y un resumen cada semana. Nada delicado se publica sin usted.
 
-En Lite las respuestas son automáticas y usted aprueba las de 1 a 3 estrellas. En Plus y Pro, una persona de nuestro equipo revisa cada respuesta antes de publicarla.
+Cuatro niveles, Lite, Plus, Pro y Enterprise, desde {price:lite_month} al mes sin IVA. Sin permanencia: se cancela con un mensaje.
 ## home.cta_sim
 Simulador de impacto
 
@@ -117,11 +117,23 @@ Hábitos para el comercio esta semana: cómo responder, cómo pedir y cómo qued
 ## guides.sources
 Fuentes
 
+## guides.covered
+Si prefiere no hacerlo usted, [BabyRock Social Lite]([[page:price_lite]]) se encarga de esta parte: contesta cada reseña y mantiene su perfil de Google al día, desde {price:lite_month} al mes, sin IVA.
+
+## guides.audit_line
+Y si antes quiere saber qué le falta a su ficha, la [auditoría gratuita de su ficha de Google]([[page:audit]]) le da una nota sobre 100 y los tres arreglos que más se notan.
+
 ## home.products_title
 BabyRock Social y BabyRock Direct
 
 ## home.products_lead
-BabyRock Social está disponible hoy. BabyRock Direct le ayuda a gestionar su propio WhatsApp for Business y a aumentar sus ingresos. Próximamente.
+Cuatro niveles con la misma promesa: cada superficie de su presencia, en un solo servicio. BabyRock Direct, para gestionar su propio WhatsApp de negocio, llegará más adelante.
+
+## home.not_included_title
+Lo que no incluye
+
+## home.not_included
+Publicidad de pago, sesiones de fotos o de vídeo en su local, ni colaboraciones con influencers. Tampoco gestionamos su WhatsApp de negocio (eso será BabyRock Direct), ni reservas, tiendas online o plataformas de terceros como TheFork o TripAdvisor.
 
 ## product.social_name
 BabyRock Social
@@ -133,9 +145,6 @@ Disponible ahora
 Alguien deja una reseña en su ficha de Google. Preparamos una respuesta en el idioma de la reseña. Releemos las de 4 y 5 estrellas, y después las publicamos. Las de 1, 2 y 3 estrellas las ve usted por WhatsApp. Dice que sí, o cambia el texto. Solo entonces se publica.
 
 No nos da la contraseña de Google. Añade una dirección BabyRock como gestor de la ficha.
-
-## product.social_price_note
-Suscripción mensual 99 €, IVA incluido. O suscripción anual 990 €.
 
 ## product.social_cta
 Quiero BabyRock Social
@@ -170,9 +179,6 @@ Ahorre tiempo y no deje ninguna reseña de Google sin respuesta.
 
 ## product.social_price_unit
 IVA incl. / mes
-
-## product.social_price_detail
-O suscripción anual 990 €. Ahorre 198 €. Precios con IVA español. Sin coste de alta si nos añade usted como gestor.
 
 ## products.social_cta
 Empezar BabyRock Social
@@ -239,9 +245,6 @@ Un solo seguimiento después de una visita confirmada, sin incentivos y sin filt
 
 ## product.direct_later
 Más adelante en la hoja de ruta, no incluido al lanzar: pedidos por WhatsApp sin comisión de marketplace, el chat de Google Business Profile y puntos de entrada con QR impreso.
-
-## products.offer
-Oferta de lanzamiento en Sant Cugat: el primer mes es gratis. Luego la suscripción mensual de 99 € se cobra sola, IVA español incluido.
 
 ## home.for_whom_title
 Si los clientes le encuentran en Google, este servicio es para usted
@@ -433,7 +436,7 @@ Extra al año, alta
 de su año
 
 ## sim.note
-Ingresos extra brutos. BabyRock Social desde 9,99 € al mes, sin IVA.
+Ingresos extra brutos. BabyRock Social desde {price:lite_month} al mes, sin IVA.
 
 ## sim.cta
 Que se ocupen de mis reseñas
@@ -521,7 +524,7 @@ Encima de las ausencias recuperadas sumamos WhatsApp como canal de reserva y de 
 Los porcentajes que usamos
 
 ## research.formula
-Extra anual = facturación mensual × 12 × el porcentaje de su tipo y producto. Cifras brutas. BabyRock Social desde 9,99 € al mes, sin IVA.
+Extra anual = facturación mensual × 12 × el porcentaje de su tipo y producto. Cifras brutas. BabyRock Social desde {price:lite_month} al mes, sin IVA.
 
 ## research.what_we_use
 Su comercio puede quedar fuera del rango. Preferimos un número comercial claro, con las fuentes al lado, que una fórmula del 0,84 % que nadie siente.
@@ -554,16 +557,10 @@ Usamos la IA para preparar un primer borrador y para trabajar en varios idiomas.
 No le pedimos que instale otra aplicación. Escribe a Rosalia, o a quien cubra la conversación, por WhatsApp.
 
 ## sub.headline
-Que cada reseña nueva de Google quede atendida, desde 9,99 € al mes, sin IVA.
+Que cada reseña nueva de Google quede atendida, desde {price:lite_month} al mes, sin IVA.
 
 ## sub.lead
 Envíenos el nombre del negocio y la ficha de Google. Rosalia responderá a las preguntas, le ayudará a elegir entre Lite, Plus y Pro, y le enviará el enlace de pago seguro. Luego nos añade como gestor y empezamos.
-
-## sub.month
-99 €/mes, IVA incluido
-
-## sub.year
-990 € al año, IVA incluido. Suscripción anual. 198 € menos que pagar mes a mes.
 
 ## sub.form_name
 Nombre del negocio
@@ -607,12 +604,6 @@ Facturación mensual, si usó la calculadora (opcional)
 ## sub.form_plan
 Plan preferido
 
-## sub.plan_month
-Suscripción mensual, 99 €
-
-## sub.plan_year
-Suscripción anual, 990 €
-
 ## sub.cta_pay
 Continuar al pago seguro
 
@@ -650,7 +641,7 @@ Cada pago produce una factura, con IVA, enviada a su correo. ¿Necesita otra cop
 Cómo se paga
 
 ## account.pay
-Rosalia envía un enlace de pago seguro para el plan elegido: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sin IVA. No hay cuota de alta si usted mismo añade el gestor de Google.
+Rosalia envía un enlace de pago seguro para el plan elegido: Lite {price:lite_month}, Plus {price:plus_month}, Pro {price:pro_month} o Enterprise {price:enterprise_month} al mes, sin IVA. No hay cuota de alta si usted mismo añade el gestor de Google.
 
 ## account.cancel_title
 Cómo cancelar
@@ -679,7 +670,7 @@ Usamos herramientas de IA para ayudar a preparar borradores. Una persona revisa 
 Condiciones
 
 ## terms.body
-BabyRock Social gestiona las respuestas de una ficha de empresa de Google a Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sin IVA, con el plan que elija el comercio. Al suscribirse e invitarnos como gestor, nos autoriza a redactar, revisar, enviar, editar y, si hace falta, borrar respuestas en esa ficha. La IA puede ayudar con el primer borrador; una persona comprueba y envía cada respuesta. Las respuestas a reseñas de 4 y 5 estrellas pueden enviarse con esta autorización continua. Las de 1, 2 y 3 estrellas se envían solo después de que usted las apruebe o las cambie por WhatsApp. Google revisa cada respuesta y controla cuándo se ve en público.
+BabyRock Social gestiona las respuestas de una ficha de empresa de Google a Lite {price:lite_month}, Plus {price:plus_month}, Pro {price:pro_month} o Enterprise {price:enterprise_month} al mes, sin IVA, con el plan que elija el comercio. Al suscribirse e invitarnos como gestor, nos autoriza a redactar, revisar, enviar, editar y, si hace falta, borrar respuestas en esa ficha. La IA puede ayudar con el primer borrador; una persona comprueba y envía cada respuesta. Las respuestas a reseñas de 4 y 5 estrellas pueden enviarse con esta autorización continua. Las de 1, 2 y 3 estrellas se envían solo después de que usted las apruebe o las cambie por WhatsApp. Google revisa cada respuesta y controla cuándo se ve en público.
 
 Puede cancelar al final del periodo pagado escribiendo a Rosalia. Cuando termina el servicio, quitamos nuestro acceso de gestor. Podemos pausar el servicio si un pago falla. Se aplica la ley española y los juzgados de Barcelona, salvo norma imperativa de consumo en otro sentido.
 
@@ -759,7 +750,7 @@ Las respuestas propuestas llegan escritas a su WhatsApp, usted aprueba o corrige
 Sin sorpresas en la factura
 
 ## home.wa_item4
-Lite desde 9,99 €, Plus 39,99 € y Pro 99,99 € al mes, sin IVA. Se cancela escribiendo una línea.
+Lite desde {price:lite_month}, Plus {price:plus_month}, Pro {price:pro_month} o Enterprise {price:enterprise_month} al mes, sin IVA. Se cancela escribiendo una línea.
 
 ## home.wa_chat_alt
 Ejemplo de conversación de WhatsApp con Rosalia
@@ -789,52 +780,76 @@ Publicada en su ficha hace un momento. Le aviso cuando llegue la próxima.
 Publicado
 
 ## home.trial_kicker
-Pruébelo gratis
+Pruébelo un mes
 
 ## home.trial_title
-Empiece gratis y sin tarjeta: tres reseñas respondidas
+Un mes gratis y completo, no una demo
 
 ## home.trial_lead
-Primero escriba a Rosalía: ella toma sus datos y su ficha de Google. Después nos añade como gestor de su ficha, y respondemos tres reseñas, solo de 4 y 5 estrellas. No se cobra nada y no hay nada que cancelar.
+El primer mes es gratis, una vez por cliente. Se deja la tarjeta al entrar y el primer cobro llega el día 30; si no le convence, cancela antes con un mensaje.
 
 ## home.trial_opt1_title
-1. Escriba primero a Rosalía
+1. Escriba a Rosalía
 
 ## home.trial_opt1
-Envíele el nombre de su negocio, su ficha de Google y cómo localizarle: por WhatsApp y con un correo. Ella empieza su prueba gratis, responde sus preguntas y le acompaña en la puesta en marcha.
+Envíele el nombre de su negocio y su ficha de Google. Ella abre su mes gratis y le pregunta todo lo que necesita, en un solo hilo de WhatsApp.
 
 ## home.trial_opt2_title
-2. Después, un clic
+2. Conecte sus cuentas
 
 ## home.trial_opt2
-Añada reviews@babyrock.ai como gestor de su ficha de empresa de Google, nunca como propietario. Nunca vemos su contraseña y puede quitarnos cuando quiera.
+Nos añade como gestor de su ficha de Google y conecta Instagram y Facebook. Sus accesos siguen a su nombre y nos los puede quitar cuando quiera.
 
 ## home.trial_video
 Ver el vídeo de un minuto
 
 ## home.trial_opt3_title
-3. Tres reseñas respondidas
+3. El mes entero trabajando
 
 ## home.trial_opt3
-Respondemos tres de sus reseñas de 4 y 5 estrellas, sobre reseñas que ya tiene. Las de 1 a 3 estrellas le llegan siempre para que las apruebe.
+Durante el mes trabajamos como con un cliente de pago: reseñas, publicaciones, ficha, mensajes privados y su web. Al terminar, decide si sigue.
 
 ## home.trial_note
-La prueba sin tarjeta termina sola: no se cobra nada y no empieza ninguna suscripción. Solo la prueba con tarjeta continúa en un plan: Lite 9,99 €, Plus 39,99 € o Pro 99,99 € al mes, sin IVA, y se cancela en una línea.
+Una vez por cliente: si cancela y vuelve, el mes gratis no se repite. Sin permanencia. El precio es {price:lite_month}, {price:plus_month}, {price:pro_month} o {price:enterprise_month} al mes, sin IVA, según el nivel.
 
 ## home.trial_cta
-Empezar la prueba gratis
+Empezar el mes gratis
 
 ## home.trial_cta_wa
 Empezar por WhatsApp
 
 ## home.trial_cta_form
-o rellenar el formulario
+Ver los cuatro niveles
 
 ## home.trial_cta_whatsapp
 o escribir a Rosalía por WhatsApp
 
 ## home.trial_wa_prefill
-Hola Rosalia, quiero la prueba gratis de tres reseñas. Mi negocio es ... y mi ficha de Google es ...
+Hola Rosalia, quiero el mes gratis de BabyRock Social. Mi negocio es ... y mi ficha de Google es ...
+
+## home.audit_kicker
+Gratis, sin compromiso
+
+## home.audit_title
+Auditoría gratuita de su ficha de Google
+
+## home.audit_lead
+Antes de pagar nada, mire cómo está su ficha. Le damos una nota sobre 100 y los tres arreglos que más se notan, en un solo mensaje.
+
+## home.audit_item1
+Una nota clara sobre 100, calculada con los datos públicos de su ficha.
+
+## home.audit_item2
+Lo que está bien y lo que falta: fotos, horarios, respuestas, categorías.
+
+## home.audit_item3
+Los tres arreglos con más impacto, en orden. Son suyos aunque no contrate.
+
+## home.audit_cta
+Pedir mi auditoría gratis
+
+## home.audit_prefill
+Hola Rosalia, quiero la auditoría gratuita de mi ficha de Google. Mi negocio es ... y mi ficha es ...
 
 ## home.cta_trial
 Pruébelo gratis
@@ -848,23 +863,20 @@ Gane dinero con BabyRock
 ## product.social_lite_name
 BabyRock Social Lite
 
-## product.social_lite_price
-9,99 € al mes, sin IVA
-
 ## product.social_lite_trial
-Dos semanas de prueba gratis.
+Un mes gratis, una vez por cliente.
 
 ## product.social_lite_f1
-Respondemos automáticamente sus reseñas de Google, hasta 10 al mes.
+Contestamos cada reseña de su ficha de Google, en el idioma en que la escribieron.
 
 ## product.social_lite_f2
-Las reseñas de 1 a 3 estrellas le llegan a su WhatsApp para que las apruebe antes de publicarlas.
+Las reseñas de 1 a 3 estrellas le llegan por WhatsApp para que las apruebe antes de publicarlas.
 
 ## product.social_lite_f3
-Cada respuesta extra cuesta 1,99 € sin IVA.
+Publicamos en Instagram y Facebook a partir de lo que usted nos envía.
 
 ## product.social_lite_f4
-Sin aplicación nueva que instalar ni panel nuevo que usar.
+Mantenemos al día los datos y las fotos de su ficha de Google.
 
 ## product.social_lite_cta
 Empezar con Lite
@@ -872,11 +884,8 @@ Empezar con Lite
 ## product.social_plus_name
 BabyRock Social Plus
 
-## product.social_plus_price
-39,99 € al mes, sin IVA
-
 ## product.social_plus_trial
-Un mes de prueba gratis.
+Un mes gratis, una vez por cliente.
 
 ## product.social_plus_inherits
 Todo lo de Lite, y además:
@@ -885,16 +894,16 @@ Todo lo de Lite, y además:
 Una persona de nuestro equipo revisa cada respuesta antes de publicarla.
 
 ## product.social_plus_f2
-Hasta 25 respuestas al mes.
+Doce publicaciones al mes en Instagram y Facebook, planificadas con usted.
 
 ## product.social_plus_f3
-Respondemos sus 10 reseñas más recientes sin respuesta.
+Vigilamos sus horarios y sus vacaciones en Google, y le avisamos antes de cada cambio.
 
 ## product.social_plus_f4
-Resumen cada lunes de su ficha y de sus reseñas.
+Un resumen cada lunes: lo publicado, lo contestado y lo que viene.
 
 ## product.social_plus_f5
-Una actualización de su ficha de Google cada semana (fotos nuevas, etc.).
+Una novedad en su ficha de Google cada semana: fotos, datos y publicaciones.
 
 ## product.social_plus_cta
 Empezar con Plus
@@ -902,32 +911,59 @@ Empezar con Plus
 ## product.social_pro_name
 BabyRock Social Pro
 
-## product.social_pro_price
-99,99 € al mes, sin IVA
-
 ## product.social_pro_trial
-Un mes de prueba gratis.
+Un mes gratis, una vez por cliente.
 
 ## product.social_pro_inherits
 Todo lo de Plus, y además:
 
 ## product.social_pro_f1
-Todos los establecimientos que quiera en una sola cuenta, con una sola factura.
+Contestamos también los mensajes privados de Instagram y Facebook.
 
 ## product.social_pro_f2
-60 respuestas revisadas por una persona en total cada mes.
+Cuatro novedades al mes en su ficha de Google, además de las publicaciones sociales.
 
 ## product.social_pro_f3
-Soporte humano prioritario: contestamos el mismo día.
+Mantenemos su web: contenido al día y una comprobación cada semana.
 
 ## product.social_pro_f4
-Sin coste añadido por cada local nuevo del mismo grupo.
+Varios locales en una sola cuenta y una sola factura.
 
 ## product.social_pro_f5
-Cambios ilimitados en sus fichas de Google Business Profile.
+Un contacto con nombre que conoce su cuenta.
 
 ## product.social_pro_cta
 Empezar con Pro
+
+## product.social_enterprise_name
+BabyRock Social Enterprise
+
+## product.social_enterprise_trial
+Un mes gratis, una vez por cliente.
+
+## product.social_enterprise_inherits
+Todo lo de Pro, y además:
+
+## product.social_enterprise_f1
+Todos sus locales en una sola cuenta, con una sola factura.
+
+## product.social_enterprise_f2
+Prioridad en la cola: sus cambios y sus mensajes pasan primero.
+
+## product.social_enterprise_f3
+Un vídeo corto al mes, montado con lo que usted nos envía.
+
+## product.social_enterprise_f4
+Un contacto único para todos sus locales.
+
+## product.social_enterprise_f5
+La misma promesa en cada local: Google, Maps, Instagram, Facebook y su web.
+
+## product.social_enterprise_f6
+Una revisión trimestral de cada local, con lo que conviene cambiar.
+
+## product.social_enterprise_cta
+Hablar con nosotros
 
 ## product.price_unit
 / mes
@@ -939,40 +975,308 @@ Recomendado
 Y más…
 
 ## product.social_lite_f5
-Respondemos en el idioma de la reseña: castellano, catalán, francés o inglés.
+Respondemos en castellano, catalán, francés o inglés, según el idioma de cada cliente.
 
 ## product.social_lite_f6
-Sin contraseña de Google: nos añade como gestor de su ficha y nos puede quitar cuando quiera.
+Sin contraseñas: nos añade como gestor de su ficha y nos puede quitar cuando quiera.
 
 ## product.social_plus_f6
-Respondemos en el idioma de la reseña, y las sensibles esperan su OK.
+Todo lo de Lite, con el mismo cuidado en cada superficie.
 
 ## product.social_plus_f7
-Soporte por WhatsApp, con respuesta en cuatro horas laborables.
+Soporte por WhatsApp, con respuesta el mismo día laborable.
 
 ## product.social_plus_f8
 Un año son diez mensualidades, en un solo pago.
 
 ## product.social_pro_f6
-Publicaciones y fotos preparadas con usted y publicadas en su ficha.
+Su dominio, su contenido y sus accesos siguen a su nombre.
 
 ## product.social_pro_f7
 Informe mensual: llamadas, solicitudes de ruta, búsquedas y evolución de las reseñas.
 
 ## product.social_pro_f8
-Vigilamos su ficha y le avisamos el mismo día si Google o un visitante propone un cambio.
+Le avisamos el mismo día si Google o un visitante propone un cambio en su ficha.
 
 ## product.social_pro_f9
-Un contacto con nombre que conoce su cuenta.
+Respondemos en el idioma de cada cliente, con el mismo cuidado.
 
 ## product.social_pro_f10
-Todo, en todos los idiomas en los que respondemos, con el mismo cuidado.
+Puede cambiar de nivel o cancelar cuando quiera, con un mensaje.
 
 ## home.tier_lite_annual
-O 99,90 € al año, sin IVA, en un solo pago.
+O {price:lite_year} al año, sin IVA, en un solo pago.
 
 ## home.tier_plus_annual
-O 399,90 € al año, sin IVA, en un solo pago.
+O {price:plus_year} al año, sin IVA, en un solo pago.
 
 ## home.tier_pro_annual
-O 999,90 € al año, sin IVA, en un solo pago.
+O {price:pro_year} al año, sin IVA, en un solo pago.
+
+## home.tier_enterprise_annual
+O {price:enterprise_year} al año, sin IVA, en un solo pago.
+
+## price.kicker
+Precios
+
+## price.for_title
+Para quién es
+
+## price.included_title
+Qué incluye
+
+## price.change_title
+Qué cambia respecto al nivel anterior
+
+## price.not_included_title
+Qué no incluye este nivel
+
+## price.trial_title
+Cómo funciona el mes gratis
+
+## price.levels_title
+Los cuatro niveles
+
+## price.audit_line
+Antes de decidir, pida la auditoría gratuita de su ficha de Google: le decimos qué falta y qué arreglaríamos primero.
+
+## price.ht_label
+sin IVA
+
+## price.ttc_label
+Con IVA
+
+## price.vat_note
+La factura añade el {vat:ES} de IVA del país del comercio.
+
+## price.lite_title
+Cuánto cuesta BabyRock Social Lite
+
+## price.lite_lead
+Lite es el nivel de entrada: contestamos cada reseña de su ficha de Google y de Maps, publicamos en Instagram y Facebook con lo que usted nos envía y mantenemos al día los datos y las fotos de su ficha. Cuesta {price:lite_month} al mes sin IVA y {price_ttc:lite_month} con IVA.
+
+Es el nivel para el comercio pequeño, de una sola persona o un solo local, que quiere su presencia cuidada sin contratar a nadie.
+
+## price.lite_for
+Para una peluquería, una panadería o un taller de barrio, con una persona al frente y publicaciones de vez en cuando.
+
+## price.lite_change
+Lite es el primer nivel, así que no hay nada por debajo. Lo que cambia es hacia arriba: Plus añade una persona de nuestro equipo que revisa cada respuesta antes de publicarla, doce publicaciones al mes planificadas con usted y la vigilancia de sus horarios.
+
+## price.lite_not_included
+Lite no incluye la revisión humana de cada respuesta antes de publicarla, la vigilancia de horarios y vacaciones, los mensajes privados de Instagram y Facebook, el mantenimiento de su web ni la gestión de varios locales. Todo eso empieza en Plus.
+
+## price.lite_trial
+El primer mes es gratis, una vez por cliente, con la tarjeta desde el alta. El primer cobro se hace automáticamente el día 30, a {price:lite_month} sin IVA al mes; si cancela antes por WhatsApp o por correo, no se le cobra nada y el mes gratis no se repite si vuelve.
+
+## price.plus_title
+Cuánto cuesta BabyRock Social Plus
+
+## price.plus_lead
+Plus toma todo lo de Lite y añade una persona de nuestro equipo que revisa cada respuesta antes de publicarla, doce publicaciones al mes en Instagram y Facebook planificadas con usted, la vigilancia de sus horarios y sus vacaciones y un resumen cada lunes. Cuesta {price:plus_month} al mes sin IVA y {price_ttc:plus_month} con IVA.
+
+Es el nivel para el comercio que ya vive en redes y recibe reseñas cada semana.
+
+## price.plus_for
+Para un restaurante, una peluquería o una clínica de barrio con una o dos personas al frente y movimiento semanal en redes.
+
+## price.plus_change
+Respecto a Lite, Plus añade la revisión humana de cada respuesta antes de publicarla, doce publicaciones al mes planificadas con usted, la vigilancia de horarios y vacaciones con aviso antes de cada cambio, una novedad semanal en su ficha de Google y un resumen cada lunes.
+
+## price.plus_not_included
+Plus no incluye los mensajes privados de Instagram y Facebook, el mantenimiento de su web, la prioridad en la cola de trabajo ni el vídeo corto al mes. Eso llega con Pro y con Enterprise.
+
+## price.plus_trial
+El primer mes es gratis, una vez por cliente, con la tarjeta desde el alta. El primer cobro se hace automáticamente el día 30, a {price:plus_month} sin IVA al mes; si cancela antes por WhatsApp o por correo, no se le cobra nada y el mes gratis no se repite si vuelve.
+
+## price.pro_title
+Cuánto cuesta BabyRock Social Pro
+
+## price.pro_lead
+Pro toma todo lo de Plus y añade los mensajes privados de Instagram y Facebook, cuatro novedades al mes en su ficha de Google, el mantenimiento de su web con una comprobación cada semana y un informe mensual con llamadas, solicitudes de ruta y evolución de las reseñas. Cuesta {price:pro_month} al mes sin IVA y {price_ttc:pro_month} con IVA.
+
+Es el nivel para el comercio que quiere una sola persona responsable de todo su canal: reseñas, redes, mensajes y web.
+
+## price.pro_for
+Para un comercio que ya vende por Instagram o Facebook y recibe mensajes privados, o que tiene web y quiere que alguien se la mantenga al día.
+
+## price.pro_change
+Respecto a Plus, Pro añade los mensajes privados contestados, cuatro novedades al mes en su ficha, el mantenimiento de su web con una comprobación cada semana, un informe mensual y un contacto con nombre que conoce su cuenta.
+
+## price.pro_not_included
+Pro no incluye la prioridad en la cola, el vídeo corto al mes ni la revisión trimestral de cada local. Eso es Enterprise, para quien tiene varios locales.
+
+## price.pro_trial
+El primer mes es gratis, una vez por cliente, con la tarjeta desde el alta. El primer cobro se hace automáticamente el día 30, a {price:pro_month} sin IVA al mes; si cancela antes por WhatsApp o por correo, no se le cobra nada y el mes gratis no se repite si vuelve.
+
+## price.enterprise_title
+Cuánto cuesta BabyRock Social Enterprise
+
+## price.enterprise_lead
+Enterprise toma todo lo de Pro y añade todos sus locales en una sola cuenta y una sola factura, prioridad en la cola, un vídeo corto al mes y una revisión trimestral de cada local. Cuesta {price:enterprise_month} al mes sin IVA y {price_ttc:enterprise_month} con IVA.
+
+Es el nivel para quien tiene varios locales y quiere la misma promesa en todos, con un solo contacto.
+
+## price.enterprise_for
+Para un grupo pequeño con varios locales que quiere una sola cuenta, una sola factura y un solo contacto para todos.
+
+## price.enterprise_change
+Respecto a Pro, Enterprise añade todos sus locales en una sola cuenta y una sola factura, prioridad en la cola de trabajo, un vídeo corto al mes, un contacto único para todos los locales y una revisión trimestral de cada uno.
+
+## price.enterprise_not_included
+Enterprise es el nivel más alto: no hay ninguna superficie por encima. Lo que no vendemos en ningún nivel es el resultado: no prometemos posiciones en Google, ni un número de reseñas nuevas, ni seguidores.
+
+## price.enterprise_trial
+El primer mes es gratis, una vez por cliente, con la tarjeta desde el alta. El primer cobro se hace automáticamente el día 30, a {price:enterprise_month} sin IVA al mes; si cancela antes por WhatsApp o por correo, no se le cobra nada y el mes gratis no se repite si vuelve.
+
+## audit.kicker
+Auditoría gratis
+
+## audit.title
+La auditoría gratuita de su ficha de Google
+
+## audit.lead
+Escriba el nombre de su negocio y su ciudad. Leemos los datos públicos de su ficha y le damos una nota sobre 100, con lo que falta y los tres arreglos que más se notan. Es gratis y no obliga a contratar nada.
+
+Si deja su correo, le enviamos el resultado para que lo tenga a mano. Es lo único que guardamos de usted, con su permiso, y lo borramos a los doce meses si no seguimos hablando.
+
+## audit.form_name
+Nombre del negocio
+
+## audit.form_name_ph
+Bar Roma
+
+## audit.form_city
+Ciudad
+
+## audit.form_city_ph
+Sant Cugat del Vallès
+
+## audit.form_email
+Su correo (opcional)
+
+## audit.form_email_hint
+Para recibir el resultado
+
+## audit.form_consent
+Sí, quiero recibir el resultado por correo. Puedo retirar el permiso cuando quiera.
+
+## audit.form_submit
+Ver mi nota
+
+## audit.form_note
+Leemos datos públicos de su ficha de empresa de Google.
+
+## audit.loading
+Estamos leyendo su ficha. Tarda unos segundos.
+
+## audit.error
+No hemos podido leer su ficha ahora mismo. Vuelva a intentarlo en un minuto.
+
+## audit.fixes_heading
+Los tres arreglos que más se notan
+
+## audit.parts_heading
+Lo que hemos leído
+
+## audit.emailed
+Le hemos enviado el resultado por correo.
+
+## audit.not_emailed
+El resultado se queda en esta pantalla.
+
+## trade.title_before
+Ficha de Google para
+
+## trade.title_between
+en
+
+## trade.lead
+Qué publicamos para un negocio así, con las reglas de casa: qué sale cada semana, de dónde sale el material y qué revisamos de su ficha. Sin promesas que no podamos sostener.
+
+## trade.angle_title
+Lo que cambia en esta ciudad
+
+## trade.publishes_title
+Qué publica un negocio así
+
+## trade.publishes_rule
+El material sale de lo que usted nos envía. Si una semana no manda nada, tiramos de su propio archivo, y si el archivo está vacío, de nuestras líneas de casa. Usted aprueba lo suyo antes de que salga, y las respuestas a las reseñas de 1 a 3 estrellas no se publican sin su OK.
+
+## trade.posts_title
+Cuánto publica cada nivel
+
+## trade.posts_unit
+publicaciones al mes
+
+## trade.posts_none
+sin un número fijo, a partir de lo que usted envía
+
+## trade.house_title
+Cuando la semana está tranquila
+
+## trade.house_rule
+Sale una línea de casa, como esta. No lleva precio, ni plato, ni fecha: nada que no podamos sostener, pase lo que pase en su negocio.
+
+## trade.shop_placeholder
+su negocio
+
+## trade.price_title
+Qué cuesta
+
+## trade.price_line
+Lite, el nivel de entrada, desde {price:lite_month} al mes, sin IVA. [Ver qué incluye Lite]([[page:price_lite]]).
+
+## trade.audit_line
+Antes de decidir nada, la [auditoría gratuita de su ficha de Google]([[page:audit]]) le dice qué falta y qué arreglaríamos primero.
+
+## trade.more_title
+Por oficio y ciudad
+
+## compare.kicker
+Alternativas
+
+## compare.method_lead
+Esta página compara BabyRock con
+
+## compare.method
+Cada frase sobre la otra parte sale de su propia página, con la fecha en que la leímos. Lo que no está publicado, no se afirma.
+
+## compare.claims_title
+Lo que dice la otra parte, con su fuente
+
+## compare.source_label
+Fuente:
+
+## compare.read_on
+leída el
+
+## compare.better_title
+Lo que hace mejor que nosotros
+
+## compare.our_title
+Lo que hacemos nosotros
+
+## compare.our_body
+Trabajamos una tienda a la vez, y todo pasa por WhatsApp: usted aprueba y responde, nosotros escribimos, publicamos y contestamos las reseñas. Sin un panel nuevo que aprender, sin aplicación y sin dar la contraseña de Google. Los cuatro niveles cubren la ficha de Google y sus reseñas, Instagram, Facebook y su web.
+
+## compare.levels_title
+Qué cubre cada nivel
+
+## compare.price_title
+Qué cuesta
+
+## compare.price_line
+Lite, el nivel de entrada, desde {price:lite_month} al mes, sin IVA. [Ver qué incluye Lite]([[page:price_lite]]).
+
+## compare.audit_line
+Antes de decidir, mida su ficha gratis: la [auditoría gratuita]([[page:audit]]) la puntúa sobre 100 y le dice qué falta.
+
+## compare.related_title
+Las otras comparaciones
+
+## compare.more_title
+Comparativas
+
+## compare.more_lead
+Las comparaciones que escribimos, cada dato con la fuente de la otra parte y la fecha en que la leímos.
