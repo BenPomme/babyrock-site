@@ -1,8 +1,8 @@
 ## meta.title
-Your presence on Google, Instagram, Facebook and your website, managed from WhatsApp | BabyRock
+Google review replies for small businesses | BabyRock Social
 
 ## meta.description
-Four levels from {price:lite_month} a month, before VAT: every review answered, your Google and Maps profile looked after, posts on Instagram and Facebook, and your website maintained. One month free, once per client.
+We reply to every Google review on your listing. On Lite automatically, on Plus and Pro with a person who checks each reply. From 9.99 € a month, VAT excluded.
 
 ## nav.simulator
 Impact calculator
@@ -94,14 +94,14 @@ Google reviews and profile management for small businesses
 Automatic replies on Lite, reviewed by a person on Plus and Pro
 
 ## home.headline
-Google, Instagram, Facebook and your website: your whole presence, managed from WhatsApp.
+68% of customers only walk into a business rated 4 stars or more.
 ## home.hero_alt
 A restaurant owner in an apron standing beside a terrace table, with olive trees and city rooftops behind her
 
 ## home.lead
-BabyRock looks after your Google and Maps profile, answers every review, posts on Instagram and Facebook and maintains your website. You get a message when something needs your OK, and one summary a week. Nothing delicate is published without you.
+You cannot change the stars you already have. But you can change what happens to the ones that come: BabyRock answers every new review in your name, in the language it was written in, and takes care of how your Google profile looks.
 
-Four levels, Lite, Plus, Pro and Enterprise, from {price:lite_month} a month before VAT. No commitment: one message stops it.
+On Lite the replies are automatic and you approve the 1 to 3 star ones. On Plus and Pro, a person on our team reviews every reply before it goes out.
 ## home.cta_sim
 Impact Simulator
 
@@ -117,23 +117,11 @@ Habits you can use in the shop this week: how to reply, how to ask, and how to s
 ## guides.sources
 Sources
 
-## guides.covered
-If you would rather not do it yourself, [BabyRock Social Lite]([[page:price_lite]]) does this part: every review answered and your Google listing kept up to date, from {price:lite_month} a month, before VAT.
-
-## guides.audit_line
-And if you want to know what your listing is missing first, the [free audit of your Google listing]([[page:audit]]) gives you a score out of 100 and the three fixes worth the most.
-
 ## home.products_title
 BabyRock Social and BabyRock Direct
 
 ## home.products_lead
-Four levels with one promise: every surface of your presence, in one service. BabyRock Direct, for your own business WhatsApp, comes later.
-
-## home.not_included_title
-What is not included
-
-## home.not_included
-Paid advertising, photo or video shoots at your premises, and influencer work. We do not manage your own business WhatsApp either (that will be BabyRock Direct), nor bookings, online shops or third party platforms such as TheFork or TripAdvisor.
+BabyRock Social is available today. BabyRock Direct helps you operate your own WhatsApp for Business and increase your revenues. Coming soon.
 
 ## product.social_name
 BabyRock Social
@@ -145,6 +133,9 @@ Available now
 Someone leaves a review on your Google listing. We prepare a reply in the language of the review. We proofread 4 and 5-star replies, then we publish them. 1, 2 and 3-star reviews come to you on WhatsApp. You say yes, or you change the text. Only then is the reply published.
 
 You do not send us your Google password. You add a BabyRock address as a manager of the listing.
+
+## product.social_price_note
+Monthly subscription €99, including VAT. Or yearly subscription €990.
 
 ## product.social_cta
 I want BabyRock Social
@@ -179,6 +170,9 @@ Save time and never leave another Google review unanswered.
 
 ## product.social_price_unit
 VAT incl. / month
+
+## product.social_price_detail
+Or a yearly subscription of €990. Save €198. Prices include Spanish VAT. No setup fee when you add us as a manager yourself.
 
 ## products.social_cta
 Start BabyRock Social
@@ -245,6 +239,9 @@ Send one follow-up after a confirmed visit, with no incentives and no review gat
 
 ## product.direct_later
 Later on the roadmap, not included at launch: WhatsApp orders without marketplace commission, Google Business Profile chat and printed QR entry points.
+
+## products.offer
+Sant Cugat launch offer: your first month is free. Then the €99 monthly subscription is charged automatically, including Spanish VAT.
 
 ## home.for_whom_title
 If customers find you on Google, this service is for you
@@ -436,7 +433,7 @@ Yearly extra, high
 of your year
 
 ## sim.note
-Gross extra revenue. BabyRock Social from {price:lite_month} a month, VAT excluded.
+Gross extra revenue. BabyRock Social from 9.99 € a month, VAT excluded.
 
 ## sim.cta
 Get my reviews handled
@@ -524,7 +521,7 @@ On top of recovered no-shows we add WhatsApp as a booking and order channel. Com
 The percentages we use
 
 ## research.formula
-Yearly extra = monthly revenue × 12 × the percentage for your type and product. Figures are gross. BabyRock Social starts at {price:lite_month} a month, VAT excluded.
+Yearly extra = monthly revenue × 12 × the percentage for your type and product. Figures are gross. BabyRock Social starts at 9.99 € a month, VAT excluded.
 
 ## research.what_we_use
 Your shop can land outside the range. We would rather show a clear commercial number with the sources next to it than a 0.84% formula nobody can feel.
@@ -557,10 +554,16 @@ We use AI to prepare a first draft and to work across languages. Your customers 
 We do not ask you to install another app. You write to Rosalia, or to whoever is covering the conversation, on WhatsApp.
 
 ## sub.headline
-Get every new Google review handled from {price:lite_month} a month, VAT excluded.
+Get every new Google review handled from 9.99 € a month, VAT excluded.
 
 ## sub.lead
 Send us your business name and Google listing. Rosalia will answer your questions, help you choose between Lite, Plus and Pro, and send your secure payment link. Then add us as a manager and we begin.
+
+## sub.month
+€99/month, including VAT
+
+## sub.year
+€990 a year, including VAT. Yearly subscription. €198 less than paying month to month.
 
 ## sub.form_name
 Business name
@@ -604,6 +607,12 @@ Monthly revenue, if you used the calculator (optional)
 ## sub.form_plan
 Preferred plan
 
+## sub.plan_month
+Lite, 9.99 € a month, VAT excluded
+
+## sub.plan_year
+Plus, 39.99 € a month, VAT excluded
+
 ## sub.cta_pay
 Continue to secure payment
 
@@ -641,7 +650,7 @@ Each payment produces an invoice, including VAT, sent to your email. Need anothe
 How you pay
 
 ## account.pay
-Rosalia sends a secure payment link for your chosen plan: Lite {price:lite_month}, Plus {price:plus_month}, Pro {price:pro_month} or Enterprise {price:enterprise_month} per month, VAT excluded. There is no setup fee when you add the Google manager yourself.
+Rosalia sends a secure payment link for your chosen plan: Lite 9.99 €, Plus 39.99 € or Pro 99.99 € per month, VAT excluded. There is no setup fee when you add the Google manager yourself.
 
 ## account.cancel_title
 How to cancel
@@ -670,7 +679,7 @@ We use AI tools to help prepare reply drafts. A person reviews and, where needed
 Terms
 
 ## terms.body
-BabyRock Social manages replies for one Google Business Profile at Lite {price:lite_month}, Plus {price:plus_month}, Pro {price:pro_month} or Enterprise {price:enterprise_month} per month excluding VAT, on the plan the business chooses. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews each reply and controls when it goes public.
+BabyRock Social manages replies for one Google Business Profile at Lite €9.99, Plus €39.99 or Pro €99.99 per month excluding VAT, on the plan the business chooses. By subscribing and inviting BabyRock Social as a manager, you authorize us to draft, review, submit, edit and, when necessary, delete replies on that profile. AI may assist with the first draft; a person checks and submits every reply. Replies to 4 and 5-star reviews may be submitted under this ongoing authorization. Replies to 1, 2 and 3-star reviews are submitted only after you approve or revise them on WhatsApp. Google reviews each reply and controls when it goes public.
 
 You can cancel at the end of the paid period by writing to Rosalia. When the service ends, we remove our manager access. We may pause the service if a payment fails. Spanish law and the courts of Barcelona apply, unless a mandatory consumer rule says otherwise.
 
@@ -717,7 +726,7 @@ We never ask for your Google password, and we do not give you new software to le
 The suggested replies arrive written in your WhatsApp, you approve or correct them right there, and they go live.
 
 ## home.wa_item4
-Lite from {price:lite_month}, Plus {price:plus_month}, Pro {price:pro_month} or Enterprise {price:enterprise_month} a month, VAT excluded. Cancel in one line.
+Lite from 9.99 €, Plus 39.99 € and Pro 99.99 € a month, VAT excluded. Cancel in one line.
 
 ## home.wa_chat_alt
 Example WhatsApp conversation with Rosalia
@@ -780,74 +789,50 @@ No billing surprises
 Rosalía
 
 ## home.trial_kicker
-Try it
+Try us for free
 ## home.trial_title
-One free month, the full service, not a demo
+Start free, without a card: three reviews answered
 ## home.trial_lead
-The first month is free, once per client. The card is left at entry and the first charge comes on day 30; if it is not for you, stop it before with one message.
+First write to Rosalía: she takes your details and your Google listing. Then you add us as a manager of your listing, and we answer three reviews, 4 and 5 stars only. Nothing is charged and there is nothing to cancel.
 
 ## home.trial_opt1_title
-1. Write to Rosalia
+1. Write to Rosalía first
 
 ## home.trial_opt1
-Send her your business name and your Google listing. She opens your free month and asks for everything she needs in one WhatsApp thread.
+Send her your business name, your Google listing and how to reach you, by WhatsApp and with an email address. She starts your free trial, answers your questions and stays with you through the set-up.
 
 ## home.trial_opt2_title
-2. Connect your accounts
+2. Then, the one click
 
 ## home.trial_opt2
-Add us as a manager of your Google listing and connect Instagram and Facebook. Your access stays in your name and you can remove us whenever you like.
+Invite reviews@babyrock.ai as a manager of your Google Business Profile, never as an owner. We never see your password, and you can remove us whenever you want.
 
 ## home.trial_video
 Watch the one-minute video
 
 ## home.trial_opt3_title
-3. The whole month, working
+3. Three reviews answered
 
 ## home.trial_opt3
-During the month we work as we do for a paying client: reviews, posts, the listing, private messages and your website. At the end, you decide.
+We answer three of your 4 and 5 star reviews, on reviews you already have. The 1 to 3 star ones come to you for approval, always.
 
 ## home.trial_note
-Once per client: if you stop and come back, the free month does not return. No commitment. The price is {price:lite_month}, {price:plus_month}, {price:pro_month} or {price:enterprise_month} a month, before VAT, depending on the level.
+The trial without a card ends by itself: nothing is charged and no subscription starts. Only the trial with a card continues into a plan: Lite 9.99 €, Plus 39.99 € or Pro 99.99 € per month, VAT excluded, and you cancel it in one line.
 
 ## home.trial_cta
-Start the free month
+Start the free trial
 
 ## home.trial_cta_wa
 Start on WhatsApp
 
 ## home.trial_cta_form
-See the four levels
+or fill the form
 
 ## home.trial_cta_whatsapp
 or write to Rosalía on WhatsApp
 
 ## home.trial_wa_prefill
-Hello Rosalia, I would like the free month of BabyRock Social. My business is ... and my Google listing is ...
-
-## home.audit_kicker
-Free, no commitment
-
-## home.audit_title
-A free audit of your Google listing
-
-## home.audit_lead
-Before you pay anything, see where your listing stands. We give you a score out of 100 and the three fixes that matter most, in one message.
-
-## home.audit_item1
-A clear score out of 100, calculated from your listing's public data.
-
-## home.audit_item2
-What is right and what is missing: photos, hours, replies, categories.
-
-## home.audit_item3
-The three fixes with the most impact, in order. They stay yours even if you do not hire us.
-
-## home.audit_cta
-Ask for my free audit
-
-## home.audit_prefill
-Hello Rosalia, I would like the free audit of my Google listing. My business is ... and my listing is ...
+Hello Rosalia, I would like the free trial with three reviews. My business is ... and my Google listing is ...
 ## home.trial_cta2_unused
 Ask for the free test
 
@@ -863,20 +848,23 @@ Make money with BabyRock
 ## product.social_lite_name
 BabyRock Social Lite
 
+## product.social_lite_price
+9.99 € per month, VAT excluded
+
 ## product.social_lite_trial
-One month free, once per client.
+Two weeks free trial.
 
 ## product.social_lite_f1
-We answer every review on your Google listing, in the language it was written in.
+We answer your Google reviews automatically, up to 10 a month.
 
 ## product.social_lite_f2
-One, two and three star reviews reach you on WhatsApp so you approve them before they go out.
+Answers to reviews with 1 to 3 stars are sent to your WhatsApp for approval before they are published.
 
 ## product.social_lite_f3
-We post on Instagram and Facebook from what you send us.
+Each extra reply costs 1.99 € VAT excluded.
 
 ## product.social_lite_f4
-We keep the details and the photos of your Google listing current.
+No new app to install, or new dashboard to use
 
 ## product.social_lite_cta
 Start with Lite
@@ -884,8 +872,11 @@ Start with Lite
 ## product.social_plus_name
 BabyRock Social Plus
 
+## product.social_plus_price
+39.99 € per month, VAT excluded
+
 ## product.social_plus_trial
-One month free, once per client.
+One month free trial.
 
 ## product.social_plus_inherits
 Everything in Lite, plus:
@@ -894,16 +885,16 @@ Everything in Lite, plus:
 A person on our team checks every reply before it goes out.
 
 ## product.social_plus_f2
-Twelve posts a month on Instagram and Facebook, planned with you.
+Up to 25 replies a month.
 
 ## product.social_plus_f3
-We watch your opening hours and holidays on Google, and tell you before a change.
+We answer your 10 most recent unanswered reviews.
 
 ## product.social_plus_f4
-A summary every Monday: what was published, what was answered and what is coming.
+A summary every Monday of your listing and your reviews.
 
 ## product.social_plus_f5
-One change a week on your Google listing: photos, details and posts.
+One Google profile update a week (new photos, etc.)
 
 ## product.social_plus_cta
 Start with Plus
@@ -911,59 +902,32 @@ Start with Plus
 ## product.social_pro_name
 BabyRock Social Pro
 
+## product.social_pro_price
+99.99 € per month, VAT excluded
+
 ## product.social_pro_trial
-One month free, once per client.
+One month free trial.
 
 ## product.social_pro_inherits
 Everything in Plus, plus:
 
 ## product.social_pro_f1
-We answer the private messages on Instagram and Facebook too.
+As many establishments as you want on one account, with a single invoice.
 
 ## product.social_pro_f2
-Four changes a month on your Google listing, on top of the social posts.
+60 replies checked by a person in total each month.
 
 ## product.social_pro_f3
-We maintain your website: content kept current and one check every week.
+Priority human support: we answer the same day.
 
 ## product.social_pro_f4
-Several locations on one account and one invoice.
+No extra cost for each new place in the same group.
 
 ## product.social_pro_f5
-One named contact who knows your account.
+Unlimited changes in your Google Business Profiles
 
 ## product.social_pro_cta
 Start with Pro
-
-## product.social_enterprise_name
-BabyRock Social Enterprise
-
-## product.social_enterprise_trial
-One month free, once per client.
-
-## product.social_enterprise_inherits
-Everything in Pro, and also:
-
-## product.social_enterprise_f1
-All your locations on one account, with one invoice.
-
-## product.social_enterprise_f2
-Priority in the queue: your changes and your messages go first.
-
-## product.social_enterprise_f3
-One short video a month, edited from what you send us.
-
-## product.social_enterprise_f4
-One contact for all your locations.
-
-## product.social_enterprise_f5
-The same promise in every location: Google, Maps, Instagram, Facebook and your website.
-
-## product.social_enterprise_f6
-A quarterly review of every location, with what to change.
-
-## product.social_enterprise_cta
-Talk to us
 
 ## product.price_unit
 / month
@@ -972,215 +936,43 @@ Talk to us
 And more…
 
 ## product.social_lite_f5
-We answer in English, Spanish, Catalan or French, whichever language the customer used.
+We reply in the language of the review: Spanish, Catalan, French or English.
 
 ## product.social_lite_f6
-No passwords: you add us as a manager of your listing and can remove us whenever you like.
+No Google password: you add us as a manager of your listing, and you can remove us whenever you want.
 
 ## product.social_plus_f6
-Everything in Lite, with the same care on every surface.
+We reply in the language of the review, and the sensitive ones wait for your OK.
 
 ## product.social_plus_f7
-WhatsApp support, answered the same working day.
+WhatsApp support, answered within four business hours.
 
 ## product.social_plus_f8
 A year costs ten monthly payments, in one charge.
 
 ## product.social_pro_f6
-Your domain, your content and your access stay in your name.
+Posts and photos prepared with you and published on your profile.
 
 ## product.social_pro_f7
-A monthly report: calls, directions, searches and how the reviews moved.
+A monthly report: calls, direction requests, searches and review movement.
 
 ## product.social_pro_f8
-We tell you the same day if Google or a visitor suggests a change to your listing.
+We watch your profile and tell you the same day if Google or a visitor suggests a change.
 
 ## product.social_pro_f9
-We answer in each customer's language, with the same care.
+One named contact who knows your account.
 
 ## product.social_pro_f10
-You can change level or stop whenever you like, with one message.
+Everything in every language we reply in, with the same care.
 
 ## sub.recommended
 Recommended
 
 ## home.tier_lite_annual
-Or {price:lite_year} a year, VAT excluded, in one payment.
+Or 99.90 € a year, VAT excluded, in one payment.
 
 ## home.tier_plus_annual
-Or {price:plus_year} a year, VAT excluded, in one payment.
+Or 399.90 € a year, VAT excluded, in one payment.
 
 ## home.tier_pro_annual
-Or {price:pro_year} a year, VAT excluded, in one payment.
-
-## home.tier_enterprise_annual
-Or {price:enterprise_year} a year, before VAT, in one payment.
-
-## price.kicker
-Pricing
-
-## price.for_title
-Who it is for
-
-## price.included_title
-What is included
-
-## price.change_title
-What changes from the level below
-
-## price.not_included_title
-What this level does not include
-
-## price.trial_title
-How the free month works
-
-## price.levels_title
-The four levels
-
-## price.audit_line
-Before you decide, ask for the free audit of your Google listing: we tell you what is missing and what we would fix first.
-
-## price.ht_label
-before VAT
-
-## price.ttc_label
-VAT included
-
-## price.vat_note
-The invoice adds {vat:ES} VAT, the rate of the shop’s country.
-
-## price.lite_title
-How much does BabyRock Social Lite cost
-
-## price.lite_lead
-Lite is the entry level: we answer every review on your Google and Maps listing, we publish on Instagram and Facebook from what you send us, and we keep the details and the photos of your listing up to date. It costs {price:lite_month} a month before VAT, {price_ttc:lite_month} with VAT.
-
-It is the level for a small shop, one person or one location, that wants its presence looked after without hiring anyone.
-
-## price.lite_for
-For a hair salon, a bakery or a neighbourhood workshop with one person in charge and the occasional post.
-
-## price.lite_change
-Lite is the first level, so there is nothing below it. What changes is upwards: Plus adds a person from our team who checks every reply before it goes out, twelve posts a month planned with you, and your opening hours watched.
-
-## price.lite_not_included
-Lite does not include the human check on every reply before it goes out, the watch on your opening hours and holidays, the private messages on Instagram and Facebook, the maintenance of your website, or several locations. All of that starts with Plus.
-
-## price.lite_trial
-The first month is free, once per client, with a card from sign-up. The first charge is automatic on day 30, at {price:lite_month} a month before VAT; cancel before that by WhatsApp or email and nothing is charged, and the free month does not come back if you return later.
-
-## price.plus_title
-How much does BabyRock Social Plus cost
-
-## price.plus_lead
-Plus takes everything in Lite and adds a person from our team who checks every reply before it goes out, twelve posts a month on Instagram and Facebook planned with you, your opening hours and holidays watched, and a summary every Monday. It costs {price:plus_month} a month before VAT, {price_ttc:plus_month} with VAT.
-
-It is the level for a shop that already lives on social media and gets reviews every week.
-
-## price.plus_for
-For a restaurant, a hair salon or a neighbourhood clinic with one or two people in charge and weekly activity on social media.
-
-## price.plus_change
-Compared with Lite, Plus adds the human check on every reply before it goes out, twelve posts a month planned with you, your opening hours and holidays watched with a warning before every change, one novelty a week on your Google listing, and a summary every Monday.
-
-## price.plus_not_included
-Plus does not include the private messages on Instagram and Facebook, the maintenance of your website, priority in the work queue, or the monthly short video. Those arrive with Pro and Enterprise.
-
-## price.plus_trial
-The first month is free, once per client, with a card from sign-up. The first charge is automatic on day 30, at {price:plus_month} a month before VAT; cancel before that by WhatsApp or email and nothing is charged, and the free month does not come back if you return later.
-
-## price.pro_title
-How much does BabyRock Social Pro cost
-
-## price.pro_lead
-Pro takes everything in Plus and adds the private messages on Instagram and Facebook, four updates a month on your Google listing, the maintenance of your website with a weekly check, and a monthly report with calls, route requests and how your reviews are moving. It costs {price:pro_month} a month before VAT, {price_ttc:pro_month} with VAT.
-
-It is the level for a shop that wants one person responsible for the whole channel: reviews, social, messages and website.
-
-## price.pro_for
-For a shop that already sells through Instagram or Facebook and gets private messages, or that has a website and wants someone to keep it current.
-
-## price.pro_change
-Compared with Plus, Pro adds the private messages answered, four updates a month on your listing, your website maintained with a weekly check, a monthly report, and a named contact who knows your account.
-
-## price.pro_not_included
-Pro does not include priority in the queue, the monthly short video, or the quarterly review of each location. That is Enterprise, for several locations.
-
-## price.pro_trial
-The first month is free, once per client, with a card from sign-up. The first charge is automatic on day 30, at {price:pro_month} a month before VAT; cancel before that by WhatsApp or email and nothing is charged, and the free month does not come back if you return later.
-
-## price.enterprise_title
-How much does BabyRock Social Enterprise cost
-
-## price.enterprise_lead
-Enterprise takes everything in Pro and adds all your locations on one account and one invoice, priority in the queue, a short video every month, and a quarterly review of each location. It costs {price:enterprise_month} a month before VAT, {price_ttc:enterprise_month} with VAT.
-
-It is the level for several locations with the same promise in each one and a single contact.
-
-## price.enterprise_for
-For a small group with several locations that wants one account, one invoice and one contact for all of them.
-
-## price.enterprise_change
-Compared with Pro, Enterprise adds all your locations on one account and one invoice, priority in the work queue, a short video every month, a single contact for every location, and a quarterly review of each one.
-
-## price.enterprise_not_included
-Enterprise is the highest level: nothing sits above it. What we do not sell at any level is the outcome: we promise no position in Google, no number of new reviews, and no followers.
-
-## price.enterprise_trial
-The first month is free, once per client, with a card from sign-up. The first charge is automatic on day 30, at {price:enterprise_month} a month before VAT; cancel before that by WhatsApp or email and nothing is charged, and the free month does not come back if you return later.
-
-## audit.kicker
-Free audit
-
-## audit.title
-The free audit of your Google listing
-
-## audit.lead
-Write the name of your shop and your city. We read the public data of your listing and give you a score out of 100, with what is missing and the three fixes worth the most. It is free and it obliges you to nothing.
-
-If you leave your email, we send you the result to keep. It is the only thing we keep about you, with your permission, and we delete it after twelve months if we do not keep talking.
-
-## audit.form_name
-Name of the shop
-
-## audit.form_name_ph
-Bar Roma
-
-## audit.form_city
-City
-
-## audit.form_city_ph
-Sant Cugat del Valles
-
-## audit.form_email
-Your email (optional)
-
-## audit.form_email_hint
-To receive the result
-
-## audit.form_consent
-Yes, I want to receive the result by email. I can withdraw my permission at any time.
-
-## audit.form_submit
-See my score
-
-## audit.form_note
-We read public data from your Google business listing.
-
-## audit.loading
-We are reading your listing. It takes a few seconds.
-
-## audit.error
-We could not read your listing right now. Try again in a minute.
-
-## audit.fixes_heading
-The three fixes worth the most
-
-## audit.parts_heading
-What we read
-
-## audit.emailed
-We have sent you the result by email.
-
-## audit.not_emailed
-The result stays on this page.
+Or 999.90 € a year, VAT excluded, in one payment.

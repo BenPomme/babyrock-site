@@ -12,8 +12,6 @@ Version of 9 September 2026. GDPR article 28. Annex to the [terms](https://www.b
 
 The processor processes, only to provide BabyRock Social, the content of Google reviews on that listing (text, stars, date, the author’s public name on Google) and the reply drafts and published texts, including the journal of who approved what was published.
 
-With the current product, the processor also handles the content the shop sends or connects for its presence: posts, comments and private messages on Instagram and Facebook, the photos and texts the shop sends on WhatsApp, and the content of its website (hours, services and contact details).
-
 It does not process health data, lists of the shop’s customer phone numbers, or the shop’s own WhatsApp with those customers.
 
 ## 3. Duration
@@ -22,7 +20,7 @@ For the life of the BabyRock Social contract and 24 months after, unless a legal
 
 ## 4. Instructions
 
-The processor processes that data only to: read reviews, draft replies, ask for your OK on 1- to 3-star reviews, publish, edit or delete replies on the listing, warn of a listing change or a vanished review, and defend a claim about a published text. On the plans that include social media and the website, also: publish and answer comments and private messages, keep the Google listing and the website current, and tell the shop what needs its approval.
+The processor processes that data only to: read reviews, draft replies, ask for your OK on 1- to 3-star reviews, publish, edit or delete replies on the listing, warn of a listing change or a vanished review, and defend a claim about a published text.
 
 A person authorised by the processor reviews every reply before it is published. AI may help with the draft.
 

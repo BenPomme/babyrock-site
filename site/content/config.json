@@ -9,7 +9,6 @@
   "apiUrl": "https://app.babyrock.ai",
   "factory": "https://github.com/BenPomme/brmsocialbackend",
   "reviewsManager": "reviews@babyrock.ai",
-  "indexnowKey": "9f4c2a7e15d84b3c6a0e2f7d91b45c38",
   "city": "Sant Cugat del Vallès",
   "legalName": "BABYROCK MINERALS, S.L.",
   "vatId": "B88957212",
@@ -19,51 +18,44 @@
     {
       "id": "lite",
       "name": "Lite",
+      "priceMonthHt": 9.99,
+      "priceMonthTtc": 12.09,
+      "priceYearHt": 99.9,
+      "included": 10,
       "features": 4,
       "featuresLong": 6,
-      "prices": {
-        "ES": { "monthHt": 48.76, "monthTtc": 59 },
-        "FR": { "monthHt": 65.83, "monthTtc": 79 }
-      }
+      "overageHt": 1.99
     },
     {
       "id": "plus",
       "name": "Plus",
       "featured": true,
+      "priceMonthHt": 39.99,
+      "priceMonthTtc": 48.39,
+      "priceYearHt": 399.9,
+      "included": 25,
       "features": 5,
       "featuresLong": 8,
-      "prices": {
-        "ES": { "monthHt": 106.61, "monthTtc": 129 },
-        "FR": { "monthHt": 140.83, "monthTtc": 169 }
-      }
+      "overageHt": 2.5
     },
     {
       "id": "pro",
       "name": "Pro",
+      "priceMonthHt": 99.99,
+      "priceMonthTtc": 120.99,
+      "priceYearHt": 999.9,
+      "included": 60,
       "features": 5,
       "featuresLong": 10,
-      "prices": {
-        "ES": { "monthHt": 164.46, "monthTtc": 199 },
-        "FR": { "monthHt": 207.5, "monthTtc": 249 }
-      }
-    },
-    {
-      "id": "enterprise",
-      "name": "Enterprise",
-      "features": 4,
-      "featuresLong": 6,
-      "prices": {
-        "ES": { "monthHt": 222.31, "monthTtc": 269 },
-        "FR": { "monthHt": 274.17, "monthTtc": 329 }
-      }
+      "overageHt": 2.5
     }
   ],
   "trials": {
     "noCard": { "replies": 3, "ratings": [4, 5] },
-    "withCard": { "liteDays": 30, "plusDays": 30, "proDays": 30, "enterpriseDays": 30 }
+    "withCard": { "liteDays": 14, "plusDays": 30, "proDays": 30 }
   },
   "currency": "EUR",
-  "vatNote": "Prices are HT. The invoice adds the VAT rate of the shop's country.",
+  "vatNote": "Prices are HT. Spanish IVA at 21 % is added on the invoice.",
   "gaId": "G-252L7M2L2P",
   "formula": {
     "lucaMid": 0.07,

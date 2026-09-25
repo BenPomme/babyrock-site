@@ -14,18 +14,11 @@ Estas condiciones se dirigen a **empresarios y profesionales**, incluido el aut�
 
 ## 2. Qué es el servicio
 
-BabyRock Social mantiene la presencia en línea de **un** comercio desde el WhatsApp que usted ya tiene, en cuatro versiones acumulativas:
-
-- **Lite**: contestamos cada reseña de su ficha de Google y de Maps, cuidamos los datos y las fotos de la ficha y publicamos en Instagram y Facebook a partir de lo que usted nos envía.
-- **Plus**: todo lo de Lite, con una persona de nuestro equipo revisando cada respuesta antes de publicarla, sus horarios y vacaciones vigilados en Google, y doce publicaciones al mes en Instagram y Facebook.
-- **Pro**: todo lo de Plus, con los mensajes privados de Instagram y Facebook contestados, cuatro novedades al mes en la ficha de Google y su web mantenida (contenido al día y una comprobación cada semana).
-- **Enterprise**: todo lo de Pro, con varios locales en una sola cuenta, prioridad en la cola y un vídeo corto al mes.
-
-Las reseñas siguen estas reglas, en todas las versiones:
+BabyRock Social consiste en redactar y publicar respuestas a las reseñas de Google de **una** ficha de empresa, con estas reglas:
 
 - Importamos reseñas sin respuesta (hasta 20 de las más recientes al empezar, salvo oferta distinta; después, el flujo).
 - El borrador se escribe en el idioma de la reseña (español, catalán, francés o inglés).
-- En Plus, Pro y Enterprise, una persona autorizada por nosotros lee cada respuesta y, si hace falta, la corrige, antes de publicarla. La inteligencia artificial puede ayudar al primer borrador. Nadie publica un texto que una persona no haya visto. En Lite, la revisión de las respuestas de 1 a 3 estrellas la hace usted.
+- Una persona autorizada por nosotros lee cada respuesta y, si hace falta, la corrige, antes de publicarla. La inteligencia artificial puede ayudar al primer borrador. Nadie publica un texto que una persona no haya visto.
 - Reseñas de 4 y 5 estrellas: se publican con la autorización continua que usted da al suscribirse y al invitarnos como gestor.
 - Reseñas de 1, 2 y 3 estrellas: se publican solo después de que usted apruebe o envíe el texto por el WhatsApp de BabyRock (Fil Babyrock). El silencio no es un sí.
 - Incluye un WhatsApp nuestro con usted (borradores 1 a 3 estrellas, recapitulativo, facturación, avisos de la ficha), el recapitulativo del lunes, el aviso el mismo día si cambian horario, nombre, teléfono, dirección o estado de la ficha, y el aviso si una reseña que teníamos en el diario desaparece de la ficha (no la republicamos).
@@ -35,28 +28,23 @@ Usted invita a reviews@babyrock.ai como **gestor**, no como propietario. Nunca p
 
 ## 3. Qué no incluye
 
-Publicidad de pago, sesiones de fotos o de vídeo en su local, colaboraciones con influencers, gestión de reservas, tiendas online, plataformas de terceros como TheFork o TripAdvisor, llamadas comerciales, copiar y pegar a un asistente, el WhatsApp **del comercio** con sus clientes (BabyRock Direct, que hoy no se vende), pedir reseñas después de una visita, listas de teléfonos, **promesa de más reseñas o de mejor nota**, espionaje de competidores, directorios fuera de Google, atributos de la ficha (terraza, PMR…) ni publicaciones «Local Post» de Google.
+Publicidad, sitio web, fotos, TheFork, caja, llamadas comerciales, copiar y pegar a un asistente, el WhatsApp **del comercio** con sus clientes (BabyRock Direct, no se vende), pedir reseñas después de una visita, listas de teléfonos, **promesa de más reseñas o de mejor nota**, espionaje de competidores, directorios fuera de Google, atributos de la ficha (terraza, PMR…) ni publicaciones «Local Post» de Google.
 
 Las [guías](https://www.babyrock.ai/es/guias/) del sitio explican hábitos que puede hacer usted. No forman parte de este contrato.
 
 ## 4. Precio, IVA y factura
 
-Precios en euros, **sin IVA**; el IVA del país se añade en la factura: {vat:ES} en España y {vat:FR} en Francia.
+Precios en euros, **sin IVA** para España; el IVA del 21 % se añade en la factura:
 
-- **Lite**: {price:lite_month} al mes sin IVA, {price_ttc:lite_month} con IVA, suscripción mensual que se renueva sola. Un año: {price:lite_year} sin IVA, en un solo pago.
-- **Plus**: {price:plus_month} al mes sin IVA, {price_ttc:plus_month} con IVA, suscripción mensual que se renueva sola, con una persona de nuestro equipo revisando cada respuesta. Un año: {price:plus_year} sin IVA, en un solo pago.
-- **Pro**: {price:pro_month} al mes sin IVA, {price_ttc:pro_month} con IVA, suscripción mensual que se renueva sola. Un año: {price:pro_year} sin IVA, en un solo pago.
-- **Enterprise**: {price:enterprise_month} al mes sin IVA, {price_ttc:enterprise_month} con IVA, suscripción mensual que se renueva sola, para un comercio con varios locales en una sola cuenta. Un año: {price:enterprise_year} sin IVA, en un solo pago.
+- **Lite**: 9,99 € al mes sin IVA (9,99 € + 2,10 € de IVA al 21 % = 12,09 €), suscripción mensual que se renueva sola. Incluye 10 respuestas automáticas al mes; cada respuesta extra son 1,99 € sin IVA. Un año: 99,90 € sin IVA, en un solo pago.
+- **Plus**: 39,99 € al mes sin IVA (39,99 € + 8,40 € de IVA al 21 % = 48,39 €), suscripción mensual que se renueva sola. Una persona de nuestro equipo revisa cada respuesta, hasta 25 al mes; cada respuesta extra son 2,50 € sin IVA. Un año: 399,90 € sin IVA, en un solo pago.
+- **Pro**: 99,99 € al mes sin IVA (99,99 € + 21,00 € de IVA al 21 % = 120,99 €), suscripción mensual que se renueva sola. Para un comercio con varios locales: 60 respuestas revisadas por una persona en total al mes; cada respuesta extra son 2,50 € sin IVA. Un año: 999,90 € sin IVA, en un solo pago.
 
-Lo que incluye cada versión se detalla en la página de servicios: https://www.babyrock.ai/es/servicios/.
-
-Francia y resto de la UE, empresario con NIF IVA: autoliquidación; usted paga el importe sin impuestos.
+Francia y resto de la UE, empresario con NIF IVA: autoliquidación; usted paga el importe sin IVA español.
 
 La factura sale a nombre de la razón social y el NIF que usted indique en el pago. Sin NIF, facturamos a la persona o al correo del alta. El PDF lo emite Stripe.
 
-**Prueba de un mes.** El primer mes es gratis una sola vez por cliente, en la versión que elija y con tarjeta desde el alta. El primer cobro se hace automáticamente el día 30; si no quiere seguir, cancele antes de esa fecha por WhatsApp o por correo y no se le cobra nada. Si cancela y vuelve más adelante, el mes gratis no se repite. La prueba sin tarjeta de tres reseñas sigue disponible por invitación, no consume este mes gratis y termina sola.
-
-**Auditoría gratuita de la ficha.** Si nos la pide por WhatsApp, leemos los datos públicos de su ficha de empresa de Google y le damos una nota sobre 100 y los tres arreglos que más se notan. Es gratis y no obliga a contratar. Para contestarle guardamos la dirección de su ficha, el canal que nos da (WhatsApp o correo) y el resultado, con su consentimiento, que se pide en la conversación y puede retirar cuando quiera. Si no contrata, borramos esos datos a los 12 meses. El detalle está en la [privacidad](https://www.babyrock.ai/es/privacidad/).
+Prueba gratuita y sin tarjeta: el comercio añade reviews@babyrock.ai como gestor de su ficha de Google y respondemos tres reseñas, solo de 4 y 5 estrellas. No se cobra nada y no hay nada que cancelar. Si el comercio prefiere probar el servicio completo con tarjeta, Lite incluye dos semanas gratis y Plus y Pro un mes gratis, y puede cancelar antes de que terminen sin pagar nada. Las pruebas no se acumulan.
 
 La puesta en servicio es 0 € si usted añade el gestor.
 

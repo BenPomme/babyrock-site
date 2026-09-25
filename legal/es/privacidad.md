@@ -28,8 +28,6 @@ Nunca pedimos la contraseña de Google del titular.
 
 **Prospección.** Si un comercio tiene correo o WhatsApp de empresa **en su sitio web**, podemos escribir una vez por canal, con forma de oponerse (STOP / BAJA). No usamos el teléfono de Maps como WhatsApp si no está publicado como canal de empresa. Base: interés legítimo en ofrecer un servicio B2B (art. 6.1.f) y artículo 21 LSSI. Puede oponerse en cualquier momento.
 
-**Auditoría gratuita de la ficha.** Si usted la pide, tratamos la dirección pública de su ficha de Google, el canal por el que nos escribe (WhatsApp o correo) y la nota y los arreglos que le devolvemos, para contestarle y, si quiere, para hablar después del servicio. Base: su consentimiento (art. 6.1.a RGPD), que se pide en la conversación y puede retirar cuando quiera. No cedemos esos datos a nadie para publicidad.
-
 **Sitio público.** Páginas visitadas, idioma, dispositivo. Si acepta cookies de analítica, Google Analytics. Base: consentimiento (art. 6.1.a). Detalle: [cookies](https://www.babyrock.ai/es/cookies/).
 
 **Diario del servicio (como encargados, ver encargo).** Texto de la reseña, nombre público del autor en Google, estrellas, borradores, texto publicado, quién pulsó publicar. Hace falta para prestar el servicio y para poder demostrar qué se publicó si hay una disputa.
@@ -62,7 +60,6 @@ Google, Meta, Stripe, xAI y GitHub pueden tratar datos en Estados Unidos u otros
 - Facturas y datos fiscales: 6 años (artículo 30 del Código de Comercio), o el plazo más largo que imponga una norma tributaria.
 - Cuenta, WhatsApp y diario del servicio: mientras dura el contrato y **24 meses** después, salvo que haya un litigio abierto.
 - Prospectos que no contratan: 12 meses desde el último contacto, o hasta que se opongan.
-- Auditoría gratuita que no acaba en contrato: 12 meses desde la última conversación.
 - Consentimiento de cookies: hasta que lo retire, o 12 meses, y entonces volvemos a preguntar.
 
 Al terminar, quitamos el acceso de gestor. El texto ya publicado en Google no lo borramos: es su ficha.

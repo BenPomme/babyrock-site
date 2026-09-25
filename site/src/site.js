@@ -167,16 +167,6 @@
   function track(name) {
     if (typeof window.gtag === "function") window.gtag("event", name);
   }
-
-  // The pay page wants a plan that names a level, an interval and a country, which is the SKU the
-  // catalogue builds. The cards already carry that; a bare level keeps the country of this page.
-  function planWithInterval(plan) {
-    if (!plan) return "";
-    if (/_(month|year)(_[a-z]{2})?$/.test(plan)) return plan;
-    const country = String(cfg.country || "ES").toLowerCase();
-    return plan + "_month_" + country;
-  }
-
   document.querySelectorAll(".btn-wa, .wa-fab").forEach(function (a) {
     a.addEventListener("click", function () {
       track("whatsapp_click");
@@ -197,12 +187,15 @@
     // Arriving from a card that already said which level, so honour it before anything is clicked.
     const asked = new URLSearchParams(location.search).get("plan");
     if (asked) {
-      // The link names a plan (lite_month_es) or only a level (lite). Both land on the card that
-      // sells that level, which is the one thing the visitor already chose.
-      const level = asked.replace(/['\\]/g, "").replace(/_(month|year)(_[a-z]{2})?$/, "");
-      fieldset.querySelectorAll("input[name=plan]").forEach(function (radio) {
-        if (radio.value.replace(/_(month|year)(_[a-z]{2})?$/, "") === level) radio.checked = true;
-      });
+      const radio = fieldset.querySelector("input[name=plan][value='" + asked.replace(/['\\]/g, "") + "']");
+      if (radio) {
+        radio.checked = true;
+      } else {
+        // The link names a plan (lite_month), the cards name a level (lite): take the level.
+        const level = asked.replace(/_(month|year)$/, "");
+        const byLevel = fieldset.querySelector("input[name=plan][value='" + level.replace(/['\\]/g, "") + "']");
+        if (byLevel) byLevel.checked = true;
+      }
     }
     function selected() {
       const picked = fieldset.querySelector("input[name=plan]:checked");
@@ -213,8 +206,8 @@
       if (!base || !plan) return;
       try {
         const url = new URL(base, location.href);
-        // The pay flow wants a level AND an interval AND a country.
-        url.searchParams.set("plan", planWithInterval(plan));
+        // The pay flow wants a level AND an interval.
+        url.searchParams.set("plan", /_(month|year)$/.test(plan) ? plan : plan + "_month");
         cta.setAttribute("href", url.toString());
       } catch (err) {
         /* keep the fallback link */
@@ -292,7 +285,7 @@
       }
       const plan = selectedPlan();
       // The pay page wants a level AND an interval, like the card links above.
-      if (plan) url.searchParams.set("plan", planWithInterval(plan));
+      if (plan) url.searchParams.set("plan", /_(month|year)$/.test(plan) ? plan : plan + "_month");
       if (value(data, "city")) url.searchParams.set("city", value(data, "city"));
       if (/^https?:\/\//i.test(value(data, "listing"))) url.searchParams.set("maps", value(data, "listing"));
       if (value(data, "email")) url.searchParams.set("email", value(data, "email"));
@@ -424,90 +417,4 @@
       history.replaceState(null, "", "#" + id);
     });
   });
-
-  // Ticket 08, the free listing audit. The form goes to the factory, which reads the listing, scores
-  // it and keeps the lead; this script prints what comes back. Every sentence a visitor reads is
-  // written once, in the endpoint's own copy file: the page hands over only the four labels it needs
-  // for the states the endpoint does not write (loading, a network that failed, and the mail line).
-  var auditForm = document.querySelector("[data-audit]");
-  var auditResult = document.querySelector("[data-audit-result]");
-  if (auditForm && auditResult) {
-    var auditEscape = function (value) {
-      return String(value === null || value === undefined ? "" : value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
-    };
-    var auditApi = String(cfg.apiUrl || "").replace(/\/$/, "");
-    var auditSay = function (message) {
-      auditResult.hidden = false;
-      auditResult.innerHTML = "<p class='note'>" + auditEscape(message) + "</p>";
-    };
-    var renderAudit = function (body) {
-      var fixes = (body.fixes || [])
-        .map(function (fix) {
-          return "<li>" + auditEscape(fix) + "</li>";
-        })
-        .join("");
-      var parts = (body.parts || [])
-        .map(function (part) {
-          return (
-            "<li><strong>" +
-            auditEscape(part.points) +
-            " / " +
-            auditEscape(part.max) +
-            "</strong> <span>" +
-            auditEscape(part.text) +
-            "</span></li>"
-          );
-        })
-        .join("");
-      auditResult.hidden = false;
-      auditResult.innerHTML =
-        "<p class='compare-price'>" +
-        auditEscape(body.score) +
-        "<small> / " +
-        auditEscape(body.scoredMax) +
-        "</small></p>" +
-        "<div class='lead'>" +
-        auditEscape(body.summary) +
-        "</div>" +
-        (fixes ? "<h3>" + auditEscape(auditForm.dataset.fixesHeading) + "</h3><ul>" + fixes + "</ul>" : "") +
-        "<h3>" +
-        auditEscape(auditForm.dataset.partsHeading) +
-        "</h3><ul>" +
-        parts +
-        "</ul><p class='tiny'>" +
-        auditEscape(body.emailed ? auditForm.dataset.emailed : auditForm.dataset.notEmailed) +
-        "</p>";
-    };
-    auditForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-      var data = new FormData(auditForm);
-      auditSay(auditForm.dataset.loading);
-      fetch(auditApi + "/api/audit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: String(data.get("name") || ""),
-          city: String(data.get("city") || ""),
-          email: String(data.get("email") || "").trim(),
-          consent: data.get("consent") === "on",
-          country: cfg.country || "ES",
-          language: document.documentElement.lang || "es",
-        }),
-      })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (body) {
-          if (body && body.found === true) renderAudit(body);
-          else auditSay(body && body.message ? body.message : auditForm.dataset.error);
-        })
-        .catch(function () {
-          auditSay(auditForm.dataset.error);
-        });
-    });
-  }
 })();

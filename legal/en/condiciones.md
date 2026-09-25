@@ -14,18 +14,11 @@ These terms are for **businesses and professionals**, including a sole trader wh
 
 ## 2. The service
 
-BabyRock Social looks after the online presence of **one** shop from the WhatsApp you already have, in four cumulative plans:
-
-- **Lite**: we answer every review on your Google and Maps listing, keep the listing's details and photos current, and post on Instagram and Facebook from what you send us.
-- **Plus**: everything in Lite, with a person on our team checking every reply before it is published, your opening hours and holidays watched on Google, and twelve posts a month on Instagram and Facebook.
-- **Pro**: everything in Plus, with the private messages on Instagram and Facebook answered, four changes a month on your Google listing, and your website maintained (content kept current and one check every week).
-- **Enterprise**: everything in Pro, with several locations on one account, priority in the queue and one short video a month.
-
-Reviews follow these rules, on every plan:
+BabyRock Social means drafting and publishing replies to Google reviews on **one** Business Profile, under these rules:
 
 - We import unanswered reviews (up to the 20 most recent at start, unless a different offer applies; then the live stream).
 - The draft is written in the language of the review (Spanish, Catalan, French or English).
-- On Plus, Pro and Enterprise, a person we authorise reads every reply and, if needed, edits it before it is published. AI may help with the first draft. Nobody publishes text a person has not seen. On Lite, you approve the 1, 2 and 3 star replies yourself.
+- A person we authorise reads every reply and, if needed, edits it before it is published. AI may help with the first draft. Nobody publishes text a person has not seen.
 - 4- and 5-star reviews: published under the standing authorisation you give by subscribing and inviting us as manager.
 - 1-, 2- and 3-star reviews: published only after you approve or send the text on BabyRock WhatsApp (Fil Babyrock). Silence is not yes.
 - Included: a WhatsApp thread with you (1 to 3 star drafts, recap, billing, listing alerts), the Monday recap, a same-day ping if hours, name, phone, address or status change, and a ping if a review in our journal disappears from the listing (we do not republish it).
@@ -35,28 +28,23 @@ You invite reviews@babyrock.ai as **manager**, not as owner. We never ask for th
 
 ## 3. What is not included
 
-Paid advertising, photo or video shoots at your premises, influencer work, booking management, online shops, third party platforms such as TheFork or TripAdvisor, sales calls, copy-paste to an assistant, the **shop’s** WhatsApp with its customers (BabyRock Direct, not sold today), asking for reviews after a visit, phone lists, **a promise of more reviews or a better rating**, competitor spying, directories other than Google, listing attributes, or Google Local Posts.
+Advertising, a website, photos, TheFork, the till, sales calls, copy-paste to an assistant, the **shop’s** WhatsApp with its customers (BabyRock Direct, not sold), asking for reviews after a visit, phone lists, **a promise of more reviews or a better rating**, competitor spying, directories other than Google, listing attributes, or Google Local Posts.
 
 The site [guides](https://www.babyrock.ai/en/guides/) teach habits you can do yourself. They are not part of this contract.
 
 ## 4. Price, VAT and invoice
 
-Prices in euros, **excluding VAT**; the country's VAT is added on the invoice: {vat:ES} in Spain and {vat:FR} in France.
+Prices in euros, **excluding VAT** for Spain; 21 % VAT is added on the invoice:
 
-- **Lite**: {price:lite_month} a month excluding VAT, {price_ttc:lite_month} including VAT, monthly subscription that renews by itself. A year: {price:lite_year} excluding VAT, in one payment.
-- **Plus**: {price:plus_month} a month excluding VAT, {price_ttc:plus_month} including VAT, monthly subscription that renews by itself, with a person on our team checking every reply. A year: {price:plus_year} excluding VAT, in one payment.
-- **Pro**: {price:pro_month} a month excluding VAT, {price_ttc:pro_month} including VAT, monthly subscription that renews by itself. A year: {price:pro_year} excluding VAT, in one payment.
-- **Enterprise**: {price:enterprise_month} a month excluding VAT, {price_ttc:enterprise_month} including VAT, monthly subscription that renews by itself, for a business with several places on one account. A year: {price:enterprise_year} excluding VAT, in one payment.
+- **Lite**: €9.99 a month excluding VAT (€9.99 + €2.10 VAT at 21% = €12.09), monthly subscription that renews by itself. It includes 10 automatic replies a month; each extra reply is €1.99 excluding VAT. A year: €99.90 excluding VAT, in one payment.
+- **Plus**: €39.99 a month excluding VAT (€39.99 + €8.40 VAT at 21% = €48.39), monthly subscription that renews by itself. A person on our team checks every reply, up to 25 a month; each extra reply is €2.50 excluding VAT. A year: €399.90 excluding VAT, in one payment.
+- **Pro**: €99.99 a month excluding VAT (€99.99 + €21.00 VAT at 21% = €120.99), monthly subscription that renews by itself. For a business with several places: 60 replies checked by a person in total each month; each extra reply is €2.50 excluding VAT. A year: €999.90 excluding VAT, in one payment.
 
-What each plan includes is set out on the services page: https://www.babyrock.ai/en/services/.
-
-France and the rest of the EU, a business with a VAT number: reverse charge; you pay the amount without tax.
+France and the rest of the EU, a business with a VAT number: reverse charge; you pay the amount without Spanish VAT.
 
 The invoice is in the legal name and tax ID you enter at payment. Without a tax ID, we invoice the person or the sign-up email. Stripe issues the PDF.
 
-**One-month trial.** The first month is free once per client, on the plan you choose and with a card from sign-up. The first charge is automatic on day 30; if you do not want to continue, cancel before that date on WhatsApp or by email and nothing is charged. If you cancel and come back later, the free month does not return. The three-review trial without a card stays available by invitation, does not use this free month and ends by itself.
-
-**Free listing audit.** If you ask for it on WhatsApp, we read the public data of your Google Business Profile and give you a score out of 100 and the three fixes that matter most. It is free and does not commit you to a contract. To answer you we keep your listing address, the channel you give us (WhatsApp or email) and the result, with your consent, asked in the conversation and withdrawable at any time. If you do not contract, we delete that data after 12 months. The detail is in the [privacy policy](https://www.babyrock.ai/en/privacy/).
+Free trial without a card: the business adds reviews@babyrock.ai as a manager of its Google listing and we answer three reviews, 4 and 5 stars only. Nothing is charged and there is nothing to cancel. If it would rather try the full service with a card, Lite includes two weeks free and Plus and Pro one month free, and it can cancel before the end at no cost. Trials do not stack.
 
 Set-up is €0 if you add the manager.
 

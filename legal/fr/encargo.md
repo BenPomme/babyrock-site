@@ -12,8 +12,6 @@ Version du 9 septembre 2026. Article 28 du RGPD. Annexe des [conditions](https:/
 
 Le sous-traitant traite, uniquement pour fournir BabyRock Social, le contenu des avis Google de cette fiche (texte, étoiles, date, nom public de l’auteur sur Google) et les brouillons et textes de réponse, y compris le journal de qui a validé et ce qui a été publié.
 
-Avec le produit actuel, le sous-traitant traite en outre les contenus que le commerce lui envoie ou lui connecte pour sa présence : publications, commentaires et messages privés d’Instagram et de Facebook, les photos et textes envoyés par WhatsApp, et le contenu de son site (horaires, services, coordonnées).
-
 Il ne traite pas de données de santé, ni de listes de téléphones des clients du commerce, ni le WhatsApp du local avec ces clients.
 
 ## 3. Durée
@@ -22,7 +20,7 @@ Pendant le contrat BabyRock Social et 24 mois après, sauf obligation légale ou
 
 ## 4. Instructions
 
-Le sous-traitant ne traite ces données que pour : lire les avis, rédiger des brouillons, demander votre accord sur les avis 1 à 3 étoiles, publier, modifier ou supprimer des réponses sur la fiche, signaler un changement de fiche ou un avis disparu, et défendre une réclamation sur un texte publié. Dans les formules qui incluent les réseaux sociaux et le site, en outre : publier et répondre aux commentaires et aux messages privés, tenir à jour la fiche Google et le site, et prévenir le commerce de ce qui attend son accord.
+Le sous-traitant ne traite ces données que pour : lire les avis, rédiger des brouillons, demander votre accord sur les avis 1 à 3 étoiles, publier, modifier ou supprimer des réponses sur la fiche, signaler un changement de fiche ou un avis disparu, et défendre une réclamation sur un texte publié.
 
 Une personne autorisée par le sous-traitant relit chaque réponse avant publication. L’IA peut aider le brouillon.
 

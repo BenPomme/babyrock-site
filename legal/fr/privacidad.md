@@ -28,8 +28,6 @@ Nous ne demandons jamais le mot de passe Google du titulaire.
 
 **Prospection.** Si un commerce a un e-mail ou un WhatsApp d’entreprise **sur son site**, nous pouvons écrire une fois par canal, avec un moyen de s’opposer (STOP / BAJA). Nous n’utilisons pas le téléphone Maps comme WhatsApp s’il n’est pas affiché comme canal d’entreprise. Base : intérêt légitime à proposer un service B2B (art. 6.1.f) et article 21 LSSI. Vous pouvez vous y opposer à tout moment.
 
-**Audit gratuit de la fiche.** Si vous le demandez, nous traitons l’adresse publique de votre fiche Google, le canal par lequel vous nous écrivez (WhatsApp ou e-mail) et la note et les corrections que nous vous renvoyons, pour vous répondre et, si vous le souhaitez, pour parler du service ensuite. Base : votre consentement (art. 6.1.a RGPD), demandé dans la conversation et retirable à tout moment. Ces données ne sont cédées à personne pour de la publicité.
-
 **Site public.** Pages visitées, langue, appareil. Si vous acceptez les cookies d’analytique, Google Analytics. Base : consentement (art. 6.1.a). Détail : [cookies](https://www.babyrock.ai/fr/cookies/).
 
 **Journal du service (en tant que sous-traitants, voir l’accord).** Texte de l’avis, nom public de l’auteur sur Google, étoiles, brouillons, texte publié, qui a cliqué Publier. Nécessaire pour fournir le service et pour montrer ce qui a été publié en cas de litige.
@@ -62,7 +60,6 @@ Google, Meta, Stripe, xAI et GitHub peuvent traiter des données aux États-Unis
 - Factures et données fiscales : 6 ans (article 30 du code de commerce espagnol), ou le délai plus long qu’imposerait une règle fiscale.
 - Compte, WhatsApp et journal du service : pendant le contrat et **24 mois** après, sauf litige ouvert.
 - Prospects qui ne contractent pas : 12 mois après le dernier contact, ou jusqu’à opposition.
-- Audit gratuit qui ne mène pas à un contrat : 12 mois après la dernière conversation.
 - Consentement cookies : jusqu’à retrait, ou 12 mois, puis nous redemandons.
 
 À la fin, nous retirons l’accès gestionnaire. Le texte déjà publié sur Google, nous ne l’effaçons pas : c’est votre fiche.

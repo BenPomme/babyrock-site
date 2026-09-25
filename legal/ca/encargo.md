@@ -12,8 +12,6 @@ Versió del 9 de setembre de 2026. Article 28 del RGPD. Annex de les [condicions
 
 L’encarregat tracta, només per prestar BabyRock Social, el contingut de les ressenyes de Google d’aquesta fitxa (text, estrelles, data, nom públic de l’autor a Google) i els esborranys i textos de resposta, inclòs el diari de qui va validar i què es va publicar.
 
-Amb el producte actual, l’encarregat tracta a més el contingut que el comerç li envia o li connecta per a la seva presència: publicacions, comentaris i missatges privats d’Instagram i Facebook, les fotos i textos que el comerç envia per WhatsApp, i el contingut del seu web (horaris, serveis i dades de contacte).
-
 No tracta dades de salut, ni llistes de telèfons dels clients del comerç, ni el WhatsApp del local amb aquests clients.
 
 ## 3. Durada
@@ -22,7 +20,7 @@ Mentre duri el contracte de BabyRock Social i 24 mesos després, llevat d’obli
 
 ## 4. Instruccions
 
-L’encarregat només tracta aquestes dades per: llegir ressenyes, redactar esborranys, demanar el vistiplau en ressenyes d’1 a 3 estrelles, publicar, editar o esborrar respostes a la fitxa, avisar d’un canvi de fitxa o d’una ressenya desapareguda, i defensar un reclam sobre un text publicat. En els nivells que inclouen xarxes socials i web, a més: publicar i contestar comentaris i missatges privats, mantenir la fitxa de Google i el web al dia, i avisar el comerç del que necessita la seva aprovació.
+L’encarregat només tracta aquestes dades per: llegir ressenyes, redactar esborranys, demanar el vistiplau en ressenyes d’1 a 3 estrelles, publicar, editar o esborrar respostes a la fitxa, avisar d’un canvi de fitxa o d’una ressenya desapareguda, i defensar un reclam sobre un text publicat.
 
 Una persona autoritzada per l’encarregat revisa cada resposta abans de publicar-la. La IA pot ajudar l’esborrany.
 
