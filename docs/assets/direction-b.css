@@ -212,7 +212,10 @@ p { color: #a9b2b9; margin: 0 0 14px; }
 /* The two faces behind the promise (Ben, 29 September 2026): the original Who we are page carried
    their portraits, so the new chart carries them too. */
 .panel.person { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 18px; align-items: start; }
-.person .portrait { display: block; width: 104px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 18%; border-radius: 14px; border: 1px solid var(--line); }
+/* `height: auto` is not decoration: the width and height attributes on the img are presentational
+   hints, so a rule that sets only the width leaves a 480 pixel tall box (found 29 September 2026 on
+   the Rosalía card, and it was quietly true of these portraits too). */
+.person .portrait { display: block; width: 104px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 18%; border-radius: 14px; border: 1px solid var(--line); }
 .person h3 { margin-top: 2px; }
 
 @media (max-width: 520px) {
@@ -248,6 +251,37 @@ footer { border-top: 1px solid var(--line); padding: 26px 0; }
 .showcase-copy ul { margin: 0; padding-left: 18px; color: #b9c2c9; font-size: 14.5px; }
 .showcase-copy li { margin-bottom: 7px; }
 .showcase-copy li::marker { color: var(--acid); }
+
+/* Rosalía herself, beside the block that says everything runs through WhatsApp (Ben, 29 September
+   2026: "next to the last bucket about whatsapp, add a nice portrait of rosalia"). A small card, the
+   same framing as the portraits on Who we are, so a visitor can see who is on the other side of the
+   thread. */
+.rosalia-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 26px 0 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  max-width: 300px;
+}
+.rosalia-card img {
+  display: block;
+  width: 76px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 18%;
+  border-radius: 12px;
+}
+.rosalia-card figcaption {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
 .showcase-right { display: grid; gap: 14px; }
 .mini-week { background: #0a0d10; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
 .mini-week .mono { display: block; margin-bottom: 6px; }
