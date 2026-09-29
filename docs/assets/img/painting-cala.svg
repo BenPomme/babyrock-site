@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Cala, oil on linen">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8cf"/>
+      <stop offset="0.5" stop-color="#4f9d9a"/>
+      <stop offset="1" stop-color="#1d5a63"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0dfba"/>
+      <stop offset="1" stop-color="#c9a97c"/>
+    </linearGradient>
+    <filter id="grain3">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="11" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+    </filter>
+    <filter id="soft3"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="600" height="600" fill="#e9ecd8"/>
+  <path d="M0 250 L220 210 L420 236 L600 200 L600 600 L0 600 Z" fill="url(#water)"/>
+  <path d="M0 470 L200 440 L420 466 L600 430 L600 600 L0 600 Z" fill="url(#sand)"/>
+  <g stroke-linecap="round" opacity="0.5">
+    <path d="M40 300 H560" stroke="#d9f0ea" stroke-width="12"/>
+    <path d="M20 344 H520" stroke="#9fd0c9" stroke-width="14"/>
+    <path d="M60 392 H600" stroke="#6fb3b0" stroke-width="16"/>
+    <path d="M0 520 H600" stroke="#f6ead0" stroke-width="18"/>
+  </g>
+  <path d="M0 250 L220 210 L420 236 L600 200" fill="none" stroke="#f7f3dd" stroke-width="10" opacity="0.8" filter="url(#soft3)"/>
+  <rect width="600" height="600" filter="url(#grain3)" opacity="0.4"/>
+</svg>

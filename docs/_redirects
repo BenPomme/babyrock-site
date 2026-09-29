@@ -1,0 +1,27 @@
+# Written by scripts/prepare-site-switch.sh from .scratch/rebuild-v2/redirect-map.md.
+# English moves to the new site; the other three languages stay where they are.
+# The root serves the new home. It was a 301 to /es/ while the old site owned it.
+/en/ / 301
+/en/audit/ /start-free/ 301
+/en/guides/ /guides/ 301
+/en/how-it-works/ / 301
+/en/subscribe/ /start-free/ 301
+/en/privacy/ /privacy/ 301
+/en/terms/ /terms/ 301
+/en/legal-notice/ /legal-notice/ 301
+/en/cookies/ /cookies/ 301
+/en/dpa/ /dpa/ 301
+/en/pricing/lite/ /pricing/ 301
+/en/pricing/plus/ /pricing/ 301
+/en/pricing/pro/ /pricing/ 301
+/en/pricing/enterprise/ /pricing/ 301
+/en/guides/reply-to-every-review/ /guides/reply-to-every-review/ 301
+/en/guides/ask-for-reviews-without-breaking-the-rules/ /guides/ask-for-reviews-without-breaking-the-rules/ 301
+/en/guides/google-review-qr-code/ /guides/google-review-qr-code/ 301
+/en/guides/when-to-ask-for-a-review/ /guides/when-to-ask-for-a-review/ 301
+/en/guides/why-review-count-matters/ /guides/why-review-count-matters/ 301
+/en/guides/how-to-remove-a-google-review/ /guides/how-to-remove-a-google-review/ 301
+/en/guides/how-to-verify-google-business-profile/ /guides/how-to-verify-google-business-profile/ 301
+/en/guides/google-review-response-examples/ /guides/google-review-response-examples/ 301
+/en/guides/how-to-respond-to-negative-google-reviews/ /guides/how-to-respond-to-negative-google-reviews/ 301
+/en/guides/do-google-reviews-help-seo/ /guides/do-google-reviews-help-seo/ 301

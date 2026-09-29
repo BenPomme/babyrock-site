@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Capvespre, oil on linen">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0b98a"/>
+      <stop offset="0.4" stop-color="#d97f6d"/>
+      <stop offset="0.7" stop-color="#7a5a86"/>
+      <stop offset="1" stop-color="#2c3157"/>
+    </linearGradient>
+    <filter id="grain2">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+    </filter>
+    <filter id="soft2"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#dusk)"/>
+  <circle cx="300" cy="330" r="86" fill="#ffd9a8" opacity="0.75" filter="url(#soft2)"/>
+  <g stroke-linecap="round" opacity="0.5">
+    <path d="M0 380 H600" stroke="#5c4b6f" stroke-width="30"/>
+    <path d="M0 430 H600" stroke="#3c3a5f" stroke-width="34"/>
+    <path d="M0 486 H600" stroke="#2a2c4b" stroke-width="36"/>
+    <path d="M0 546 H600" stroke="#1b1d36" stroke-width="40"/>
+  </g>
+  <g stroke-linecap="round" opacity="0.45">
+    <path d="M0 300 H600" stroke="#ffc48f" stroke-width="22"/>
+    <path d="M80 254 H520" stroke="#f6a98a" stroke-width="16"/>
+    <path d="M160 214 H460" stroke="#e78f7e" stroke-width="12"/>
+  </g>
+  <rect width="600" height="600" filter="url(#grain2)" opacity="0.4"/>
+</svg>

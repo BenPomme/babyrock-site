@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do Google reviews help SEO and your Maps ranking?</title>
+  <meta name="description" content="Reviews are not a magic ranking switch. They are one of the things people, and Google, look at when they compare two shops on the same street. This piece is the honest version.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.babyrock.ai/guides/do-google-reviews-help-seo/">
+  <link rel="alternate" hreflang="en" href="https://www.babyrock.ai/guides/do-google-reviews-help-seo/">
+  <link rel="alternate" hreflang="es" href="https://www.babyrock.ai/es/guides/ayudan-las-resenas-google-al-posicionamiento/">
+  <link rel="alternate" hreflang="fr" href="https://www.babyrock.ai/fr/guides/les-avis-google-aident-ils-au-referencement/">
+  <link rel="alternate" hreflang="x-default" href="https://www.babyrock.ai/guides/do-google-reviews-help-seo/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BabyRock Social">
+  <meta property="og:title" content="Do Google reviews help SEO and your Maps ranking?">
+  <meta property="og:description" content="Reviews are not a magic ranking switch. They are one of the things people, and Google, look at when they compare two shops on the same street. This piece is the honest version.">
+  <meta property="og:url" content="https://www.babyrock.ai/guides/do-google-reviews-help-seo/">
+  <meta property="og:image" content="https://www.babyrock.ai/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/direction-b.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"en","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/guides/do-google-reviews-help-seo/","url":"https://www.babyrock.ai/guides/do-google-reviews-help-seo/","name":"Do Google reviews help SEO and your Maps ranking?","description":"Reviews are not a magic ranking switch. They are one of the things people, and Google, look at when they compare two shops on the same street. This piece is the honest version.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"en"}]}</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">BABY<em>ROCK</em></a>
+    <nav class="lang-nav" aria-label="Language"><a href="/guides/do-google-reviews-help-seo/" hreflang="en" class="on" aria-current="true">EN</a><a href="/es/guides/ayudan-las-resenas-google-al-posicionamiento/" hreflang="es">ES</a><a href="/fr/guides/les-avis-google-aident-ils-au-referencement/" hreflang="fr">FR</a></nav>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/how">How it works</a>
+      <a href="/apply">Apply</a>
+    </nav>
+    <a class="btn btn-primary" href="/apply">Apply to join</a>
+  </div>
+</header>
+
+<main class="wrap article">
+    <p class="mono">Guide · Google reviews</p>
+    <h1>Do Google reviews help SEO and your Maps ranking?</h1>
+    <p class="lede">Reviews are not a magic ranking switch. They are one of the things people, and Google, look at when they compare two shops on the same street. This piece is the honest version.</p>
+    <div class="panel" style="margin-top:22px"><h3>Why it matters</h3><p>Google’s own help says replies show that you value feedback, and that more genuine reviews can help a listing stand out. Independent research on restaurants found that ratings move revenue for small places more than for chains. None of that is a guarantee that ten new stars will lift you into the local pack tomorrow.</p></div>
+    <div class="article-body"><p>Yes, Google reviews help local SEO and Maps more than they help a classic blue-link result. When someone searches “bakery near me”, Google has to pick a handful of listings. The usual ingredients are the category you chose, the distance, whether the profile is complete, and whether the page looks alive. Reviews sit in that last bucket.</p></div>
+  <section class="final" style="border-top:1px solid var(--line); margin-top:40px">
+    <p class="mono">Start here</p>
+    <h2>Want this handled for you?</h2>
+    <p>Apply, and we read your Google listing, your Instagram and your Facebook, then
+    tell you what is missing and what it would take.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/apply">Apply to join</a>
+      <a class="btn btn-ghost" href="/how">See how it works</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap mono">BabyRock · Sant Cugat del Vallès · one thread, every surface · your access, your data, your website</footer>
+<script>
+  (function () {
+    function send(name) {
+      try {
+        fetch("https://app.babyrock.ai/api/event", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: name,
+            path: location.pathname,
+            lang: document.documentElement.lang || "en"
+          }),
+          keepalive: true
+        }).catch(function () {});
+      } catch (e) {}
+    }
+    window.brSiteEvent = send;
+    var form = document.querySelector("[data-apply-form]");
+    if (form) {
+      var started = false;
+      form.addEventListener("focusin", function () {
+        if (started) return;
+        started = true;
+        send("apply_started");
+      });
+    }
+    document.addEventListener("click", function (event) {
+      var link = event.target && event.target.closest
+        ? event.target.closest('a[href*="wa.me"], a[href*="whatsapp"]')
+        : null;
+      if (link) send("whatsapp_clicked");
+    });
+  })();
+</script>
+</body>
+</html>

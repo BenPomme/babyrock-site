@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to remove a Google review (and how to report a fake one)</title>
+  <meta name="description" content="Most genuine Google reviews cannot be deleted, even the ones that sting. This guide is for the owner who has just found a 1-star they did not expect, and wants the legal next step, not a miracle.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.babyrock.ai/guides/how-to-remove-a-google-review/">
+  <link rel="alternate" hreflang="en" href="https://www.babyrock.ai/guides/how-to-remove-a-google-review/">
+  <link rel="alternate" hreflang="es" href="https://www.babyrock.ai/es/guides/como-eliminar-una-resena-de-google/">
+  <link rel="alternate" hreflang="fr" href="https://www.babyrock.ai/fr/guides/comment-supprimer-un-avis-google/">
+  <link rel="alternate" hreflang="x-default" href="https://www.babyrock.ai/guides/how-to-remove-a-google-review/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BabyRock Social">
+  <meta property="og:title" content="How to remove a Google review (and how to report a fake one)">
+  <meta property="og:description" content="Most genuine Google reviews cannot be deleted, even the ones that sting. This guide is for the owner who has just found a 1-star they did not expect, and wants the legal next step, not a miracle.">
+  <meta property="og:url" content="https://www.babyrock.ai/guides/how-to-remove-a-google-review/">
+  <meta property="og:image" content="https://www.babyrock.ai/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/direction-b.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"en","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/guides/how-to-remove-a-google-review/","url":"https://www.babyrock.ai/guides/how-to-remove-a-google-review/","name":"How to remove a Google review (and how to report a fake one)","description":"Most genuine Google reviews cannot be deleted, even the ones that sting. This guide is for the owner who has just found a 1-star they did not expect, and wants the legal next step, not a miracle.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"en"}]}</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">BABY<em>ROCK</em></a>
+    <nav class="lang-nav" aria-label="Language"><a href="/guides/how-to-remove-a-google-review/" hreflang="en" class="on" aria-current="true">EN</a><a href="/es/guides/como-eliminar-una-resena-de-google/" hreflang="es">ES</a><a href="/fr/guides/comment-supprimer-un-avis-google/" hreflang="fr">FR</a></nav>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/how">How it works</a>
+      <a href="/apply">Apply</a>
+    </nav>
+    <a class="btn btn-primary" href="/apply">Apply to join</a>
+  </div>
+</header>
+
+<main class="wrap article">
+    <p class="mono">Guide · Google reviews</p>
+    <h1>How to remove a Google review (and how to report a fake one)</h1>
+    <p class="lede">Most genuine Google reviews cannot be deleted, even the ones that sting. This guide is for the owner who has just found a 1-star they did not expect, and wants the legal next step, not a miracle.</p>
+    <div class="panel" style="margin-top:22px"><h3>Why it matters</h3><p>Google says it does not step into a conflict between a business and a customer. A review comes down only if it breaks the rules: spam, fake engagement, incentives, conflict of interest, or prohibited content. Disagreeing with the score is not enough.</p></div>
+    <div class="article-body"><p>You cannot remove a customer’s Google review from your listing. Only the person who wrote it, or Google after a report, can take it down. If the text describes a real visit, even unfairly, reporting it will not work. Reply once, in public, then go back to work.</p></div>
+  <section class="final" style="border-top:1px solid var(--line); margin-top:40px">
+    <p class="mono">Start here</p>
+    <h2>Want this handled for you?</h2>
+    <p>Apply, and we read your Google listing, your Instagram and your Facebook, then
+    tell you what is missing and what it would take.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/apply">Apply to join</a>
+      <a class="btn btn-ghost" href="/how">See how it works</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap mono">BabyRock · Sant Cugat del Vallès · one thread, every surface · your access, your data, your website</footer>
+<script>
+  (function () {
+    function send(name) {
+      try {
+        fetch("https://app.babyrock.ai/api/event", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: name,
+            path: location.pathname,
+            lang: document.documentElement.lang || "en"
+          }),
+          keepalive: true
+        }).catch(function () {});
+      } catch (e) {}
+    }
+    window.brSiteEvent = send;
+    var form = document.querySelector("[data-apply-form]");
+    if (form) {
+      var started = false;
+      form.addEventListener("focusin", function () {
+        if (started) return;
+        started = true;
+        send("apply_started");
+      });
+    }
+    document.addEventListener("click", function (event) {
+      var link = event.target && event.target.closest
+        ? event.target.closest('a[href*="wa.me"], a[href*="whatsapp"]')
+        : null;
+      if (link) send("whatsapp_clicked");
+    });
+  })();
+</script>
+</body>
+</html>
