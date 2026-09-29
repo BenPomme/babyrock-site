@@ -64,10 +64,12 @@ header.nav .wrap { display: flex; align-items: center; gap: 26px; padding: 16px 
 /* Hero */
 .hero { padding: 68px 0 30px; }
 
-/* The hero, second pass (Ben, 29 September 2026): the text runs the full width of the page and is
-   justified, both edges square, instead of centred in a 20ch column. The buttons, the fine print
-   and the platform marks stay centred under it. */
-.hero-center { text-align: justify; }
+/* The hero, third pass (Ben, 29 September 2026): the text still runs the full width of the page,
+   but it is no longer justified. On a phone, justifying a title opens rivers of space between the
+   words ("Votre      présence numérique"), and the join page, which is not justified, reads better.
+   The title and the lede break naturally, left aligned; the buttons, the fine print and the
+   platform marks stay centred under them. */
+.hero-center { text-align: left; }
 .hero-center h1 { max-width: none; }
 .hero-center .lede { max-width: none; margin-left: auto; margin-right: auto; }
 .hero-center .hero-actions { justify-content: center; }
