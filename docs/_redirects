@@ -1,10 +1,10 @@
 # Written by scripts/prepare-site-switch.sh from .scratch/rebuild-v2/redirect-map.md.
 # English, Spanish and French move to the new site; Catalan stays where it is.
 # The root serves the new home. It was a 301 to /es/ while the old site owned it.
-/es/auditoria/ /es/apply/ 301
+/es/auditoria/ /es/start-free/ 301
 /es/guias/ /es/guides/ 301
-/es/como-funciona/ /es/how/ 301
-/es/suscribirse/ /es/apply/ 301
+/es/como-funciona/ /es/ 301
+/es/suscribirse/ /es/start-free/ 301
 /es/privacidad/ /es/privacy/ 301
 /es/condiciones/ /es/terms/ 301
 /es/aviso-legal/ /es/legal-notice/ 301
@@ -23,9 +23,9 @@
 /es/guias/ejemplos-respuesta-resenas-google/ /es/guides/ejemplos-respuesta-resenas-google/ 301
 /es/guias/como-responder-resenas-negativas-google/ /es/guides/como-responder-resenas-negativas-google/ 301
 /es/guias/ayudan-las-resenas-google-al-posicionamiento/ /es/guides/ayudan-las-resenas-google-al-posicionamiento/ 301
-/fr/audit/ /fr/apply/ 301
-/fr/comment-ca-marche/ /fr/how/ 301
-/fr/s-abonner/ /fr/apply/ 301
+/fr/audit/ /fr/start-free/ 301
+/fr/comment-ca-marche/ /fr/ 301
+/fr/s-abonner/ /fr/start-free/ 301
 /fr/confidentialite/ /fr/privacy/ 301
 /fr/conditions/ /fr/terms/ 301
 /fr/mentions-legales/ /fr/legal-notice/ 301
