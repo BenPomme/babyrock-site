@@ -1,6 +1,8 @@
 # Written by scripts/prepare-site-switch.sh from .scratch/rebuild-v2/redirect-map.md.
-# English, Spanish and French move to the new site; Catalan stays where it is.
+# English, Spanish and French move to the new site; Catalan is retired to /es/.
 # The root serves the new home. It was a 301 to /es/ while the old site owned it.
+/ca/ /es/ 301
+/ca/* /es/ 301
 /how/ / 301
 /apply/ /start-free/ 301
 /es/how/ /es/ 301
