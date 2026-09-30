@@ -46,6 +46,12 @@ header.nav .wrap { display: flex; align-items: center; gap: 26px; padding: 16px 
 .nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; }
 .nav-links a b { color: var(--text); font-weight: 600; }
 .nav-links a:hover { color: var(--text); }
+/**
+ * One call to action per header (Ben, 30 September 2026: "i only want the green version"), and it
+ * never breaks in two lines when the brand and the language switcher take their room: on a phone the
+ * button was wrapping to "Join the / waitlist" because a flex item shrinks before its neighbour does.
+ */
+header.nav .btn { white-space: nowrap; flex-shrink: 0; }
 /* The language buttons (Ben, 29 September 2026): the site's three languages, small, next to the
    brand, with the one you are reading marked. */
 .lang-nav { display: flex; align-items: center; gap: 8px; margin-left: 4px; }
