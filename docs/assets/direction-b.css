@@ -74,6 +74,13 @@ html[data-currency="eur"] .price-usd { display: none; }
 .btn-wa { background: #25d366; color: #06331a; border-color: #25d366; }
 .btn-wa .ico { width: 17px; height: 17px; fill: currentColor; }
 
+/* The cookie banner. Its choice gates the GA4 tag, and the cookie policy page names both. */
+.cookie-banner { position: fixed; left: 16px; bottom: 16px; z-index: 80; width: min(28rem, calc(100% - 32px)); background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); }
+.cookie-banner[hidden] { display: none !important; }
+.cookie-banner h2 { margin: 0 0 6px; font-size: 18px; }
+.cookie-banner p { margin: 0 0 14px; color: var(--muted); font-size: 14.5px; }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
 /* Hero */
 .hero { padding: 68px 0 30px; }
 
