@@ -19,7 +19,7 @@
   <meta property="og:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
-  <link rel="stylesheet" href="/assets/direction-b.css?v=767ef9e383">
+  <link rel="stylesheet" href="/assets/direction-b.css?v=de342d7fe8">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"es","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/es/start-free/","url":"https://www.babyrock.ai/es/start-free/","name":"Apúntate a la lista | BabyRock","description":"Apúntate a la lista de espera de BabyRock y te escribiremos cuando haya una plaza.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"es"}]}</script>
 </head>
 <body>
@@ -381,17 +381,18 @@
       </div>
       <p class="fine">Usamos tus datos para hablarte de tu sitio en la lista, nada más, y puedes pedirnos que los borremos cuando quieras.</p>
     </form>
+    <p class="lede">Apúntate para acceder a BabyRock. Te contactaremos cuando haya una plaza y te explicaremos la oferta antes de que decidas. Apuntarte no inicia una suscripción de pago ni requiere tarjeta.</p>
   </section>
 
   <section class="wrap">
     <div class="panel">
       <h3>Qué hace el plan Gratis</h3>
       <ul>
-        <li>Responde a tus reseñas de Google, las de 4 y 5 estrellas automáticamente</li>
-        <li>Responde a los comentarios de Instagram y Facebook</li>
-        <li>Redacta las respuestas de 1 a 3 estrellas y te pide tu OK antes</li>
-        <li>Tu panel de rendimiento, y un resumen cada lunes</li>
-        <li>Respuestas sin límite, con un control de uso razonable por detrás</li>
+        <li>Respuestas a reseñas de Google y a comentarios de Instagram y Facebook con la voz de tu marca</li>
+        <li>Avisos de mensajes privados hasta 100 conversaciones al mes, sin respuestas automáticas</li>
+        <li>Las reseñas de Google de 1 a 3 estrellas te llegan para que las apruebes; si no respondes en 48 horas, la respuesta se publica</li>
+        <li>Tu panel y tu resumen semanal</li>
+        <li>Servicios sociales gratis hasta 1.000 seguidores de Instagram, con 30 días de margen tras superar el límite verificado</li>
       </ul>
     </div>
   </section>
@@ -405,9 +406,8 @@
         <li>Cuando te seleccionemos, tendrás que añadirnos como gestor de las plataformas que quieras
         que llevemos (Google, Instagram y Facebook). Te guiamos paso a paso.</li>
       </ul>
-      <p class="fine">Tendrás que añadir una tarjeta si decides conectar Instagram y Facebook, como
-      forma de filtrar cuentas. Sin aplicaciones que instalar. Tú mantienes la propiedad de todas tus
-      cuentas y puedes retirarnos el acceso cuando quieras.</p>
+      <p class="fine">No necesitas tarjeta para empezar. Sin aplicaciones que instalar. Tú mantienes
+      la propiedad de todas tus cuentas y puedes retirarnos el acceso cuando quieras.</p>
     </div>
   </section>
 
@@ -417,9 +417,9 @@
     <h2>Los planes de pago están en fase de prueba.</h2>
     <p class="lede">
       El formulario de arriba es el único. Entramos por tandas y, cuando llegue tu turno, te
-      escribimos con el plan que nos gustaría que probaras: el plan Gratis, o uno de los de pago
-      durante 15 días, por nuestra cuenta, a cambio de tu opinión sincera. Tú decides entonces. Sin
-      tarjeta hasta que elijas un plan de pago.
+      escribimos con el plan que nos gustaría que probaras: el plan Gratis, o un plan de pago gratis
+      durante el piloto, a cambio de tu opinión sincera. Tú decides entonces. Sin tarjeta hasta que
+      elijas un plan de pago.
     </p>
     <div class="hero-actions" style="margin-top:18px">
       <button class="btn btn-ghost" type="button" data-share>Comparte esta página</button>
@@ -527,6 +527,28 @@
         : null;
       if (link) send("whatsapp_clicked");
     });
+    var toggle = document.querySelector(".currency-toggle");
+    if (toggle) {
+      var setCurrency = function (currency) {
+        var code = currency === "usd" ? "usd" : "eur";
+        document.documentElement.setAttribute("data-currency", code);
+        toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+          var on = button.getAttribute("data-currency") === code;
+          button.classList.toggle("on", on);
+          button.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        try { localStorage.setItem("br-currency", code); } catch (e) {}
+      };
+      toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          setCurrency(button.getAttribute("data-currency"));
+          send("currency_" + button.getAttribute("data-currency"));
+        });
+      });
+      var stored = "eur";
+      try { stored = localStorage.getItem("br-currency") === "usd" ? "usd" : "eur"; } catch (e) {}
+      setCurrency(stored);
+    }
   })();
 </script>
 </body>

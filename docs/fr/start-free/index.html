@@ -19,7 +19,7 @@
   <meta property="og:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
-  <link rel="stylesheet" href="/assets/direction-b.css?v=767ef9e383">
+  <link rel="stylesheet" href="/assets/direction-b.css?v=de342d7fe8">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"fr","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/fr/start-free/","url":"https://www.babyrock.ai/fr/start-free/","name":"Rejoignez la liste | BabyRock","description":"Rejoignez la liste d'attente de BabyRock et nous vous écrirons dès qu'une place se libère.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"fr"}]}</script>
 </head>
 <body>
@@ -38,7 +38,7 @@
 
 <main>
   <section class="wrap" style="border-top:none">
-    <p class="mono">Formule Gratuite · ouvre bientôt · inscrivez-vous sur la liste</p>
+    <p class="mono">Plan Gratuit · ouvre bientôt · inscrivez-vous sur la liste</p>
     <h1><em>Rejoignez la liste.</em><br>Nous accueillerons de plus en plus de commerces, au rythme où nous pourrons répondre à la demande.</h1>
     <div class="hero-actions">
       
@@ -381,17 +381,18 @@
       </div>
       <p class="fine">Nous utilisons vos coordonnées pour vous écrire au sujet de la liste, rien d'autre, et vous pouvez nous demander de les supprimer à tout moment.</p>
     </form>
+    <p class="lede">Inscrivez-vous pour accéder à BabyRock. Nous vous contacterons lorsqu’une place sera disponible et vous présenterons l’offre avant votre décision. L’inscription ne démarre aucun abonnement payant et ne nécessite pas de carte bancaire.</p>
   </section>
 
   <section class="wrap">
     <div class="panel">
-      <h3>Ce que fait la formule Gratuite</h3>
+      <h3>Ce que fait le plan Gratuit</h3>
       <ul>
-        <li>Répond à vos avis Google, les 4 et 5 étoiles automatiquement</li>
-        <li>Répond aux commentaires sur Instagram et Facebook</li>
-        <li>Rédige les réponses de 1 à 3 étoiles et vous demande votre accord avant</li>
-        <li>Votre tableau de bord, et un récapitulatif chaque lundi</li>
-        <li>Des réponses illimitées, avec un contrôle d'usage raisonnable derrière</li>
+        <li>Réponses aux avis Google et aux commentaires Instagram et Facebook dans le ton de votre marque</li>
+        <li>Alertes de messages privés jusqu’à 100 conversations par mois, sans réponse automatique</li>
+        <li>Les avis Google de 1 à 3 étoiles vous sont soumis pour validation ; si vous ne répondez pas dans les 48 heures, la réponse est publiée</li>
+        <li>Votre tableau de bord et votre récapitulatif hebdomadaire</li>
+        <li>Services sociaux gratuits jusqu’à 1 000 abonnés Instagram, avec 30 jours après un dépassement vérifié</li>
       </ul>
     </div>
   </section>
@@ -405,9 +406,9 @@
         <li>Une fois sélectionné, vous devrez nous ajouter comme gestionnaire des plateformes que vous
         voulez nous confier (Google, Instagram et Facebook). Nous vous guiderons pas à pas.</li>
       </ul>
-      <p class="fine">Il vous faudra ajouter une carte bancaire si vous décidez de connecter Instagram
-      et Facebook, pour filtrer les comptes. Aucune application à installer. Vous restez propriétaire
-      de tous vos comptes et pouvez nous retirer l'accès à tout moment.</p>
+      <p class="fine">Aucune carte bancaire n’est requise pour commencer. Aucune application à
+      installer. Vous restez propriétaire de tous vos comptes et pouvez nous retirer l’accès à tout
+      moment.</p>
     </div>
   </section>
 
@@ -417,9 +418,9 @@
     <h2>Les formules payantes sont en phase de test.</h2>
     <p class="lede">
       Le formulaire ci-dessus est le seul. Nous prenons les gens par vagues, et quand votre tour
-      arrive nous vous écrivons avec la formule que nous aimerions vous faire tester : la formule
-      Gratuite, ou une des payantes pendant 15 jours, offerts, en échange d'un retour honnête. Vous
-      décidez à ce moment-là. Pas de carte avant de choisir une formule payante.
+      arrive nous vous écrivons avec la formule que nous aimerions vous faire tester : le plan
+      Gratuit, ou une formule payante gratuite pendant le pilote, en échange d'un retour honnête.
+      Vous décidez à ce moment-là. Pas de carte avant de choisir une formule payante.
     </p>
     <div class="hero-actions" style="margin-top:18px">
       <button class="btn btn-ghost" type="button" data-share>Partager cette page</button>
@@ -527,6 +528,28 @@
         : null;
       if (link) send("whatsapp_clicked");
     });
+    var toggle = document.querySelector(".currency-toggle");
+    if (toggle) {
+      var setCurrency = function (currency) {
+        var code = currency === "usd" ? "usd" : "eur";
+        document.documentElement.setAttribute("data-currency", code);
+        toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+          var on = button.getAttribute("data-currency") === code;
+          button.classList.toggle("on", on);
+          button.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        try { localStorage.setItem("br-currency", code); } catch (e) {}
+      };
+      toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          setCurrency(button.getAttribute("data-currency"));
+          send("currency_" + button.getAttribute("data-currency"));
+        });
+      });
+      var stored = "eur";
+      try { stored = localStorage.getItem("br-currency") === "usd" ? "usd" : "eur"; } catch (e) {}
+      setCurrency(stored);
+    }
   })();
 </script>
 </body>

@@ -19,7 +19,7 @@
   <meta property="og:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
-  <link rel="stylesheet" href="/assets/direction-b.css?v=767ef9e383">
+  <link rel="stylesheet" href="/assets/direction-b.css?v=de342d7fe8">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"en","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/","url":"https://www.babyrock.ai/","name":"BabyRock: your social presence, handled from WhatsApp","description":"Instagram, Facebook, Google and your website, run from one WhatsApp thread. A restaurant's posts, a creator's DMs, a shop's offers, an artist's site. Join the waitlist.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"en"}]}</script>
 </head>
 <body>
@@ -39,7 +39,7 @@
 <main>
   <section class="hero wrap hero-center" style="border-top:none">
     <p class="mono">For restaurants, creators, artists and shops that live on their social presence</p>
-    <h1>Your social presence, handled. <em>From one WhatsApp thread.</em></h1>
+    <h1>Your social presence, handled.<br><em>From one WhatsApp thread.</em></h1>
     <p class="lede">
       Instagram, Facebook, Google and your website, run for you. You send your questions or photos to
       Rosalía on WhatsApp. She prepares your posts, replies to you, and asks for your approval when
@@ -359,6 +359,28 @@
         : null;
       if (link) send("whatsapp_clicked");
     });
+    var toggle = document.querySelector(".currency-toggle");
+    if (toggle) {
+      var setCurrency = function (currency) {
+        var code = currency === "usd" ? "usd" : "eur";
+        document.documentElement.setAttribute("data-currency", code);
+        toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+          var on = button.getAttribute("data-currency") === code;
+          button.classList.toggle("on", on);
+          button.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        try { localStorage.setItem("br-currency", code); } catch (e) {}
+      };
+      toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          setCurrency(button.getAttribute("data-currency"));
+          send("currency_" + button.getAttribute("data-currency"));
+        });
+      });
+      var stored = "eur";
+      try { stored = localStorage.getItem("br-currency") === "usd" ? "usd" : "eur"; } catch (e) {}
+      setCurrency(stored);
+    }
   })();
 </script>
 </body>

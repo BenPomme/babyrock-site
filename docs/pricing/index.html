@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-currency="eur">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plans: free, then four paid, every channel covered | BabyRock</title>
-  <meta name="description" content="Compare the BabyRock plans, from free to Enterprise. The free plan answers automatically; paid plans add publishing, private messages, a human on every reply and the website.">
+<script>try{if(localStorage.getItem("br-currency")==="usd")document.documentElement.setAttribute("data-currency","usd")}catch(e){}</script>
+  <title>Plans: free, then pay for the conversations you have | BabyRock</title>
+  <meta name="description" content="Free to start. No payment card required. Paid plans by conversations, from 9.99 EUR a month, with 3 days free. Comments and DMs answered with your own brand voice.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://www.babyrock.ai/pricing/">
   <link rel="alternate" hreflang="en" href="https://www.babyrock.ai/pricing/">
@@ -13,17 +14,16 @@
   <link rel="alternate" hreflang="x-default" href="https://www.babyrock.ai/pricing/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BabyRock Social">
-  <meta property="og:title" content="Plans: free, then four paid, every channel covered | BabyRock">
-  <meta property="og:description" content="Compare the BabyRock plans, from free to Enterprise. The free plan answers automatically; paid plans add publishing, private messages, a human on every reply and the website.">
+  <meta property="og:title" content="Plans: free, then pay for the conversations you have | BabyRock">
+  <meta property="og:description" content="Free to start. No payment card required. Paid plans by conversations, from 9.99 EUR a month, with 3 days free. Comments and DMs answered with your own brand voice.">
   <meta property="og:url" content="https://www.babyrock.ai/pricing/">
   <meta property="og:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.babyrock.ai/assets/og-fded67ba8a.jpg">
-  <link rel="stylesheet" href="/assets/direction-b.css?v=767ef9e383">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"en","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/pricing/","url":"https://www.babyrock.ai/pricing/","name":"Plans: free, then four paid, every channel covered | BabyRock","description":"Compare the BabyRock plans, from free to Enterprise. The free plan answers automatically; paid plans add publishing, private messages, a human on every reply and the website.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"en"}]}</script>
+  <link rel="stylesheet" href="/assets/direction-b.css?v=de342d7fe8">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyRock Social","url":"https://www.babyrock.ai","email":"rosalia@babyrock.ai","address":{"@type":"PostalAddress","addressLocality":"Sant Cugat del Valles","addressCountry":"ES"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"en","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"WebPage","@id":"https://www.babyrock.ai/pricing/","url":"https://www.babyrock.ai/pricing/","name":"Plans: free, then pay for the conversations you have | BabyRock","description":"Free to start. No payment card required. Paid plans by conversations, from 9.99 EUR a month, with 3 days free. Comments and DMs answered with your own brand voice.","isPartOf":{"@id":"https://www.babyrock.ai/#website"},"inLanguage":"en"}]}</script>
 </head>
 <body>
-
 
 <header class="nav">
   <div class="wrap">
@@ -33,8 +33,11 @@
       <a href="/">Home</a>
       <a href="/pricing"><b>Pricing</b></a>
     </nav>
+    <div class="currency-toggle" role="group" aria-label="Currency">
+      <button type="button" data-currency="eur" aria-pressed="true">EUR</button>
+      <button type="button" data-currency="usd" aria-pressed="false">USD</button>
+    </div>
     <a class="btn btn-primary" href="/start-free">Join the waitlist</a>
-    
   </div>
 </header>
 
@@ -45,177 +48,115 @@
       Each subscription covers Google, Instagram, Facebook and your own website. The plan you pick
       depends on your needs and whether you require human quality control. You stay in control.
     </p>
-    <p class="mono" style="margin-top:14px">The free plan opens soon. 15 days free trial for every paid plan.</p>
+    <p class="fine">Start free. No card required. Posting and website care are optional paid services.</p>
+    <p class="fine">Try Start, Grow or Scale free for 3 days. A payment card is required. Cancel before the trial ends to avoid the subscription charge. One trial per account.</p>
   </section>
 
   <section class="wrap" id="pick">
-    <p class="mono">Pick one</p>
-    <h2>Pick how much help you want. <em>The channels are the same in every plan.</em></h2>
-    <div class="tiers" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
-      <div class="tier">
-        <div class="tier-head">
-          <span class="plan-mark" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span>
-          <span class="name">Free</span>
-        </div>
-        <div class="price">€0<small> without limit</small></div>
-        <ul>
-          <li>Google reviews, and Instagram and Facebook comments, answered automatically</li>
-          <li>Full performance dashboard</li>
-          <li>1 WhatsApp number connected</li>
-          <li>No card required until you connect your Facebook or Instagram accounts</li>
-        </ul>
-      </div>
-      <div class="tier">
-        <div class="tier-head">
-          <span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>
-          <span class="name">Lite</span>
-        </div>
-        <div class="price">€49<small> / mo</small></div>
-        <p class="same">Same as Free, plus</p>
-        <ul>
-          <li>Google profile care: hours, holidays and photos kept up to date</li>
-          <li>4 Instagram and Facebook posts a month</li>
-          <li>Your existing site monitored, 4 small edits a month</li>
-        </ul>
-      </div>
-      <div class="tier hot human">
-        <div class="tag human-tag">Human quality control</div>
-        <div class="tier-head">
-          <span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
-          <span class="name">Plus</span>
-        </div>
-        <div class="price">€99<small> / mo</small></div>
-        <p class="same">Same as Lite, plus</p>
-        <ul>
-          <li>A human checks every reply for quality</li>
-          <li>12 Instagram and Facebook posts a month</li>
-          <li>Instagram and Facebook private messages (DMs), up to 500 a month</li>
-          <li>Unlimited small edits to your website</li>
-          <li>Monthly PDF report</li>
-        </ul>
-      </div>
-      <div class="tier human">
-        <div class="tag human-tag">Human quality control</div>
-        <div class="tier-head">
-          <span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
-          <span class="name">Pro</span>
-        </div>
-        <div class="price">€149<small> / mo</small></div>
-        <p class="same">Same as Plus, plus</p>
-        <ul>
-          <li>Tone of voice and brand personalization</li>
-          <li>Unlimited Instagram and Facebook posts</li>
-          <li>Private messages (DMs) answered, higher volume</li>
-          <li>Your website rebuilt, maintained and edited</li>
-          <li>SEO diagnosis and optimization</li>
-          <li>Unlimited Google posts</li>
-          <li>Up to 5 WhatsApp numbers</li>
-        </ul>
-      </div>
-      <div class="tier human">
-        <div class="tag human-tag">Human quality control</div>
-        <div class="tier-head">
-          <span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-          <span class="name">Enterprise</span>
-        </div>
-        <div class="price">€199<small> / mo</small></div>
-        <p class="same">Same as Pro</p>
-        <ul>
-          <li>Up to 3 locations or brands, on one account</li>
-          <li>100 € a month per extra location</li>
-          <li>Priority queue</li>
-          <li>Up to 10 WhatsApp numbers</li>
-        </ul>
-      </div>
+    <p class="mono">Plans</p>
+    <h2>Find <em>your plan.</em></h2>
+    <p class="lede">From everyday replies to a growing inbox, there’s a plan for the way you work.</p>
+    <div class="compare-wrap">
+<table class="compare-table"><thead><tr><th class="compare-feature" scope="col"><span class="mono">Compare plans</span><p>Every subscription covers Google, Instagram, Facebook and your website.</p></th><th class="compare-plan " scope="col"><span class="compare-badge is-empty"></span><span class="compare-name">Free</span><span class="compare-price"><span class="compare-amount"><span class="price-eur"><span class="eur">0</span> EUR</span><span class="price-usd"><span class="usd">0 USD</span></span></span><small> / mo</small></span><a class="btn compare-cta" href="start-free.html">Join the waitlist</a></th><th class="compare-plan " scope="col"><span class="compare-badge is-empty"></span><span class="compare-name">Start</span><span class="compare-price"><span class="compare-amount"><span class="price-eur"><span class="eur">9.99</span> EUR</span><span class="price-usd"><span class="usd">10.99 USD</span></span></span><small> / mo</small></span><a class="btn compare-cta" href="start-free.html">Join the waitlist</a></th><th class="compare-plan is-featured" scope="col"><span class="compare-badge">Recommended</span><span class="compare-name">Grow</span><span class="compare-price"><span class="compare-amount"><span class="price-eur"><span class="eur">24.99</span> EUR</span><span class="price-usd"><span class="usd">27.99 USD</span></span></span><small> / mo</small></span><a class="btn btn-primary compare-cta" href="start-free.html">Join the waitlist</a></th><th class="compare-plan  is-soon" scope="col"><span class="compare-badge is-empty"></span><span class="compare-name">Scale</span><span class="compare-price"><span class="compare-amount"><span class="price-eur"><span class="eur">59.99</span> EUR</span><span class="price-usd"><span class="usd">67.99 USD</span></span></span><small> / mo</small></span><span class="btn compare-cta is-disabled">Coming soon</span></th><th class="compare-plan  is-soon" scope="col"><span class="compare-badge is-empty"></span><span class="compare-name">Enterprise</span><span class="compare-price"><span class="compare-amount"><span class="price-eur">from <span class="eur">199</span> EUR</span><span class="price-usd">from <span class="usd">224.99 USD</span></span></span><small> / mo</small></span><span class="btn compare-cta is-disabled">Coming soon</span></th></tr></thead><tbody><tr class=""><th scope="row">Conversations a month</th><td class="">100 <small>(alerts only)</small></td><td class="">200</td><td class="is-featured">1,000</td><td class="">5,000</td><td class="">10,000+</td></tr><tr class=""><th scope="row">Brand Voice Integration</th><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Reply to Google Reviews</th><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Auto-reply to IG and FB comments</th><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Automatic DM replies</th><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Comments Moderation</th><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Collaboration pipeline</th><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Deeper voice training from your examples</th><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row"># of Business Accounts</th><td class="">1</td><td class="">1</td><td class="is-featured">1</td><td class="">2</td><td class="">5</td></tr><tr class=""><th scope="row">Team members</th><td class="">1</td><td class="">1</td><td class="is-featured">2</td><td class="">3</td><td class="">Tailored</td></tr><tr class=""><th scope="row">Priority alerts</th><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class="is-featured"><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Exports and API access</th><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class=""><span class="compare-no" aria-hidden="true">-</span></td><td class="is-featured"><span class="compare-no" aria-hidden="true">-</span></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td><td class=""><svg class="compare-check" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8"></circle><path d="M5.2 9.4l2.4 2.4 5.1-5.4"></path></svg></td></tr><tr class=""><th scope="row">Support</th><td class="">Standard</td><td class="">Standard</td><td class="is-featured">Priority</td><td class="">Priority</td><td class="">Dedicated</td></tr><tr class="compare-prices"><th scope="row">Annual price</th><td class=""><span class="price-eur"><span class="eur">0</span> EUR</span><span class="price-usd"><span class="usd">0 USD</span></span></td><td class=""><span class="price-eur"><span class="eur">99.90 EUR</span> / yr</span><span class="price-usd"><span class="usd">109.90 USD</span> / yr</span></td><td class="is-featured"><span class="price-eur"><span class="eur">249.90 EUR</span> / yr</span><span class="price-usd"><span class="usd">279.90 USD</span> / yr</span></td><td class=""><span class="price-eur"><span class="eur">599.90 EUR</span> / yr</span><span class="price-usd"><span class="usd">679.90 USD</span> / yr</span></td><td class=""><span class="price-eur"><span class="eur">1,990 EUR</span> / yr</span><span class="price-usd"><span class="usd">2,249.90 USD</span> / yr</span></td></tr></tbody></table>
     </div>
-    <p class="fine" style="margin-top:16px">
-      Spain, prices before VAT, added at checkout. France: €69 / €139 / €199 / €259. Annual: ten
-      months, one payment.
+    <p class="fine compare-fine" style="margin-top:16px">
+      EUR prices include tax. USD prices exclude US sales tax. With annual billing, you pay for 10
+      months and receive 12 months of service in one annual subscription.
+    </p>
+    <p class="fine compare-fine">
+      Each subscription includes a monthly conversation allowance. A conversation groups messages
+      from one person on one channel within a 24-hour window.
+    </p>
+    <p class="fine compare-fine">
+      Posting, Google profile care and website care are separate add-ons. Additional services and
+      capacity are charged only after you confirm them.
+    </p>
+  </section>
+
+  <section class="wrap" id="addons">
+    <p class="mono">Add-ons</p>
+    <h2>Add the work <em>you want handled.</em></h2>
+    <p class="lede">
+      Create posts, keep your Google profile current or request website updates. Choose the services
+      you need alongside your plan.
+    </p>
+    <div class="addon-groups">
+<div class="addon-group"><p class="mono"><span class="addon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M4 17l5-5 4 4 3-3 4 4"></path></svg></span>Content management</p><div class="addon-card"><div class="addon-card-head"><strong>Content 12</strong><span class="addon-price"><span class="price-eur"><span class="eur">9.99 EUR</span></span><span class="price-usd"><span class="usd">10.99 USD</span></span><small> / mo</small></span></div><p>Turn your photos into 12 Instagram and Facebook posts a month. Send them on WhatsApp, refine the draft and approve it for publication.</p></div><div class="addon-card"><div class="addon-card-head"><strong>Content Unlimited</strong><span class="addon-price"><span class="price-eur"><span class="eur">29.99 EUR</span></span><span class="price-usd"><span class="usd">33.99 USD</span></span><small> / mo</small></span></div><p>Keep your Instagram and Facebook active with a steady flow of posts from your photos and ideas.¹</p></div></div>
+<div class="addon-group"><p class="mono"><span class="addon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>Google profile</p><div class="addon-card"><div class="addon-card-head"><strong>Google profile care</strong><span class="addon-price"><span class="price-eur"><span class="eur">4.99 EUR</span></span><span class="price-usd"><span class="usd">5.99 USD</span></span><small> / mo</small></span></div><p>Keep your hours, photos and description up to date, with 4 Google posts a month.</p></div></div>
+<div class="addon-group"><p class="mono"><span class="addon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"></path></svg></span>Website</p><div class="addon-card"><div class="addon-card-head"><strong>Website care</strong><span class="addon-price"><span class="price-eur"><span class="eur">49.99 EUR</span></span><span class="price-usd"><span class="usd">55.99 USD</span></span><small> / mo</small></span></div><p>Keep your website current and cared for, with hosting oversight, security, backups, small edits and a monthly report.²</p></div><div class="addon-card"><div class="addon-card-head"><strong>Website build</strong><span class="addon-price"><span class="price-eur"><span class="eur">499 EUR</span></span><span class="price-usd"><span class="usd">563.99 USD</span></span><small> one-off</small></span></div><p>Give your business a website that reflects your work. A one-off build or rebuild, scoped to your needs.³</p></div></div>
+<div class="addon-group"><p class="mono"><span class="addon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17" cy="9" r="2.5"></circle><path d="M15.5 14.5c2.8.3 5 2.6 5 5.5"></path></svg></span>Accounts and seats</p><div class="addon-card is-soon"><div class="addon-card-head"><strong>Extra account <span class="addon-soon">Coming soon</span></strong><span class="addon-price"><span class="price-eur"><span class="eur">9.99 EUR</span></span><span class="price-usd"><span class="usd">10.99 USD</span></span><small> / mo</small></span></div><p>Add one account or location to your plan.</p></div><div class="addon-card"><div class="addon-card-head"><strong>Extra seat</strong><span class="addon-price"><span class="price-eur"><span class="eur">4.99 EUR</span></span><span class="price-usd"><span class="usd">5.99 USD</span></span><small> / mo</small></span></div><p>Give one more team member access to your account.</p></div></div>
+<div class="addon-group"><p class="mono"><span class="addon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V11M11 19V6M17 19v-5"></path><path d="M3 19h18"></path></svg></span>Capacity</p><div class="addon-card"><div class="addon-card-head"><strong>Extra 1,000 conversations</strong><span class="addon-price"><span class="price-eur"><span class="eur">14.99 EUR</span></span><span class="price-usd"><span class="usd">16.99 USD</span></span><small> / mo</small></span></div><p>Add 1,000 conversations to your monthly allowance.</p></div></div>
+    </div>
+    <p class="fine compare-fine">
+      ¹ Content Unlimited: fair use of one post a day. ² Website care includes 4 small edits a
+      month. ³ Ongoing website care is separate.
+    </p>
+    <p class="fine compare-fine">
+      Recurring add-ons are billed monthly. When you add one, you’ll see the charge before
+      confirming. When you remove one, it remains active until the end of the period you’ve already
+      paid for. Website build is a separate one-off service.
     </p>
   </section>
 
   <section class="wrap">
-    <p class="mono">Compare every detail</p>
-    <div class="included-strip">
-      <p class="mono">In every plan</p>
-      <ul>
-        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Your own WhatsApp thread with Rosalía, 24/7</li>
-        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Unlimited replies to comments and reviews on IG, Google and Facebook</li>
-        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>1 to 3 star reviews wait for your OK</li>
-        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Your own performance dashboard</li>
-      </ul>
-    </div>
+    <p class="mono">The free plan and your first 1,000 followers</p>
+    <h2>Start free. <em>Grow at your pace.</em></h2>
+    <p class="lede">
+      Get started with comments, reviews and DM alerts. Move to a paid plan when you want more.
+    </p>
+    <p class="same">
+      Free social services cover accounts with up to 1,000 Instagram followers.
+    </p>
+    <p class="same">
+      If your connected account passes 1,000 followers, we’ll notify you and give you 30 days to
+      choose a paid plan. After that, Instagram and Facebook comment replies and DM alerts pause if
+      you stay on Free.
+    </p>
+    <p class="same">
+      Google review replies remain free. Your dashboard and history stay available. Choose a paid
+      plan to resume your social services.
+    </p>
+    <p class="same">
+      Social services require a connected Instagram account. You can use Google review replies
+      without connecting Instagram.
+    </p>
+    <p><a class="back" href="#pick">Compare paid plans</a></p>
+  </section>
 
-    <p class="mono swipe">Swipe to compare</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>What you get</th>
-            <th><span class="plan-mark" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="th-name">Free</span><span class="th-price">€0</span></th>
-            <th><span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="th-name">Lite</span><span class="th-price">€49</span></th>
-            <th><span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="th-name">Plus</span><span class="th-price">€99</span></th>
-            <th><span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="th-name">Pro</span><span class="th-price">€149</span></th>
-            <th><span class="plan-mark" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="th-name">Enterprise</span><span class="th-price">€199</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="group"><td colspan="6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Google profile and Maps</td></tr>
-          <tr><td>Reviews of 4 and 5 stars</td><td class="yes">automatic</td><td class="yes">automatic</td><td class="yes">automatic</td><td class="yes">automatic</td><td class="yes">automatic</td></tr>
-          <tr><td>Reviews of 1 to 3 stars</td><td class="yes">you approve, we publish</td><td class="yes">you approve, we publish</td><td class="yes">you approve, we publish</td><td class="yes">you approve, we publish</td><td class="yes">you approve, we publish</td></tr>
-          <tr><td>Every reply read by a person</td><td class="no">-</td><td class="no">-</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td></tr>
-          <tr><td>Profile care: hours, holidays, description, photos</td><td class="no">-</td><td class="yes">included</td><td class="yes">included</td><td class="yes">included</td><td class="yes">included</td></tr>
-          <tr><td>Posts on your Google profile</td><td class="no">-</td><td class="no">-</td><td class="no">-</td><td class="yes">unlimited</td><td class="yes">unlimited</td></tr>
-          <tr><td>Menu or service list linked from Google</td><td class="no">-</td><td class="no">-</td><td class="no">-</td><td class="yes">yes</td><td class="yes">yes</td></tr>
-
-          <tr class="group"><td colspan="6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Instagram and Facebook</td></tr>
-          <tr><td>Comment replies</td><td class="yes">unlimited</td><td class="yes">unlimited</td><td class="yes">unlimited</td><td class="yes">unlimited</td><td class="yes">unlimited</td></tr>
-          <tr><td>Posts from your photos</td><td class="no">-</td><td class="yes">4 / mo</td><td class="yes">12 / mo</td><td class="yes">unlimited</td><td class="yes">unlimited</td></tr>
-          <tr><td>Private messages answered</td><td class="no">-</td><td class="no">-</td><td class="yes">up to 500 / mo*</td><td class="yes">higher volume*</td><td class="yes">custom volume*</td></tr>
-          <tr><td>Human review before publishing</td><td class="no">-</td><td class="no">-</td><td class="yes">posts and replies</td><td class="yes">posts and replies</td><td class="yes">posts and replies</td></tr>
-          <tr><td>Tone of voice and brand personalization</td><td class="no">-</td><td class="no">-</td><td class="no">-</td><td class="yes">included</td><td class="yes">included</td></tr>
-
-          <tr class="group"><td colspan="6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.4 12h17.2M12 3.4c2.7 2.5 2.7 14.6 0 17.2M12 3.4c-2.7 2.5-2.7 14.6 0 17.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Your website</td></tr>
-          <tr><td>Site check every 6 hours: it answers, certificate valid</td><td class="no">-</td><td class="yes">included</td><td class="yes">included</td><td class="yes">included</td><td class="yes">included</td></tr>
-          <tr><td>Small edits</td><td class="no">-</td><td class="yes">4 / mo</td><td class="yes">unlimited*</td><td class="yes">unlimited*</td><td class="yes">unlimited*</td></tr>
-          <tr><td>Rebuilt, maintained and edited</td><td class="no">-</td><td class="no">-</td><td class="no">-</td><td class="yes">included</td><td class="yes">included</td></tr>
-          <tr><td>SEO diagnosis and optimization</td><td class="no">-</td><td class="no">-</td><td class="no">-</td><td class="yes">included</td><td class="yes">included</td></tr>
-
-          <tr class="group"><td colspan="6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Performance dashboard and support</td></tr>
-          <tr><td>Performance dashboard</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td></tr>
-          <tr><td>Monday recap with the numbers</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td></tr>
-          <tr><td>Monthly PDF report</td><td class="no">-</td><td class="no">-</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td></tr>
-          <tr><td>Support</td><td class="no">self serve</td><td class="no">self serve</td><td class="yes">human</td><td class="yes">human, priority</td><td class="yes">priority</td></tr>
-
-          <tr class="group"><td colspan="6"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Scope</td></tr>
-          <tr><td>WhatsApp numbers on the account</td><td class="yes">1</td><td class="yes">1</td><td class="yes">3</td><td class="yes">5</td><td class="yes">10</td></tr>
-          <tr><td>Locations</td><td class="no">1</td><td class="no">1</td><td class="no">1</td><td class="no">1</td><td class="yes">3, then 100 € per extra</td></tr>
-          <tr><td>Short video</td><td class="no">coming soon</td><td class="no">coming soon</td><td class="no">coming soon</td><td class="no">coming soon</td><td class="no">coming soon</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="fine" style="margin-top:14px">
-      Site check: every six hours we open your site, follow its redirects, read the answer and the
-      certificate, and write to you on WhatsApp when something is wrong or the certificate is close
-      to expiry.
+  <section class="wrap">
+    <p class="mono">Private messages</p>
+    <h2>Turn a busy inbox into <em>conversations that count.</em></h2>
+    <p class="lede">
+      Everyday questions get an answer in your voice. Collaboration enquiries reach you. Messages
+      that need a decision come back to you.
+    </p>
+    <p class="same">
+      Rosalía helps you stay present without writing every reply yourself. With Grow, follow your
+      collaboration enquiries in one place.
     </p>
     <p class="fine">
-      * Private messages: 500 a month per account on Plus; higher volumes on Pro and custom volumes
-      on Enterprise, quoted by the number of messages a month, because a creator with heavy traffic
-      costs more to serve. Private messages are never read by a person.
-      * Small edits: text, hours, services, prices, photos and links. A new design or a new site is a
-      project, quoted separately.
+      Free includes DM alerts; automatic DM replies require a paid plan. Coverage depends on your
+      connected inbox. Alerts follow your settings and allowance. Collaboration acknowledgements
+      accept no terms. Rosalía only replies to people who messaged you first; she does not send
+      unsolicited DMs.
     </p>
   </section>
 
   <section class="final wrap" style="border-top:1px solid var(--line)">
+    <p class="mono">Start free</p>
+    <h2>Give your next task <em>to Rosalía.</em></h2>
+    <p class="lede">
+      The photo you want to post. The question you keep answering. Start with the work you’d like
+      off your list.
+    </p>
     <div class="hero-actions" style="justify-content:center; padding: 10px 0 30px">
-      <a class="btn btn-primary" href="/start-free">Join the waitlist</a>
+      <a class="btn btn-primary" href="/start-free">Start free. No payment card required.</a>
+      
     </div>
   </section>
 </main>
 
-<footer class="wrap mono">BabyRock · Sant Cugat del Vallès ·<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Google ·<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"/></svg>Instagram ·<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook ·<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.4 12h17.2M12 3.4c2.7 2.5 2.7 14.6 0 17.2M12 3.4c-2.7 2.5-2.7 14.6 0 17.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Web ·<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp is how you talk to us; your customers' WhatsApp is next</footer>
+<footer class="wrap mono">BabyRock · Sant Cugat del Vallès · <a href="/about">Who we are</a> · <a href="terms/">Terms</a> · <a href="privacy/">Privacy</a> · <a href="cookies/">Cookies</a></footer>
 <script>
   (function () {
     function send(name) {
@@ -248,6 +189,28 @@
         : null;
       if (link) send("whatsapp_clicked");
     });
+    var toggle = document.querySelector(".currency-toggle");
+    if (toggle) {
+      var setCurrency = function (currency) {
+        var code = currency === "usd" ? "usd" : "eur";
+        document.documentElement.setAttribute("data-currency", code);
+        toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+          var on = button.getAttribute("data-currency") === code;
+          button.classList.toggle("on", on);
+          button.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        try { localStorage.setItem("br-currency", code); } catch (e) {}
+      };
+      toggle.querySelectorAll("[data-currency]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          setCurrency(button.getAttribute("data-currency"));
+          send("currency_" + button.getAttribute("data-currency"));
+        });
+      });
+      var stored = "eur";
+      try { stored = localStorage.getItem("br-currency") === "usd" ? "usd" : "eur"; } catch (e) {}
+      setCurrency(stored);
+    }
   })();
 </script>
 </body>
