@@ -1,16 +1,16 @@
 # Avís legal
 
-Versió del 9 de setembre de 2026. Prestador del lloc i del servei BabyRock Social, d’acord amb els articles 9 i 10 de la Llei 34/2002 (LSSI).
+Versió del 21 d’octubre de 2026. Prestador del lloc i del servei BabyRock Social, d’acord amb els articles 9 i 10 de la Llei 34/2002 (LSSI).
 
 ## 1. Identitat
 
-Denominació social: **BABYROCK MINERALS, S.L.** (la «Societat»).
+Denominació social: **BabyFactory LTD** (la «Societat»).
 
 Nom comercial: BabyRock. El producte que es ven avui es diu **BabyRock Social**.
 
-NIF: **B88957212**.
+Número de societat: **17523851**.
 
-Domicili social: Avinguda Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona), Espanya.
+Domicili social: 124-128 City Road, Londres, Anglaterra, EC1V 2NX.
 
 Correu per a notificacions legals i de privadesa: [contact@babyrock.ai](mailto:contact@babyrock.ai).
 
@@ -20,9 +20,9 @@ WhatsApp del servei: +34 711 52 09 44.
 
 Lloc públic: [https://www.babyrock.ai](https://www.babyrock.ai). Aplicació i pagament: [https://app.babyrock.ai](https://app.babyrock.ai).
 
-CNAE principal: 62.10 (activitats de programació informàtica).
+Codis d’activitat SIC registrats a Companies House: 58210, 58290, 62011 i 62012.
 
-La Societat es va constituir el 25 de juny de 2026 davant el notari de Barcelona Ramon García-Torrent Carballo, protocol 3670. L’escriptura es va presentar el mateix dia al Registre Mercantil de Barcelona (entrada 2026097627). A la data d’aquesta versió, la inscripció registral continua en tràmit. Quan constin tom, foli i full, s’indicaran aquí.
+BabyFactory LTD es va constituir al Regne Unit i es va registrar a Companies House el 15 d’octubre de 2026. Número de societat: 17523851. Domicili social: 124-128 City Road, Londres, Anglaterra, EC1V 2NX.
 
 ## 2. Objecte d’aquest lloc
 

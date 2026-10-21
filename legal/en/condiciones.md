@@ -1,12 +1,12 @@
 # BabyRock Social terms
 
-Version of 22 September 2026. Contract between BABYROCK MINERALS, S.L. and the shop that subscribes.
+Version of 21 October 2026. Contract between BabyFactory LTD and the shop that subscribes.
 
 These terms are accepted when you tick the box on the payment page (app.babyrock.ai/pay) and complete payment or a trial with a payment method. The [legal notice](https://www.babyrock.ai/en/legal-notice/), [privacy policy](https://www.babyrock.ai/en/privacy/) and [processing agreement](https://www.babyrock.ai/en/dpa/) form part of the contract.
 
 ## 1. Who contracts
 
-Provider: **BABYROCK MINERALS, S.L.**, NIF B88957212, Avenida Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona). Contact: [contact@babyrock.ai](mailto:contact@babyrock.ai). Trading name: BabyRock. Product: BabyRock Social.
+Provider: **BabyFactory LTD**, Company number 17523851, 124-128 City Road, London, England, EC1V 2NX. Contact: [contact@babyrock.ai](mailto:contact@babyrock.ai). Trading name: BabyRock. Product: BabyRock Social.
 
 Customer: the natural or legal person who registers and pays (the “Paid Account”). One subscription = one shop = one Google Business Profile. Email, WhatsApp and card are not unique keys: if they match more than one shop, we ask which.
 

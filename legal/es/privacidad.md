@@ -1,10 +1,10 @@
 # Política de privacidad
 
-Versión del 9 de septiembre de 2026. Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 (LOPDGDD).
+Versión del 21 de octubre de 2026. Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 (LOPDGDD).
 
 ## 1. Responsable
 
-**BABYROCK MINERALS, S.L.**, NIF B88957212, Avenida Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona).
+**BabyFactory LTD**, Número de sociedad 17523851, 124-128 City Road, Londres, Inglaterra, EC1V 2NX.
 
 Contacto de privacidad: [contact@babyrock.ai](mailto:contact@babyrock.ai). No tenemos delegado de protección de datos: no estamos en los supuestos en que la ley lo exige.
 

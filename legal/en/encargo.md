@@ -1,12 +1,12 @@
 # Processing agreement (reviews and replies)
 
-Version of 9 September 2026. GDPR article 28. Annex to the [terms](https://www.babyrock.ai/en/terms/). Accepted when you subscribe to BabyRock Social.
+Version of 21 October 2026. GDPR article 28. Annex to the [terms](https://www.babyrock.ai/en/terms/). Accepted when you subscribe to BabyRock Social.
 
 ## 1. Parties
 
 **Controller:** the shop (Paid Account) that owns the Google Business Profile.
 
-**Processor:** BABYROCK MINERALS, S.L., NIF B88957212, Avenida Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona). Contact: [contact@babyrock.ai](mailto:contact@babyrock.ai).
+**Processor:** BabyFactory LTD, Company number 17523851, 124-128 City Road, London, England, EC1V 2NX. Contact: [contact@babyrock.ai](mailto:contact@babyrock.ai).
 
 ## 2. Subject
 

@@ -1,12 +1,12 @@
 # Accord de traitement (avis et réponses)
 
-Version du 9 septembre 2026. Article 28 du RGPD. Annexe des [conditions](https://www.babyrock.ai/fr/conditions/). Accepté à la souscription de BabyRock Social.
+Version du 21 octobre 2026. Article 28 du RGPD. Annexe des [conditions](https://www.babyrock.ai/fr/conditions/). Accepté à la souscription de BabyRock Social.
 
 ## 1. Parties
 
 **Responsable :** le commerce (Compte payant) titulaire de la fiche d’établissement Google.
 
-**Sous-traitant :** BABYROCK MINERALS, S.L., NIF B88957212, Avenida Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelone). Contact : [contact@babyrock.ai](mailto:contact@babyrock.ai).
+**Sous-traitant :** BabyFactory LTD, Numéro d’immatriculation 17523851, 124-128 City Road, Londres, Angleterre, EC1V 2NX. Contact : [contact@babyrock.ai](mailto:contact@babyrock.ai).
 
 ## 2. Objet
 

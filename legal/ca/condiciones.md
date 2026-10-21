@@ -1,12 +1,12 @@
 # Condicions de contractació de BabyRock Social
 
-Versió del 22 de setembre de 2026. Contracte entre BABYROCK MINERALS, S.L. i el comerç que s’hi subscriu.
+Versió del 21 d’octubre de 2026. Contracte entre BabyFactory LTD i el comerç que s’hi subscriu.
 
 Aquestes condicions s’accepten en marcar la casella a la pàgina de pagament (app.babyrock.ai/pay) i completar el pagament o l’alta de la prova amb mètode de pagament. L’[avís legal](https://www.babyrock.ai/ca/avis-legal/), la [privadesa](https://www.babyrock.ai/ca/privadesa/) i l’[encàrrec de tractament](https://www.babyrock.ai/ca/encarrec/) formen part del contracte.
 
 ## 1. Qui contracta
 
-Prestador: **BABYROCK MINERALS, S.L.**, NIF B88957212, Avinguda Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona). Contacte: [contact@babyrock.ai](mailto:contact@babyrock.ai). Nom comercial: BabyRock. Producte: BabyRock Social.
+Prestador: **BabyFactory LTD**, Número de societat 17523851, 124-128 City Road, Londres, Anglaterra, EC1V 2NX. Contacte: [contact@babyrock.ai](mailto:contact@babyrock.ai). Nom comercial: BabyRock. Producte: BabyRock Social.
 
 Client: la persona física o jurídica que es registra i paga (el «Compte de pagament»). Una subscripció = un comerç = una fitxa d’empresa de Google. El correu, el WhatsApp i la targeta no són identificadors únics: si coincideixen amb més d’un comerç, preguntem quin és.
 

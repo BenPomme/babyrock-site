@@ -1,10 +1,10 @@
 # Privacy policy
 
-Version of 9 September 2026. Regulation (EU) 2016/679 (GDPR) and Spanish Organic Law 3/2018 (LOPDGDD).
+Version of 21 October 2026. Regulation (EU) 2016/679 (GDPR) and Spanish Organic Law 3/2018 (LOPDGDD).
 
 ## 1. Controller
 
-**BABYROCK MINERALS, S.L.**, NIF B88957212, Avenida Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona).
+**BabyFactory LTD**, Company number 17523851, 124-128 City Road, London, England, EC1V 2NX.
 
 Privacy contact: [contact@babyrock.ai](mailto:contact@babyrock.ai). We do not have a data protection officer: we are not in the cases where the law requires one.
 

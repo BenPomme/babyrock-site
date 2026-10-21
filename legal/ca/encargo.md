@@ -1,12 +1,12 @@
 # Encàrrec de tractament (ressenyes i respostes)
 
-Versió del 9 de setembre de 2026. Article 28 del RGPD. Annex de les [condicions](https://www.babyrock.ai/ca/condicions/). S’accepta en contractar BabyRock Social.
+Versió del 21 d’octubre de 2026. Article 28 del RGPD. Annex de les [condicions](https://www.babyrock.ai/ca/condicions/). S’accepta en contractar BabyRock Social.
 
 ## 1. Parts
 
 **Responsable:** el comerç (Compte de pagament) titular de la fitxa d’empresa de Google.
 
-**Encarregat:** BABYROCK MINERALS, S.L., NIF B88957212, Avinguda Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona). Contacte: [contact@babyrock.ai](mailto:contact@babyrock.ai).
+**Encarregat:** BabyFactory LTD, Número de societat 17523851, 124-128 City Road, Londres, Anglaterra, EC1V 2NX. Contacte: [contact@babyrock.ai](mailto:contact@babyrock.ai).
 
 ## 2. Objecte
 

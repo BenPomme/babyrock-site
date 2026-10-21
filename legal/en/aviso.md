@@ -1,16 +1,16 @@
 # Legal notice
 
-Version of 9 September 2026. Provider of the website and of BabyRock Social, under articles 9 and 10 of Spanish Act 34/2002 (LSSI).
+Version of 21 October 2026. Provider of the website and of BabyRock Social, under articles 9 and 10 of Spanish Act 34/2002 (LSSI).
 
 ## 1. Identity
 
-Legal name: **BABYROCK MINERALS, S.L.** (the “Company”).
+Legal name: **BabyFactory LTD** (the “Company”).
 
 Trading name: BabyRock. The product sold today is **BabyRock Social**.
 
-Tax ID (NIF): **B88957212**.
+Company number: **17523851**.
 
-Registered office: Avenida Ramon Escayola 129, 08197 Sant Cugat del Vallès (Barcelona), Spain.
+Registered office: 124-128 City Road, London, England, EC1V 2NX.
 
 Email for legal and privacy notices: [contact@babyrock.ai](mailto:contact@babyrock.ai).
 
@@ -20,9 +20,9 @@ Service WhatsApp: +34 711 52 09 44.
 
 Public site: [https://www.babyrock.ai](https://www.babyrock.ai). App and payment: [https://app.babyrock.ai](https://app.babyrock.ai).
 
-Main CNAE: 62.10 (computer programming).
+Companies House SIC codes: 58210, 58290, 62011 and 62012.
 
-The Company was incorporated on 25 June 2026 before the Barcelona notary Ramón García-Torrent Carballo, protocol 3670. The deed was filed the same day with the Barcelona Commercial Registry (entry 2026097627). As of this version, registration is still in progress. Volume, folio and sheet will be added here once they exist.
+BabyFactory LTD was incorporated in the United Kingdom and registered with Companies House on 15 October 2026. Company number 17523851. Registered office: 124-128 City Road, London, England, EC1V 2NX.
 
 ## 2. What this site is for
 
