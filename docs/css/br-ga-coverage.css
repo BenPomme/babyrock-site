@@ -1,0 +1,12 @@
+.br-ga-consent[hidden]{display:none!important}
+.br-ga-consent{position:fixed;z-index:2147483647;left:max(12px,env(safe-area-inset-left));right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));box-sizing:border-box;width:auto;max-width:560px;max-height:calc(100vh - 24px);margin-inline:auto;overflow:auto;padding:clamp(14px,4vw,22px);border:1px solid #52605f;border-radius:16px;background:#101514;color:#f1f5f2;box-shadow:0 18px 60px rgba(0,0,0,.55);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}
+.br-ga-consent *{box-sizing:border-box}
+.br-ga-consent h2{margin:0 0 8px;color:#fff;font-size:20px;line-height:1.2}
+.br-ga-consent p{margin:0;color:#d4ddda;overflow-wrap:anywhere}
+.br-ga-consent-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.br-ga-consent button{min-height:44px;flex:1 1 120px;margin:0;padding:11px 16px;border:1px solid #bde636;border-radius:10px;background:#bde636;color:#101514;font:inherit;font-weight:700;line-height:1.2;cursor:pointer}
+.br-ga-consent button.br-ga-consent-button-secondary{border-color:#82918e;background:#202a28;color:#f1f5f2}
+.br-ga-consent button:hover{filter:brightness(1.08)}
+.br-ga-consent button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:360px){.br-ga-consent button{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.br-ga-consent button{transition:none}}

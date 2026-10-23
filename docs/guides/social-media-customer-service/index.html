@@ -75,7 +75,31 @@
     .comparison-table { min-width: 680px; }
   }
 </style>
-<!-- BR-DEMO-CSS:START --><link rel="stylesheet" href="/assets/br-demo-026767e18e99.css"><!-- BR-DEMO-CSS:END --><!-- BR-DEMO-JS:START --><script src="/assets/br-demo-16788598b495.js" defer></script><!-- BR-DEMO-JS:END --></head>
+<!-- BR-DEMO-CSS:START --><link rel="stylesheet" href="/assets/br-demo-026767e18e99.css"><!-- BR-DEMO-CSS:END --><!-- BR-DEMO-JS:START --><script src="/assets/br-demo-16788598b495.js" defer></script><!-- BR-DEMO-JS:END --><!-- BR-GA-COVERAGE:HEAD:START -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    try {
+      if (localStorage.getItem('br-consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    } catch (e) {}
+    gtag('js', new Date());
+    gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
+  <link rel="stylesheet" href="/css/br-ga-coverage.css">
+<!-- BR-GA-COVERAGE:HEAD:END -->
+</head>
 <body>
 <!-- BR-GENERATED-PAGE:v1 -->
 <!-- APPROVED copy: revision2 exact copy approved by Ben on 2026-10-22. Release-ready; deployment pending. -->
@@ -139,5 +163,16 @@
 </main>
 <footer class="wrap mono" aria-label="Footer">BabyRock · Sant Cugat del Vallès · BabyRock is a product of BabyFactory LTD, registered in the UK, company number 17523851, 124-128 City Road, London, England, EC1V 2NX.</footer>
 <script src="/assets/attribution.js" defer></script>
+<!-- BR-GA-COVERAGE:CONSENT:START -->
+<aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
+  <h2 id="br-ga-consent-title">Cookies</h2>
+  <p id="br-ga-consent-text">We use Google Analytics to understand which pages people visit. You can accept or refuse.</p>
+  <div class="br-ga-consent-actions">
+    <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accept">Accept</button>
+    <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuse">Refuse</button>
+  </div>
+</aside>
+<script src="/js/br-ga-coverage.js" defer></script>
+<!-- BR-GA-COVERAGE:CONSENT:END -->
 </body>
 </html>

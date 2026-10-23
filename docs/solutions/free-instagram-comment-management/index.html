@@ -47,6 +47,30 @@
   .organic-fine-print li { margin: 0 0 5px; }
 </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.babyrock.ai/#organization","name":"BabyFactory LTD","url":"https://www.babyrock.ai","legalName":"BABYFACTORY LTD","identifier":{"@type":"PropertyValue","propertyID":"Companies House company number","value":"17523851"},"address":{"@type":"PostalAddress","streetAddress":"124-128 City Road","addressLocality":"London","postalCode":"EC1V 2NX","addressCountry":"GB"}},{"@type":"WebSite","@id":"https://www.babyrock.ai/#website","url":"https://www.babyrock.ai","name":"BabyRock Social","inLanguage":"en","publisher":{"@id":"https://www.babyrock.ai/#organization"}},{"@type":"Article","@id":"https://www.babyrock.ai/solutions/free-instagram-comment-management/#article","url":"https://www.babyrock.ai/solutions/free-instagram-comment-management/","headline":"Free Instagram Comment Management for Small Accounts","description":"Free Instagram and Facebook comment replies for smaller accounts, with DM alerts and replies that keep your voice.","inLanguage":"en","mainEntityOfPage":{"@id":"https://www.babyrock.ai/solutions/free-instagram-comment-management/"},"author":{"@id":"https://www.babyrock.ai/#organization"},"publisher":{"@id":"https://www.babyrock.ai/#organization"},"citation":["https://help.instagram.com/","https://www.facebook.com/business/help"]}]}</script>
+<!-- BR-GA-COVERAGE:HEAD:START -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    try {
+      if (localStorage.getItem('br-consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    } catch (e) {}
+    gtag('js', new Date());
+    gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
+  <link rel="stylesheet" href="/css/br-ga-coverage.css">
+<!-- BR-GA-COVERAGE:HEAD:END -->
 </head>
 <body>
 <header class="nav">
@@ -118,5 +142,16 @@
 </main>
 <footer class="wrap mono">BabyRock · Sant Cugat del Vallès · BabyRock is a product of BabyFactory LTD, registered in the UK, company number 17523851.</footer>
 <script src="/assets/attribution.js" defer></script>
+<!-- BR-GA-COVERAGE:CONSENT:START -->
+<aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
+  <h2 id="br-ga-consent-title">Cookies</h2>
+  <p id="br-ga-consent-text">We use Google Analytics to understand which pages people visit. You can accept or refuse.</p>
+  <div class="br-ga-consent-actions">
+    <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accept">Accept</button>
+    <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuse">Refuse</button>
+  </div>
+</aside>
+<script src="/js/br-ga-coverage.js" defer></script>
+<!-- BR-GA-COVERAGE:CONSENT:END -->
 </body>
 </html>
