@@ -226,3 +226,53 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 - [Portfolio d'architecture : publications, études de cas et demandes | BabyRock](https://www.babyrock.ai/fr/for/architects/)
 - [Gestion des réseaux sociaux pour les professionnels de santé | BabyRock](https://www.babyrock.ai/fr/for/health-professionals/)
 <!-- BR-GENERATED-LLMS:END -->
+<!-- BR-DEMO-LLMS:START -->
+## BabyRock video demos
+
+### EN
+- [See BabyRock in action](https://www.babyrock.ai/demos/)
+- [Reply to Google reviews from WhatsApp](https://www.babyrock.ai/demos/google-review-replies/)
+- [Create Instagram posts and answer comments from WhatsApp](https://www.babyrock.ai/demos/instagram-posts-comments/)
+- [Confirm Instagram table bookings from WhatsApp](https://www.babyrock.ai/demos/instagram-dm-reservations/)
+- [Review weekly content insights and brand enquiries from WhatsApp](https://www.babyrock.ai/demos/creator-coaching-brand-deals/)
+- [Update your architecture portfolio and Instagram from WhatsApp](https://www.babyrock.ai/demos/website-updates-whatsapp/)
+- [Turn a Christmas preorder post into an order notification](https://www.babyrock.ai/demos/instagram-orders-preorders/)
+- [Turn product photos into Instagram posts from WhatsApp](https://www.babyrock.ai/demos/product-photo-cleanup/)
+- [Capture after-hours salon enquiries on Instagram](https://www.babyrock.ai/demos/after-hours-salon-enquiries/)
+- [Turn brand DMs into complete creator briefs](https://www.babyrock.ai/demos/creator-brand-deal-briefs/)
+- [Take a day off while BabyRock handles routine messages](https://www.babyrock.ai/demos/business-messages-whatsapp/)
+- [Reply to Instagram comments in your own voice](https://www.babyrock.ai/demos/replies-in-your-brand-voice/)
+- [Update your website and Google opening hours from WhatsApp](https://www.babyrock.ai/demos/website-opening-hours-update/)
+
+### ES
+- [Mira BabyRock en acción](https://www.babyrock.ai/es/demos/)
+- [Responde a reseñas de Google desde WhatsApp](https://www.babyrock.ai/es/demos/google-review-replies/)
+- [Crea publicaciones de Instagram y responde a comentarios desde WhatsApp](https://www.babyrock.ai/es/demos/instagram-posts-comments/)
+- [Confirma reservas de Instagram desde WhatsApp](https://www.babyrock.ai/es/demos/instagram-dm-reservations/)
+- [Revisa consejos semanales y consultas de marcas desde WhatsApp](https://www.babyrock.ai/es/demos/creator-coaching-brand-deals/)
+- [Actualiza tu porfolio de arquitectura e Instagram desde WhatsApp](https://www.babyrock.ai/es/demos/website-updates-whatsapp/)
+- [Convierte una publicación de preventa navideña en un aviso de pedido](https://www.babyrock.ai/es/demos/instagram-orders-preorders/)
+- [Convierte fotos de producto en publicaciones de Instagram desde WhatsApp](https://www.babyrock.ai/es/demos/product-photo-cleanup/)
+- [Atiende consultas de peluquería fuera de horario en Instagram](https://www.babyrock.ai/es/demos/after-hours-salon-enquiries/)
+- [Convierte los DM de marcas en briefs completos para creadores](https://www.babyrock.ai/es/demos/creator-brand-deal-briefs/)
+- [Tómate un día libre mientras BabyRock gestiona los mensajes habituales](https://www.babyrock.ai/es/demos/business-messages-whatsapp/)
+- [Responde a los comentarios de Instagram con tu propio estilo](https://www.babyrock.ai/es/demos/replies-in-your-brand-voice/)
+- [Actualiza el horario de tu web y de Google desde WhatsApp](https://www.babyrock.ai/es/demos/website-opening-hours-update/)
+
+### FR
+- [BabyRock en action](https://www.babyrock.ai/fr/demos/)
+- [Répondez aux avis Google depuis WhatsApp](https://www.babyrock.ai/fr/demos/google-review-replies/)
+- [Créez des publications Instagram et répondez aux commentaires depuis WhatsApp](https://www.babyrock.ai/fr/demos/instagram-posts-comments/)
+- [Confirmez les réservations Instagram depuis WhatsApp](https://www.babyrock.ai/fr/demos/instagram-dm-reservations/)
+- [Analysez les conseils hebdomadaires et les demandes de marques depuis WhatsApp](https://www.babyrock.ai/fr/demos/creator-coaching-brand-deals/)
+- [Mettez à jour votre portfolio d'architecture et Instagram depuis WhatsApp](https://www.babyrock.ai/fr/demos/website-updates-whatsapp/)
+- [Transformez une publication de précommande de Noël en notification de commande](https://www.babyrock.ai/fr/demos/instagram-orders-preorders/)
+- [Transformez des photos produit en publications Instagram depuis WhatsApp](https://www.babyrock.ai/fr/demos/product-photo-cleanup/)
+- [Recevez les demandes de rendez-vous hors horaires sur Instagram](https://www.babyrock.ai/fr/demos/after-hours-salon-enquiries/)
+- [Transformez les DM de marques en briefs complets pour créateurs](https://www.babyrock.ai/fr/demos/creator-brand-deal-briefs/)
+- [Prenez un jour de repos pendant que BabyRock gère les messages courants](https://www.babyrock.ai/fr/demos/business-messages-whatsapp/)
+- [Répondez aux commentaires Instagram dans votre style](https://www.babyrock.ai/fr/demos/replies-in-your-brand-voice/)
+- [Mettez à jour les horaires de votre site et de Google depuis WhatsApp](https://www.babyrock.ai/fr/demos/website-opening-hours-update/)
+
+- [BabyRock in action](https://www.babyrock.ai/investors/demos/)
+<!-- BR-DEMO-LLMS:END -->
