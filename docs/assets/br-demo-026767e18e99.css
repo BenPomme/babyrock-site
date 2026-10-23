@@ -450,6 +450,23 @@
   font-size: 20px;
 }
 
+.br-demo-investor > .br-demo-wrap {
+  display: grid;
+  row-gap: clamp(32px, 5vw, 56px);
+}
+
+.br-demo-investor .br-demo-lede {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.br-demo-investor > .br-demo-wrap > .br-demo-section,
+.br-demo-investor .br-demo-investor-card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
 .br-demo-proof {
   width: min(1120px, calc(100% - 40px));
   margin: 54px auto;
