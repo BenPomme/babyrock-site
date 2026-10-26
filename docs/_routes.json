@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "include": [
+    "/api/investor-interest",
+    "/api/investor-interest/"
+  ],
+  "exclude": []
+}
