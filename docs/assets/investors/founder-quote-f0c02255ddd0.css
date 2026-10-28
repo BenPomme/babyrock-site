@@ -1,3 +1,8 @@
+.br-demo-investor.br-presentation-investor > .br-demo-wrap.br-presentation-investor__inner {
+  --br-investor-content-width: min(calc(100vw - 40px), 460px);
+  --br-investor-content-width: min(calc(100vw - 40px), 460px, 60svh);
+}
+
 .br-founder-quote {
   --br-founder-secondary: #b8c0c6;
   box-sizing: border-box;
@@ -25,8 +30,8 @@
 
 .br-founder-quote .br-founder-quote__text {
   box-sizing: border-box;
-  width: min(100%, 64ch);
-  max-width: 64ch;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -85,11 +90,11 @@
   margin-top: 3px;
 }
 
-@media (max-width: 800px) {
-  .br-founder-quote {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.br-demo-investor.br-presentation-investor > .br-demo-wrap.br-presentation-investor__inner > .br-presentation-video-wrap.br-presentation-investor__video,
+.br-demo-investor.br-presentation-investor > .br-demo-wrap.br-presentation-investor__inner > .br-founder-quote {
+  width: var(--br-investor-content-width);
+  max-width: var(--br-investor-content-width);
+  margin-inline: auto;
 }
 
 @media (max-width: 600px) {
