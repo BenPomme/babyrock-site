@@ -1,0 +1,120 @@
+.br-founder-quote {
+  --br-founder-secondary: #b8c0c6;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: clamp(64px, 8vw, 80px) 0 0;
+  padding: clamp(30px, 4vw, 38px) 0 0;
+  border: 0;
+  border-top: 1px solid var(--br-line, #23282e);
+  color: var(--br-founder-secondary);
+  text-align: left;
+}
+
+.br-founder-quote__mark {
+  display: block;
+  margin: 0 0 10px;
+  color: var(--br-acid, #cbff4a);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.64;
+  opacity: 0.72;
+}
+
+.br-founder-quote .br-founder-quote__text {
+  box-sizing: border-box;
+  width: min(100%, 64ch);
+  max-width: 64ch;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--br-founder-secondary);
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.br-founder-quote .br-founder-quote__text > p {
+  max-width: 100%;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+
+.br-founder-quote .br-founder-quote__text > p + p {
+  margin-top: clamp(20px, 2.2vw, 24px);
+}
+
+.br-founder-quote .br-founder-quote__text > .br-founder-quote__lead {
+  color: var(--br-text, #eef2f5);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+
+.br-founder-quote__caption {
+  margin: 28px 0 0;
+  color: var(--br-founder-secondary);
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.br-founder-quote__name {
+  display: block;
+  color: var(--br-text, #eef2f5);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.br-founder-quote__role {
+  display: block;
+  margin-top: 3px;
+}
+
+@media (max-width: 800px) {
+  .br-founder-quote {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .br-founder-quote {
+    margin-top: 64px;
+    padding-top: 28px;
+  }
+
+  .br-founder-quote__mark {
+    font-size: 38px;
+  }
+
+  .br-founder-quote .br-founder-quote__text {
+    font-size: 16px;
+  }
+
+  .br-founder-quote .br-founder-quote__text > p + p {
+    margin-top: 20px;
+  }
+
+  .br-founder-quote .br-founder-quote__text > .br-founder-quote__lead {
+    font-size: 24px;
+  }
+
+  .br-founder-quote__caption {
+    margin-top: 24px;
+  }
+}
