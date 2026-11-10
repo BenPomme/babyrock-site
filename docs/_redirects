@@ -1,6 +1,20 @@
 # Written by scripts/prepare-site-switch.sh from .scratch/rebuild-v2/redirect-map.md.
 # English, Spanish and French move to the new site; Catalan is retired to /es/.
 # The root serves the new home. It was a 301 to /es/ while the old site owned it.
+# Legacy pricing is retired to each locale's approved home. Keep fixed same-site
+# destinations and no request-derived target, so the rules cannot open-redirect.
+/pricing / 301
+/pricing/ / 301
+/pricing/index.html / 301
+/pricing/* / 301
+/es/pricing /es/ 301
+/es/pricing/ /es/ 301
+/es/pricing/index.html /es/ 301
+/es/pricing/* /es/ 301
+/fr/pricing /fr/ 301
+/fr/pricing/ /fr/ 301
+/fr/pricing/index.html /fr/ 301
+/fr/pricing/* /fr/ 301
 /ca/ /es/ 301
 /ca/* /es/ 301
 /how/ / 301
@@ -9,9 +23,18 @@
 /es/apply/ /es/start-free/ 301
 /fr/how/ /fr/ 301
 /fr/apply/ /fr/start-free/ 301
-/pricing-v2/ /pricing/ 301
-/es/pricing-v2/ /es/pricing/ 301
-/fr/pricing-v2/ /fr/pricing/ 301
+/pricing-v2 / 301
+/pricing-v2/ / 301
+/pricing-v2/index.html / 301
+/pricing-v2/* / 301
+/es/pricing-v2 /es/ 301
+/es/pricing-v2/ /es/ 301
+/es/pricing-v2/index.html /es/ 301
+/es/pricing-v2/* /es/ 301
+/fr/pricing-v2 /fr/ 301
+/fr/pricing-v2/ /fr/ 301
+/fr/pricing-v2/index.html /fr/ 301
+/fr/pricing-v2/* /fr/ 301
 /es/auditoria/ /es/start-free/ 301
 /es/guias/ /es/guides/ 301
 /es/como-funciona/ /es/ 301
@@ -20,10 +43,10 @@
 /es/condiciones/ /es/terms/ 301
 /es/aviso-legal/ /es/legal-notice/ 301
 /es/encargo/ /es/dpa/ 301
-/es/precios/lite/ /es/pricing/ 301
-/es/precios/plus/ /es/pricing/ 301
-/es/precios/pro/ /es/pricing/ 301
-/es/precios/enterprise/ /es/pricing/ 301
+/es/precios/lite/ /es/ 301
+/es/precios/plus/ /es/ 301
+/es/precios/pro/ /es/ 301
+/es/precios/enterprise/ /es/ 301
 /es/guias/responder-todas-las-resenas/ /es/guides/responder-todas-las-resenas/ 301
 /es/guias/pedir-resenas-sin-romper-las-reglas/ /es/guides/pedir-resenas-sin-romper-las-reglas/ 301
 /es/guias/codigo-qr-para-resenas-de-google/ /es/guides/codigo-qr-para-resenas-de-google/ 301
@@ -41,10 +64,10 @@
 /fr/conditions/ /fr/terms/ 301
 /fr/mentions-legales/ /fr/legal-notice/ 301
 /fr/accord-traitement/ /fr/dpa/ 301
-/fr/tarifs/lite/ /fr/pricing/ 301
-/fr/tarifs/plus/ /fr/pricing/ 301
-/fr/tarifs/pro/ /fr/pricing/ 301
-/fr/tarifs/enterprise/ /fr/pricing/ 301
+/fr/tarifs/lite/ /fr/ 301
+/fr/tarifs/plus/ /fr/ 301
+/fr/tarifs/pro/ /fr/ 301
+/fr/tarifs/enterprise/ /fr/ 301
 /en/ / 301
 /en/audit/ /start-free/ 301
 /en/guides/ /guides/ 301
@@ -55,10 +78,10 @@
 /en/legal-notice/ /legal-notice/ 301
 /en/cookies/ /cookies/ 301
 /en/dpa/ /dpa/ 301
-/en/pricing/lite/ /pricing/ 301
-/en/pricing/plus/ /pricing/ 301
-/en/pricing/pro/ /pricing/ 301
-/en/pricing/enterprise/ /pricing/ 301
+/en/pricing/lite/ / 301
+/en/pricing/plus/ / 301
+/en/pricing/pro/ / 301
+/en/pricing/enterprise/ / 301
 /en/guides/reply-to-every-review/ /guides/reply-to-every-review/ 301
 /en/guides/ask-for-reviews-without-breaking-the-rules/ /guides/ask-for-reviews-without-breaking-the-rules/ 301
 /en/guides/google-review-qr-code/ /guides/google-review-qr-code/ 301
