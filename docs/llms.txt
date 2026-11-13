@@ -11,9 +11,6 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 ### Home
 - [BabyRock: your social presence, handled from WhatsApp](https://www.babyrock.ai/)
 
-### Pricing
-- [Plans: free, then pay for the conversations you have | BabyRock](https://www.babyrock.ai/pricing/)
-
 ### Solutions
 - [Business Reputation Management That Keeps Replies Personal](https://www.babyrock.ai/solutions/business-reputation/)
 - [Creator Community Management Without Losing Your Voice](https://www.babyrock.ai/solutions/creator-community/)
@@ -26,9 +23,6 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 
 ### Home
 - [BabyRock: toda tu presencia digital, gestionada desde WhatsApp](https://www.babyrock.ai/es/)
-
-### Pricing
-- [Planes: gratis y luego pagas por las conversaciones que tienes | BabyRock](https://www.babyrock.ai/es/pricing/)
 
 ### Solutions
 - [Gestión de la reputación de tu negocio sin respuestas de plantilla](https://www.babyrock.ai/es/solutions/business-reputation/)
@@ -47,9 +41,6 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 
 ### Home
 - [BabyRock : toute votre présence numérique, gérée depuis WhatsApp](https://www.babyrock.ai/fr/)
-
-### Pricing
-- [Formules : Gratuit, puis vous payez les conversations que vous avez | BabyRock](https://www.babyrock.ai/fr/pricing/)
 
 ### Solutions
 - [Gestion de la réputation d'entreprise : des réponses qui restent personnelles](https://www.babyrock.ai/fr/solutions/business-reputation/)
@@ -134,7 +125,7 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 - [Instagram DM automation that answers while you work | BabyRock](https://www.babyrock.ai/guides/instagram-dm-automation/)
 - [Instagram posting service from photos to approved posts | BabyRock](https://www.babyrock.ai/guides/instagram-posting-service/)
 - [An owner WhatsApp command center for social decisions | BabyRock](https://www.babyrock.ai/guides/owner-whatsapp-command-center/)
-- [Small business website build from 499 EUR | BabyRock](https://www.babyrock.ai/guides/small-business-website-build/)
+- [Small business website build | BabyRock](https://www.babyrock.ai/guides/small-business-website-build/)
 - [Social content repurposing for small business | BabyRock](https://www.babyrock.ai/guides/social-content-repurposing/)
 - [Social media comment management that sounds like you | BabyRock](https://www.babyrock.ai/guides/social-media-comment-management/)
 - [Social media content calendar for small businesses | BabyRock](https://www.babyrock.ai/guides/social-media-content-calendar/)
@@ -161,7 +152,7 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 - [Automatización de mensajes directos de Instagram que responde mientras trabajas | BabyRock](https://www.babyrock.ai/es/guides/instagram-dm-automation/)
 - [Servicio de publicación en Instagram, de las fotos a las publicaciones aprobadas | BabyRock](https://www.babyrock.ai/es/guides/instagram-posting-service/)
 - [Un centro de mando en WhatsApp para las decisiones de redes sociales del propietario | BabyRock](https://www.babyrock.ai/es/guides/owner-whatsapp-command-center/)
-- [Creación de una web de pequeño negocio desde 499 € | BabyRock](https://www.babyrock.ai/es/guides/small-business-website-build/)
+- [Creación de una web de pequeño negocio | BabyRock](https://www.babyrock.ai/es/guides/small-business-website-build/)
 - [Reutilización de contenido para redes sociales en pequeños negocios | BabyRock](https://www.babyrock.ai/es/guides/social-content-repurposing/)
 - [Gestión de comentarios en redes sociales con tu propio tono | BabyRock](https://www.babyrock.ai/es/guides/social-media-comment-management/)
 - [Calendario de contenidos para redes sociales de pequeñas empresas | BabyRock](https://www.babyrock.ai/es/guides/social-media-content-calendar/)
@@ -188,7 +179,7 @@ Instagram, Facebook, Google and your website, run from one WhatsApp thread. A re
 - [Automatisation des messages privés Instagram : répondez pendant que vous travaillez | BabyRock](https://www.babyrock.ai/fr/guides/instagram-dm-automation/)
 - [Service de publication Instagram, des photos aux publications validées | BabyRock](https://www.babyrock.ai/fr/guides/instagram-posting-service/)
 - [Un centre de commande WhatsApp pour les décisions du propriétaire | BabyRock](https://www.babyrock.ai/fr/guides/owner-whatsapp-command-center/)
-- [Création de site pour petite entreprise à partir de 499 EUR | BabyRock](https://www.babyrock.ai/fr/guides/small-business-website-build/)
+- [Création de site pour petite entreprise | BabyRock](https://www.babyrock.ai/fr/guides/small-business-website-build/)
 - [Réutilisation de contenus sociaux pour les petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/social-content-repurposing/)
 - [Gestion des commentaires sur les réseaux sociaux qui vous ressemble | BabyRock](https://www.babyrock.ai/fr/guides/social-media-comment-management/)
 - [Calendrier de contenu pour les réseaux sociaux des petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/social-media-content-calendar/)
