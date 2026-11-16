@@ -46,7 +46,7 @@ Only those who need the data for the service:
 - **Google** (Business Profile, reviews, and Analytics if you consented).
 - **Meta** (WhatsApp Cloud API).
 - **Zoho** (email, EU data centre).
-- **xAI** (help with the draft; a person reviews it afterwards).
+- **DeepSeek** (helps draft replies under your chosen review mode).
 - **DataForSEO** (reading public reviews when a count is needed).
 - **Hosting** of the app and Postgres in the European Union.
 - **GitHub** (pages for the public site www.babyrock.ai).
@@ -57,7 +57,7 @@ The tax authority, a court or the Spanish DPA (AEPD), if they ask us on a legal 
 
 ## 5. Transfers outside the EEA
 
-Google, Meta, Stripe, xAI and GitHub may process data in the United States or other countries. Where there is no adequacy decision, we use the European Commission’s standard contractual clauses or another Chapter V GDPR safeguard. Zoho Mail is configured in the EU.
+Google, Meta, Stripe, DeepSeek and GitHub may process data in the United States, China or other countries. Where there is no adequacy decision, we use the European Commission’s standard contractual clauses or another Chapter V GDPR safeguard. Zoho Mail is configured in the EU.
 
 ## 6. Retention
 
