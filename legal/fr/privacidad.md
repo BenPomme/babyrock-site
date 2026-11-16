@@ -34,6 +34,10 @@ Nous ne demandons jamais le mot de passe Google du titulaire.
 
 Nous ne vendons pas de données. Nous ne faisons pas de profils ayant des effets juridiques sur vous.
 
+**Données utilisateur Google.** Lorsque vous connectez votre fiche d'établissement Google, BabyRock reçoit, avec votre autorisation : le profil de base de votre compte Google (nom et e-mail, pour identifier la connexion) et l'accès à la gestion de votre fiche (`business.manage`). Nous utilisons cet accès uniquement pour afficher les établissements que vous gérez, lire les avis de l'établissement choisi et publier vos réponses selon le mode que vous autorisez expressément. Dans le mode recommandé, que vous activez explicitement, les réponses aux nouveaux avis de 4 et 5 étoiles sont publiées automatiquement ; les réponses aux avis de 1, 2 et 3 étoiles nécessitent votre validation. Vous pouvez désactiver les réponses automatiques. Nous conservons les identifiants d'établissement, les avis et les réponses nécessaires au service, ainsi que le jeton de connexion chiffré. Nous n'utilisons pas les données utilisateur Google pour la publicité, ne les vendons pas et ne les partageons qu'avec les sous-traitants listés dans cette politique et nécessaires au service (par exemple **le fournisseur d'IA qui aide à rédiger les réponses selon le mode choisi**). Vous pouvez révoquer l'accès à tout moment dans votre compte Google (Sécurité → Accès tiers) ou en vous déconnectant dans BabyRock. Nous supprimons alors le jeton immédiatement et les avis conservés sous 30 jours, sauf obligation légale. Les réponses déjà publiées restent sur votre fiche, car elles vous appartiennent.
+
+L'utilisation et le transfert vers toute autre application, par BabyRock, des informations reçues des API Google respecteront la [Politique relative aux données utilisateur des services d'API Google](https://developers.google.com/terms/api-services-user-data-policy), y compris les exigences d'utilisation limitée.
+
 ## 4. Destinataires
 
 Uniquement qui en a besoin pour le service :
@@ -62,7 +66,7 @@ Google, Meta, Stripe, xAI et GitHub peuvent traiter des données aux États-Unis
 - Prospects qui ne contractent pas : 12 mois après le dernier contact, ou jusqu’à opposition.
 - Consentement cookies : jusqu’à retrait, ou 12 mois, puis nous redemandons.
 
-À la fin, nous retirons l’accès gestionnaire. Le texte déjà publié sur Google, nous ne l’effaçons pas : c’est votre fiche.
+Lorsque vous déconnectez Google dans BabyRock, nous demandons la révocation du jeton Google OAuth et supprimons immédiatement le jeton conservé. Si vous nous avez donné accès par une invitation en tant que gestionnaire, vous pouvez retirer cet accès dans Google. Les réponses déjà publiées restent sur votre fiche.
 
 ## 7. Droits
 

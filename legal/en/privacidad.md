@@ -34,6 +34,10 @@ We never ask for the owner’s Google password.
 
 We do not sell data. We do not profile you in a way that produces legal effects.
 
+**Google user data.** When you connect your Google Business Profile, BabyRock receives, with your permission: your Google account's basic profile (name and email, to identify the connection) and access to manage your business profile (`business.manage`). We use this access only to list the locations you manage, read the customer reviews of the location you choose, and publish your review replies under the mode you expressly authorise. In the recommended mode, which you explicitly enable, replies to new 4 and 5 star reviews publish automatically and replies to 1, 2 and 3 star reviews need your approval. You can turn automatic replies off. We store the location identifiers, the reviews and the replies needed to provide the service, and the connection token encrypted. We do not use Google user data for advertising, do not sell it, and do not share it with third parties except the processors listed in this policy that are needed to run the service (for example, **the AI provider that helps draft replies under your chosen review mode**). You can revoke access at any time in your Google Account (Security → Third-party access) or by disconnecting in BabyRock. We then delete the stored token immediately, and the stored reviews within 30 days, unless the law requires us to keep them. Replies already published stay on your listing, because they belong to you.
+
+BabyRock's use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+
 ## 4. Recipients
 
 Only those who need the data for the service:
@@ -62,7 +66,7 @@ Google, Meta, Stripe, xAI and GitHub may process data in the United States or ot
 - Prospects who never subscribe: 12 months after last contact, or until they object.
 - Cookie consent: until you withdraw it, or 12 months, after which we ask again.
 
-When we stop, we remove manager access. We do not delete text already published on Google: it is your listing.
+When you disconnect Google in BabyRock, we request revocation of the Google OAuth token and delete the stored token immediately. If you connected by inviting us as a manager, you can remove our manager access in Google. Replies already published stay on your listing.
 
 ## 7. Rights
 

@@ -34,6 +34,10 @@ Nunca pedimos la contraseña de Google del titular.
 
 No vendemos datos. No hacemos perfiles con efectos jurídicos sobre usted.
 
+**Datos de usuario de Google.** Cuando conecta su Perfil de Empresa de Google, BabyRock recibe, con su permiso: el perfil básico de su cuenta de Google (nombre y correo, para identificar la conexión) y acceso para gestionar su perfil de empresa (`business.manage`). Usamos este acceso solo para listar los establecimientos que gestiona, leer las reseñas del establecimiento que elija y publicar sus respuestas según el modo que autorice expresamente. En el modo recomendado, que usted activa expresamente, las respuestas a las nuevas reseñas de 4 y 5 estrellas se publican automáticamente y las respuestas a las reseñas de 1, 2 y 3 estrellas requieren su aprobación. Puede desactivar las respuestas automáticas. Guardamos los identificadores del establecimiento, las reseñas y las respuestas necesarias para prestar el servicio, y el token de conexión cifrado. No usamos los datos de usuario de Google para publicidad, no los vendemos y no los compartimos con terceros, salvo los encargados de tratamiento de esta política necesarios para el servicio (por ejemplo, **el proveedor de IA que ayuda a redactar respuestas según el modo de reseñas que usted elija**). Puede revocar el acceso en cualquier momento en su Cuenta de Google (Seguridad → Acceso de terceros) o desconectando en BabyRock. Borramos el token de inmediato y las reseñas guardadas en 30 días, salvo obligación legal. Las respuestas ya publicadas siguen en su ficha, porque son suyas.
+
+El uso y la transferencia a cualquier otra aplicación por parte de BabyRock de la información recibida de las API de Google se ajustarán a la [Política de datos de usuario de los servicios de API de Google](https://developers.google.com/terms/api-services-user-data-policy), incluidos los requisitos de Uso Limitado.
+
 ## 4. Destinatarios
 
 Solo quien necesita el dato para el servicio:
@@ -62,7 +66,7 @@ Google, Meta, Stripe, xAI y GitHub pueden tratar datos en Estados Unidos u otros
 - Prospectos que no contratan: 12 meses desde el último contacto, o hasta que se opongan.
 - Consentimiento de cookies: hasta que lo retire, o 12 meses, y entonces volvemos a preguntar.
 
-Al terminar, quitamos el acceso de gestor. El texto ya publicado en Google no lo borramos: es su ficha.
+Cuando desconecta Google en BabyRock, solicitamos la revocación del token de Google OAuth y borramos el token guardado de inmediato. Si nos dio acceso mediante una invitación como gestor, puede quitar ese acceso en Google. Las respuestas ya publicadas siguen en su ficha.
 
 ## 7. Derechos
 
