@@ -220,6 +220,8 @@ details p{color:var(--muted);margin-top:8px}
 .pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .pv-post b{margin-bottom:3px}
 
+.soon-line{font-weight:700;font-size:15px}
+
 /* Core pages (home, pricing, about, legal) on top of brand/components.css and landing/template.css. */
 .coming .wrap{display:grid;gap:18px}
 .coming ul{list-style:none;display:grid;gap:10px;max-width:65ch}
@@ -309,7 +311,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
-  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true};
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"}}};
   // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
   // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
   var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
@@ -324,6 +326,35 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       keep.forEach(function (p) { u.searchParams.set(p[0], p[1]); });
       a.href = u.toString();
     });
+  }
+  // Price by visitor country. The host tells us the country of the visitor's IP at /cdn-cgi/trace;
+  // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
+  var P = CONFIG.prices;
+  function showPrice(cc) {
+    var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
+    if (!to) return;
+    // Prices are shown before tax; where tax is added on top the amount carries the tax word in the page's language.
+    var paid = to[0] + (to[2] ? (P.taxWord[document.documentElement.lang] || P.taxWord.en) : '');
+    var rules = [];
+    P.bases.forEach(function (b) {
+      if (b[0] === paid) return;
+      b.forEach(function (tok, i) { rules.push([new RegExp('(^|[^A-Za-z0-9])' + tok.replace(/[$.]/g, '\\$&') + '(?![0-9.,])', 'g'), i ? to[1] : paid]); });
+    });
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) {
+      if (n.parentNode.nodeName === 'SCRIPT' || n.parentNode.nodeName === 'STYLE') continue;
+      var t = n.nodeValue, u = t;
+      rules.forEach(function (r) { u = u.replace(r[0], function (m, pre) { return pre + r[1]; }); });
+      if (u !== t) n.nodeValue = u;
+    }
+    document.documentElement.setAttribute('data-price-country', cc);
+  }
+  if (P) {
+    var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);
+    if (forced) showPrice(forced[1].toUpperCase());
+    else if (window.fetch) fetch('/cdn-cgi/trace').then(function (r) { return r.ok ? r.text() : ''; }).then(function (t) {
+      var m = /^loc=([A-Z]{2})$/m.exec(t); if (m) showPrice(m[1]);
+    }).catch(function () {});
   }
   // Notify-me form for the full product.
   document.querySelectorAll('form[data-notify]').forEach(function (f) {

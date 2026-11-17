@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Don't let bad reviews kill your business.</title>
+<meta name="description" content="Bad reviews left unanswered cost you customers. Rosalia replies to every review, posts every week and keeps your profile fresh, all from WhatsApp.">
+<meta name="robots" content="noindex">
+
+<meta name="theme-color" content="#07080a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)">
+<style>@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d;--radius:12px;--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--quote:"Source Serif 4",Georgia,"Times New Roman",serif;color-scheme:dark}
+:root{color-scheme:dark light}
+@media (prefers-color-scheme:light){:root{--bg:#f8f7f3;--panel:#ffffff;--line:#e0dfd8;--text:#0b0d0a;--muted:#5c636a;--star:#c88a00}.bar .wm b{background:var(--accent);color:var(--accent-ink);padding:.06em .3em;margin-left:.14em;border-radius:5px}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;line-height:1.08;font-weight:700}
+h1{font-size:34px;font-weight:800;letter-spacing:-.02em}
+h2{font-size:26px;letter-spacing:-.015em}
+h3{font-size:19px;line-height:1.25}
+p{max-width:65ch}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.barin{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.home{text-decoration:none}
+.nav{display:flex;align-items:center;gap:18px;font-size:15px}
+.nav a{text-decoration:none}
+.nav a.navlink{color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.wm{font-weight:800;font-size:17px;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.wm b{color:var(--accent);font-weight:inherit}
+.btn{display:inline-block;text-align:center;text-decoration:none;font-weight:700;font-size:17px;line-height:1.2;padding:15px 24px;border-radius:var(--radius);border:1px solid var(--line);color:var(--text);background:transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.btn-sm{padding:10px 16px;font-size:15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stars{display:inline-flex;gap:2px;color:var(--star)}
+.quote{font-family:var(--quote);font-style:italic;font-size:18px;line-height:1.45}
+.plans{display:grid;gap:16px}
+.plan{display:flex;flex-direction:column;gap:14px}
+.plan .price{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.plan ul{list-style:none;display:grid;gap:10px}
+.plan li{padding-left:22px;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--text)}
+.foot{padding-block:40px 56px;color:var(--muted);font-size:14px}
+.foot a{color:var(--text)}
+:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+@media (min-width:760px){h1{font-size:52px}h2{font-size:36px}.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+body{--market-bg:#FFB800;--market-fg:#0b0d0a}
+/* Landing layout on top of brand/components.css. Colours only through kit variables. */
+.hero{padding-block:36px 48px}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.hero-text{display:grid;gap:16px;justify-items:start}
+.hero-text .btn-primary{width:100%;max-width:360px}
+.sub{font-size:19px;line-height:1.45;color:var(--muted)}
+.reassure{font-size:14px;color:var(--muted);margin-top:-6px}
+.poster{background:var(--market-bg);color:var(--market-fg);border-radius:var(--radius);padding:28px 24px;display:grid;gap:12px;align-content:center;min-height:240px}
+.pnum{font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.poster .stars{color:inherit}
+.poster figcaption{font-size:20px;font-weight:700;line-height:1.3;max-width:22ch}
+.demo{display:grid;gap:12px;max-width:460px}
+.demo .ex{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px dashed var(--muted);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.who{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.who b{display:block;font-size:15px}
+.av{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--line);color:var(--text)}
+.lab{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.dr{font-size:17px}
+.sign{font-size:14px;color:var(--muted);margin-top:6px}
+.dbtns{display:flex;gap:8px;margin-top:14px}
+.dbtns span{font-size:14px;font-weight:700;padding:8px 12px;border-radius:8px;border:1px solid var(--line)}
+.dbtns .db1{background:var(--text);color:var(--bg);border-color:transparent}
+.photo{position:relative;max-width:460px}
+.photo>img{border-radius:var(--radius);width:100%;height:auto;aspect-ratio:1}
+.rchip{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 14px 5px 5px;font-size:13px}
+.rchip img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.rchip b{display:block;font-size:14px}
+.plans-hero{margin-top:28px}
+.pname{font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.plan .btn{margin-top:auto}
+.note{font-size:14px;color:var(--muted);margin-top:auto}
+.after-plans{margin-top:20px}
+.sec{padding-block:48px}
+.sec h2{margin-bottom:22px}
+.statrow{display:grid;gap:22px}
+.stat b{display:block;font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.stat span{color:var(--muted)}
+.source{font-size:13px;color:var(--muted);margin-top:18px}
+.steps{list-style:none;display:grid;gap:22px;counter-reset:none}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:14px}
+.steps .n{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-weight:700}
+.steps p{color:var(--muted);margin-top:4px}
+.ctl{list-style:none;display:grid;gap:14px;max-width:65ch}
+.ctl li{padding-left:22px;position:relative}
+.ctl li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--text)}
+.narrow{max-width:760px}
+details{padding-block:14px}
+summary{font-weight:700;cursor:pointer;list-style-position:outside}
+details p{color:var(--muted);margin-top:8px}
+.final{text-align:left}
+.final .wrap{display:grid;gap:14px;justify-items:start}
+.final p{color:var(--muted)}
+.final .btn-primary{width:100%;max-width:360px}
+/* example Google listing (profile variant) */
+.lp{display:grid;max-width:520px}
+.lp .body{background:var(--panel);border-inline:1px solid var(--line);padding:12px 14px}
+.lp .part:first-child .body{border-top:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0;padding:0;overflow:hidden}
+.lp-cover img{width:100%;height:auto;aspect-ratio:1040/437;object-fit:cover}
+.lp-head{display:flex;align-items:center;gap:10px}
+.lp-head b{display:block}
+.lp-logo{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;font-weight:800;background:var(--line)}
+.lp-ex{margin-left:auto;font-style:normal;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px dashed var(--muted);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.lp-tabs{display:flex;gap:4px;padding-block:0!important;overflow:hidden}
+.lp-tabs span{padding:10px 8px;font-size:14px;font-weight:700;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+.lp-tabs span.on{color:var(--text);border-bottom-color:var(--text)}
+.lp-who{display:flex;align-items:center;gap:8px;font-size:14px}
+.lp-who .av{width:26px;height:26px;font-size:13px}
+.lp-rv{font-size:15px;margin-top:6px}
+.lp-reply{margin:8px 0 2px 18px;padding:8px 10px;border:1px solid var(--line);border-radius:8px}
+.lp-reply i,.lp-post i{display:block;height:7px;border-radius:4px;background:var(--line);width:90%}
+.lp-reply i+i,.lp-post i+i{margin-top:6px;width:60%}
+.lp-post{display:flex;gap:12px;align-items:center}
+.lp-post .th{width:44px;height:44px;border-radius:8px;background:var(--line);flex:none}
+.lp-post .pt{flex:1}
+.lp-post b{display:block;font-size:14px;margin-bottom:5px}
+.lp-tiles{display:flex;gap:6px}
+.lp-tiles span{flex:1;aspect-ratio:1.25;border-radius:6px;overflow:hidden;background:var(--line)}
+.lp-tiles img{width:100%;height:100%;object-fit:cover}
+.lp-hrs{display:flex;gap:10px;font-size:15px}
+.lp-hrs span{color:var(--muted)}
+.lp .call{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:9px 14px;border-inline:1px solid var(--line);border-top:1px solid var(--line);background:var(--bg)}
+.lp .cn{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--text);font-size:12px;display:grid;place-items:center}
+.lp .part:last-child .call{border-bottom:1px solid var(--line);border-radius:0 0 var(--radius) var(--radius)}
+@media (min-width:760px){
+ .hero{padding-block:64px 72px}
+ .hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px}
+ .statrow{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .pnum{font-size:140px}
+}
+
+/* Package: four services as small pictures of the profile; 2 columns on phones, 4 on desktop. */
+.pkg-intro{color:var(--muted);margin-top:6px}
+.pkg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+@media (min-width:900px){.pkg-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.pkg-item{padding:12px;display:flex;flex-direction:column}
+.pkg-item h3{font-size:17px;line-height:1.25;margin-top:12px}
+.pkg-item p{font-size:14px;color:var(--muted);margin-top:4px}
+.pkg-item .pkg-tag{margin-top:auto;padding-top:10px;font-size:13px;font-weight:700;color:var(--text)}
+.pv{height:96px;border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:10px;overflow:hidden}
+.pv .lp-who{font-size:13px;flex-wrap:wrap;gap:4px 6px}
+.pv .lp-who b{white-space:nowrap}
+.pv .lp-reply{margin:8px 0 0 10px}
+.pv-post{display:flex;gap:10px;align-items:center}
+.pv-post img{width:64px;height:64px;border-radius:6px;object-fit:cover;flex:none}
+.pv-post span{flex:1;min-width:0}
+.pv-post b{display:block;font-size:13px;margin-bottom:6px}
+.pv-post i{display:block;height:7px;border-radius:4px;background:var(--line);width:90%}
+.pv-post i+i{margin-top:6px;width:60%}
+.pv-tiles{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px}
+.pv-tiles img{width:100%;height:100%;min-height:0;object-fit:cover;border-radius:4px}
+.pv-hrs{display:flex;flex-direction:column;gap:4px;font-size:13px}
+.pv-hrs span{color:var(--muted)}
+.pv-hrs em{font-style:normal;font-weight:700;display:inline-flex;align-items:center;gap:5px;margin-top:auto;color:var(--star)}
+.pkg-foot{margin-top:18px;font-size:18px;font-weight:700}
+.lp-post img.th{object-fit:cover}
+.pv-post{gap:8px}.pv-post img{width:48px;height:48px}.pv-post b{hyphens:auto;overflow-wrap:break-word}
+
+.demo .auto{font-weight:700;color:var(--star);margin-top:10px;font-size:14px}
+.demo .wa{margin-top:8px;padding:9px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
+
+/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer, coming-soon tags --- */
+.soon-tag{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);white-space:nowrap}
+.lp .call .soon-tag{margin-left:auto}
+.lp .part.soon .body,.pkg-item.soon .pv{opacity:.75}
+.ctl-grid{display:grid;gap:12px}
+.ctl-card{display:grid;gap:12px;align-content:start}
+.ctl-card svg{color:var(--text)}
+.ctl-card p{font-size:17px}
+.steps li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.steps .n{background:var(--text);color:var(--bg);border-color:transparent}
+.plan ul{gap:12px}
+.plan li{padding-left:28px}
+.plan li::before{top:.22em;width:18px;height:18px;border-radius:50%;background:var(--text)}
+.plan li::after{content:"";position:absolute;left:5px;top:calc(.22em + 5px);width:8px;height:4px;border-left:2px solid var(--panel);border-bottom:2px solid var(--panel);transform:rotate(-45deg)}
+.plan.card{padding:24px}
+.narrow details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:0;margin-top:10px}
+.narrow summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px}
+.narrow summary::-webkit-details-marker{display:none}
+.narrow summary::after{content:"+";font-size:22px;font-weight:400;line-height:1;color:var(--muted);flex:none}
+.narrow details[open] summary::after{content:"\2212"}
+.narrow details p{margin:0;padding:0 18px 18px}
+.final .wrap{background:var(--panel);border:1px solid var(--line);border-radius:calc(var(--radius) * 1.5);padding-block:40px;justify-items:center;text-align:center}
+.final p{margin-inline:auto}
+.foot{text-align:center}
+.foot p{margin-inline:auto}
+.foot .footlinks{justify-content:center}
+.demo-sec .demo{max-width:none}
+@media (min-width:760px){
+ .ctl-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+ .demo-sec .demo{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+ .demo-sec .demo .ex{grid-column:1/-1}
+ .demo-sec .demo>.card:first-of-type{grid-row:span 2}
+}
+
+/* Real reply and post text in the example profile, instead of placeholder lines. */
+.lp-reply{font-size:14px;line-height:1.4;color:var(--muted);max-width:none}
+.lp-post{align-items:flex-start}
+.lp-post .th{width:56px;height:56px}
+.ptx{display:block;font-size:14px;line-height:1.4;color:var(--muted)}
+.pv .lp-reply{font-size:12px;line-height:1.35;padding:6px 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pv-post{align-items:flex-start}
+.pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pv-post b{margin-bottom:3px}
+
+.soon-line{font-weight:700;font-size:15px}
+</style>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+try { if (localStorage.getItem('br-consent') === 'granted') gtag('consent', 'update', { analytics_storage: 'granted' }); } catch (e) {}
+gtag('js', new Date());
+gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
+<link rel="stylesheet" href="/css/br-ga-coverage.css">
+</head>
+<body class="v-stakes m-za">
+<header class="bar"><div class="wrap barin"><a class="home" href="/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=en" data-cta="bar">Start free</a></nav></div></header>
+<main>
+<section class="hero hero-stakes"><div class="wrap hero-grid"><div class="hero-text"><h1>Don't let bad reviews kill your business.</h1><p class="sub">Bad reviews left unanswered cost you customers. Rosalia replies to every review, posts every week and keeps your profile fresh, all from WhatsApp.</p>
+<a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=en" data-cta="hero">Start free</a><p class="reassure">No card, no password. 10 replies a month, free.</p></div>
+<figure class="poster"><div class="pnum">68%</div><span class="stars" role="img" aria-label="4 out of 5 stars"><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><figcaption>of people only choose businesses with 4 stars or more.</figcaption></figure>
+</div></section>
+<section class="sec stats"><div class="wrap"><div class="statrow"><div class="stat"><b>42%</b><span>avoid businesses that never reply to their reviews.</span></div><div class="stat"><b>8 in 10</b><span>are likely to choose a business that replies to every review.</span></div><div class="stat"><b>81%</b><span>expect a reply within a week.</span></div></div><p class="source">Source: BrightLocal Local Consumer Review Survey 2026 (US consumers).</p></div></section>
+<section class="sec pkg"><div class="wrap"><h2>One assistant for your whole Google profile.</h2>
+<div class="pkg-grid"><div class="card pkg-item"><div class="pv pv-rev"><div class="lp-who"><span class="av">T</span><b>Thabo M.</b><span class="stars" role="img" aria-label="5 / 5"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></div><p class="lp-reply">Thank you, Thabo! So glad you loved the flat white. See you again soon.</p></div><h3>Reviews answered</h3><p>In your customer's own language.</p><p class="pkg-tag">10 a month free, 100 with Mini.</p></div><div class="card pkg-item"><div class="pv pv-post"><img src="/assets/img/za-cafe-3.jpg" alt="" width="64" height="64" loading="lazy"><span><b>New post</b><span class="ptx">Heritage Day special: braai platter for two and a free koeksister with every coffee. This weekend only.</span></span></div><h3>A post every week</h3><p>Offers, new products, events.</p><p class="pkg-tag">Mini.</p></div><div class="card pkg-item"><div class="pv pv-tiles"><img src="/assets/img/za-cafe-1.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/za-cafe-2.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/za-cafe-3.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/za-cafe-4.jpg" alt="" width="60" height="48" loading="lazy"></div><h3>Fresh photos</h3><p>Made from your own pictures, ready for Google.</p><p class="pkg-tag">4 a month with Mini.</p></div><div class="card pkg-item soon"><div class="pv pv-hrs"><b>Hours</b><span>Mon–Sat 7:00–17:00</span><em><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Updated</em></div><h3>Profile kept up to date</h3><p>Opening hours, holidays, phone and details.</p><p class="pkg-tag"><em class="soon-tag">Launching soon</em></p></div></div>
+<p class="pkg-foot">All of it for R179 a month.</p></div></section>
+<section class="sec"><div class="wrap"><h2>Ready in three steps</h2><ol class="steps"><li><span class="n">1</span><div><h3>Sign up with your email</h3><p>It takes a minute.</p></div></li><li><span class="n">2</span><div><h3>Connect your Google profile</h3><p>So Rosalia can reply to your reviews and post for you.</p></div></li><li><span class="n">3</span><div><h3>Connect your WhatsApp</h3><p>That's where Rosalia talks to you: new reviews, replies to check, posts to approve.</p></div></li></ol></div></section>
+<section class="sec"><div class="wrap demo-sec"><h2>What it looks like</h2><div class="demo"><p class="ex">Example</p>
+<div class="card review"><div class="who"><span class="av" aria-hidden="true">T</span><span><b>Thabo M.</b><span class="stars" role="img" aria-label="5 stars"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></span></div><p class="quote">Best flat white in Braamfontein! Staff so friendly.</p><p class="auto">Replied automatically ✓</p><p class="wa">Rosalia: I replied to your 5-star review. Nothing to do.</p></div>
+<div class="card review"><div class="who"><span class="av" aria-hidden="true">P</span><span><b>Pieter V.</b><span class="stars" role="img" aria-label="2 stars"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span></span></div><p class="quote">Food was good, but we waited 25 minutes to be served.</p></div>
+<div class="card draft"><p class="lab">Rosalia's suggested reply</p><p class="dr">Sorry about the wait, Pieter. That's not the service we want to give. We've added staff at busy times and hope to see you again.</p><p class="sign">Nomsa's Café</p>
+<div class="dbtns" aria-hidden="true"><span class="db1">Approve &amp; publish</span><span class="db2">Edit</span></div></div></div></div></section>
+<section class="sec"><div class="wrap"><h2>You stay in control</h2><div class="ctl-grid"><div class="card ctl-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg><p>Rosalia replies to good reviews on her own, so you don't have to.</p></div><div class="card ctl-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><p>Anything sensitive, like a 1 to 3 star review or a new post, waits for your OK on WhatsApp.</p></div><div class="card ctl-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="10" rx="5"/><circle cx="16.5" cy="12" r="2.6"/></svg><p>Change or switch off anything, anytime.</p></div></div></div></section>
+<section class="sec"><div class="wrap"><h2>Start free. Get everything for R179 a month.</h2><div class="plans">
+<div class="plan card"><h3 class="pname">Free</h3><p class="price">R0</p><ul><li>10 review replies a month</li><li>No card needed</li></ul><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=en" data-cta="pricing">Start free</a></div>
+<div class="plan card"><h3 class="pname">Mini</h3><p class="price">R179 a month</p><ul><li>100 review replies a month</li><li>4 Google posts a month, written for you</li><li>4 photos a month, from your own pictures</li></ul><p class="note">No trial, cancel anytime.</p></div></div></div></section>
+<section class="sec"><div class="wrap narrow"><h2>Questions</h2><details><summary>Is it really free?</summary><p>Yes. The Free plan gives you 10 review replies every month and never asks for a card.</p></details><details><summary>What exactly does Rosalia do?</summary><p>On the Free plan, she replies to up to 10 reviews a month. On the Mini plan, she replies to up to 100 reviews, writes 4 Google posts and prepares 4 photos from your own pictures every month.</p></details><details><summary>Will Rosalia publish things without asking me?</summary><p>Rosalia replies to good reviews on her own, so you don't have to. Anything sensitive, like a 1 to 3 star review or a new post, waits for your OK on WhatsApp. Change or switch off anything, anytime.</p></details><details><summary>What do I need?</summary><p>An email address, a Google Business Profile and WhatsApp.</p></details><details><summary>What does Mini cost?</summary><p>R179 a month for review replies, posts and photos together. You only pay if you choose to upgrade.</p></details></div></section>
+<section class="sec final"><div class="wrap"><h2>Your Google profile, finally taken care of.</h2><p>Start free today. Upgrade when you're ready.</p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=en" data-cta="final">Start free</a><p class="reassure">10 replies a month, free.</p></div></section>
+</main>
+<footer class="foot"><div class="wrap"><p>BabyRock · Rosalia is an AI assistant.</p><p class="source">Source: BrightLocal Local Consumer Review Survey 2026 (US consumers).</p></div></footer>
+
+<script>// Client script inlined on every page. CONFIG is replaced at build time.
+(function () {
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"}}};
+  // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
+  // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
+  var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
+  if (links.length && (location.search || CONFIG.utm)) {
+    var keep = [], tagged = false;
+    new URLSearchParams(location.search).forEach(function (v, k) {
+      if (/^(utm_[a-z]+|fbclid|gclid)$/.test(k) && v.length <= 200) { keep.push([k, v]); if (k.indexOf('utm_') === 0) tagged = true; }
+    });
+    if (!tagged && CONFIG.utm) keep.push(['utm_source', 'babyrock.ai'], ['utm_medium', 'organic'], ['utm_campaign', location.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home']);
+    links.forEach(function (a) {
+      var u = new URL(a.getAttribute('href'), location.href);
+      keep.forEach(function (p) { u.searchParams.set(p[0], p[1]); });
+      a.href = u.toString();
+    });
+  }
+  // Price by visitor country. The host tells us the country of the visitor's IP at /cdn-cgi/trace;
+  // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
+  var P = CONFIG.prices;
+  function showPrice(cc) {
+    var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
+    if (!to) return;
+    // Prices are shown before tax; where tax is added on top the amount carries the tax word in the page's language.
+    var paid = to[0] + (to[2] ? (P.taxWord[document.documentElement.lang] || P.taxWord.en) : '');
+    var rules = [];
+    P.bases.forEach(function (b) {
+      if (b[0] === paid) return;
+      b.forEach(function (tok, i) { rules.push([new RegExp('(^|[^A-Za-z0-9])' + tok.replace(/[$.]/g, '\\$&') + '(?![0-9.,])', 'g'), i ? to[1] : paid]); });
+    });
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) {
+      if (n.parentNode.nodeName === 'SCRIPT' || n.parentNode.nodeName === 'STYLE') continue;
+      var t = n.nodeValue, u = t;
+      rules.forEach(function (r) { u = u.replace(r[0], function (m, pre) { return pre + r[1]; }); });
+      if (u !== t) n.nodeValue = u;
+    }
+    document.documentElement.setAttribute('data-price-country', cc);
+  }
+  if (P) {
+    var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);
+    if (forced) showPrice(forced[1].toUpperCase());
+    else if (window.fetch) fetch('/cdn-cgi/trace').then(function (r) { return r.ok ? r.text() : ''; }).then(function (t) {
+      var m = /^loc=([A-Z]{2})$/m.exec(t); if (m) showPrice(m[1]);
+    }).catch(function () {});
+  }
+  // Notify-me form for the full product.
+  document.querySelectorAll('form[data-notify]').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var out = f.querySelector('[data-result]'), email = f.querySelector('input[type=email]').value;
+      fetch(CONFIG.notifyEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, lang: document.documentElement.lang }) })
+        .then(function (r) { out.textContent = r.ok ? f.dataset.ok : f.dataset.err; })
+        .catch(function () { out.textContent = f.dataset.err; });
+    });
+  });
+})();
+</script>
+<aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
+<h2 id="br-ga-consent-title">Cookies</h2>
+<p id="br-ga-consent-text">We use Google Analytics to understand which pages people visit. You can accept or refuse.</p>
+<div class="br-ga-consent-actions">
+<button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accept">Accept</button>
+<button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuse">Refuse</button>
+</div>
+</aside>
+<script src="/js/br-ga-coverage.js" defer></script>
+
+</body>
+</html>
