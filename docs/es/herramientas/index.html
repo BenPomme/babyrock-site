@@ -7,12 +7,15 @@
 <meta name="description" content="Cartel con código QR para pedir reseñas y plantillas para responderlas. Gratis, sin registro.">
 <link rel="canonical" href="https://www.babyrock.ai/es/herramientas/">
 <link rel="alternate" hreflang="es-MX" href="/es/herramientas/">
-<meta name="theme-color" content="#07080a">
+<meta name="theme-color" content="#07080a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)">
 <style>@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 :root{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d;--radius:12px;--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--quote:"Source Serif 4",Georgia,"Times New Roman",serif;color-scheme:dark}
+:root{color-scheme:dark light}
+@media (prefers-color-scheme:light){:root{--bg:#f8f7f3;--panel:#ffffff;--line:#e0dfd8;--text:#0b0d0a;--muted:#5c636a;--star:#c88a00}.bar .wm b{background:var(--accent);color:var(--accent-ink);padding:.06em .3em;margin-left:.14em;border-radius:5px}}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -109,7 +112,7 @@ details p{color:var(--muted);margin-top:8px}
 .lp{display:grid;max-width:520px}
 .lp .body{background:var(--panel);border-inline:1px solid var(--line);padding:12px 14px}
 .lp .part:first-child .body{border-top:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0;padding:0;overflow:hidden}
-.lp-cover img{width:100%;height:120px;object-fit:cover}
+.lp-cover img{width:100%;height:auto;aspect-ratio:1040/437;object-fit:cover}
 .lp-head{display:flex;align-items:center;gap:10px}
 .lp-head b{display:block}
 .lp-logo{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;font-weight:800;background:var(--line)}
@@ -163,15 +166,59 @@ details p{color:var(--muted);margin-top:8px}
 .pv-post i+i{margin-top:6px;width:60%}
 .pv-tiles{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px}
 .pv-tiles img{width:100%;height:100%;min-height:0;object-fit:cover;border-radius:4px}
-.pv-tiles img:nth-child(1){object-position:15% 30%}.pv-tiles img:nth-child(2){object-position:85% 35%}
-.pv-tiles img:nth-child(3){object-position:50% 85%}.pv-tiles img:nth-child(4){object-position:40% 5%}
 .pv-hrs{display:flex;flex-direction:column;gap:4px;font-size:13px}
 .pv-hrs span{color:var(--muted)}
 .pv-hrs em{font-style:normal;font-weight:700;display:inline-flex;align-items:center;gap:5px;margin-top:auto;color:var(--star)}
 .pkg-foot{margin-top:18px;font-size:18px;font-weight:700}
-.lp-post img.th{object-fit:cover;object-position:60% 30%}
-.lp-tiles span:nth-child(1) img{object-position:15% 30%}.lp-tiles span:nth-child(2) img{object-position:85% 35%}.lp-tiles span:nth-child(3) img{object-position:50% 85%}
+.lp-post img.th{object-fit:cover}
 .pv-post{gap:8px}.pv-post img{width:48px;height:48px}.pv-post b{hyphens:auto;overflow-wrap:break-word}
+
+.demo .auto{font-weight:700;color:var(--star);margin-top:10px;font-size:14px}
+.demo .wa{margin-top:8px;padding:9px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
+
+/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer, coming-soon tags --- */
+.soon-tag{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);white-space:nowrap}
+.lp .call .soon-tag{margin-left:auto}
+.lp .part.soon .body,.pkg-item.soon .pv{opacity:.75}
+.ctl-grid{display:grid;gap:12px}
+.ctl-card{display:grid;gap:12px;align-content:start}
+.ctl-card svg{color:var(--text)}
+.ctl-card p{font-size:17px}
+.steps li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.steps .n{background:var(--text);color:var(--bg);border-color:transparent}
+.plan ul{gap:12px}
+.plan li{padding-left:28px}
+.plan li::before{top:.22em;width:18px;height:18px;border-radius:50%;background:var(--text)}
+.plan li::after{content:"";position:absolute;left:5px;top:calc(.22em + 5px);width:8px;height:4px;border-left:2px solid var(--panel);border-bottom:2px solid var(--panel);transform:rotate(-45deg)}
+.plan.card{padding:24px}
+.narrow details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:0;margin-top:10px}
+.narrow summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px}
+.narrow summary::-webkit-details-marker{display:none}
+.narrow summary::after{content:"+";font-size:22px;font-weight:400;line-height:1;color:var(--muted);flex:none}
+.narrow details[open] summary::after{content:"\2212"}
+.narrow details p{margin:0;padding:0 18px 18px}
+.final .wrap{background:var(--panel);border:1px solid var(--line);border-radius:calc(var(--radius) * 1.5);padding-block:40px;justify-items:center;text-align:center}
+.final p{margin-inline:auto}
+.foot{text-align:center}
+.foot p{margin-inline:auto}
+.foot .footlinks{justify-content:center}
+.demo-sec .demo{max-width:none}
+@media (min-width:760px){
+ .ctl-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+ .demo-sec .demo{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+ .demo-sec .demo .ex{grid-column:1/-1}
+ .demo-sec .demo>.card:first-of-type{grid-row:span 2}
+}
+
+/* Real reply and post text in the example profile, instead of placeholder lines. */
+.lp-reply{font-size:14px;line-height:1.4;color:var(--muted);max-width:none}
+.lp-post{align-items:flex-start}
+.lp-post .th{width:56px;height:56px}
+.ptx{display:block;font-size:14px;line-height:1.4;color:var(--muted)}
+.pv .lp-reply{font-size:12px;line-height:1.35;padding:6px 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pv-post{align-items:flex-start}
+.pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pv-post b{margin-bottom:3px}
 
 /* Free tools and comparison pages, on top of brand/components.css and landing/template.css. */
 .g-cards{display:grid;gap:14px;margin-top:26px}
@@ -244,22 +291,48 @@ details p{color:var(--muted);margin-top:8px}
 .g-call{border:1px solid var(--accent);border-radius:var(--radius);padding:18px;background:var(--panel);display:grid;gap:10px;max-width:65ch}
 .g-call h2{font-size:20px;margin:0}
 .g-call p{color:var(--text)}
+/* Design pass, 17 Nov: check marks instead of bullets, as on the plans. */
+.g-list{list-style:none;padding-left:0;gap:12px}
+.g-list li{position:relative;padding-left:28px}
+.g-list li::before{content:"";position:absolute;left:0;top:.28em;width:18px;height:18px;border-radius:50%;background:var(--text)}
+.g-list li::after{content:"";position:absolute;left:5px;top:calc(.28em + 5px);width:8px;height:4px;border-left:2px solid var(--bg);border-bottom:2px solid var(--bg);transform:rotate(-45deg)}
 </style>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+try { if (localStorage.getItem('br-consent') === 'granted') gtag('consent', 'update', { analytics_storage: 'granted' }); } catch (e) {}
+gtag('js', new Date());
+gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
+<link rel="stylesheet" href="/css/br-ga-coverage.css">
 </head>
 <body class="p-growth">
-<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/herramientas/">Herramientas</a><a class="navlink" href="/es/vs/">Comparativas</a><a class="navlink" href="/es/blog/">Blog</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es&amp;utm_source=babyrock.ai&amp;utm_medium=organic&amp;utm_campaign=herramientas" data-cta="bar">Empieza gratis</a></nav></div></header>
+<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/herramientas/">Herramientas</a><a class="navlink" href="/es/vs/">Comparativas</a><a class="navlink" href="/es/blog/">Blog</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="bar">Empieza gratis</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap"><h1>Herramientas gratis para tus reseñas de Google</h1><p class="sub">Sin registro. Lo que escribes no sale de tu teléfono.</p><div class="g-cards"><a class="g-card" href="/es/herramientas/cartel-qr-resenas/"><h2>Cartel QR para pedir reseñas</h2><p>Pega tu enlace de reseñas y llévate un cartel para imprimir y un mensaje listo para WhatsApp.</p></a><a class="g-card" href="/es/herramientas/plantillas-respuesta-resenas/"><h2>Plantillas para responder reseñas</h2><p>Seis respuestas, de 5 estrellas a 1, con el nombre de tu cliente y de tu negocio.</p></a></div></div></section><section class="sec"><div class="wrap g-cta"><h2>¿Y si alguien respondiera tus reseñas por ti?</h2><p class="muted">Rosalia redacta la respuesta a cada reseña de Google y te la manda por WhatsApp. Tú apruebas y se publica.</p><p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es&amp;utm_source=babyrock.ai&amp;utm_medium=organic&amp;utm_campaign=herramientas" data-cta="tools">Empieza gratis</a></p><p class="reassure">Sin tarjeta. 10 respuestas al mes, gratis.</p></div></section>
+<section class="hero"><div class="wrap"><h1>Herramientas gratis para tus reseñas de Google</h1><p class="sub">Sin registro. Lo que escribes no sale de tu teléfono.</p><div class="g-cards"><a class="g-card" href="/es/herramientas/cartel-qr-resenas/"><h2>Cartel QR para pedir reseñas</h2><p>Pega tu enlace de reseñas y llévate un cartel para imprimir y un mensaje listo para WhatsApp.</p></a><a class="g-card" href="/es/herramientas/plantillas-respuesta-resenas/"><h2>Plantillas para responder reseñas</h2><p>Seis respuestas, de 5 estrellas a 1, con el nombre de tu cliente y de tu negocio.</p></a></div></div></section><section class="sec"><div class="wrap g-cta"><h2>¿Y si alguien respondiera tus reseñas por ti?</h2><p class="muted">Rosalia redacta la respuesta a cada reseña de Google y te la manda por WhatsApp. Tú apruebas y se publica.</p><p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="tools">Empieza gratis</a></p><p class="reassure">Sin tarjeta. 10 respuestas al mes, gratis.</p></div></section>
 </main>
-<footer class="foot"><div class="wrap"><p>BabyRock es un producto de BabyFactory LTD, empresa del Reino Unido (número 17523851). Rosalia es una asistente con IA.</p><p class="footlinks"><a href="/es/herramientas/">Herramientas</a><a href="/es/vs/">Comparativas</a><a href="/es/blog/">Blog</a><a href="/es/nosotros/">Quiénes somos</a><a href="/es/terms/">Términos</a><a href="/es/privacy/">Privacidad</a><a href="/es/cookies/">Cookies</a><a href="/es/legal-notice/">Aviso legal</a></p></div></footer>
+<footer class="foot"><div class="wrap"><p>BabyRock es un producto de BabyFactory LTD, empresa del Reino Unido (número 17523851). Rosalia es una asistente con IA.</p><p class="footlinks"><a href="/es/precios/">Precios</a><a href="/es/herramientas/">Herramientas</a><a href="/es/vs/">Comparativas</a><a href="/es/blog/">Blog</a><a href="/es/nosotros/">Quiénes somos</a><a href="https://app.babyrock.ai/legal/terms?lang=es">Términos</a><a href="/es/privacy/">Privacidad</a><a href="/es/cookies/">Cookies</a><a href="/es/legal-notice/">Aviso legal</a></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
-  var CONFIG = {"signupPath":"/mini/signup","notifyEndpoint":"/api/notify"};
-  // Carry the visit's query string (utm, fbclid) to the signup link.
-  if (location.search) {
-    document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]').forEach(function (a) {
-      if (a.href.indexOf('?') < 0) a.href += location.search;
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true};
+  // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
+  // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
+  var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
+  if (links.length && (location.search || CONFIG.utm)) {
+    var keep = [], tagged = false;
+    new URLSearchParams(location.search).forEach(function (v, k) {
+      if (/^(utm_[a-z]+|fbclid|gclid)$/.test(k) && v.length <= 200) { keep.push([k, v]); if (k.indexOf('utm_') === 0) tagged = true; }
+    });
+    if (!tagged && CONFIG.utm) keep.push(['utm_source', 'babyrock.ai'], ['utm_medium', 'organic'], ['utm_campaign', location.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home']);
+    links.forEach(function (a) {
+      var u = new URL(a.getAttribute('href'), location.href);
+      keep.forEach(function (p) { u.searchParams.set(p[0], p[1]); });
+      a.href = u.toString();
     });
   }
   // Notify-me form for the full product.
@@ -274,6 +347,15 @@ details p{color:var(--muted);margin-top:8px}
   });
 })();
 </script>
+<aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
+<h2 id="br-ga-consent-title">Cookies</h2>
+<p id="br-ga-consent-text">Usamos Google Analytics para entender qué páginas visita la gente. Puede aceptar o rechazar.</p>
+<div class="br-ga-consent-actions">
+<button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Aceptar">Aceptar</button>
+<button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Rechazar">Rechazar</button>
+</div>
+</aside>
+<script src="/js/br-ga-coverage.js" defer></script>
 
 </body>
 </html>
