@@ -2692,6 +2692,8 @@ $('qr-copy').addEventListener('click',function(){var b=this;navigator.clipboard.
   // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
   // With the trial switch on, MX and ZA visitors get a price arm (a or b) and the sign-up links carry the pv parameter.
   var P = CONFIG.prices;
+  // The English home page carries two examples (data-ex="za" and "in"). Visitors in India see the Indian one: data-ex="in" on <html> swaps them (CSS in site.css).
+  function showExample(cc) { if (cc === 'IN') html.setAttribute('data-ex', 'in'); }
   function showPrice(cc) {
     var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
     if (CONFIG.trial && P.arms && P.arms[cc]) {
@@ -2704,10 +2706,10 @@ $('qr-copy').addEventListener('click',function(){var b=this;navigator.clipboard.
     // Prices are shown before tax; where tax is added on top the amount carries the tax word (by country, else by the page's language).
     var tax = (P.taxWordByCountry && P.taxWordByCountry[cc]) || P.taxWord[html.lang] || P.taxWord.en;
     var paid = to[0] + (to[2] ? tax : '');
-    var rules = [];
+    var rules = [], done = to[2] ? '(?!' + tax.replace(/[+.$]/g, '\\$&') + ')' : '';   // do not add the tax word twice (₹399 -> ₹399 + GST -> ...)
     P.bases.forEach(function (b) {
       if (b[0] === paid) return;
-      b.forEach(function (tok, i) { rules.push([new RegExp('(^|[^A-Za-z0-9])' + tok.replace(/[$.]/g, '\\$&') + '(?![0-9.,])', 'g'), i ? to[1] : paid]); });
+      b.forEach(function (tok, i) { rules.push([new RegExp('(^|[^A-Za-z0-9])' + tok.replace(/[$.]/g, '\\$&') + '(?![0-9.,])' + done, 'g'), i ? to[1] : paid]); });
     });
     var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), n;
     while ((n = w.nextNode())) {
@@ -2718,11 +2720,12 @@ $('qr-copy').addEventListener('click',function(){var b=this;navigator.clipboard.
     }
     html.setAttribute('data-price-country', cc);
   }
-  if (P) {
+  function onCountry(cc) { showExample(cc); if (P) showPrice(cc); }
+  if (P || document.querySelector('[data-ex]')) {
     var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);
-    if (forced) showPrice(forced[1].toUpperCase());
+    if (forced) onCountry(forced[1].toUpperCase());
     else if (window.fetch) fetch('/cdn-cgi/trace').then(function (r) { return r.ok ? r.text() : ''; }).then(function (t) {
-      var m = /^loc=([A-Z]{2})$/m.exec(t); if (m) showPrice(m[1]);
+      var m = /^loc=([A-Z]{2})$/m.exec(t); if (m) onCountry(m[1]);
     }).catch(function () {});
   }
   // Notify-me form for the full product.
