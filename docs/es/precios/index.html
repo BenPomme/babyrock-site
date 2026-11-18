@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Precios de BabyRock: Gratis y Mini</title>
-<meta name="description" content="Gratis: 10 respuestas a reseñas de Google al mes, sin tarjeta. Mini: MX$99 más IVA al mes con 100 respuestas, 4 publicaciones de Google y 4 fotos.">
+<meta name="description" content="Gratis: 10 respuestas a reseñas de Google al mes, sin tarjeta. Mini: MX$99 más IVA al mes con 100 respuestas, 4 publicaciones de Google, 4 fotos y cuidado del perfil.">
 <link rel="canonical" href="https://www.babyrock.ai/es/precios/">
 <link rel="alternate" hreflang="es-MX" href="/es/precios/">
 <link rel="alternate" hreflang="en" href="/pricing/">
@@ -177,10 +177,7 @@ details p{color:var(--muted);margin-top:8px}
 .demo .auto{font-weight:700;color:var(--star);margin-top:10px;font-size:14px}
 .demo .wa{margin-top:8px;padding:9px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
 
-/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer, coming-soon tags --- */
-.soon-tag{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);white-space:nowrap}
-.lp .call .soon-tag{margin-left:auto}
-.lp .part.soon .body,.pkg-item.soon .pv{opacity:.75}
+/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer --- */
 .ctl-grid{display:grid;gap:12px}
 .ctl-card{display:grid;gap:12px;align-content:start}
 .ctl-card svg{color:var(--text)}
@@ -221,7 +218,18 @@ details p{color:var(--muted);margin-top:8px}
 .pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .pv-post b{margin-bottom:3px}
 
-.soon-line{font-weight:700;font-size:15px}
+/* Trial wording: N shows by default, C when brand/site.js sets tv-c on <html>. Both are in the page, so nothing jumps. */
+.tvc{display:none}
+html.tv-c .tvc{display:inline}
+html.tv-c .tvn{display:none}
+/* Everything Rosalia handles: six cards, one column on phones. */
+.hd-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
+.hd-card{display:grid;gap:8px;align-content:start}
+.hd-card svg{color:var(--text)}
+.hd-card h3{font-size:17px;line-height:1.25}
+.hd-card p{font-size:14px;color:var(--muted)}
+@media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Core pages (home, pricing, about, legal) on top of brand/components.css and landing/template.css. */
 .coming .wrap{display:grid;gap:18px}
@@ -277,24 +285,40 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <link rel="stylesheet" href="/css/br-ga-coverage.css">
 </head>
 <body class="p-pricing">
-<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/precios/">Precios</a><a class="navlink" href="/es/nosotros/">Quiénes somos</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="bar">Empieza gratis</a></nav></div></header>
+<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/precios/">Precios</a><a class="navlink" href="/es/nosotros/">Quiénes somos</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n" data-cta="bar">Prueba Mini 7 días gratis</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap"><h1>Empieza gratis. Todo por MX$99 más IVA al mes.</h1><div class="plans plans-hero">
-<div class="plan card"><h2 class="pname">Gratis</h2><p class="price">MX$0</p><ul><li>10 respuestas a reseñas al mes</li><li>Sin tarjeta</li></ul><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="pricing">Empieza gratis</a></div>
-<div class="plan card"><h2 class="pname">Mini</h2><p class="price">MX$99 más IVA al mes</p><ul><li>100 respuestas a reseñas al mes</li><li>4 publicaciones de Google al mes, escritas para ti</li><li>4 fotos al mes, a partir de las tuyas</li></ul><p class="note">Los precios no incluyen impuestos aplicables. Sin prueba, cancela cuando quieras.</p></div></div><p class="muted small" style="margin-top:18px">Muy pronto, planes con Instagram y Facebook.</p></div></section>
+<section class="hero"><div class="wrap"><h1>Prueba Mini 7 días gratis. O empieza gratis.</h1><div class="plans plans-hero">
+<div class="plan card"><h2 class="pname">Gratis</h2><p class="price">MX$0</p><p class="reassure">Sin prueba. 10 respuestas a reseñas al mes, gratis.</p><ul><li>10 respuestas a reseñas al mes</li><li>Sin tarjeta</li></ul><a class="btn" href="https://app.babyrock.ai/mini/signup?lang=es&amp;plan=free&amp;tv=n" data-cta="pricing">Empieza gratis</a></div>
+<div class="plan card"><h2 class="pname">Mini</h2><p class="price">MX$99 más IVA al mes después de la prueba</p><p class="reassure"><span class="tvn">7 días gratis, no se requiere tarjeta de pago. Después, plan Gratis, a menos que pagues.</span><span class="tvc">7 días gratis. Tu tarjeta se cobra el día 7.</span></p><ul><li>100 respuestas a reseñas al mes</li><li>4 publicaciones de Google al mes, escritas para ti</li><li>4 fotos al mes, a partir de las tuyas</li><li>Cuidado del perfil: horarios, festivos y estadísticas</li></ul><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n" data-cta="pricing">Prueba Mini 7 días gratis</a><p class="note">Los precios no incluyen impuestos aplicables.</p></div></div><p class="muted small" style="margin-top:18px">Muy pronto, planes con Instagram y Facebook.</p></div></section>
 <section class="sec pkg"><div class="wrap"><h2>Una asistente para todo tu perfil de Google.</h2>
-<div class="pkg-grid"><div class="card pkg-item"><div class="pv pv-rev"><div class="lp-who"><span class="av">D</span><b>Daniela R.</b><span class="stars" role="img" aria-label="5 / 5"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></div><p class="lp-reply">¡Gracias, Daniela! Qué gusto que disfrutaste los tacos al pastor. Aquí te esperamos pronto.</p></div><h3>Reseñas respondidas</h3><p>En el idioma de tu cliente.</p><p class="pkg-tag">10 al mes gratis, 100 con Mini.</p></div><div class="card pkg-item"><div class="pv pv-post"><img src="/assets/img/mx-taqueria-2.jpg" alt="" width="64" height="64" loading="lazy"><span><b>Nueva publicación</b><span class="ptx">Día de Muertos: tacos al pastor y pan de muerto recién hecho. Este fin de semana, 5 tacos por el precio de 4.</span></span></div><h3>Una publicación cada semana</h3><p>Promociones, novedades, eventos.</p><p class="pkg-tag">Con Mini.</p></div><div class="card pkg-item"><div class="pv pv-tiles"><img src="/assets/img/mx-taqueria-1.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/mx-taqueria-2.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/mx-taqueria-3.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/mx-taqueria-4.jpg" alt="" width="60" height="48" loading="lazy"></div><h3>Fotos nuevas</h3><p>Hechas con tus propias fotos, listas para Google.</p><p class="pkg-tag">4 al mes con Mini.</p></div><div class="card pkg-item soon"><div class="pv pv-hrs"><b>Horario</b><span>Lun–Sáb 9:00–21:00</span><em><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Actualizado</em></div><h3>Perfil siempre al día</h3><p>Horarios, días festivos, teléfono y datos.</p><p class="pkg-tag"><em class="soon-tag">Muy pronto</em></p></div></div>
+<div class="pkg-grid"><div class="card pkg-item"><div class="pv pv-rev"><div class="lp-who"><span class="av">D</span><b>Daniela R.</b><span class="stars" role="img" aria-label="5 / 5"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></div><p class="lp-reply">¡Gracias, Daniela! Qué gusto que disfrutaste los tacos al pastor. Aquí te esperamos pronto.</p></div><h3>Reseñas respondidas</h3><p>En el idioma de tu cliente.</p><p class="pkg-tag">10 al mes gratis, 100 con Mini.</p></div><div class="card pkg-item"><div class="pv pv-post"><img src="/assets/img/mx-taqueria-2.jpg" alt="" width="64" height="64" loading="lazy"><span><b>Nueva publicación</b><span class="ptx">Día de Muertos: tacos al pastor y pan de muerto recién hecho. Este fin de semana, 5 tacos por el precio de 4.</span></span></div><h3>Una publicación cada semana</h3><p>Promociones, novedades, eventos.</p><p class="pkg-tag">Con Mini.</p></div><div class="card pkg-item"><div class="pv pv-tiles"><img src="/assets/img/mx-taqueria-1.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/mx-taqueria-2.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/mx-taqueria-3.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/mx-taqueria-4.jpg" alt="" width="60" height="48" loading="lazy"></div><h3>Fotos nuevas</h3><p>Hechas con tus propias fotos, listas para Google.</p><p class="pkg-tag">4 al mes con Mini.</p></div><div class="card pkg-item"><div class="pv pv-hrs"><b>Horario</b><span>Lun–Sáb 9:00–21:00</span><em><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Actualizado</em></div><h3>Perfil siempre al día</h3><p>Horarios siempre al día: festivos y días especiales.</p><p class="pkg-tag">Con Mini.</p></div></div>
 <p class="pkg-foot">Todo por MX$99 más IVA al mes.</p></div></section>
-<section class="sec"><div class="wrap narrow"><h2>Preguntas</h2><details><summary>¿De verdad es gratis?</summary><p>Sí. El plan Gratis te da 10 respuestas a reseñas cada mes y nunca pide tarjeta.</p></details><details><summary>¿Qué hace Rosalia exactamente?</summary><p>En el plan Gratis, responde hasta 10 reseñas al mes. En el plan Mini, responde hasta 100 reseñas, escribe 4 publicaciones de Google y prepara 4 fotos a partir de las tuyas cada mes.</p></details><details><summary>¿Rosalia va a publicar sin preguntarme?</summary><p>Rosalia responde sola las buenas reseñas, para que tú no tengas que hacerlo. Lo delicado, como una reseña de 1 a 3 estrellas o una publicación nueva, espera tu OK por WhatsApp. Cambia o apaga lo que quieras, cuando quieras.</p></details><details><summary>¿Qué necesito?</summary><p>Un correo electrónico, un Perfil de Negocio de Google y WhatsApp.</p></details><details><summary>¿Cuánto cuesta Mini?</summary><p>MX$99 más IVA al mes, sin impuestos aplicables, por respuestas a reseñas, publicaciones y fotos, todo junto. Solo pagas si decides subir de plan.</p></details></div></section>
+<section class="sec"><div class="wrap narrow"><h2>Preguntas</h2><details><summary>¿De verdad es gratis?</summary><p>Sí. El plan Gratis te da 10 respuestas a reseñas cada mes y nunca pide tarjeta.</p></details><details><summary>¿Cómo funciona la prueba de 7 días?</summary><p><span class="tvn">Tienes Mini 7 días: 100 respuestas a reseñas, 4 publicaciones de Google y 4 fotos. No se requiere tarjeta de pago.</span><span class="tvc">Tienes Mini 7 días y hoy no pagas nada. El día 7 se cobran MX$99 más IVA a tu tarjeta.</span></p></details><details><summary>¿Qué pasa cuando termina la prueba?</summary><p><span class="tvn">Tu cuenta pasa al plan Gratis: 10 respuestas a reseñas al mes. Para seguir con Mini, paga desde WhatsApp.</span><span class="tvc">Se cobra tu tarjeta y Mini sigue. Para parar, cancela antes del día 7 desde WhatsApp.</span></p></details><details><summary>¿Qué hace Rosalia exactamente?</summary><p>En el plan Gratis, responde hasta 10 reseñas al mes. En el plan Mini, responde hasta 100 reseñas, escribe 4 publicaciones de Google y prepara 4 fotos a partir de las tuyas cada mes. También cuida tu perfil: horarios, días festivos, teléfono y link de WhatsApp, con sugerencias de lo que falta y estadísticas de cómo te encuentra la gente.</p></details><details><summary>¿Rosalia va a publicar sin preguntarme?</summary><p>Rosalia responde sola las buenas reseñas, para que tú no tengas que hacerlo. Lo delicado, como una reseña de 1 a 3 estrellas o una publicación nueva, espera tu OK por WhatsApp. Cambia o apaga lo que quieras, cuando quieras.</p></details><details><summary>¿Qué necesito?</summary><p>Un correo electrónico, un Perfil de Negocio de Google y WhatsApp.</p></details><details><summary>¿Cuánto cuesta Mini?</summary><p>MX$99 más IVA al mes, sin impuestos aplicables, por respuestas a reseñas, publicaciones y fotos, todo junto. Solo pagas si decides subir de plan.</p></details></div></section>
 </main>
 <footer class="foot"><div class="wrap"><p>BabyRock es un producto de BabyFactory LTD, empresa del Reino Unido (número 17523851). Rosalia es una asistente con IA.</p><p class="footlinks"><a href="/es/precios/">Precios</a><a href="/es/nosotros/">Quiénes somos</a><a href="/investors/demos/">Inversionistas</a><a href="https://app.babyrock.ai/legal/terms?lang=es">Términos</a><a href="/es/privacy/">Privacidad</a><a href="/es/cookies/">Cookies</a><a href="/es/legal-notice/">Aviso legal</a><a href="/pricing/" hreflang="en" lang="en">English</a></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
-  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"}}};
+  // First-visit arm: a forced value from the page URL (pv or tv parameter) wins and is stored; else the stored value; else 50/50, stored.
+  // If storage fails, the arm is drawn again on each page load.
+  function pickArm(key, vals, forced, store, rnd) {
+    if (forced && vals.indexOf(forced) >= 0) { try { store.setItem(key, forced); } catch (e) {} return forced; }
+    try { var s = store.getItem(key); if (s && vals.indexOf(s) >= 0) return s; } catch (e) {}
+    var v = vals[rnd() < 0.5 ? 0 : 1];
+    try { store.setItem(key, v); } catch (e) {}
+    return v;
+  }
+  if (typeof module === 'object' && module.exports) { module.exports = { pickArm: pickArm }; return; }
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false],"IN":["₹399","₹0",true]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"},"taxWordByCountry":{"IN":" + GST","MX":" más IVA"},"arms":{"MX":{"a":["MX$99","MX$0",true],"b":["MX$179","MX$0",true]},"ZA":{"a":["R179","R0",false],"b":["R99","R0",false]}}},"trial":true};
+  var store = null; try { store = window.localStorage; } catch (e) {}
+  function forcedArm(name) { var m = new RegExp('[?&]' + name + '=([A-Za-z])(&|$)').exec(location.search); return m ? m[1].toLowerCase() : null; }
+  var html = document.documentElement;
   // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
   // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
   var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
+  function setParam(name, val) {
+    links.forEach(function (a) { var u = new URL(a.getAttribute('href'), location.href); u.searchParams.set(name, val); a.href = u.toString(); });
+  }
   if (links.length && (location.search || CONFIG.utm)) {
     var keep = [], tagged = false;
     new URLSearchParams(location.search).forEach(function (v, k) {
@@ -307,14 +331,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       a.href = u.toString();
     });
   }
+  // Trial arm (only with the trial switch on and trial wording in the page): n or c. The matching block shows through a class on <html>.
+  if (CONFIG.trial && document.querySelector('.tvn')) {
+    var tvArm = pickArm('br-tv', ['n', 'c'], forcedArm('tv'), store, Math.random);
+    html.className += ' tv-' + tvArm;
+    setParam('tv', tvArm);
+  }
   // Price by visitor country. The host tells us the country of the visitor's IP at /cdn-cgi/trace;
   // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
+  // With the trial switch on, MX and ZA visitors get a price arm (a or b) and the sign-up links carry the pv parameter.
   var P = CONFIG.prices;
   function showPrice(cc) {
     var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
+    if (CONFIG.trial && P.arms && P.arms[cc]) {
+      var pvArm = pickArm('br-pv', ['a', 'b'], forcedArm('pv'), store, Math.random);
+      to = P.arms[cc][pvArm];
+      html.setAttribute('data-pv', pvArm);
+      setParam('pv', pvArm);
+    }
     if (!to) return;
-    // Prices are shown before tax; where tax is added on top the amount carries the tax word in the page's language.
-    var paid = to[0] + (to[2] ? (P.taxWord[document.documentElement.lang] || P.taxWord.en) : '');
+    // Prices are shown before tax; where tax is added on top the amount carries the tax word (by country, else by the page's language).
+    var tax = (P.taxWordByCountry && P.taxWordByCountry[cc]) || P.taxWord[html.lang] || P.taxWord.en;
+    var paid = to[0] + (to[2] ? tax : '');
     var rules = [];
     P.bases.forEach(function (b) {
       if (b[0] === paid) return;
@@ -327,7 +365,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       rules.forEach(function (r) { u = u.replace(r[0], function (m, pre) { return pre + r[1]; }); });
       if (u !== t) n.nodeValue = u;
     }
-    document.documentElement.setAttribute('data-price-country', cc);
+    html.setAttribute('data-price-country', cc);
   }
   if (P) {
     var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);

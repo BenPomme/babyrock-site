@@ -176,10 +176,7 @@ details p{color:var(--muted);margin-top:8px}
 .demo .auto{font-weight:700;color:var(--star);margin-top:10px;font-size:14px}
 .demo .wa{margin-top:8px;padding:9px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
 
-/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer, coming-soon tags --- */
-.soon-tag{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);white-space:nowrap}
-.lp .call .soon-tag{margin-left:auto}
-.lp .part.soon .body,.pkg-item.soon .pv{opacity:.75}
+/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer --- */
 .ctl-grid{display:grid;gap:12px}
 .ctl-card{display:grid;gap:12px;align-content:start}
 .ctl-card svg{color:var(--text)}
@@ -220,7 +217,18 @@ details p{color:var(--muted);margin-top:8px}
 .pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .pv-post b{margin-bottom:3px}
 
-.soon-line{font-weight:700;font-size:15px}
+/* Trial wording: N shows by default, C when brand/site.js sets tv-c on <html>. Both are in the page, so nothing jumps. */
+.tvc{display:none}
+html.tv-c .tvc{display:inline}
+html.tv-c .tvn{display:none}
+/* Everything Rosalia handles: six cards, one column on phones. */
+.hd-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
+.hd-card{display:grid;gap:8px;align-content:start}
+.hd-card svg{color:var(--text)}
+.hd-card h3{font-size:17px;line-height:1.25}
+.hd-card p{font-size:14px;color:var(--muted)}
+@media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Free tools and comparison pages, on top of brand/components.css and landing/template.css. */
 .g-cards{display:grid;gap:14px;margin-top:26px}
@@ -313,18 +321,34 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <link rel="stylesheet" href="/css/br-ga-coverage.css">
 </head>
 <body class="p-growth">
-<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/herramientas/">Herramientas</a><a class="navlink" href="/es/vs/">Comparativas</a><a class="navlink" href="/es/blog/">Blog</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="bar">Empieza gratis</a></nav></div></header>
+<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/herramientas/">Herramientas</a><a class="navlink" href="/es/vs/">Comparativas</a><a class="navlink" href="/es/blog/">Blog</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n" data-cta="bar">Prueba Mini 7 días gratis</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap"><h1>Guías para tus reseñas de Google</h1><p class="sub">Cortas, prácticas y pensadas para quien atiende su propio negocio.</p><div class="g-cards"><a class="g-card" href="/es/blog/como-responder-resenas-google/"><h2>Cómo responder reseñas de Google</h2><p>Qué decir según las estrellas, con ejemplos que puedes copiar hoy.</p></a><a class="g-card" href="/es/blog/como-conseguir-mas-resenas-google/"><h2>Cómo conseguir más reseñas en Google</h2><p>Seis formas sencillas de pedirlas, y dos cosas que Google no permite.</p></a><a class="g-card" href="/es/blog/resena-negativa-google-que-hacer/"><h2>Te llegó una mala reseña en Google. ¿Y ahora?</h2><p>Cinco pasos, en orden, para que no te quite el sueño ni los clientes.</p></a></div></div></section><section class="sec"><div class="wrap g-cta"><h2>¿Y si alguien respondiera tus reseñas por ti?</h2><p class="muted">Rosalia redacta la respuesta a cada reseña de Google y te la manda por WhatsApp. Tú apruebas y se publica.</p><p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="blog">Empieza gratis</a></p><p class="reassure">Sin tarjeta. 10 respuestas al mes, gratis.</p></div></section>
+<section class="hero"><div class="wrap"><h1>Guías para tus reseñas de Google</h1><p class="sub">Cortas, prácticas y pensadas para quien atiende su propio negocio.</p><div class="g-cards"><a class="g-card" href="/es/blog/como-responder-resenas-google/"><h2>Cómo responder reseñas de Google</h2><p>Qué decir según las estrellas, con ejemplos que puedes copiar hoy.</p></a><a class="g-card" href="/es/blog/como-conseguir-mas-resenas-google/"><h2>Cómo conseguir más reseñas en Google</h2><p>Seis formas sencillas de pedirlas, y dos cosas que Google no permite.</p></a><a class="g-card" href="/es/blog/resena-negativa-google-que-hacer/"><h2>Te llegó una mala reseña en Google. ¿Y ahora?</h2><p>Cinco pasos, en orden, para que no te quite el sueño ni los clientes.</p></a></div></div></section><section class="sec"><div class="wrap g-cta"><h2>¿Y si alguien respondiera tus reseñas por ti?</h2><p class="muted">Rosalia redacta la respuesta a cada reseña de Google y te la manda por WhatsApp. Tú apruebas y se publica.</p><p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n" data-cta="blog">Prueba Mini 7 días gratis</a></p><p class="reassure">Sin tarjeta. 10 respuestas al mes, gratis.</p></div></section>
 </main>
 <footer class="foot"><div class="wrap"><p>BabyRock es un producto de BabyFactory LTD, empresa del Reino Unido (número 17523851). Rosalia es una asistente con IA.</p><p class="footlinks"><a href="/es/precios/">Precios</a><a href="/es/herramientas/">Herramientas</a><a href="/es/vs/">Comparativas</a><a href="/es/blog/">Blog</a><a href="/es/nosotros/">Quiénes somos</a><a href="https://app.babyrock.ai/legal/terms?lang=es">Términos</a><a href="/es/privacy/">Privacidad</a><a href="/es/cookies/">Cookies</a><a href="/es/legal-notice/">Aviso legal</a></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
-  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"}}};
+  // First-visit arm: a forced value from the page URL (pv or tv parameter) wins and is stored; else the stored value; else 50/50, stored.
+  // If storage fails, the arm is drawn again on each page load.
+  function pickArm(key, vals, forced, store, rnd) {
+    if (forced && vals.indexOf(forced) >= 0) { try { store.setItem(key, forced); } catch (e) {} return forced; }
+    try { var s = store.getItem(key); if (s && vals.indexOf(s) >= 0) return s; } catch (e) {}
+    var v = vals[rnd() < 0.5 ? 0 : 1];
+    try { store.setItem(key, v); } catch (e) {}
+    return v;
+  }
+  if (typeof module === 'object' && module.exports) { module.exports = { pickArm: pickArm }; return; }
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false],"IN":["₹399","₹0",true]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"},"taxWordByCountry":{"IN":" + GST","MX":" más IVA"},"arms":{"MX":{"a":["MX$99","MX$0",true],"b":["MX$179","MX$0",true]},"ZA":{"a":["R179","R0",false],"b":["R99","R0",false]}}},"trial":true};
+  var store = null; try { store = window.localStorage; } catch (e) {}
+  function forcedArm(name) { var m = new RegExp('[?&]' + name + '=([A-Za-z])(&|$)').exec(location.search); return m ? m[1].toLowerCase() : null; }
+  var html = document.documentElement;
   // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
   // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
   var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
+  function setParam(name, val) {
+    links.forEach(function (a) { var u = new URL(a.getAttribute('href'), location.href); u.searchParams.set(name, val); a.href = u.toString(); });
+  }
   if (links.length && (location.search || CONFIG.utm)) {
     var keep = [], tagged = false;
     new URLSearchParams(location.search).forEach(function (v, k) {
@@ -337,14 +361,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       a.href = u.toString();
     });
   }
+  // Trial arm (only with the trial switch on and trial wording in the page): n or c. The matching block shows through a class on <html>.
+  if (CONFIG.trial && document.querySelector('.tvn')) {
+    var tvArm = pickArm('br-tv', ['n', 'c'], forcedArm('tv'), store, Math.random);
+    html.className += ' tv-' + tvArm;
+    setParam('tv', tvArm);
+  }
   // Price by visitor country. The host tells us the country of the visitor's IP at /cdn-cgi/trace;
   // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
+  // With the trial switch on, MX and ZA visitors get a price arm (a or b) and the sign-up links carry the pv parameter.
   var P = CONFIG.prices;
   function showPrice(cc) {
     var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
+    if (CONFIG.trial && P.arms && P.arms[cc]) {
+      var pvArm = pickArm('br-pv', ['a', 'b'], forcedArm('pv'), store, Math.random);
+      to = P.arms[cc][pvArm];
+      html.setAttribute('data-pv', pvArm);
+      setParam('pv', pvArm);
+    }
     if (!to) return;
-    // Prices are shown before tax; where tax is added on top the amount carries the tax word in the page's language.
-    var paid = to[0] + (to[2] ? (P.taxWord[document.documentElement.lang] || P.taxWord.en) : '');
+    // Prices are shown before tax; where tax is added on top the amount carries the tax word (by country, else by the page's language).
+    var tax = (P.taxWordByCountry && P.taxWordByCountry[cc]) || P.taxWord[html.lang] || P.taxWord.en;
+    var paid = to[0] + (to[2] ? tax : '');
     var rules = [];
     P.bases.forEach(function (b) {
       if (b[0] === paid) return;
@@ -357,7 +395,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       rules.forEach(function (r) { u = u.replace(r[0], function (m, pre) { return pre + r[1]; }); });
       if (u !== t) n.nodeValue = u;
     }
-    document.documentElement.setAttribute('data-price-country', cc);
+    html.setAttribute('data-price-country', cc);
   }
   if (P) {
     var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);

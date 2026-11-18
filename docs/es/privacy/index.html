@@ -176,10 +176,7 @@ details p{color:var(--muted);margin-top:8px}
 .demo .auto{font-weight:700;color:var(--star);margin-top:10px;font-size:14px}
 .demo .wa{margin-top:8px;padding:9px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
 
-/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer, coming-soon tags --- */
-.soon-tag{font-style:normal;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);white-space:nowrap}
-.lp .call .soon-tag{margin-left:auto}
-.lp .part.soon .body,.pkg-item.soon .pv{opacity:.75}
+/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer --- */
 .ctl-grid{display:grid;gap:12px}
 .ctl-card{display:grid;gap:12px;align-content:start}
 .ctl-card svg{color:var(--text)}
@@ -220,7 +217,18 @@ details p{color:var(--muted);margin-top:8px}
 .pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .pv-post b{margin-bottom:3px}
 
-.soon-line{font-weight:700;font-size:15px}
+/* Trial wording: N shows by default, C when brand/site.js sets tv-c on <html>. Both are in the page, so nothing jumps. */
+.tvc{display:none}
+html.tv-c .tvc{display:inline}
+html.tv-c .tvn{display:none}
+/* Everything Rosalia handles: six cards, one column on phones. */
+.hd-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
+.hd-card{display:grid;gap:8px;align-content:start}
+.hd-card svg{color:var(--text)}
+.hd-card h3{font-size:17px;line-height:1.25}
+.hd-card p{font-size:14px;color:var(--muted)}
+@media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Core pages (home, pricing, about, legal) on top of brand/components.css and landing/template.css. */
 .coming .wrap{display:grid;gap:18px}
@@ -276,7 +284,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <link rel="stylesheet" href="/css/br-ga-coverage.css">
 </head>
 <body class="p-legal">
-<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/precios/">Precios</a><a class="navlink" href="/es/nosotros/">Quiénes somos</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es" data-cta="bar">Empieza gratis</a></nav></div></header>
+<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/es/precios/">Precios</a><a class="navlink" href="/es/nosotros/">Quiénes somos</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n" data-cta="bar">Prueba Mini 7 días gratis</a></nav></div></header>
 <main>
 <section class="sec"><div class="wrap prose"><h1>Política de privacidad</h1><p>Versión del 21 de octubre de 2026. Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018 (LOPDGDD).</p>
 <h2>1. Responsable</h2>
@@ -296,7 +304,8 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <p><strong>Sitio público.</strong> Páginas visitadas, idioma, dispositivo. Si acepta cookies de analítica, Google Analytics. Base: consentimiento (art. 6.1.a). Detalle: <a href="/es/cookies/">cookies</a>.</p>
 <p><strong>Diario del servicio (como encargados, ver encargo).</strong> Texto de la reseña, nombre público del autor en Google, estrellas, borradores, texto publicado, quién pulsó publicar. Hace falta para prestar el servicio y para poder demostrar qué se publicó si hay una disputa.</p>
 <p>No vendemos datos. No hacemos perfiles con efectos jurídicos sobre usted.</p>
-<p><strong>Datos de usuario de Google.</strong> Cuando conecta su Perfil de Empresa de Google, BabyRock recibe, con su permiso: el perfil básico de su cuenta de Google (nombre y correo, para identificar la conexión) y acceso para gestionar su perfil de empresa (<code>business.manage</code>). Usamos este acceso solo para listar los establecimientos que gestiona, leer las reseñas del establecimiento que elija y publicar sus respuestas según el modo que autorice expresamente. En el modo recomendado, que usted activa expresamente, las respuestas a las nuevas reseñas de 4 y 5 estrellas se publican automáticamente y las respuestas a las reseñas de 1, 2 y 3 estrellas requieren su aprobación. Puede desactivar las respuestas automáticas. Guardamos los identificadores del establecimiento, las reseñas y las respuestas necesarias para prestar el servicio, y el token de conexión cifrado. No usamos los datos de usuario de Google para publicidad, no los vendemos y no los compartimos con terceros, salvo los encargados de tratamiento de esta política necesarios para el servicio (por ejemplo, <strong>el proveedor de IA que ayuda a redactar respuestas según el modo de reseñas que usted elija</strong>). Puede revocar el acceso en cualquier momento en su Cuenta de Google (Seguridad → Acceso de terceros) o desconectando en BabyRock. Borramos el token de inmediato y las reseñas guardadas en 30 días, salvo obligación legal. Las respuestas ya publicadas siguen en su ficha, porque son suyas.</p>
+<p><strong>Datos de usuario de Google.</strong> Cuando conecta su Perfil de Empresa de Google, BabyRock recibe, con su permiso: el perfil básico de su cuenta de Google (nombre y correo, para identificar la conexión) y acceso para gestionar su perfil de empresa (<code>business.manage</code>). Usamos este acceso solo para listar los establecimientos que gestiona, leer las reseñas y los datos del establecimiento que elija, leer sus estadísticas, publicar sus respuestas a reseñas según el modo que autorice y actualizar los datos del perfil que apruebe. Al conectar Google, usted autoriza las respuestas automáticas a las nuevas reseñas de 4 y 5 estrellas; las respuestas a reseñas de 1, 2 y 3 estrellas necesitan su aprobación, salvo que active las respuestas automáticas para todas las reseñas. Puede cambiar o desactivar las respuestas automáticas cuando quiera. Guardamos los identificadores del establecimiento, las reseñas y las respuestas necesarias para prestar el servicio, y el token de conexión cifrado. No usamos los datos de usuario de Google para publicidad, no los vendemos y no los compartimos con terceros, salvo los encargados de tratamiento de esta política necesarios para el servicio (por ejemplo, <strong>el proveedor de IA que ayuda a redactar respuestas según el modo de reseñas que usted elija</strong>). Puede revocar el acceso en cualquier momento en su Cuenta de Google (Seguridad → Acceso de terceros) o desconectando en BabyRock. Borramos el token de inmediato y las reseñas guardadas en 30 días, salvo obligación legal. Las respuestas ya publicadas siguen en su ficha, porque son suyas.</p>
+<p><strong>Su sitio web.</strong> Si nos da la dirección de su sitio web, Rosalia lee sus páginas públicas para conocer su negocio y su tono. Guardamos un breve resumen, no una copia de su sitio.</p>
 <p>El uso y la transferencia a cualquier otra aplicación por parte de BabyRock de la información recibida de las API de Google se ajustarán a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
 <h2>4. Destinatarios</h2>
 <p>Solo quien necesita el dato para el servicio:</p>
@@ -321,10 +330,26 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
-  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"}}};
+  // First-visit arm: a forced value from the page URL (pv or tv parameter) wins and is stored; else the stored value; else 50/50, stored.
+  // If storage fails, the arm is drawn again on each page load.
+  function pickArm(key, vals, forced, store, rnd) {
+    if (forced && vals.indexOf(forced) >= 0) { try { store.setItem(key, forced); } catch (e) {} return forced; }
+    try { var s = store.getItem(key); if (s && vals.indexOf(s) >= 0) return s; } catch (e) {}
+    var v = vals[rnd() < 0.5 ? 0 : 1];
+    try { store.setItem(key, v); } catch (e) {}
+    return v;
+  }
+  if (typeof module === 'object' && module.exports) { module.exports = { pickArm: pickArm }; return; }
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false],"IN":["₹399","₹0",true]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"},"taxWordByCountry":{"IN":" + GST","MX":" más IVA"},"arms":{"MX":{"a":["MX$99","MX$0",true],"b":["MX$179","MX$0",true]},"ZA":{"a":["R179","R0",false],"b":["R99","R0",false]}}},"trial":true};
+  var store = null; try { store = window.localStorage; } catch (e) {}
+  function forcedArm(name) { var m = new RegExp('[?&]' + name + '=([A-Za-z])(&|$)').exec(location.search); return m ? m[1].toLowerCase() : null; }
+  var html = document.documentElement;
   // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
   // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
   var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
+  function setParam(name, val) {
+    links.forEach(function (a) { var u = new URL(a.getAttribute('href'), location.href); u.searchParams.set(name, val); a.href = u.toString(); });
+  }
   if (links.length && (location.search || CONFIG.utm)) {
     var keep = [], tagged = false;
     new URLSearchParams(location.search).forEach(function (v, k) {
@@ -337,14 +362,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       a.href = u.toString();
     });
   }
+  // Trial arm (only with the trial switch on and trial wording in the page): n or c. The matching block shows through a class on <html>.
+  if (CONFIG.trial && document.querySelector('.tvn')) {
+    var tvArm = pickArm('br-tv', ['n', 'c'], forcedArm('tv'), store, Math.random);
+    html.className += ' tv-' + tvArm;
+    setParam('tv', tvArm);
+  }
   // Price by visitor country. The host tells us the country of the visitor's IP at /cdn-cgi/trace;
   // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
+  // With the trial switch on, MX and ZA visitors get a price arm (a or b) and the sign-up links carry the pv parameter.
   var P = CONFIG.prices;
   function showPrice(cc) {
     var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
+    if (CONFIG.trial && P.arms && P.arms[cc]) {
+      var pvArm = pickArm('br-pv', ['a', 'b'], forcedArm('pv'), store, Math.random);
+      to = P.arms[cc][pvArm];
+      html.setAttribute('data-pv', pvArm);
+      setParam('pv', pvArm);
+    }
     if (!to) return;
-    // Prices are shown before tax; where tax is added on top the amount carries the tax word in the page's language.
-    var paid = to[0] + (to[2] ? (P.taxWord[document.documentElement.lang] || P.taxWord.en) : '');
+    // Prices are shown before tax; where tax is added on top the amount carries the tax word (by country, else by the page's language).
+    var tax = (P.taxWordByCountry && P.taxWordByCountry[cc]) || P.taxWord[html.lang] || P.taxWord.en;
+    var paid = to[0] + (to[2] ? tax : '');
     var rules = [];
     P.bases.forEach(function (b) {
       if (b[0] === paid) return;
@@ -357,7 +396,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
       rules.forEach(function (r) { u = u.replace(r[0], function (m, pre) { return pre + r[1]; }); });
       if (u !== t) n.nodeValue = u;
     }
-    document.documentElement.setAttribute('data-price-country', cc);
+    html.setAttribute('data-price-country', cc);
   }
   if (P) {
     var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);
