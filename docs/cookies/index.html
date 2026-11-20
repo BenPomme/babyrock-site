@@ -272,7 +272,7 @@ html.tv-c .tvn{display:none}
 
 /* English home: two examples are built, one is shown per visitor country (data-ex on <html>, set by brand/site.js). Hidden copies stay display:none so their lazy images are not fetched. */
 html:not([data-ex="in"]) [data-ex="in"],html[data-ex="in"] [data-ex="za"]{display:none!important}
-</style>
+.linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -289,23 +289,24 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <body class="p-legal">
 <header class="bar"><div class="wrap barin"><a class="home" href="/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="navlink" href="/pricing/">Pricing</a><a class="navlink" href="/about/">Who we are</a><a class="btn btn-sm" href="https://app.babyrock.ai/mini/signup?lang=en&amp;tv=n" data-cta="bar">Try Mini free for 7 days</a></nav></div></header>
 <main>
-<section class="sec"><div class="wrap prose"><h1>Cookie policy</h1><p>Version of 9 September 2026. Complements <a href="/privacy/">privacy</a>.</p>
+<section class="sec"><div class="wrap prose"><h1>Cookie policy</h1><p>Version of 20 November 2026. Complements <a href="/privacy/">privacy</a>.</p>
 <h2>1. What we use</h2>
-<p>The public site www.babyrock.ai does not need cookies to show the pages. We store your analytics choice in the browser’s <strong>local storage</strong>, key `br-consent` (value `granted` or `denied`). It does not expire on its own: it lasts until you clear it or tap Cookies in the footer again.</p>
+<p>The public site www.babyrock.ai does not need cookies to show the pages. We store your cookie choice in the browser’s <strong>local storage</strong>, key `br-consent` (value `granted` or `denied`), and `br-consent-meta` (value `1`) once you have answered the current banner. Neither expires on its own: they last until you clear them or tap Cookie settings in the footer again.</p>
 <p>If you <strong>accept</strong>, we turn on Google Analytics 4 (id G-252L7M2L2P). Google may then set, among others:</p>
 <ul><li>`_ga`: tell visitors apart; usually 2 years; Google LLC.</li><li>`_ga_252L7M2L2P` (or the equivalent stream id): session state; usually 2 years; Google LLC.</li></ul>
-<p>Google may process that data in the United States. We do not use advertising cookies. Default consent is <strong>denied</strong>.</p>
+<p>Google may process that data in the United States. If you <strong>accept</strong>, we also turn on the Meta pixel (id 2978994959128371). It tells Meta which pages of this site you visit, so we can measure our ads and show them again to people who visited. Meta may then set `_fbp` (tells browsers apart; 90 days) and, if you arrived from a Meta ad, `_fbc` (the ad click; 90 days). Meta Platforms Ireland Ltd and Meta Platforms, Inc. may process that data, including in the United States. Nothing is set before you accept: default consent is <strong>denied</strong>.</p>
 <p>The payment app (app.babyrock.ai) uses its own session cookie, needed so the sign-up is not lost. Without it you cannot pay. Basis: necessity for the service you asked for.</p>
 <h2>2. How to accept or refuse</h2>
-<p>The banner lets you accept or refuse. You can open it again with the Cookies link in the footer. You can also clear cookies and local storage in the browser, or use a blocker.</p>
-<p>Refusing does not stop you reading the site or subscribing. It only stops Google Analytics from counting the visit.</p>
+<p>The banner lets you accept or refuse. You can open it again with the Cookie settings button in the footer. You can also clear cookies and local storage in the browser, or use a blocker.</p>
+<p>Refusing does not stop you reading the site or subscribing. It only stops Google Analytics from counting the visit and the Meta pixel from loading.</p>
 <h2>3. Third parties</h2>
 <p>Google LLC, United States. Google’s policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>. Opt out of Analytics: <a href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a>.</p>
-<p>Stripe, Meta and Google (Business Profile) process data because you use payment, WhatsApp or the manager, not because of a cookie from this banner. That is in <a href="/privacy/">privacy</a>.</p>
+<p>Meta Platforms Ireland Ltd (and Meta Platforms, Inc., United States) for the pixel. Meta’s policy: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a>.</p>
+<p>Apart from the pixel above, Stripe, Meta and Google (Business Profile) process data because you use payment, WhatsApp or the manager. That is in <a href="/privacy/">privacy</a>.</p>
 <h2>4. Contact</h2>
 <p><a href="mailto:contact@babyrock.ai">contact@babyrock.ai</a>.</p></div></section>
 </main>
-<footer class="foot"><div class="wrap"><p>BabyRock is a product of BabyFactory LTD, a UK company (number 17523851). Rosalia is an AI assistant.</p><p class="footlinks"><a href="/pricing/">Pricing</a><a href="/about/">Who we are</a><a href="/investors/demos/">Investors</a><a href="https://app.babyrock.ai/legal/terms">Terms</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/legal-notice/">Legal notice</a><a href="/es/cookies/" hreflang="es-MX" lang="es">Español</a></p></div></footer>
+<footer class="foot"><div class="wrap"><p>BabyRock is a product of BabyFactory LTD, a UK company (number 17523851). Rosalia is an AI assistant.</p><p class="footlinks"><a href="/pricing/">Pricing</a><a href="/about/">Who we are</a><a href="/investors/demos/">Investors</a><a href="https://app.babyrock.ai/legal/terms">Terms</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/legal-notice/">Legal notice</a><a href="/es/cookies/" hreflang="es-MX" lang="es">Español</a></p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Cookie settings</button></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
@@ -401,12 +402,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
 <aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
 <h2 id="br-ga-consent-title">Cookies</h2>
-<p id="br-ga-consent-text">We use Google Analytics to understand which pages people visit. You can accept or refuse.</p>
+<p id="br-ga-consent-text">We use Google Analytics and a Meta pixel to understand which pages people visit and to measure our ads. You can accept or refuse.</p>
 <div class="br-ga-consent-actions">
 <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accept">Accept</button>
 <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuse">Refuse</button>
 </div>
 </aside>
+<script>
+(function(){
+var loaded=false;
+function load(){if(loaded)return;loaded=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2978994959128371');fbq('track','PageView');}
+function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
+var c=null;
+try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
+if(c==='granted')load();else if(c==='denied')clear();
+document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
+var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
+try{localStorage.setItem('br-consent-meta','1')}catch(e){}
+if(a)load();else clear();});
+})();
+</script>
 <script src="/js/br-ga-coverage.js" defer></script>
 
 </body>

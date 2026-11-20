@@ -272,7 +272,7 @@ html.tv-c .tvn{display:none}
 
 /* English home: two examples are built, one is shown per visitor country (data-ex on <html>, set by brand/site.js). Hidden copies stay display:none so their lazy images are not fetched. */
 html:not([data-ex="in"]) [data-ex="in"],html[data-ex="in"] [data-ex="za"]{display:none!important}
-</style>
+.linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -357,7 +357,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <h2>19. Contact</h2>
 <p>Résiliation, données et réclamations : <a href="mailto:contact@babyrock.ai">contact@babyrock.ai</a> ou WhatsApp +34 711 52 09 44.</p></div></section>
 </main>
-<footer class="foot"><div class="wrap"><p>BabyRock is a product of BabyFactory LTD, a UK company (number 17523851). Rosalia is an AI assistant.</p><p class="footlinks"><a href="/pricing/">Pricing</a><a href="/about/">Who we are</a><a href="/investors/demos/">Investors</a><a href="https://app.babyrock.ai/legal/terms">Terms</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/legal-notice/">Legal notice</a><a href="/" hreflang="es-MX" lang="es">Español</a></p></div></footer>
+<footer class="foot"><div class="wrap"><p>BabyRock is a product of BabyFactory LTD, a UK company (number 17523851). Rosalia is an AI assistant.</p><p class="footlinks"><a href="/pricing/">Pricing</a><a href="/about/">Who we are</a><a href="/investors/demos/">Investors</a><a href="https://app.babyrock.ai/legal/terms">Terms</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/legal-notice/">Legal notice</a><a href="/" hreflang="es-MX" lang="es">Español</a></p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Paramètres des cookies</button></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
@@ -453,12 +453,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
 <aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
 <h2 id="br-ga-consent-title">Cookies</h2>
-<p id="br-ga-consent-text">Nous utilisons Google Analytics pour comprendre quelles pages sont visitées. Vous pouvez accepter ou refuser.</p>
+<p id="br-ga-consent-text">Nous utilisons Google Analytics et un pixel Meta pour comprendre quelles pages sont visitées et mesurer nos publicités. Vous pouvez accepter ou refuser.</p>
 <div class="br-ga-consent-actions">
 <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accepter">Accepter</button>
 <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuser">Refuser</button>
 </div>
 </aside>
+<script>
+(function(){
+var loaded=false;
+function load(){if(loaded)return;loaded=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2978994959128371');fbq('track','PageView');}
+function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
+var c=null;
+try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
+if(c==='granted')load();else if(c==='denied')clear();
+document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
+var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
+try{localStorage.setItem('br-consent-meta','1')}catch(e){}
+if(a)load();else clear();});
+})();
+</script>
 <script src="/js/br-ga-coverage.js" defer></script>
 
 </body>

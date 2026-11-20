@@ -230,7 +230,7 @@ html.tv-c .tvn{display:none}
 .hd-card p{font-size:14px;color:var(--muted)}
 @media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
 @media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-</style>
+.linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -270,7 +270,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <section class="sec"><div class="wrap narrow"><h2>Preguntas</h2><details><summary>¿De verdad es gratis?</summary><p>Sí. El plan Gratis te da 10 respuestas a reseñas cada mes y nunca pide tarjeta.</p></details><details><summary>¿Cómo funciona la prueba de 7 días?</summary><p><span class="tvn">Tienes Mini 7 días: 100 respuestas a reseñas, 4 publicaciones de Google y 4 fotos. No se requiere tarjeta de pago.</span><span class="tvc">Tienes Mini 7 días y hoy no pagas nada. El día 7 se cobran MX$99 más IVA a tu tarjeta.</span></p></details><details><summary>¿Qué pasa cuando termina la prueba?</summary><p><span class="tvn">Tu cuenta pasa al plan Gratis: 10 respuestas a reseñas al mes. Para seguir con Mini, paga desde WhatsApp.</span><span class="tvc">Se cobra tu tarjeta y Mini sigue. Para parar, cancela antes del día 7 desde WhatsApp.</span></p></details><details><summary>¿Qué hace Rosalia exactamente?</summary><p>En el plan Gratis, responde hasta 10 reseñas al mes. En el plan Mini, responde hasta 100 reseñas, escribe 4 publicaciones de Google y prepara 4 fotos a partir de las tuyas cada mes. También cuida tu perfil: horarios, días festivos, teléfono y link de WhatsApp, con sugerencias de lo que falta y estadísticas de cómo te encuentra la gente.</p></details><details><summary>¿Rosalia va a publicar sin preguntarme?</summary><p>Rosalia responde sola las buenas reseñas, para que tú no tengas que hacerlo. Lo delicado, como una reseña de 1 a 3 estrellas o una publicación nueva, espera tu OK por WhatsApp. Cambia o apaga lo que quieras, cuando quieras.</p></details><details><summary>¿Qué necesito?</summary><p>Un correo electrónico, un Perfil de Negocio de Google y WhatsApp.</p></details><details><summary>¿Cuánto cuesta Mini?</summary><p>MX$99 más IVA al mes, sin impuestos aplicables, por respuestas a reseñas, publicaciones y fotos, todo junto. Solo pagas si decides subir de plan.</p></details></div></section>
 <section class="sec final"><div class="wrap"><h2>Tu perfil de Google, por fin atendido.</h2><p>Prueba Mini 7 días gratis.</p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n" data-cta="final">Prueba Mini 7 días gratis</a><p class="reassure"><span class="tvn">No se requiere tarjeta de pago. A los 7 días pasas al plan Gratis, a menos que elijas Mini.</span><span class="tvc">No se cobra hoy. Te avisamos por correo antes del día 7. Cancela por WhatsApp.</span></p><p class="reassure"><a href="https://app.babyrock.ai/mini/signup?lang=es&amp;plan=free&amp;tv=n" data-cta="free">O empieza con el plan Gratis</a></p></div></section>
 </main>
-<footer class="foot"><div class="wrap"><p>BabyRock · Rosalia es una asistente con IA.</p></div></footer>
+<footer class="foot"><div class="wrap"><p>BabyRock · Rosalia es una asistente con IA.</p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Configurar cookies</button></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
@@ -366,12 +366,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
 <aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
 <h2 id="br-ga-consent-title">Cookies</h2>
-<p id="br-ga-consent-text">Usamos Google Analytics para entender qué páginas visita la gente. Puede aceptar o rechazar.</p>
+<p id="br-ga-consent-text">Usamos Google Analytics y un píxel de Meta para entender qué páginas visita la gente y medir nuestros anuncios. Puede aceptar o rechazar.</p>
 <div class="br-ga-consent-actions">
 <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Aceptar">Aceptar</button>
 <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Rechazar">Rechazar</button>
 </div>
 </aside>
+<script>
+(function(){
+var loaded=false;
+function load(){if(loaded)return;loaded=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2978994959128371');fbq('track','PageView');}
+function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
+var c=null;
+try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
+if(c==='granted')load();else if(c==='denied')clear();
+document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
+var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
+try{localStorage.setItem('br-consent-meta','1')}catch(e){}
+if(a)load();else clear();});
+})();
+</script>
 <script src="/js/br-ga-coverage.js" defer></script>
 
 </body>

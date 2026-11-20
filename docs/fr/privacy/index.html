@@ -272,7 +272,7 @@ html.tv-c .tvn{display:none}
 
 /* English home: two examples are built, one is shown per visitor country (data-ex on <html>, set by brand/site.js). Hidden copies stay display:none so their lazy images are not fetched. */
 html:not([data-ex="in"]) [data-ex="in"],html[data-ex="in"] [data-ex="za"]{display:none!important}
-</style>
+.linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -304,7 +304,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <p><strong>WhatsApp et e-mail avec vous.</strong> Le fil Fil Babyrock (brouillons 1 et 3 étoiles, récap, facturation). Base : contrat. Meta transporte le message.</p>
 <p><strong>Prospection.</strong> Si un commerce a un e-mail ou un WhatsApp d’entreprise <strong>sur son site</strong>, nous pouvons écrire une fois par canal, avec un moyen de s’opposer (STOP / BAJA). Nous n’utilisons pas le téléphone Maps comme WhatsApp s’il n’est pas affiché comme canal d’entreprise. Base : intérêt légitime à proposer un service B2B (art. 6.1.f) et article 21 LSSI. Vous pouvez vous y opposer à tout moment.</p>
 <p><strong>Audit gratuit de la fiche.</strong> Si vous l’avez demandé auparavant, nous avons traité l’adresse publique de votre fiche Google, le canal par lequel vous nous avez écrit (WhatsApp ou e-mail) et la note et les corrections que nous vous avons renvoyées, pour vous répondre et, si vous le souhaitiez, pour parler du service ensuite. Base : votre consentement (art. 6.1.a RGPD), demandé dans la conversation et retirable à tout moment. Ces données ne sont cédées à personne pour de la publicité.</p>
-<p><strong>Site public.</strong> Pages visitées, langue, appareil. Si vous acceptez les cookies d’analytique, Google Analytics. Base : consentement (art. 6.1.a). Détail : <a href="/fr/cookies/">cookies</a>.</p>
+<p><strong>Site public.</strong> Pages visitées, langue, appareil. Si vous acceptez les cookies d’analytique, Google Analytics. Si vous acceptez, nous chargeons aussi le pixel Meta, qui indique à Meta Platforms quelles pages sont visitées, afin de mesurer nos publicités et de les montrer à nouveau aux visiteurs. Base : consentement (art. 6.1.a). Détail : <a href="/fr/cookies/">cookies</a>.</p>
 <p><strong>Journal du service (en tant que sous-traitants, voir l’accord).</strong> Texte de l’avis, nom public de l’auteur sur Google, étoiles, brouillons, texte publié, qui a cliqué Publier. Nécessaire pour fournir le service et pour montrer ce qui a été publié en cas de litige.</p>
 <p>Nous ne vendons pas de données. Nous ne faisons pas de profils ayant des effets juridiques sur vous.</p>
 <p><strong>Données utilisateur Google.</strong> Lorsque vous connectez votre fiche d'établissement Google, BabyRock reçoit, avec votre autorisation : le profil de base de votre compte Google (nom et e-mail, pour identifier la connexion) et l'accès à la gestion de votre fiche (<code>business.manage</code>). Nous utilisons cet accès uniquement pour afficher les établissements que vous gérez, lire les avis et les informations de l'établissement choisi, lire ses statistiques, publier vos réponses selon le mode que vous autorisez et mettre à jour les informations du profil que vous approuvez. En connectant Google, vous autorisez les réponses automatiques aux nouveaux avis de 4 et 5 étoiles ; les réponses aux avis de 1, 2 et 3 étoiles nécessitent votre validation, sauf si vous activez les réponses automatiques pour tous les avis. Vous pouvez modifier ou désactiver les réponses automatiques à tout moment. Nous conservons les identifiants d'établissement, les avis et les réponses nécessaires au service, ainsi que le jeton de connexion chiffré. Nous n'utilisons pas les données utilisateur Google pour la publicité, ne les vendons pas et ne les partageons qu'avec les sous-traitants listés dans cette politique et nécessaires au service (par exemple <strong>le fournisseur d'IA qui aide à rédiger les réponses selon le mode choisi</strong>). Vous pouvez révoquer l'accès à tout moment dans votre compte Google (Sécurité → Accès tiers) ou en vous déconnectant dans BabyRock. Nous supprimons alors le jeton immédiatement et les avis conservés sous 30 jours, sauf obligation légale. Les réponses déjà publiées restent sur votre fiche, car elles vous appartiennent.</p>
@@ -312,7 +312,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <p>L'utilisation et le transfert vers toute autre application, par BabyRock, des informations reçues des API Google respecteront la <a href="https://developers.google.com/terms/api-services-user-data-policy">Politique relative aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
 <h2>4. Destinataires</h2>
 <p>Uniquement qui en a besoin pour le service :</p>
-<ul><li><strong>Stripe</strong> (paiement et facture).</li><li><strong>Google</strong> (fiche d’établissement, avis, et Analytics en cas de consentement).</li><li><strong>Meta</strong> (WhatsApp Cloud API).</li><li><strong>Zoho</strong> (e-mail, centre de données dans l’UE).</li><li><strong>DeepSeek</strong> (aide à rédiger les réponses selon le mode choisi).</li><li><strong>DataForSEO</strong> (lecture d’avis publics lorsqu’un décompte est nécessaire).</li><li><strong>Hébergement</strong> de l’application et de Postgres dans l’Union européenne.</li><li><strong>GitHub</strong> (pages du site public www.babyrock.ai).</li></ul>
+<ul><li><strong>Stripe</strong> (paiement et facture).</li><li><strong>Google</strong> (fiche d’établissement, avis, et Analytics en cas de consentement).</li><li><strong>Meta</strong> (WhatsApp Cloud API, et le pixel Meta sur le site public si vous acceptez les cookies).</li><li><strong>Zoho</strong> (e-mail, centre de données dans l’UE).</li><li><strong>DeepSeek</strong> (aide à rédiger les réponses selon le mode choisi).</li><li><strong>DataForSEO</strong> (lecture d’avis publics lorsqu’un décompte est nécessaire).</li><li><strong>Hébergement</strong> de l’application et de Postgres dans l’Union européenne.</li><li><strong>GitHub</strong> (pages du site public www.babyrock.ai).</li></ul>
 <p>Les personnes qui publient ou bloquent une réponse sont des personnes autorisées par nous. Elles sont aujourd’hui dans l’Union européenne. Si plus tard une personne travaille hors EEE, nous l’indiquerons ici et nous signerons les clauses correspondantes <strong>avant</strong> qu’elle voie des données.</p>
 <p>L’administration fiscale, un tribunal ou l’AEPD, s’ils nous le demandent sur une base légale.</p>
 <h2>5. Transferts hors EEE</h2>
@@ -329,7 +329,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <h2>9. Modifications</h2>
 <p>Si cette politique change de façon substantielle, nous vous le dirons par WhatsApp ou e-mail et nous mettrons à jour la date de version.</p></div></section>
 </main>
-<footer class="foot"><div class="wrap"><p>BabyRock is a product of BabyFactory LTD, a UK company (number 17523851). Rosalia is an AI assistant.</p><p class="footlinks"><a href="/pricing/">Pricing</a><a href="/about/">Who we are</a><a href="/investors/demos/">Investors</a><a href="https://app.babyrock.ai/legal/terms">Terms</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/legal-notice/">Legal notice</a><a href="/" hreflang="es-MX" lang="es">Español</a></p></div></footer>
+<footer class="foot"><div class="wrap"><p>BabyRock is a product of BabyFactory LTD, a UK company (number 17523851). Rosalia is an AI assistant.</p><p class="footlinks"><a href="/pricing/">Pricing</a><a href="/about/">Who we are</a><a href="/investors/demos/">Investors</a><a href="https://app.babyrock.ai/legal/terms">Terms</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/legal-notice/">Legal notice</a><a href="/" hreflang="es-MX" lang="es">Español</a></p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Paramètres des cookies</button></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
@@ -425,12 +425,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
 <aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
 <h2 id="br-ga-consent-title">Cookies</h2>
-<p id="br-ga-consent-text">Nous utilisons Google Analytics pour comprendre quelles pages sont visitées. Vous pouvez accepter ou refuser.</p>
+<p id="br-ga-consent-text">Nous utilisons Google Analytics et un pixel Meta pour comprendre quelles pages sont visitées et mesurer nos publicités. Vous pouvez accepter ou refuser.</p>
 <div class="br-ga-consent-actions">
 <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accepter">Accepter</button>
 <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuser">Refuser</button>
 </div>
 </aside>
+<script>
+(function(){
+var loaded=false;
+function load(){if(loaded)return;loaded=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2978994959128371');fbq('track','PageView');}
+function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
+var c=null;
+try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
+if(c==='granted')load();else if(c==='denied')clear();
+document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
+var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
+try{localStorage.setItem('br-consent-meta','1')}catch(e){}
+if(a)load();else clear();});
+})();
+</script>
 <script src="/js/br-ga-coverage.js" defer></script>
 
 </body>

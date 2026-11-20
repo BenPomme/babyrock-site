@@ -230,7 +230,7 @@ html.tv-c .tvn{display:none}
 .hd-card p{font-size:14px;color:var(--muted)}
 @media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
 @media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-</style>
+.linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -270,7 +270,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <section class="sec"><div class="wrap narrow"><h2>Questions</h2><details><summary>Is it really free?</summary><p>Yes. The Free plan gives you 10 review replies every month and never asks for a card.</p></details><details><summary>How does the 7-day trial work?</summary><p><span class="tvn">You get Mini for 7 days: 100 review replies, 4 Google posts and 4 photos. No payment card required.</span><span class="tvc">You get Mini for 7 days and pay nothing today. On day 7 your card is charged R179.</span></p></details><details><summary>What happens when the trial ends?</summary><p><span class="tvn">Your account moves to the Free plan: 10 review replies a month. To keep Mini, pay from WhatsApp.</span><span class="tvc">Your card is charged and Mini carries on. To stop, cancel before day 7 from WhatsApp.</span></p></details><details><summary>What exactly does Rosalia do?</summary><p>On the Free plan, she replies to up to 10 reviews a month. On the Mini plan, she replies to up to 100 reviews, writes 4 Google posts and prepares 4 photos from your own pictures every month. She also looks after your profile: opening hours, holidays, phone and WhatsApp link, with suggestions on what's missing and statistics on how people find you.</p></details><details><summary>Will Rosalia publish things without asking me?</summary><p>Rosalia replies to good reviews on her own, so you don't have to. Anything sensitive, like a 1 to 3 star review or a new post, waits for your OK on WhatsApp. Change or switch off anything, anytime.</p></details><details><summary>What do I need?</summary><p>An email address, a Google Business Profile and WhatsApp.</p></details><details><summary>What does Mini cost?</summary><p>R179 a month for review replies, posts and photos together. You only pay if you choose to upgrade.</p></details></div></section>
 <section class="sec final"><div class="wrap"><h2>Your Google profile, finally taken care of.</h2><p>Try Mini free for 7 days.</p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=en&amp;tv=n" data-cta="final">Try Mini free for 7 days</a><p class="reassure"><span class="tvn">No payment card required. After 7 days you move to the Free plan, unless you choose Mini.</span><span class="tvc">No charge today. We email you before day 7. Cancel on WhatsApp.</span></p><p class="reassure"><a href="https://app.babyrock.ai/mini/signup?lang=en&amp;plan=free&amp;tv=n" data-cta="free">Or start with the Free plan</a></p></div></section>
 </main>
-<footer class="foot"><div class="wrap"><p>BabyRock · Rosalia is an AI assistant.</p></div></footer>
+<footer class="foot"><div class="wrap"><p>BabyRock · Rosalia is an AI assistant.</p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Cookie settings</button></p></div></footer>
 
 <script>// Client script inlined on every page. CONFIG is replaced at build time.
 (function () {
@@ -366,12 +366,28 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
 <aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
 <h2 id="br-ga-consent-title">Cookies</h2>
-<p id="br-ga-consent-text">We use Google Analytics to understand which pages people visit. You can accept or refuse.</p>
+<p id="br-ga-consent-text">We use Google Analytics and a Meta pixel to understand which pages people visit and to measure our ads. You can accept or refuse.</p>
 <div class="br-ga-consent-actions">
 <button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Accept">Accept</button>
 <button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Refuse">Refuse</button>
 </div>
 </aside>
+<script>
+(function(){
+var loaded=false;
+function load(){if(loaded)return;loaded=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2978994959128371');fbq('track','PageView');}
+function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
+var c=null;
+try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
+if(c==='granted')load();else if(c==='denied')clear();
+document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
+var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
+try{localStorage.setItem('br-consent-meta','1')}catch(e){}
+if(a)load();else clear();});
+})();
+</script>
 <script src="/js/br-ga-coverage.js" defer></script>
 
 </body>
