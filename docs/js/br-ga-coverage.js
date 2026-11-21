@@ -27,7 +27,13 @@
     cookies.forEach(function (part) {
       var name = part.split("=")[0].trim();
       if (!/^(_ga(?:_[A-Za-z0-9]+)?|_gid|_gat(?:_[A-Za-z0-9]+)?)$/.test(name)) return;
-      document.cookie = name + "=; Max-Age=0; path=/; SameSite=Lax";
+      var past = "=; Max-Age=0; path=/; SameSite=Lax";
+      document.cookie = name + past;
+      // GA sets its cookies on the registrable domain, so expire them there too.
+      var host = location.hostname.split(".");
+      for (var i = 0; i <= host.length - 2; i++) {
+        document.cookie = name + past + "; domain=." + host.slice(i).join(".");
+      }
     });
   }
 
