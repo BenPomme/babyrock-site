@@ -299,6 +299,25 @@ html.tv-c .tvn{display:none}
 html.tv-c .st-nocard .tvn{display:inline!important}
 .hw-como-funciona .hero-text{order:2}
 @media (min-width:760px){.hw-como-funciona .hero-text{order:0}}
+
+/* W01 ad visuals keep the dark ad palette in both themes (light mode only changes the page, never the ad picture). */
+.hero-w01 .wvis,.hero-w01 .wlist{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d}
+.hero-w01 .wvis{color:var(--text)}
+@media (prefers-color-scheme:light){
+ .hero-w01 .wlist{background:#07080a;color:var(--text);border-radius:var(--radius);padding:16px 20px;width:fit-content;max-width:100%}
+}
+
+/* W01 pages only: the cookie banner (same buttons, same JS) becomes a compact bottom bar so it does not cover the Maps question. */
+body.w01 .br-ga-consent{left:0;right:0;bottom:0;max-width:none;width:auto;margin:0;border-radius:0;border-width:1px 0 0;padding:6px max(10px,env(safe-area-inset-left)) calc(6px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;overflow:visible;max-height:none;box-shadow:0 -6px 24px rgba(0,0,0,.35);font-size:11px;line-height:1.22}
+body.w01 .br-ga-consent h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:0}
+body.w01 .br-ga-consent p{flex:1 1 auto;min-width:0}
+body.w01 .br-ga-consent .br-ga-consent-actions{flex:none;flex-wrap:nowrap;gap:6px;margin:0}
+body.w01 .br-ga-consent button{flex:0 0 auto;min-height:34px;padding:5px 8px;font-size:12.5px;border-radius:8px}
+@media(min-width:760px){body.w01 .br-ga-consent{font-size:13px;padding-inline:max(16px,calc((100vw - 1080px)/2))}}
+.hero-w01 .wdim{opacity:1}
+.hero-w01 .wdim .wcd{background:#0c0f12;border-color:#1b1f24;color:#96999c}
+.hero-w01 .wdim .wcd-av{background:#1b1f24}
+.hero-w01 .wdim .stars{opacity:.65}
 .linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
@@ -313,7 +332,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
 <link rel="stylesheet" href="/css/br-ga-coverage.css">
 </head>
-<body class="v-maps m-mx">
+<body class="v-maps m-mx w01">
 <header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><a class="btn btn-sm" href="#maps" data-cta="bar">Empezar</a></nav></div></header>
 <main>
 <section class="hero hero-w01 hw-maps"><div class="wrap hero-grid"><div class="hero-text"><h1>¿Tienes un negocio en Google Maps?</h1><p class="sub">Tú lo apruebas en WhatsApp. Se publica en tu perfil.</p></div>
