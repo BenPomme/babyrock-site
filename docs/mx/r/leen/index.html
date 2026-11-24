@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Antes de venir, leen tus reseñas.</title>
+<meta name="description" content="Que no encuentren silencio: BabyRock responde cada una.">
+<meta name="robots" content="noindex">
+
+<meta name="theme-color" content="#07080a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)">
+<style>@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/schibsted-grotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d;--radius:12px;--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--quote:"Source Serif 4",Georgia,"Times New Roman",serif;color-scheme:dark}
+:root{color-scheme:dark light}
+@media (prefers-color-scheme:light){:root{--bg:#f8f7f3;--panel:#ffffff;--line:#e0dfd8;--text:#0b0d0a;--muted:#5c636a;--star:#c88a00}.bar .wm b{background:var(--accent);color:var(--accent-ink);padding:.06em .3em;margin-left:.14em;border-radius:5px}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;line-height:1.08;font-weight:700}
+h1{font-size:34px;font-weight:800;letter-spacing:-.02em}
+h2{font-size:26px;letter-spacing:-.015em}
+h3{font-size:19px;line-height:1.25}
+p{max-width:65ch}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.barin{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.home{text-decoration:none}
+.nav{display:flex;align-items:center;gap:18px;font-size:15px}
+.nav a{text-decoration:none}
+.nav a.navlink{color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.wm{font-weight:800;font-size:17px;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
+.wm b{color:var(--accent);font-weight:inherit}
+.btn{display:inline-block;text-align:center;text-decoration:none;font-weight:700;font-size:17px;line-height:1.2;padding:15px 24px;border-radius:var(--radius);border:1px solid var(--line);color:var(--text);background:transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.btn-sm{padding:10px 16px;font-size:15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stars{display:inline-flex;gap:2px;color:var(--star)}
+.quote{font-family:var(--quote);font-style:italic;font-size:18px;line-height:1.45}
+.plans{display:grid;gap:16px}
+.plan{display:flex;flex-direction:column;gap:14px}
+.plan .price{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.plan ul{list-style:none;display:grid;gap:10px}
+.plan li{padding-left:22px;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--text)}
+.foot{padding-block:40px 56px;color:var(--muted);font-size:14px}
+.foot a{color:var(--text)}
+:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+@media (min-width:760px){h1{font-size:52px}h2{font-size:36px}.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+body{--market-bg:#E3007D;--market-fg:#ffffff}
+/* Landing layout on top of brand/components.css. Colours only through kit variables. */
+.hero{padding-block:36px 48px}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.hero-text{display:grid;gap:16px;justify-items:start}
+.hero-text .btn-primary{width:100%;max-width:360px}
+.sub{font-size:19px;line-height:1.45;color:var(--muted)}
+.reassure{font-size:14px;color:var(--muted);margin-top:-6px}
+.poster{background:var(--market-bg);color:var(--market-fg);border-radius:var(--radius);padding:28px 24px;display:grid;gap:12px;align-content:center;min-height:240px}
+.pnum{font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.poster .stars{color:inherit}
+.poster figcaption{font-size:20px;font-weight:700;line-height:1.3;max-width:22ch}
+.demo{display:grid;gap:12px;max-width:460px}
+.demo .ex{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px dashed var(--muted);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.who{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.who b{display:block;font-size:15px}
+.av{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:var(--line);color:var(--text)}
+.lab{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.dr{font-size:17px}
+.sign{font-size:14px;color:var(--muted);margin-top:6px}
+.dbtns{display:flex;gap:8px;margin-top:14px}
+.dbtns span{font-size:14px;font-weight:700;padding:8px 12px;border-radius:8px;border:1px solid var(--line)}
+.dbtns .db1{background:var(--text);color:var(--bg);border-color:transparent}
+.photo{position:relative;max-width:460px}
+.photo>img{border-radius:var(--radius);width:100%;height:auto;aspect-ratio:1}
+.rchip{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 14px 5px 5px;font-size:13px}
+.rchip img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.rchip b{display:block;font-size:14px}
+.plans-hero{margin-top:28px}
+.pname{font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.plan .btn{margin-top:auto}
+.note{font-size:14px;color:var(--muted);margin-top:auto}
+.after-plans{margin-top:20px}
+.sec{padding-block:48px}
+.sec h2{margin-bottom:22px}
+.statrow{display:grid;gap:22px}
+.stat b{display:block;font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.stat span{color:var(--muted)}
+.source{font-size:13px;color:var(--muted);margin-top:18px}
+.steps{list-style:none;display:grid;gap:22px;counter-reset:none}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:14px}
+.steps .n{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-weight:700}
+.steps p{color:var(--muted);margin-top:4px}
+.ctl{list-style:none;display:grid;gap:14px;max-width:65ch}
+.ctl li{padding-left:22px;position:relative}
+.ctl li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--text)}
+.narrow{max-width:760px}
+details{padding-block:14px}
+summary{font-weight:700;cursor:pointer;list-style-position:outside}
+details p{color:var(--muted);margin-top:8px}
+.final{text-align:left}
+.final .wrap{display:grid;gap:14px;justify-items:start}
+.final p{color:var(--muted)}
+.final .btn-primary{width:100%;max-width:360px}
+/* example Google listing (profile variant) */
+.lp{display:grid;max-width:520px}
+.lp .body{background:var(--panel);border-inline:1px solid var(--line);padding:12px 14px}
+.lp .part:first-child .body{border-top:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0;padding:0;overflow:hidden}
+.lp-cover img{width:100%;height:auto;aspect-ratio:1040/437;object-fit:cover}
+.lp-head{display:flex;align-items:center;gap:10px}
+.lp-head b{display:block}
+.lp-logo{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;font-weight:800;background:var(--line)}
+.lp-ex{margin-left:auto;font-style:normal;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px dashed var(--muted);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.lp-tabs{display:flex;gap:4px;padding-block:0!important;overflow:hidden}
+.lp-tabs span{padding:10px 8px;font-size:14px;font-weight:700;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+.lp-tabs span.on{color:var(--text);border-bottom-color:var(--text)}
+.lp-who{display:flex;align-items:center;gap:8px;font-size:14px}
+.lp-who .av{width:26px;height:26px;font-size:13px}
+.lp-rv{font-size:15px;margin-top:6px}
+.lp-reply{margin:8px 0 2px 18px;padding:8px 10px;border:1px solid var(--line);border-radius:8px}
+.lp-reply i,.lp-post i{display:block;height:7px;border-radius:4px;background:var(--line);width:90%}
+.lp-reply i+i,.lp-post i+i{margin-top:6px;width:60%}
+.lp-post{display:flex;gap:12px;align-items:center}
+.lp-post .th{width:44px;height:44px;border-radius:8px;background:var(--line);flex:none}
+.lp-post .pt{flex:1}
+.lp-post b{display:block;font-size:14px;margin-bottom:5px}
+.lp-tiles{display:flex;gap:6px}
+.lp-tiles span{flex:1;aspect-ratio:1.25;border-radius:6px;overflow:hidden;background:var(--line)}
+.lp-tiles img{width:100%;height:100%;object-fit:cover}
+.lp-hrs{display:flex;gap:10px;font-size:15px}
+.lp-hrs span{color:var(--muted)}
+.lp .call{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:9px 14px;border-inline:1px solid var(--line);border-top:1px solid var(--line);background:var(--bg)}
+.lp .cn{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--text);font-size:12px;display:grid;place-items:center}
+.lp .part:last-child .call{border-bottom:1px solid var(--line);border-radius:0 0 var(--radius) var(--radius)}
+@media (min-width:760px){
+ .hero{padding-block:64px 72px}
+ .hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px}
+ .statrow{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .pnum{font-size:140px}
+}
+
+/* Package: four services as small pictures of the profile; 2 columns on phones, 4 on desktop. */
+.pkg-intro{color:var(--muted);margin-top:6px}
+.pkg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+@media (min-width:900px){.pkg-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.pkg-item{padding:12px;display:flex;flex-direction:column}
+.pkg-item h3{font-size:17px;line-height:1.25;margin-top:12px}
+.pkg-item p{font-size:14px;color:var(--muted);margin-top:4px}
+.pkg-item .pkg-tag{margin-top:auto;padding-top:10px;font-size:13px;font-weight:700;color:var(--text)}
+.pv{height:96px;border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:10px;overflow:hidden}
+.pv .lp-who{font-size:13px;flex-wrap:wrap;gap:4px 6px}
+.pv .lp-who b{white-space:nowrap}
+.pv .lp-reply{margin:8px 0 0 10px}
+.pv-post{display:flex;gap:10px;align-items:center}
+.pv-post img{width:64px;height:64px;border-radius:6px;object-fit:cover;flex:none}
+.pv-post span{flex:1;min-width:0}
+.pv-post b{display:block;font-size:13px;margin-bottom:6px}
+.pv-post i{display:block;height:7px;border-radius:4px;background:var(--line);width:90%}
+.pv-post i+i{margin-top:6px;width:60%}
+.pv-tiles{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px}
+.pv-tiles img{width:100%;height:100%;min-height:0;object-fit:cover;border-radius:4px}
+.pv-hrs{display:flex;flex-direction:column;gap:4px;font-size:13px}
+.pv-hrs span{color:var(--muted)}
+.pv-hrs em{font-style:normal;font-weight:700;display:inline-flex;align-items:center;gap:5px;margin-top:auto;color:var(--star)}
+.pkg-foot{margin-top:18px;font-size:18px;font-weight:700}
+.lp-post img.th{object-fit:cover}
+.pv-post{gap:8px}.pv-post img{width:48px;height:48px}.pv-post b{hyphens:auto;overflow-wrap:break-word}
+
+.demo .auto{font-weight:700;color:var(--star);margin-top:10px;font-size:14px}
+.demo .wa{margin-top:8px;padding:9px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
+
+/* --- Design pass, 17 Nov: visual blocks instead of dash lists, centred footer --- */
+.ctl-grid{display:grid;gap:12px}
+.ctl-card{display:grid;gap:12px;align-content:start}
+.ctl-card svg{color:var(--text)}
+.ctl-card p{font-size:17px}
+.steps li{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.steps .n{background:var(--text);color:var(--bg);border-color:transparent}
+.plan ul{gap:12px}
+.plan li{padding-left:28px}
+.plan li::before{top:.22em;width:18px;height:18px;border-radius:50%;background:var(--text)}
+.plan li::after{content:"";position:absolute;left:5px;top:calc(.22em + 5px);width:8px;height:4px;border-left:2px solid var(--panel);border-bottom:2px solid var(--panel);transform:rotate(-45deg)}
+.plan.card{padding:24px}
+.narrow details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:0;margin-top:10px}
+.narrow summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px}
+.narrow summary::-webkit-details-marker{display:none}
+.narrow summary::after{content:"+";font-size:22px;font-weight:400;line-height:1;color:var(--muted);flex:none}
+.narrow details[open] summary::after{content:"\2212"}
+.narrow details p{margin:0;padding:0 18px 18px}
+.final .wrap{background:var(--panel);border:1px solid var(--line);border-radius:calc(var(--radius) * 1.5);padding-block:40px;justify-items:center;text-align:center}
+.final p{margin-inline:auto}
+.foot{text-align:center}
+.foot p{margin-inline:auto}
+.foot .footlinks{justify-content:center}
+.demo-sec .demo{max-width:none}
+@media (min-width:760px){
+ .ctl-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+ .demo-sec .demo{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+ .demo-sec .demo .ex{grid-column:1/-1}
+ .demo-sec .demo>.card:first-of-type{grid-row:span 2}
+}
+
+/* Real reply and post text in the example profile, instead of placeholder lines. */
+.lp-reply{font-size:14px;line-height:1.4;color:var(--muted);max-width:none}
+.lp-post{align-items:flex-start}
+.lp-post .th{width:56px;height:56px}
+.ptx{display:block;font-size:14px;line-height:1.4;color:var(--muted)}
+.pv .lp-reply{font-size:12px;line-height:1.35;padding:6px 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pv-post{align-items:flex-start}
+.pv-post .ptx{font-size:12px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pv-post b{margin-bottom:3px}
+
+/* Trial wording: N shows by default, C when brand/site.js sets tv-c on <html>. Both are in the page, so nothing jumps. */
+.tvc{display:none}
+html.tv-c .tvc{display:inline}
+html.tv-c .tvn{display:none}
+/* Everything Rosalia handles: six cards, one column on phones. */
+.hd-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:22px}
+.hd-card{display:grid;gap:8px;align-content:start}
+.hd-card svg{color:var(--text)}
+.hd-card h3{font-size:17px;line-height:1.25}
+.hd-card p{font-size:14px;color:var(--muted)}
+@media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* --- W01 restart landings (mx): hero repeats one ad. Card/chat are HTML/CSS copies of creative/src/w01.css and w1..w4.html. --- */
+.hero-w01{padding-block:22px 18px}
+.hero-w01 .hero-grid{gap:20px}
+.hero-w01 h1{font-size:30px;line-height:1.06;letter-spacing:-.03em;font-weight:700}
+.hero-w01 .sub{font-size:18px;margin-top:-4px}
+.hero-visual .wvis{width:100%;max-width:460px}
+.wcd{--cf:16px;background:var(--panel);border:1px solid var(--line);border-radius:.85em;overflow:hidden;font-size:var(--cf);line-height:1.28}
+.wcd-h{display:flex;align-items:center;gap:.6em;padding:.6em .8em;border-bottom:1px solid var(--line)}
+.wcd-logo{width:2em;height:2em;border-radius:50%;background:var(--text);color:var(--bg);font-weight:800;display:grid;place-items:center;flex:none}
+.wcd-nm{display:block;font-weight:800;font-size:1.2em;letter-spacing:-.02em;line-height:1.1}
+.wcd-h .stars,.wcd-who .stars{color:var(--star)}
+.wcd-r{padding:.65em .8em .75em}
+.wcd-who{display:flex;align-items:center;gap:.45em;font-weight:700;font-size:1.02em}
+.wcd-av{width:1.5em;height:1.5em;border-radius:50%;background:var(--line);display:grid;place-items:center;font-weight:700;font-size:.8em;flex:none}
+.wcd-rv{font-weight:500;font-size:1.1em;margin-top:.35em;line-height:1.3}
+.wrep{margin:.6em 0 0 .6em;padding:.5em .65em .55em;background:rgba(203,255,74,.09);border-left:.18em solid var(--accent);border-radius:0 .55em .55em 0;line-height:1.35}
+.wrep b{display:block;color:var(--accent);font-size:.7em;letter-spacing:.04em;text-transform:uppercase;margin-bottom:.25em}
+.wtag{display:inline-block;font-weight:800;font-size:13px;line-height:1;padding:8px 12px;border-radius:9px;margin-bottom:8px}
+.wtag-b{background:var(--line);color:#c9cfd5}
+.wtag-a{background:var(--accent);color:var(--accent-ink)}
+.wdim{opacity:.62;margin-bottom:14px}
+.wvis .wtag-a{margin-top:0}
+.wlist{list-style:none;display:grid;gap:0}
+.wlist li{font-size:34px;line-height:1.02;font-weight:700;letter-spacing:-.035em}
+.wlist li:nth-child(odd){color:var(--accent)}
+.hw-negocios .wvis .wcd{--cf:16px}
+.wph{--text:#eef2f5;background:#0b141a;border:1px solid var(--line);border-radius:22px;overflow:hidden;font-size:15px}
+.wph-h{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#1f2c34;font-size:17px}
+.wph-a{width:32px;height:32px;border-radius:50%;background:#eef2f5;color:#0b0d0a;display:grid;place-items:center;font-weight:800;font-size:13px}
+.wph-c{padding:12px 12px 14px;display:flex;flex-direction:column;gap:8px}
+.wph-c p{max-width:none}
+.wm-in,.wm-out{border-radius:12px;padding:9px 12px;line-height:1.3;color:#e9edef;font-weight:500;max-width:90%}
+.wm-in{background:#202c33;border-top-left-radius:3px;align-self:flex-start}
+.wm-out{background:#005c4b;border-top-right-radius:3px;align-self:flex-end;font-weight:600;max-width:60%}
+.wm-ok{font-weight:600}
+.wgs{display:inline-block;vertical-align:-.12em;color:var(--star)}
+.wbtns{display:flex;gap:8px;width:90%}
+.wbtns span{flex:1;text-align:center;background:#202c33;color:#53bdeb;font-weight:700;padding:11px 0;border-radius:9px}
+.wvid video{width:100%;height:auto;aspect-ratio:4/5;border-radius:var(--radius);border:1px solid var(--line);background:var(--panel)}
+/* Maps question */
+.mq{padding-block:18px 8px}
+.mq-box{background:var(--panel);border:1px solid var(--line);border-radius:calc(var(--radius) * 1.5);padding:22px 18px;display:grid;gap:14px;justify-items:start}
+.mq-box h2{margin:0;font-size:24px}
+.mq-btns{display:flex;gap:10px;width:100%;max-width:420px}
+.mq-btns .btn{flex:1}
+.mq-box .reassure{margin:0}
+.mq-box[data-state=no] .mq-btns,.mq-box[data-state=no] .mq-extra{display:none}
+.mq-no p{color:var(--text)}
+.mq-no .linkbtn{margin-top:10px;color:var(--muted)}
+.mq-strip{padding-block:12px 28px}
+.mq-strip ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.mq-strip li{background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px}
+@media (min-width:760px){
+ .hero-w01{padding-block:56px 28px}
+ .hero-w01 h1{font-size:46px}
+ .wlist li{font-size:52px}
+ .hero-w01 .hero-visual{justify-self:end;width:100%;max-width:460px}
+ .wcd{--cf:18px}
+ .mq-box{padding:28px;grid-template-columns:1fr;max-width:640px}
+}
+
+.nocard{margin:0}
+.nocard span{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:15px;padding:9px 16px;border-radius:999px}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+html.tv-c .st-nocard .tvn{display:inline!important}
+.hw-como-funciona .hero-text{order:2}
+@media (min-width:760px){.hw-como-funciona .hero-text{order:0}}
+
+/* W01 ad visuals keep the dark ad palette in both themes (light mode only changes the page, never the ad picture). */
+.hero-w01 .wvis,.hero-w01 .wlist{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d}
+.hero-w01 .wvis{color:var(--text)}
+@media (prefers-color-scheme:light){
+ .hero-w01 .wlist{background:#07080a;color:var(--text);border-radius:var(--radius);padding:16px 20px;width:fit-content;max-width:100%}
+}
+
+/* W01 pages only: the cookie banner (same buttons, same JS) becomes a compact bottom bar so it does not cover the Maps question. */
+body.w01 .br-ga-consent{left:0;right:0;bottom:0;max-width:none;width:auto;margin:0;border-radius:0;border-width:1px 0 0;padding:6px max(10px,env(safe-area-inset-left)) calc(6px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;overflow:visible;max-height:none;box-shadow:0 -6px 24px rgba(0,0,0,.35);font-size:11px;line-height:1.22}
+body.w01 .br-ga-consent h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:0}
+body.w01 .br-ga-consent p{flex:1 1 auto;min-width:0}
+body.w01 .br-ga-consent .br-ga-consent-actions{flex:none;flex-wrap:nowrap;gap:6px;margin:0}
+body.w01 .br-ga-consent button{flex:0 0 auto;min-height:34px;padding:5px 8px;font-size:12.5px;border-radius:8px}
+@media(min-width:760px){body.w01 .br-ga-consent{font-size:13px;padding-inline:max(16px,calc((100vw - 1080px)/2))}}
+.hero-w01 .wdim{opacity:1}
+.hero-w01 .wdim .wcd{background:#0c0f12;border-color:#1b1f24;color:#96999c}
+.hero-w01 .wdim .wcd-av{background:#1b1f24}
+.hero-w01 .wdim .stars{opacity:.65}
+/* /mx/restaurantes/: hero copies the R1 ad (dark in both themes) and its own sections. */
+.hero-r{padding-block:16px 8px}
+.rad{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d;position:relative;overflow:hidden;background:#07080a;color:#eef2f5;border-radius:calc(var(--radius) * 1.5);border:1px solid #23282e;max-width:560px;margin-inline:auto}
+.rad-bg{position:absolute;left:0;right:0;top:0;height:58%;background:url(/assets/img/b03-leen.jpg) center 40%/cover}
+.rad-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,10,.6) 0%,rgba(7,8,10,.35) 35%,rgba(7,8,10,.85) 75%,#07080a 100%)}
+.rad-in{position:relative;padding:18px 16px 16px}
+.rad-tag{display:inline-block;background:#cbff4a;color:#0b0d0a;font-weight:800;font-size:12px;line-height:1;letter-spacing:.03em;text-transform:uppercase;padding:9px 12px;border-radius:9px;margin:0 0 14px}
+.rad h1{color:#eef2f5;font-size:31px;line-height:1.04;letter-spacing:-.03em;font-weight:800;text-shadow:0 2px 20px rgba(0,0,0,.55)}
+.rad h1 .b{display:block;color:#cbff4a;font-family:var(--quote);font-style:italic;font-weight:400;letter-spacing:-.01em;margin-top:4px}
+.rad-sub{font-size:18px;line-height:1.15;font-weight:700;color:#cbff4a;margin:10px 0 0;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.rad-pc{margin-top:20px;background:#0e1114;border:1px solid #23282e;border-radius:16px;overflow:hidden}
+.rad-pch{display:flex;align-items:center;gap:11px;padding:12px 14px;border-bottom:1px solid #23282e}
+.rad-pcl{width:38px;height:38px;border-radius:50%;background:#eef2f5;color:#0b0d0a;font-weight:800;font-size:18px;display:grid;place-items:center;flex:none}
+.rad-pcn{font-weight:800;font-size:19px;line-height:1.05;letter-spacing:-.02em}
+.rad-pcr{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:#f5b83d;margin-top:4px}
+.rad-pcr .stars{color:#f5b83d;display:inline-flex}
+.rad-pcw{margin-left:auto;font-weight:700;font-size:11px;line-height:1.15;color:#949ca4;text-transform:uppercase;letter-spacing:.04em;text-align:right;max-width:96px}
+.rad-pc ul{list-style:none;margin:0;padding:12px 14px 4px;display:flex;flex-direction:column;gap:9px}
+.rad-pc li{display:flex;align-items:center;gap:11px;font-weight:700;font-size:16px;line-height:1.15;color:#eef2f5}
+.rad i{flex:none;width:24px;height:24px;border-radius:50%;background:#cbff4a;color:#0b0d0a;display:grid;place-items:center}
+.rad i svg{width:15px;height:15px}
+.rad-pcd{padding:6px 14px 12px;font-weight:600;font-size:13px;color:#cbff4a;text-align:right}
+.rad-ofr{margin-top:16px;background:#0e1114;border:1.5px solid #cbff4a;border-radius:16px;padding:16px;display:grid;gap:4px}
+.rad-o1{font-weight:800;font-size:34px;line-height:1;letter-spacing:-.02em;color:#cbff4a}
+.rad-o2{font-weight:700;font-size:18px;margin-top:6px}
+.rad-o3{font-weight:600;font-size:16px}
+.rad-cta{display:block;text-align:center;background:#cbff4a;color:#0b0d0a;font-weight:800;font-size:18px;line-height:1.1;padding:15px 18px;border-radius:999px;margin-top:12px;text-decoration:none}
+.rad-free{display:flex;align-items:center;gap:10px;border-top:1px solid #23282e;margin-top:12px;padding-top:12px;font-weight:700;font-size:15px;line-height:1.2}
+.rad-free i{width:22px;height:22px}
+.rd-grid .hd-card h3{font-size:19px}
+.rd-grid .hd-card p{font-size:15px}
+.rn{padding-block:12px}
+.rn-box{background:#cbff4a;color:#0b0d0a;border-radius:calc(var(--radius) * 1.5);padding:26px 20px}
+.rn-box h2{margin:0 0 8px;color:#0b0d0a}
+.rn-box p{font-size:18px;font-weight:600;max-width:52ch;color:#0b0d0a}
+@media (min-width:760px){
+ .hero-r{padding-block:44px 16px}
+ .rad{max-width:720px}
+ .rad-in{padding:30px 34px 30px}
+ .rad-tag{font-size:14px;padding:11px 15px}
+ .rad h1{font-size:50px}
+ .rad-sub{font-size:24px}
+ .rad-pc{max-width:560px}
+ .rad-ofr{max-width:560px}
+ .rn-box{padding:34px}
+}
+.linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+try { if (localStorage.getItem('br-consent') === 'granted') gtag('consent', 'update', { analytics_storage: 'granted' }); } catch (e) {}
+gtag('js', new Date());
+gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-252L7M2L2P"></script>
+<link rel="stylesheet" href="/css/br-ga-coverage.css">
+</head>
+<body class="v-b03 v-b03-leen m-mx w01">
+<header class="bar"><div class="wrap barin"><a class="home" href="/es/" aria-label="BabyRock"><span class="wm">BABY<b>ROCK</b></span></a><nav class="nav"><span hidden data-tv-force="n"></span><script>(function(){try{var u=new URL(location.href);if(u.searchParams.get('pv')!=='a'){u.searchParams.set('pv','a');history.replaceState(null,'',u.pathname+u.search+u.hash)}}catch(e){}})()</script><a class="btn btn-sm" href="#maps" data-cta="bar">Empezar</a></nav></div></header>
+<main>
+<section class="hero hero-r"><div class="wrap"><div class="rad"><div class="rad-bg" aria-hidden="true"></div><div class="rad-in">
+<p class="rad-tag">Restaurantes y bares en Google Maps</p><h1>Antes de venir, <span class="b">leen tus reseñas.</span></h1><p class="rad-sub">Que no encuentren silencio: BabyRock responde cada una.</p>
+<div class="rad-pc"><div class="rad-pch"><span class="rad-pcl" aria-hidden="true">C</span><div><div class="rad-pcn">Cantina El Ancla</div><div class="rad-pcr"><span>4.7</span><span class="stars" role="img" aria-label="4.7 / 5"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></div></div><div class="rad-pcw">Esta semana en tu perfil</div></div>
+<ul><li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><span>12 reseñas respondidas</span></li><li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><span>Fotos nuevas de tus platillos</span></li><li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><span>Promo del sábado publicada</span></li><li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><span>Horario de fin de año al día</span></li></ul><div class="rad-pcd">Hecho por BabyRock</div></div>
+<div class="rad-ofr"><div class="rad-o1">Prueba gratis 7 días</div><div class="rad-o2">Luego MX$99 al mes</div><div class="rad-o3">Cancela cuando quieras</div>
+<a class="rad-cta" href="#maps" data-cta="hero">Prueba gratis <span aria-hidden="true">→</span></a>
+<div class="rad-free"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><span>Y siempre gratis: tus primeras 10 reseñas al mes</span></div></div></div></div></div></section>
+<section class="sec mq" id="maps"><div class="wrap"><div class="mq-box" data-state="ask"><h2>¿Tu negocio aparece en Google Maps?</h2>
+<div class="mq-btns"><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=es&amp;tv=n&amp;pv=a" data-cta="maps-yes">Sí, empezar 7 días gratis</a><button type="button" class="btn" data-mq="no">No</button></div>
+
+<div class="mq-no" hidden><p>BabyRock trabaja con el perfil de Google de tu negocio. Cuando tu negocio aparezca en Google Maps, aquí estaremos.</p><button type="button" class="linkbtn" data-mq="back">Volver</button></div></div></div></section>
+<script>(function(){var b=document.querySelector('.mq-box');if(!b)return;b.addEventListener('click',function(e){var k=e.target.closest('[data-mq]');if(!k)return;var no=k.getAttribute('data-mq')==='no';b.setAttribute('data-state',no?'no':'ask');b.querySelector('.mq-no').hidden=!no;})})();</script>
+<section class="sec"><div class="wrap"><h2>Lo que BabyRock hace por ti</h2><div class="hd-grid rd-grid"><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10l2 2 4-4"/></svg><h3>Reseñas respondidas, siempre</h3><p>Las buenas se contestan solas. Las difíciles, BabyRock te las redacta y las revisa contigo por WhatsApp antes de publicar.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg><h3>Tu comida se ve en Google</h3><p>Fotos nuevas hechas a partir de las tuyas, cada semana. Tu perfil siempre se ve vivo y apetecible.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="8" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="3.5" y="14.5" width="7" height="6" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/></svg><h3>Promos y eventos publicados</h3><p>El happy hour, el partido del sábado, el menú del día: BabyRock los publica en Google por ti.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><h3>Tus datos siempre al día</h3><p>Horarios, días festivos, teléfono y link de WhatsApp. Que nadie llegue a una puerta cerrada.</p></div></div></div></section>
+<section class="sec rn"><div class="wrap"><div class="rn-box"><h2>Tú no haces nada</h2><p>Conecta tu Google una sola vez. BabyRock hace el resto y solo te escribe por WhatsApp cuando de verdad te necesita.</p></div></div></section>
+<section class="sec"><div class="wrap"><h2>Empieza gratis, sin tarjeta</h2><div class="plans"><div class="plan card"><h3 class="pname">Mini</h3><p class="price">7 días gratis, sin tarjeta</p><p class="reassure">Luego MX$99 al mes</p><ul><li>Hasta 100 respuestas a reseñas al mes</li><li>4 publicaciones en Google al mes</li><li>4 fotos al mes</li><li>Cuidado del perfil: horarios, festivos, teléfono, link de WhatsApp y estadísticas</li></ul></div><div class="plan card"><h3 class="pname">Gratis</h3><p class="price">10 reseñas al mes, siempre gratis</p><p class="reassure">Sin tarjeta</p><ul><li>10 respuestas a reseñas al mes</li><li>Sin tarjeta, sin plazo</li></ul></div></div></div></section>
+<section class="sec"><div class="wrap narrow"><h2>Preguntas frecuentes</h2><details><summary>¿Necesito estar en Google Maps?</summary><p>Sí. BabyRock trabaja con el perfil de Google de tu negocio, así que tu restaurante o bar tiene que aparecer en Google Maps.</p></details><details><summary>¿Necesito tarjeta?</summary><p>No. Los 7 días de prueba son sin tarjeta.</p></details><details><summary>¿Qué pasa después de 7 días?</summary><p>Para seguir en el plan Mini pagas MX$99 al mes. Si no lo haces, tu cuenta pasa al plan Gratis, con 10 respuestas a reseñas al mes.</p></details><details><summary>¿Puedo cancelar?</summary><p>Sí, cuando quieras.</p></details></div></section>
+<section class="sec final"><div class="wrap"><h2>Antes de venir, leen tus reseñas.</h2><a class="btn btn-primary" href="#maps" data-cta="final">Prueba gratis 7 días</a></div></section>
+</main>
+<footer class="foot"><div class="wrap"><p>BabyRock · Asistente con IA.</p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Configurar cookies</button></p></div></footer>
+
+<script>// Client script inlined on every page. CONFIG is replaced at build time.
+(function () {
+  // First-visit arm: a forced value from the page URL (pv or tv parameter) wins and is stored; else the stored value; else 50/50, stored.
+  // If storage fails, the arm is drawn again on each page load.
+  function pickArm(key, vals, forced, store, rnd) {
+    if (forced && vals.indexOf(forced) >= 0) { try { store.setItem(key, forced); } catch (e) {} return forced; }
+    try { var s = store.getItem(key); if (s && vals.indexOf(s) >= 0) return s; } catch (e) {}
+    var v = vals[rnd() < 0.5 ? 0 : 1];
+    try { store.setItem(key, v); } catch (e) {}
+    return v;
+  }
+  if (typeof module === 'object' && module.exports) { module.exports = { pickArm: pickArm }; return; }
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",false],"GB":["£8.99","£0",true],"US":["$9.99","$0",false],"IN":["₹399","₹0",true]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"},"taxWordByCountry":{"IN":" + GST","MX":" más IVA"},"arms":{"ZA":{"a":["R179","R0",false],"b":["R99","R0",false]}}},"trial":true};
+  var store = null; try { store = window.localStorage; } catch (e) {}
+  function forcedArm(name) { var m = new RegExp('[?&]' + name + '=([A-Za-z])(&|$)').exec(location.search); return m ? m[1].toLowerCase() : null; }
+  var html = document.documentElement;
+  // Carry the visit's campaign parameters (utm, fbclid, gclid) to the signup link.
+  // With CONFIG.utm, a visit that brings none is tagged as coming from this page.
+  var links = document.querySelectorAll('a[href^="' + CONFIG.signupPath + '"]');
+  function setParam(name, val) {
+    links.forEach(function (a) { var u = new URL(a.getAttribute('href'), location.href); u.searchParams.set(name, val); a.href = u.toString(); });
+  }
+  if (links.length && (location.search || CONFIG.utm)) {
+    var keep = [], tagged = false;
+    new URLSearchParams(location.search).forEach(function (v, k) {
+      if (/^(utm_[a-z]+|fbclid|gclid)$/.test(k) && v.length <= 200) { keep.push([k, v]); if (k.indexOf('utm_') === 0) tagged = true; }
+    });
+    if (!tagged && CONFIG.utm) keep.push(['utm_source', 'babyrock.ai'], ['utm_medium', 'organic'], ['utm_campaign', location.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home']);
+    links.forEach(function (a) {
+      var u = new URL(a.getAttribute('href'), location.href);
+      keep.forEach(function (p) { u.searchParams.set(p[0], p[1]); });
+      a.href = u.toString();
+    });
+  }
+  // Trial arm (only with the trial switch on and trial wording in the page): n or c. The matching block shows through a class on <html>.
+  // A page can pin the arm with an element carrying data-tv-force="n"|"c" (e.g. the no-card -st landings); the pin is not stored.
+  var tvPinEl = document.querySelector('[data-tv-force]'), tvPin = tvPinEl && tvPinEl.getAttribute('data-tv-force');
+  if (CONFIG.trial && (tvPin || document.querySelector('.tvn'))) {
+    var tvArm = (tvPin === 'n' || tvPin === 'c') ? tvPin : pickArm('br-tv', ['n', 'c'], forcedArm('tv'), store, Math.random);
+    html.className += ' tv-' + tvArm;
+    setParam('tv', tvArm);
+  }
+  // Price by visitor country. The host tells us the country of the visitor's IP at /cdn-cgi/trace;
+  // ?geo=XX overrides it for testing. Unknown countries, or no answer, keep the page's own price.
+  // With the trial switch on, MX and ZA visitors get a price arm (a or b) and the sign-up links carry the pv parameter.
+  var P = CONFIG.prices;
+  // The English home page carries two examples (data-ex="za" and "in"). Visitors in India see the Indian one: data-ex="in" on <html> swaps them (CSS in site.css).
+  function showExample(cc) { if (cc === 'IN') html.setAttribute('data-ex', 'in'); }
+  function showPrice(cc) {
+    var to = P.byCountry[cc] || (P.eurCountries.indexOf(cc) >= 0 ? P.eur : null);
+    if (CONFIG.trial && P.arms && P.arms[cc]) {
+      var pvArm = pickArm('br-pv', ['a', 'b'], forcedArm('pv'), store, Math.random);
+      to = P.arms[cc][pvArm];
+      html.setAttribute('data-pv', pvArm);
+      setParam('pv', pvArm);
+    }
+    if (!to) return;
+    // Prices are shown before tax; where tax is added on top the amount carries the tax word (by country, else by the page's language).
+    var tax = (P.taxWordByCountry && P.taxWordByCountry[cc]) || P.taxWord[html.lang] || P.taxWord.en;
+    var paid = to[0] + (to[2] ? tax : '');
+    var rules = [], done = to[2] ? '(?!' + tax.replace(/[+.$]/g, '\\$&') + ')' : '';   // do not add the tax word twice (₹399 -> ₹399 + GST -> ...)
+    P.bases.forEach(function (b) {
+      if (b[0] === paid) return;
+      b.forEach(function (tok, i) { rules.push([new RegExp('(^|[^A-Za-z0-9])' + tok.replace(/[$.]/g, '\\$&') + '(?![0-9.,])' + done, 'g'), i ? to[1] : paid]); });
+    });
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) {
+      if (n.parentNode.nodeName === 'SCRIPT' || n.parentNode.nodeName === 'STYLE') continue;
+      var t = n.nodeValue, u = t;
+      rules.forEach(function (r) { u = u.replace(r[0], function (m, pre) { return pre + r[1]; }); });
+      if (u !== t) n.nodeValue = u;
+    }
+    html.setAttribute('data-price-country', cc);
+  }
+  function onCountry(cc) { showExample(cc); if (P) showPrice(cc); }
+  if (P || document.querySelector('[data-ex]')) {
+    var forced = /[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);
+    if (forced) onCountry(forced[1].toUpperCase());
+    else if (window.fetch) fetch('/cdn-cgi/trace').then(function (r) { return r.ok ? r.text() : ''; }).then(function (t) {
+      var m = /^loc=([A-Z]{2})$/m.exec(t); if (m) onCountry(m[1]);
+    }).catch(function () {});
+  }
+  // Notify-me form for the full product.
+  document.querySelectorAll('form[data-notify]').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var out = f.querySelector('[data-result]'), email = f.querySelector('input[type=email]').value;
+      fetch(CONFIG.notifyEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, lang: document.documentElement.lang }) })
+        .then(function (r) { out.textContent = r.ok ? f.dataset.ok : f.dataset.err; })
+        .catch(function () { out.textContent = f.dataset.err; });
+    });
+  });
+})();
+</script>
+<aside class="br-ga-consent" data-br-ga-consent-banner hidden role="dialog" aria-modal="false" aria-labelledby="br-ga-consent-title" aria-describedby="br-ga-consent-text">
+<h2 id="br-ga-consent-title">Cookies</h2>
+<p id="br-ga-consent-text">Usamos Google Analytics y un píxel de Meta para entender qué páginas visita la gente y medir nuestros anuncios. Puede aceptar o rechazar.</p>
+<div class="br-ga-consent-actions">
+<button type="button" class="br-ga-consent-button" data-br-ga-consent-accept aria-label="Aceptar">Aceptar</button>
+<button type="button" class="br-ga-consent-button br-ga-consent-button-secondary" data-br-ga-consent-refuse aria-label="Rechazar">Rechazar</button>
+</div>
+</aside>
+<script>
+(function(){
+var loaded=false;
+function load(){if(loaded)return;loaded=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2978994959128371');fbq('track','PageView');}
+function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
+var c=null;
+try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
+if(c==='granted')load();else if(c==='denied')clear();
+document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
+var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
+try{localStorage.setItem('br-consent-meta','1')}catch(e){}
+if(a)load();else clear();});
+})();
+</script>
+<script src="/js/br-ga-coverage.js" defer></script>
+<script src="/js/br-measure.js" defer></script>
+
+</body>
+</html>
