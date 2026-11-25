@@ -41,11 +41,12 @@
     if (state === "denied") clearAnalyticsCookies();
     if (typeof window.gtag !== "function") return;
     try {
+      // Accept grants all four signals, Refuse denies all four (Ben, 17 Nov 2026 consent rule).
       window.gtag("consent", "update", {
         analytics_storage: state,
-        ad_storage: "denied",
-        ad_user_data: "denied",
-        ad_personalization: "denied"
+        ad_storage: state,
+        ad_user_data: state,
+        ad_personalization: state
       });
     } catch (e) {}
   }
