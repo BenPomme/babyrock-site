@@ -7,8 +7,8 @@
     var ENDPOINT = 'https://app.babyrock.ai/api/e';
     if (['https://www.babyrock.ai', 'https://babyrock-site.pages.dev'].indexOf(location.origin) < 0) return;
 
-    var MARKETS = { mx: 'MX', us: 'US', za: 'ZA', 'in': 'IN', es: 'ES', fr: 'FR' };
-    var COUNTRY = { mx: 'MX', us: 'US', za: 'ZA', 'in': 'IN' };
+    var MARKETS = { mx: 'MX', us: 'US', za: 'ZA', 'in': 'IN', es: 'ES', fr: 'FR', uk: 'GB' };
+    var COUNTRY = { mx: 'MX', us: 'US', za: 'ZA', 'in': 'IN', uk: 'GB' };
     var FIRST_PARTY = { mx: 1, us: 1 };            // vid is persistent here regardless of cookie consent
     var PRICES = { MX: { a: 'MXN99', b: 'MXN179' }, ZA: { a: 'ZAR179', b: 'ZAR99' } };
     var UTM_KEYS = ['source', 'medium', 'campaign', 'content', 'term'];
@@ -22,6 +22,19 @@
       return s;
     }
     function clean(v, n) { v = String(v == null ? '' : v).replace(/[^\w.\-~:+@ ]/g, '').slice(0, n || 100); return v; }
+    // Search keywords (utm_term) keep their Unicode letters (reseñas, café) up to 200 characters. Anything that looks
+    // like personal data or a link (email, phone number, URL) or carries control characters is dropped entirely.
+    function cleanTerm(v) {
+      v = String(v == null ? '' : v);
+      if (v.normalize) v = v.normalize('NFC');
+      if (/[\u0000-\u001f\u007f-\u009f]/.test(v)) return '';
+      if (/@|https?:|www\.|:\/\/|\.(com|net|org|io|co|uk|mx|es|ai)\b/i.test(v)) return '';
+      if (/(\d[\s().-]*){7,}/.test(v)) return '';
+      v = v.replace(/\s+/g, ' ').trim();
+      var chars = Array.from ? Array.from(v) : v.split('');
+      return chars.slice(0, 200).join('');
+    }
+    function cleanUtm(k, v) { return k === 'term' ? cleanTerm(v) : clean(v, 100); }
 
     var path = location.pathname;
     var seg = path.split('/').filter(Boolean);
@@ -58,14 +71,21 @@
     var utm = {};
     safe(function () {
       var fromUrl = {}, any = false;
-      UTM_KEYS.forEach(function (k) { var v = params.get('utm_' + k); if (v) { fromUrl[k] = clean(v, 100); any = true; } });
+      UTM_KEYS.forEach(function (k) { var v = params.get('utm_' + k); if (v) { v = cleanUtm(k, v); if (v) { fromUrl[k] = v; any = true; } } });
       if (any) { try { sessionStorage.setItem('br-utm', JSON.stringify(fromUrl)); } catch (e) {} utm = fromUrl; return; }
       var s = JSON.parse(sessionStorage.getItem('br-utm') || '{}');
-      UTM_KEYS.forEach(function (k) { if (s && typeof s[k] === 'string' && s[k]) utm[k] = clean(s[k], 100); });
+      UTM_KEYS.forEach(function (k) { if (s && typeof s[k] === 'string' && s[k]) { var c = cleanUtm(k, s[k]); if (c) utm[k] = c; } });
     });
 
     var pv = /^[ab]$/.test(params.get('pv') || '') ? params.get('pv') : '';
     var tv = /^[nc]$/.test(params.get('tv') || '') ? params.get('tv') : '';
+    // Google Ads match type from the ad's final URL suffix (mt={matchtype}): closed value e (exact) or p (phrase).
+    var mt = safe(function () {
+      var m = params.get('mt');
+      if (/^[ep]$/.test(m || '')) { try { sessionStorage.setItem('br-mt', m); } catch (e) {} return m; }
+      if (params.get('utm_source')) return '';
+      var st = sessionStorage.getItem('br-mt'); return /^[ep]$/.test(st || '') ? st : '';
+    }, '');
     var device = window.innerWidth < 768 ? 'phone' : window.innerWidth < 1100 ? 'tablet' : 'desktop';
     var refHost = safe(function () { return document.referrer ? new URL(document.referrer).hostname.slice(0, 100) : ''; }, '');
 
@@ -76,6 +96,7 @@
       if (pv && PRICES[country] && PRICES[country][pv]) p.price_shown = PRICES[country][pv];
       if (pv) p.pv = pv;
       if (tv) p.tv = tv;
+      if (mt) p.mt = mt;
       var u = {}, n = 0; UTM_KEYS.forEach(function (k) { if (utm[k]) { u[k] = utm[k]; n++; } });
       if (n) p.utm = u;
       if (refHost) p.ref_host = refHost;
@@ -105,7 +126,7 @@
         function put(k, v) { if (v && !u.searchParams.has(k)) { u.searchParams.set(k, v); changed = true; } }
         UTM_KEYS.forEach(function (k) { put('utm_' + k, utm[k]); });
         if (vidPersisted) put('vid', vid);
-        put('pv', pv); put('tv', tv);
+        put('pv', pv); put('tv', tv); put('mt', mt);
         if (changed) a.href = u.toString();
       });
     }
