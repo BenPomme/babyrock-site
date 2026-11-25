@@ -230,6 +230,94 @@ html.tv-c .tvn{display:none}
 .hd-card p{font-size:14px;color:var(--muted)}
 @media (min-width:600px){.hd-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
 @media (min-width:900px){.hd-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* --- W01 restart landings (mx): hero repeats one ad. Card/chat are HTML/CSS copies of creative/src/w01.css and w1..w4.html. --- */
+.hero-w01{padding-block:22px 18px}
+.hero-w01 .hero-grid{gap:20px}
+.hero-w01 h1{font-size:30px;line-height:1.06;letter-spacing:-.03em;font-weight:700}
+.hero-w01 .sub{font-size:18px;margin-top:-4px}
+.hero-visual .wvis{width:100%;max-width:460px}
+.wcd{--cf:16px;background:var(--panel);border:1px solid var(--line);border-radius:.85em;overflow:hidden;font-size:var(--cf);line-height:1.28}
+.wcd-h{display:flex;align-items:center;gap:.6em;padding:.6em .8em;border-bottom:1px solid var(--line)}
+.wcd-logo{width:2em;height:2em;border-radius:50%;background:var(--text);color:var(--bg);font-weight:800;display:grid;place-items:center;flex:none}
+.wcd-nm{display:block;font-weight:800;font-size:1.2em;letter-spacing:-.02em;line-height:1.1}
+.wcd-h .stars,.wcd-who .stars{color:var(--star)}
+.wcd-r{padding:.65em .8em .75em}
+.wcd-who{display:flex;align-items:center;gap:.45em;font-weight:700;font-size:1.02em}
+.wcd-av{width:1.5em;height:1.5em;border-radius:50%;background:var(--line);display:grid;place-items:center;font-weight:700;font-size:.8em;flex:none}
+.wcd-rv{font-weight:500;font-size:1.1em;margin-top:.35em;line-height:1.3}
+.wrep{margin:.6em 0 0 .6em;padding:.5em .65em .55em;background:rgba(203,255,74,.09);border-left:.18em solid var(--accent);border-radius:0 .55em .55em 0;line-height:1.35}
+.wrep b{display:block;color:var(--accent);font-size:.7em;letter-spacing:.04em;text-transform:uppercase;margin-bottom:.25em}
+.wtag{display:inline-block;font-weight:800;font-size:13px;line-height:1;padding:8px 12px;border-radius:9px;margin-bottom:8px}
+.wtag-b{background:var(--line);color:#c9cfd5}
+.wtag-a{background:var(--accent);color:var(--accent-ink)}
+.wdim{opacity:.62;margin-bottom:14px}
+.wvis .wtag-a{margin-top:0}
+.wlist{list-style:none;display:grid;gap:0}
+.wlist li{font-size:34px;line-height:1.02;font-weight:700;letter-spacing:-.035em}
+.wlist li:nth-child(odd){color:var(--accent)}
+.hw-negocios .wvis .wcd{--cf:16px}
+.wph{--text:#eef2f5;background:#0b141a;border:1px solid var(--line);border-radius:22px;overflow:hidden;font-size:15px}
+.wph-h{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#1f2c34;font-size:17px}
+.wph-a{width:32px;height:32px;border-radius:50%;background:#eef2f5;color:#0b0d0a;display:grid;place-items:center;font-weight:800;font-size:13px}
+.wph-c{padding:12px 12px 14px;display:flex;flex-direction:column;gap:8px}
+.wph-c p{max-width:none}
+.wm-in,.wm-out{border-radius:12px;padding:9px 12px;line-height:1.3;color:#e9edef;font-weight:500;max-width:90%}
+.wm-in{background:#202c33;border-top-left-radius:3px;align-self:flex-start}
+.wm-out{background:#005c4b;border-top-right-radius:3px;align-self:flex-end;font-weight:600;max-width:60%}
+.wm-ok{font-weight:600}
+.wgs{display:inline-block;vertical-align:-.12em;color:var(--star)}
+.wbtns{display:flex;gap:8px;width:90%}
+.wbtns span{flex:1;text-align:center;background:#202c33;color:#53bdeb;font-weight:700;padding:11px 0;border-radius:9px}
+.wvid video{width:100%;height:auto;aspect-ratio:4/5;border-radius:var(--radius);border:1px solid var(--line);background:var(--panel)}
+/* Maps question */
+.mq{padding-block:18px 8px}
+.mq-box{background:var(--panel);border:1px solid var(--line);border-radius:calc(var(--radius) * 1.5);padding:22px 18px;display:grid;gap:14px;justify-items:start}
+.mq-box h2{margin:0;font-size:24px}
+.mq-btns{display:flex;gap:10px;width:100%;max-width:420px}
+.mq-btns .btn{flex:1}
+.mq-box .reassure{margin:0}
+.mq-box[data-state=no] .mq-btns,.mq-box[data-state=no] .mq-extra{display:none}
+.mq-no p{color:var(--text)}
+.mq-no .linkbtn{margin-top:10px;color:var(--muted)}
+.mq-strip{padding-block:12px 28px}
+.mq-strip ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.mq-strip li{background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px}
+@media (min-width:760px){
+ .hero-w01{padding-block:56px 28px}
+ .hero-w01 h1{font-size:46px}
+ .wlist li{font-size:52px}
+ .hero-w01 .hero-visual{justify-self:end;width:100%;max-width:460px}
+ .wcd{--cf:18px}
+ .mq-box{padding:28px;grid-template-columns:1fr;max-width:640px}
+}
+
+.nocard{margin:0}
+.nocard span{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:15px;padding:9px 16px;border-radius:999px}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+html.tv-c .st-nocard .tvn{display:inline!important}
+.hw-como-funciona .hero-text{order:2}
+@media (min-width:760px){.hw-como-funciona .hero-text{order:0}}
+
+/* W01 ad visuals keep the dark ad palette in both themes (light mode only changes the page, never the ad picture). */
+.hero-w01 .wvis,.hero-w01 .wlist{--bg:#07080a;--panel:#0e1114;--line:#23282e;--text:#eef2f5;--muted:#949ca4;--accent:#cbff4a;--accent-ink:#0b0d0a;--star:#f5b83d}
+.hero-w01 .wvis{color:var(--text)}
+@media (prefers-color-scheme:light){
+ .hero-w01 .wlist{background:#07080a;color:var(--text);border-radius:var(--radius);padding:16px 20px;width:fit-content;max-width:100%}
+}
+
+/* W01 pages only: the cookie banner (same buttons, same JS) becomes a compact bottom bar so it does not cover the Maps question. */
+body.w01 .br-ga-consent{left:0;right:0;bottom:0;max-width:none;width:auto;margin:0;border-radius:0;border-width:1px 0 0;padding:6px max(10px,env(safe-area-inset-left)) calc(6px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;overflow:visible;max-height:none;box-shadow:0 -6px 24px rgba(0,0,0,.35);font-size:11px;line-height:1.22}
+body.w01 .br-ga-consent h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:0}
+body.w01 .br-ga-consent p{flex:1 1 auto;min-width:0}
+body.w01 .br-ga-consent .br-ga-consent-actions{flex:none;flex-wrap:nowrap;gap:6px;margin:0}
+body.w01 .br-ga-consent button{flex:0 0 auto;min-height:34px;padding:5px 8px;font-size:12.5px;border-radius:8px}
+@media(min-width:760px){body.w01 .br-ga-consent{font-size:13px;padding-inline:max(16px,calc((100vw - 1080px)/2))}}
+.hero-w01 .wdim{opacity:1}
+.hero-w01 .wdim .wcd{background:#0c0f12;border-color:#1b1f24;color:#96999c}
+.hero-w01 .wdim .wcd-av{background:#1b1f24}
+.hero-w01 .wdim .stars{opacity:.65}
 .linkbtn{font:inherit;color:var(--text);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}</style>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>
@@ -258,7 +346,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <div class="part"><div class="body lp-tiles"><span><img src="/assets/img/in-sweets-1.jpg" alt="" width="120" height="96" loading="lazy"></span><span><img src="/assets/img/in-sweets-2.jpg" alt="" width="120" height="96" loading="lazy"></span><span><img src="/assets/img/in-sweets-3.jpg" alt="" width="120" height="96" loading="lazy"></span><span><img src="/assets/img/in-sweets-4.jpg" alt="" width="120" height="96" loading="lazy"></span></div><div class="call"><span class="cn">3</span>4 new photos a month</div></div>
 <div class="part"><div class="body lp-hrs"><b>Hours</b><span>Mon–Sat 9:00–21:00</span></div><div class="call"><span class="cn">4</span>Opening hours kept right: holidays and special days.</div></div></div></div></section>
 <section class="sec pkg"><div class="wrap"><h2>One assistant for your whole Google profile.</h2>
-<div class="pkg-grid"><div class="card pkg-item"><div class="pv pv-rev"><div class="lp-who"><span class="av">P</span><b>Priya S.</b><span class="stars" role="img" aria-label="5 / 5"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></div><p class="lp-reply">Thank you, Priya! So glad you loved the kaju katli. See you again soon.</p></div><h3>Reviews answered</h3><p>In your customer's own language.</p><p class="pkg-tag">10 a month free, 100 with Mini.</p></div><div class="card pkg-item"><div class="pv pv-post"><img src="/assets/img/in-sweets-2.jpg" alt="" width="64" height="64" loading="lazy"><span><b>New post</b><span class="ptx">Diwali special: gift boxes of kaju katli and motichoor laddoo, ready to order. 10% off until Sunday.</span></span></div><h3>What to post, every week</h3><p>Rosalia suggests what to post each week and on special dates.</p><p class="pkg-tag">Mini.</p></div><div class="card pkg-item"><div class="pv pv-tiles"><img src="/assets/img/in-sweets-1.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/in-sweets-2.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/in-sweets-3.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/in-sweets-4.jpg" alt="" width="60" height="48" loading="lazy"></div><h3>Fresh photos</h3><p>Made from your own pictures, ready for Google.</p><p class="pkg-tag">4 a month with Mini.</p></div><div class="card pkg-item"><div class="pv pv-hrs"><b>Hours</b><span>Mon–Sat 9:00–21:00</span><em><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Updated</em></div><h3>Profile kept up to date</h3><p>Opening hours kept right: holidays and special days.</p><p class="pkg-tag">Mini.</p></div></div>
+<div class="pkg-grid"><div class="card pkg-item"><div class="pv pv-rev"><div class="lp-who"><span class="av">P</span><b>Priya S.</b><span class="stars" role="img" aria-label="5 / 5"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.2 6.8.8-5 4.7 1.3 6.7-6-3.4-6 3.4 1.3-6.7-5-4.7 6.8-.8z" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linejoin="round"/></svg></span></div><p class="lp-reply">Thank you, Priya! So glad you loved the kaju katli. See you again soon.</p></div><h3>Reviews answered</h3><p>In your customer's own language.</p><p class="pkg-tag">10 a month free, 100 with the Mini plan.</p></div><div class="card pkg-item"><div class="pv pv-post"><img src="/assets/img/in-sweets-2.jpg" alt="" width="64" height="64" loading="lazy"><span><b>New post</b><span class="ptx">Diwali special: gift boxes of kaju katli and motichoor laddoo, ready to order. 10% off until Sunday.</span></span></div><h3>What to post, every week</h3><p>Rosalia suggests what to post each week and on special dates.</p><p class="pkg-tag">Mini plan.</p></div><div class="card pkg-item"><div class="pv pv-tiles"><img src="/assets/img/in-sweets-1.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/in-sweets-2.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/in-sweets-3.jpg" alt="" width="60" height="48" loading="lazy"><img src="/assets/img/in-sweets-4.jpg" alt="" width="60" height="48" loading="lazy"></div><h3>Fresh photos</h3><p>Made from your own pictures, ready for Google.</p><p class="pkg-tag">4 a month with the Mini plan.</p></div><div class="card pkg-item"><div class="pv pv-hrs"><b>Hours</b><span>Mon–Sat 9:00–21:00</span><em><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Updated</em></div><h3>Profile kept up to date</h3><p>Opening hours kept right: holidays and special days.</p><p class="pkg-tag">Mini plan.</p></div></div>
 <p class="pkg-foot">All of it for ₹399 a month.</p></div></section>
 <section class="sec handles"><div class="wrap"><h2>Everything Rosalia handles</h2>
 <div class="hd-grid"><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10l2 2 4-4"/></svg><h3>Review replies</h3><p>Good reviews are answered on their own. 1 to 3 star replies wait for your OK. Or let her answer them all.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg><h3>Posts and photos</h3><p>Post ideas every week and 4 photos a month, from your own pictures.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><h3>Profile care</h3><p>Opening hours, holidays, phone and WhatsApp link kept right on Google, with your OK. She suggests what's missing and shows your views, calls and direction requests.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 2.6 14.6 0 17M12 3.5c-2.6 2.4-2.6 14.6 0 17"/></svg><h3>Knows your business</h3><p>She reads your website to learn what you do and how you talk. She never changes it.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="10" rx="5"/><circle cx="16.5" cy="12" r="2.6"/></svg><h3>Control from WhatsApp</h3><p>Approve, edit or say no with a button, right in the chat.</p></div><div class="card hd-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="8" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="3.5" y="14.5" width="7" height="6" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/></svg><h3>Your dashboard</h3><p>See your reviews, replies, posts and numbers in one place.</p></div></div></div></section>
@@ -268,7 +356,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 <div class="after-plans"><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=en" data-cta="pricing">Start free</a></div></div></section>
 <section class="sec"><div class="wrap"><h2>Ready in three steps</h2><ol class="steps"><li><span class="n">1</span><div><h3>Sign up with your email</h3><p>It takes a minute.</p></div></li><li><span class="n">2</span><div><h3>Connect your Google profile</h3><p>So Rosalia can reply to your reviews and post for you.</p></div></li><li><span class="n">3</span><div><h3>Connect your WhatsApp</h3><p>That's where Rosalia talks to you: new reviews, replies to check, posts to approve.</p></div></li></ol></div></section>
 <section class="sec"><div class="wrap"><h2>You stay in control</h2><div class="ctl-grid"><div class="card ctl-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg><p>Rosalia replies to good reviews on her own, so you don't have to.</p></div><div class="card ctl-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><p>Anything sensitive, like a 1 to 3 star review or a new post, waits for your OK on WhatsApp.</p></div><div class="card ctl-card"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="10" rx="5"/><circle cx="16.5" cy="12" r="2.6"/></svg><p>Change or switch off anything, anytime.</p></div></div></div></section>
-<section class="sec"><div class="wrap narrow"><h2>Questions</h2><details><summary>Is it really free?</summary><p>Yes. The Free plan gives you 10 review replies every month and never asks for a card.</p></details><details><summary>What exactly does Rosalia do?</summary><p>On the Free plan, she replies to up to 10 reviews a month. On the Mini plan, she replies to up to 100 reviews, suggests what to post each week and on special dates, and prepares 4 photos from your own pictures every month. She also looks after your profile: opening hours, holidays, phone and WhatsApp link, with suggestions on what's missing and statistics on how people find you.</p></details><details><summary>Will Rosalia publish things without asking me?</summary><p>Rosalia replies to good reviews on her own, so you don't have to. Anything sensitive, like a 1 to 3 star review or a new post, waits for your OK on WhatsApp. Change or switch off anything, anytime.</p></details><details><summary>What do I need?</summary><p>An email address, a Google Business Profile and WhatsApp.</p></details><details><summary>What does Mini cost?</summary><p>₹399 a month, excluding applicable tax, for review replies, posts and photos together. You only pay if you choose to upgrade.</p></details></div></section>
+<section class="sec"><div class="wrap narrow"><h2>Questions</h2><details><summary>Is it really free?</summary><p>Yes. The Free plan gives you 10 review replies every month and never asks for a card.</p></details><details><summary>What exactly does Rosalia do?</summary><p>On the Free plan, she replies to up to 10 reviews a month. On the Mini plan, she replies to up to 100 reviews, suggests what to post each week and on special dates, and prepares 4 photos from your own pictures every month. She also looks after your profile: opening hours, holidays, phone and WhatsApp link, with suggestions on what's missing and statistics on how people find you.</p></details><details><summary>Will Rosalia publish things without asking me?</summary><p>Rosalia replies to good reviews on her own, so you don't have to. Anything sensitive, like a 1 to 3 star review or a new post, waits for your OK on WhatsApp. Change or switch off anything, anytime.</p></details><details><summary>What do I need?</summary><p>An email address, a Google Business Profile and WhatsApp.</p></details><details><summary>What does the Mini plan cost?</summary><p>₹399 a month, excluding applicable tax, for review replies, posts and photos together. You only pay if you choose to upgrade.</p></details></div></section>
 <section class="sec final"><div class="wrap"><h2>Your Google profile, finally taken care of.</h2><p>Start free today. Upgrade when you're ready.</p><a class="btn btn-primary" href="https://app.babyrock.ai/mini/signup?lang=en" data-cta="final">Start free</a><p class="reassure">10 replies a month, free.</p></div></section>
 </main>
 <footer class="foot"><div class="wrap"><p>BabyRock · Rosalia is an AI assistant.</p><p><button class="linkbtn" type="button" data-br-ga-consent-open>Cookie settings</button></p></div></footer>
@@ -285,7 +373,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
     return v;
   }
   if (typeof module === 'object' && module.exports) { module.exports = { pickArm: pickArm }; return; }
-  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",true],"GB":["£8.99","£0",true],"US":["$9.99","$0",false],"IN":["₹399","₹0",true]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"},"taxWordByCountry":{"IN":" + GST","MX":" más IVA"},"arms":{"MX":{"a":["MX$99","MX$0",true],"b":["MX$179","MX$0",true]},"ZA":{"a":["R179","R0",false],"b":["R99","R0",false]}}},"trial":true};
+  var CONFIG = {"signupPath":"https://app.babyrock.ai/mini/signup","notifyEndpoint":"","utm":true,"prices":{"bases":[["R179","R0"],["MX$99 más IVA","MX$0"],["₹399","₹0"]],"byCountry":{"ZA":["R179","R0",false],"MX":["MX$99","MX$0",false],"GB":["£8.99","£0",true],"US":["$9.99","$0",false],"IN":["₹399","₹0",true]},"eur":["€9.99","€0",true],"eurCountries":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"],"taxWord":{"en":" + VAT","es":" más IVA"},"taxWordByCountry":{"IN":" + GST"},"arms":{"MX":{"a":["MX$99","MX$0",false],"b":["MX$179","MX$0",false]},"ZA":{"a":["R179","R0",false],"b":["R99","R0",false]}}},"trial":false};
   var store = null; try { store = window.localStorage; } catch (e) {}
   function forcedArm(name) { var m = new RegExp('[?&]' + name + '=([A-Za-z])(&|$)').exec(location.search); return m ? m[1].toLowerCase() : null; }
   var html = document.documentElement;
@@ -302,14 +390,18 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
     });
     if (!tagged && CONFIG.utm) keep.push(['utm_source', 'babyrock.ai'], ['utm_medium', 'organic'], ['utm_campaign', location.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home']);
     links.forEach(function (a) {
+      // A link that carries its own campaign tags (data-utm-own, e.g. the home CTA) keeps them unless this visit brought its own utm parameters.
+      if (!tagged && a.hasAttribute('data-utm-own')) return;
       var u = new URL(a.getAttribute('href'), location.href);
       keep.forEach(function (p) { u.searchParams.set(p[0], p[1]); });
       a.href = u.toString();
     });
   }
   // Trial arm (only with the trial switch on and trial wording in the page): n or c. The matching block shows through a class on <html>.
-  if (CONFIG.trial && document.querySelector('.tvn')) {
-    var tvArm = pickArm('br-tv', ['n', 'c'], forcedArm('tv'), store, Math.random);
+  // A page can pin the arm with an element carrying data-tv-force="n"|"c" (e.g. the no-card -st landings); the pin is not stored.
+  var tvPinEl = document.querySelector('[data-tv-force]'), tvPin = tvPinEl && tvPinEl.getAttribute('data-tv-force');
+  if (CONFIG.trial && (tvPin || document.querySelector('.tvn'))) {
+    var tvArm = (tvPin === 'n' || tvPin === 'c') ? tvPin : pickArm('br-tv', ['n', 'c'], forcedArm('tv'), store, Math.random);
     html.className += ' tv-' + tvArm;
     setParam('tv', tvArm);
   }
