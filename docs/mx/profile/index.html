@@ -386,7 +386,7 @@ gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
   if (links.length && (location.search || CONFIG.utm)) {
     var keep = [], tagged = false;
     new URLSearchParams(location.search).forEach(function (v, k) {
-      if (/^(utm_[a-z]+|fbclid|gclid)$/.test(k) && v.length <= 200) { keep.push([k, v]); if (k.indexOf('utm_') === 0) tagged = true; }
+      if (/^(utm_[a-z]+|fbclid|gclid|gbraid|wbraid)$/.test(k) && v.length <= 200) { keep.push([k, v]); if (k.indexOf('utm_') === 0) tagged = true; }
     });
     if (!tagged && CONFIG.utm) keep.push(['utm_source', 'babyrock.ai'], ['utm_medium', 'organic'], ['utm_campaign', location.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home']);
     links.forEach(function (a) {
