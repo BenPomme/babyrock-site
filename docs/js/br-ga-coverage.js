@@ -16,10 +16,23 @@
     }
   }
 
+  // The choice is shared with app.babyrock.ai through a first-party cookie on .babyrock.ai (br_consent=state|v1|unix time),
+  // so the app's Consent Mode reads the same answer. localStorage keeps the site's own copy.
+  function writeCookie(state) {
+    try {
+      var host = location.hostname, domain = /(^|\.)babyrock\.ai$/.test(host) ? "; Domain=.babyrock.ai" : "";
+      document.cookie = "br_consent=" + state + "|v1|" + Math.floor(Date.now() / 1000) + domain + "; Path=/; Max-Age=31536000; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
+    } catch (e) {}
+  }
+  function readCookie() {
+    var m = /(?:^|; )br_consent=(granted|denied)/.exec(document.cookie || "");
+    return m ? m[1] : null;
+  }
   function rememberChoice(state) {
     try {
       localStorage.setItem(CONSENT_KEY, state);
     } catch (e) {}
+    writeCookie(state);
   }
 
   function clearAnalyticsCookies() {
@@ -38,6 +51,8 @@
   }
 
   function updateConsent(state) {
+    // Global Privacy Control always wins: all four signals stay denied, even after an earlier Accept.
+    if (navigator.globalPrivacyControl) state = "denied";
     if (state === "denied") clearAnalyticsCookies();
     if (typeof window.gtag !== "function") return;
     try {
@@ -76,6 +91,10 @@
   });
 
   var stored = readChoice();
+  // Keep the shared cookie in step: an answer given before the cookie existed is copied over; an answer given on the app is used here.
+  if (stored === "granted" || stored === "denied") { if (readCookie() !== stored) writeCookie(stored); }
+  else { stored = readCookie(); if (stored) { try { localStorage.setItem(CONSENT_KEY, stored); } catch (e) {} } }
+  if (navigator.globalPrivacyControl && stored === "granted") updateConsent("denied");
   if (stored === "denied") clearAnalyticsCookies();
   banner.hidden = stored === "granted" || stored === "denied";
 })();
