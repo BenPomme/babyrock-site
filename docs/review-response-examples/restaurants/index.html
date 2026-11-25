@@ -456,7 +456,9 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 window.gtag = gtag;
 gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
-try { if (localStorage.getItem('br-consent') === 'granted') gtag('consent', 'update', { analytics_storage: 'granted' }); } catch (e) {}
+// Mexico and US: ad and analytics signals on by default (Ben, 17 Nov 2026), unless the browser sends Global Privacy Control.
+if (!navigator.globalPrivacyControl) gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted', region: ['MX', 'US'] });
+try { var brc = localStorage.getItem('br-consent'); if (brc === 'granted' || brc === 'denied') gtag('consent', 'update', { ad_storage: brc, ad_user_data: brc, ad_personalization: brc, analytics_storage: brc }); } catch (e) {}
 gtag('js', new Date());
 gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
