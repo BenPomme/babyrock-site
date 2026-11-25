@@ -1,269 +1,41 @@
-# BabyRock Social
+# BabyRock
 
-> BabyRock: your social presence, handled from WhatsApp
+> BabyRock looks after a local business's Google profile. Its AI assistant, Rosalia, works from the owner's WhatsApp: she replies to Google reviews, suggests what to post each week and on special dates, prepares photos from the owner's own pictures, and keeps opening hours and the WhatsApp link up to date. The owner stays in control: difficult reviews are approved by WhatsApp before anything goes live.
 
-Instagram, Facebook, Google and your website, run from one WhatsApp thread. A restaurant's posts, a creator's DMs, a shop's offers, an artist's site. Join the waitlist.
+BabyRock is aimed at owners of shops, restaurants, salons and other local businesses with a Google Business Profile. The main market today is Mexico (Spanish, with Mexican wording); the English pages serve other markets.
 
-> Join the BabyRock waitlist and we will contact you when a place opens.
+## What BabyRock does
+- Replies to Google reviews in the language of the customer. Good reviews are answered automatically; delicate ones (1 to 3 stars) wait for the owner's OK by WhatsApp.
+- Suggests what to post each week and on special dates, and writes Google posts for the owner to approve.
+- Prepares new photos from the owner's own pictures, ready for Google.
+- Keeps the profile in order: opening hours, holidays, phone number and WhatsApp link, with suggestions for what is missing.
+- Rosalia is an AI assistant, available 24/7 on WhatsApp.
 
-## English
+## Plans
+- Free plan: 10 review replies a month, no card needed.
+- Plan Mini: MX$99 a month in Mexico (plus IVA where shown on the pricing page). Up to 100 review replies, 4 Google posts and 4 photos a month, plus profile care.
+- Prices differ by country; the pricing page shows the price for the visitor's country.
 
-### Home
-- [BabyRock: your social presence, handled from WhatsApp](https://www.babyrock.ai/)
+## Key pages
+- [BabyRock in Spanish (Mexico)](https://www.babyrock.ai/es/): what BabyRock does and how to connect a business
+- [Precios](https://www.babyrock.ai/es/precios/): Free plan and Plan Mini, with a FAQ
+- [Quiénes somos](https://www.babyrock.ai/es/nosotros/): the company, the founder and how approvals work
+- [Blog: guías para reseñas de Google](https://www.babyrock.ai/es/blog/): how to reply to reviews, how to get more reviews, what to do with a bad review
+- [Herramientas gratis](https://www.babyrock.ai/es/herramientas/): review QR poster maker and review reply templates
+- [Comparativas](https://www.babyrock.ai/es/vs/): BabyRock compared with Relvio, Cinquo and Localo
+- [BabyRock in English](https://www.babyrock.ai/): home page
+- [Pricing](https://www.babyrock.ai/pricing/)
+- [About](https://www.babyrock.ai/about/)
 
-### Solutions
-- [Business Reputation Management That Keeps Replies Personal](https://www.babyrock.ai/solutions/business-reputation/)
-- [Creator Community Management Without Losing Your Voice](https://www.babyrock.ai/solutions/creator-community/)
-- [How to Reply to Negative Comments and Reviews](https://www.babyrock.ai/solutions/negative-comments-reviews/)
-- [WhatsApp Reputation Workflow for Busy Business Owners](https://www.babyrock.ai/solutions/whatsapp-workflow/)
-- [Free Google Review Management for Eligible Businesses](https://www.babyrock.ai/solutions/free-google-review-management/)
-- [Free Instagram Comment Management for Small Accounts](https://www.babyrock.ai/solutions/free-instagram-comment-management/)
+## Guides and free tools (Spanish)
+- [Cómo responder reseñas de Google](https://www.babyrock.ai/es/blog/como-responder-resenas-google/)
+- [Cómo conseguir más reseñas en Google](https://www.babyrock.ai/es/blog/como-conseguir-mas-resenas-google/)
+- [Reseña negativa en Google: qué hacer](https://www.babyrock.ai/es/blog/resena-negativa-google-que-hacer/)
+- [Cartel QR para pedir reseñas](https://www.babyrock.ai/es/herramientas/cartel-qr-resenas/)
+- [Plantillas para responder reseñas](https://www.babyrock.ai/es/herramientas/plantillas-respuesta-resenas/)
 
-## Español
-
-### Home
-- [BabyRock: toda tu presencia digital, gestionada desde WhatsApp](https://www.babyrock.ai/es/)
-
-### Solutions
-- [Gestión de la reputación de tu negocio sin respuestas de plantilla](https://www.babyrock.ai/es/solutions/business-reputation/)
-- [Gestión de la comunidad para creadores sin perder tu voz](https://www.babyrock.ai/es/solutions/creator-community/)
-- [Cómo responder a comentarios y reseñas negativas](https://www.babyrock.ai/es/solutions/negative-comments-reviews/)
-- [Proceso de reputación por WhatsApp para negocios ocupados](https://www.babyrock.ai/es/solutions/whatsapp-workflow/)
-- [Gestionar reseñas de Google gratis para negocios elegibles](https://www.babyrock.ai/es/solutions/free-google-review-management/)
-- [Gestionar comentarios de Instagram gratis para cuentas pequeñas](https://www.babyrock.ai/es/solutions/free-instagram-comment-management/)
-
-### Comparisons
-- [Agencia local o herramienta directa: lista de compra | BabyRock](https://www.babyrock.ai/es/alternativas/agencia-local/)
-- [Alternativa a Qamarero: lista de compra para comparar | BabyRock](https://www.babyrock.ai/es/alternativas/qamarero/)
-- [Alternativa a Uberall para varios locales: qué comprobar | BabyRock](https://www.babyrock.ai/es/alternativas/uberall/)
-
-## Français
-
-### Home
-- [BabyRock : toute votre présence numérique, gérée depuis WhatsApp](https://www.babyrock.ai/fr/)
-
-### Solutions
-- [Gestion de la réputation d'entreprise : des réponses qui restent personnelles](https://www.babyrock.ai/fr/solutions/business-reputation/)
-- [Gestion de communauté pour créateurs, sans perdre votre voix](https://www.babyrock.ai/fr/solutions/creator-community/)
-- [Comment répondre aux commentaires et avis négatifs](https://www.babyrock.ai/fr/solutions/negative-comments-reviews/)
-- [Suivi de réputation WhatsApp pour les propriétaires occupés](https://www.babyrock.ai/fr/solutions/whatsapp-workflow/)
-- [Gestion gratuite des avis Google pour les entreprises éligibles](https://www.babyrock.ai/fr/solutions/free-google-review-management/)
-- [Gestion gratuite des commentaires Instagram pour les petits comptes](https://www.babyrock.ai/fr/solutions/free-instagram-comment-management/)
-
-### Comparisons
-- [Agence locale ou outil direct : liste d'achat | BabyRock](https://www.babyrock.ai/fr/alternatives/agence-locale/)
-- [Alternative à Partoo pour un réseau : ce qu'il faut vérifier | BabyRock](https://www.babyrock.ai/fr/alternatives/partoo/)
-- [Alternative à Restomatik : liste d'achat pour comparer | BabyRock](https://www.babyrock.ai/fr/alternatives/restomatik/)
-
-<!-- BR-GENERATED-LLMS:START -->
-### Competitive comparisons
-
-- [Your community manager and web agency in your pocket](https://www.babyrock.ai/compare/)
-- [Tu community manager y agencia web de bolsillo](https://www.babyrock.ai/es/compare/)
-- [Votre community manager et agence web de poche](https://www.babyrock.ai/fr/compare/)
-- [BabyRock: public-first replies and owner WhatsApp control | AiSensy alternative](https://www.babyrock.ai/compare/aisensy/)
-- [BabyRock vs Birdeye: owner-led replies for independent businesses](https://www.babyrock.ai/compare/birdeye/)
-- [BabyRock: public replies, paid DMs and brand presence | BizzBuzz alternative](https://www.babyrock.ai/compare/bizzbuzz/)
-- [BabyRock: comments, paid DMs and website care | Buffer alternative](https://www.babyrock.ai/compare/buffer/)
-- [BabyRock: public replies, paid DMs and local presence | Hootsuite alternative](https://www.babyrock.ai/compare/hootsuite/)
-- [BabyRock: public replies, DM alerts and owner control | Manychat alternative](https://www.babyrock.ai/compare/manychat/)
-- [BabyRock: comments, DMs and reviews with owner control | Meta Business Agent alternative](https://www.babyrock.ai/compare/meta-business-agent/)
-- [BabyRock vs NiceJob: one owner-led customer voice](https://www.babyrock.ai/compare/nicejob/)
-- [BabyRock vs Partoo: owner-led reviews, comments and local content](https://www.babyrock.ai/compare/partoo/)
-- [BabyRock vs Podium: public replies and practical customer care](https://www.babyrock.ai/compare/podium/)
-- [BabyRock vs Qamarero: a stronger guest voice after service](https://www.babyrock.ai/compare/qamarero/)
-- [BabyRock: public replies, paid DMs and local presence | Reepli alternative](https://www.babyrock.ai/compare/reepli/)
-- [BabyRock: public replies, DMs and local presence | respond.io alternative](https://www.babyrock.ai/compare/respond-io/)
-- [BabyRock vs Restomatik: a stronger guest voice beyond the booking](https://www.babyrock.ai/compare/restomatik/)
-- [BabyRock vs Uberall: owner-led replies for independent businesses](https://www.babyrock.ai/compare/uberall/)
-- [BabyRock: owner WhatsApp alerts, replies and local presence | Wati alternative](https://www.babyrock.ai/compare/wati/)
-- [BabyRock: respuestas públicas y control del propietario por WhatsApp | Alternativa a AiSensy](https://www.babyrock.ai/es/compare/aisensy/)
-- [BabyRock frente a Birdeye: una voz cercana al propietario](https://www.babyrock.ai/es/compare/birdeye/)
-- [BabyRock: respuestas públicas, automatización de mensajes y presencia de marca | Alternativa a BizzBuzz](https://www.babyrock.ai/es/compare/bizzbuzz/)
-- [BabyRock: comentarios, automatización de mensajes y cuidado web | Alternativa a Buffer](https://www.babyrock.ai/es/compare/buffer/)
-- [BabyRock: respuestas públicas, automatización de mensajes y presencia local | Alternativa a Hootsuite](https://www.babyrock.ai/es/compare/hootsuite/)
-- [BabyRock: respuestas públicas, avisos y control del propietario | Alternativa a Manychat](https://www.babyrock.ai/es/compare/manychat/)
-- [BabyRock: comentarios, mensajes y reseñas con control del propietario | Alternativa a Meta Business Agent](https://www.babyrock.ai/es/compare/meta-business-agent/)
-- [BabyRock frente a NiceJob: una sola voz para tu negocio](https://www.babyrock.ai/es/compare/nicejob/)
-- [BabyRock frente a Partoo: reseñas, comentarios y contenido local](https://www.babyrock.ai/es/compare/partoo/)
-- [BabyRock frente a Podium: respuestas públicas y atención práctica](https://www.babyrock.ai/es/compare/podium/)
-- [BabyRock frente a Qamarero: una voz más fuerte después del servicio](https://www.babyrock.ai/es/alternativas/qamarero/)
-- [BabyRock: respuestas públicas, automatización de mensajes y presencia local | Alternativa a Reepli](https://www.babyrock.ai/es/compare/reepli/)
-- [BabyRock: respuestas públicas, mensajes y presencia local | Alternativa a respond.io](https://www.babyrock.ai/es/compare/respond-io/)
-- [BabyRock frente a Restomatik: una voz más fuerte más allá de la reserva](https://www.babyrock.ai/es/compare/restomatik/)
-- [BabyRock frente a Uberall: respuestas para negocios independientes](https://www.babyrock.ai/es/alternativas/uberall/)
-- [BabyRock: avisos por WhatsApp, respuestas y presencia local | Alternativa a Wati](https://www.babyrock.ai/es/compare/wati/)
-- [BabyRock : réponses publiques et contrôle WhatsApp du propriétaire | Alternative à AiSensy](https://www.babyrock.ai/fr/compare/aisensy/)
-- [BabyRock ou Birdeye : les avis pilotés par le propriétaire](https://www.babyrock.ai/fr/compare/birdeye/)
-- [BabyRock : réponses publiques, messages privés payants et présence de marque | Alternative à BizzBuzz](https://www.babyrock.ai/fr/compare/bizzbuzz/)
-- [BabyRock : commentaires, messages privés payants et entretien du site | Alternative à Buffer](https://www.babyrock.ai/fr/compare/buffer/)
-- [BabyRock : réponses publiques, messages privés payants et présence locale | Alternative à Hootsuite](https://www.babyrock.ai/fr/compare/hootsuite/)
-- [BabyRock : réponses publiques, alertes DM et contrôle du propriétaire | Alternative à Manychat](https://www.babyrock.ai/fr/compare/manychat/)
-- [BabyRock : commentaires, messages privés et avis sous contrôle du propriétaire | Alternative à Meta Business Agent](https://www.babyrock.ai/fr/compare/meta-business-agent/)
-- [BabyRock ou NiceJob : une seule voix pour votre entreprise](https://www.babyrock.ai/fr/compare/nicejob/)
-- [BabyRock ou Partoo : avis, commentaires et contenu local](https://www.babyrock.ai/fr/alternatives/partoo/)
-- [BabyRock ou Podium : réponses publiques et relation client](https://www.babyrock.ai/fr/compare/podium/)
-- [BabyRock ou Qamarero : une voix client après le service](https://www.babyrock.ai/fr/compare/qamarero/)
-- [BabyRock : réponses publiques, messages privés payants et présence locale | Alternative à Reepli](https://www.babyrock.ai/fr/compare/reepli/)
-- [BabyRock : réponses publiques, messages privés et présence locale | Alternative à respond.io](https://www.babyrock.ai/fr/compare/respond-io/)
-- [BabyRock ou Restomatik : la relation client après la réservation](https://www.babyrock.ai/fr/alternatives/restomatik/)
-- [BabyRock ou Uberall : une présence locale bien pilotée](https://www.babyrock.ai/fr/compare/uberall/)
-- [BabyRock : alertes WhatsApp, réponses et présence locale pour le propriétaire | Alternative à Wati](https://www.babyrock.ai/fr/compare/wati/)
-
-### Buyer guides
-
-- [Comment to DM: public replies that invite a private chat | BabyRock](https://www.babyrock.ai/guides/comment-to-dm-automation/)
-- [A community manager in your pocket for everyday care | BabyRock](https://www.babyrock.ai/guides/community-manager-in-your-pocket/)
-- [Content 12: 12 social posts a month | BabyRock](https://www.babyrock.ai/guides/content-12-posts-per-month/)
-- [Creator community management that keeps your voice | BabyRock](https://www.babyrock.ai/guides/creator-community-management/)
-- [DM lead qualification for inbound social conversations | BabyRock](https://www.babyrock.ai/guides/dm-lead-qualification/)
-- [Facebook comment management that protects your reputation | BabyRock](https://www.babyrock.ai/guides/facebook-comment-management/)
-- [Facebook Messenger automation for small businesses | BabyRock](https://www.babyrock.ai/guides/facebook-messenger-automation/)
-- [Facebook posting service for small business pages | BabyRock](https://www.babyrock.ai/guides/facebook-posting-service/)
-- [Free Google review replies in your brand voice | BabyRock](https://www.babyrock.ai/guides/free-google-review-tools/)
-- [Free Instagram comment replies with owner control | BabyRock](https://www.babyrock.ai/guides/free-instagram-comment-tools/)
-- [Instagram DM automation that answers while you work | BabyRock](https://www.babyrock.ai/guides/instagram-dm-automation/)
-- [Instagram posting service from photos to approved posts | BabyRock](https://www.babyrock.ai/guides/instagram-posting-service/)
-- [An owner WhatsApp command center for social decisions | BabyRock](https://www.babyrock.ai/guides/owner-whatsapp-command-center/)
-- [Small business website build | BabyRock](https://www.babyrock.ai/guides/small-business-website-build/)
-- [Social content repurposing for small business | BabyRock](https://www.babyrock.ai/guides/social-content-repurposing/)
-- [Social media comment management that sounds like you | BabyRock](https://www.babyrock.ai/guides/social-media-comment-management/)
-- [Social media content calendar for small businesses | BabyRock](https://www.babyrock.ai/guides/social-media-content-calendar/)
-- [Social media customer service for small businesses | BabyRock](https://www.babyrock.ai/guides/social-media-customer-service/)
-- [Social media management for creators and influencers | BabyRock](https://www.babyrock.ai/guides/social-media-management-for-creators/)
-- [Social media management for small businesses | BabyRock](https://www.babyrock.ai/guides/social-media-management-for-small-business/)
-- [Social media moderation with calm, clear owner control | BabyRock](https://www.babyrock.ai/guides/social-media-moderation/)
-- [Social media workflow for a solo founder | BabyRock](https://www.babyrock.ai/guides/solo-founder-social-media-workflow/)
-- [Web agency in your pocket for small business | BabyRock](https://www.babyrock.ai/guides/web-agency-in-your-pocket/)
-- [Website care that keeps your business site current | BabyRock](https://www.babyrock.ai/guides/website-care-service/)
-- [A website redesign that brings your business up to date | BabyRock](https://www.babyrock.ai/guides/website-redesign-service/)
-- [Website updates through one clear owner workflow | BabyRock](https://www.babyrock.ai/guides/website-update-service/)
-- [BabyRock: owner WhatsApp for comments, DMs and brand care](https://www.babyrock.ai/guides/whatsapp-ai-tools-small-business/)
-- [Comentario a mensaje directo: respuestas públicas que invitan a una conversación privada | BabyRock](https://www.babyrock.ai/es/guides/comment-to-dm-automation/)
-- [Un community manager en tu bolsillo para la atención diaria | BabyRock](https://www.babyrock.ai/es/guides/community-manager-in-your-pocket/)
-- [Content 12: 12 publicaciones para redes sociales al mes | BabyRock](https://www.babyrock.ai/es/guides/content-12-posts-per-month/)
-- [Gestión de comunidad para creadores que mantiene tu voz | BabyRock](https://www.babyrock.ai/es/guides/creator-community-management/)
-- [Cualificación de clientes potenciales en mensajes directos entrantes de redes sociales | BabyRock](https://www.babyrock.ai/es/guides/dm-lead-qualification/)
-- [Gestión de comentarios de Facebook que protege tu reputación | BabyRock](https://www.babyrock.ai/es/guides/facebook-comment-management/)
-- [Automatización de Facebook Messenger para pequeños negocios | BabyRock](https://www.babyrock.ai/es/guides/facebook-messenger-automation/)
-- [Servicio de publicación en Facebook para páginas de pequeñas empresas | BabyRock](https://www.babyrock.ai/es/guides/facebook-posting-service/)
-- [Respuestas gratis a reseñas de Google con tu voz de marca | BabyRock](https://www.babyrock.ai/es/guides/free-google-review-tools/)
-- [Respuestas gratis a comentarios de Instagram con control del propietario | BabyRock](https://www.babyrock.ai/es/guides/free-instagram-comment-tools/)
-- [Automatización de mensajes directos de Instagram que responde mientras trabajas | BabyRock](https://www.babyrock.ai/es/guides/instagram-dm-automation/)
-- [Servicio de publicación en Instagram, de las fotos a las publicaciones aprobadas | BabyRock](https://www.babyrock.ai/es/guides/instagram-posting-service/)
-- [Un centro de mando en WhatsApp para las decisiones de redes sociales del propietario | BabyRock](https://www.babyrock.ai/es/guides/owner-whatsapp-command-center/)
-- [Creación de una web de pequeño negocio | BabyRock](https://www.babyrock.ai/es/guides/small-business-website-build/)
-- [Reutilización de contenido para redes sociales en pequeños negocios | BabyRock](https://www.babyrock.ai/es/guides/social-content-repurposing/)
-- [Gestión de comentarios en redes sociales con tu propio tono | BabyRock](https://www.babyrock.ai/es/guides/social-media-comment-management/)
-- [Calendario de contenidos para redes sociales de pequeñas empresas | BabyRock](https://www.babyrock.ai/es/guides/social-media-content-calendar/)
-- [Atención al cliente en redes sociales para pequeñas empresas | BabyRock](https://www.babyrock.ai/es/guides/social-media-customer-service/)
-- [Gestión de redes sociales para creadores e influencers | BabyRock](https://www.babyrock.ai/es/guides/social-media-management-for-creators/)
-- [Gestión de redes sociales para pequeñas empresas | BabyRock](https://www.babyrock.ai/es/guides/social-media-management-for-small-business/)
-- [Moderación de redes sociales con un control claro y sereno del negocio | BabyRock](https://www.babyrock.ai/es/guides/social-media-moderation/)
-- [Flujo de trabajo de redes sociales para un fundador en solitario | BabyRock](https://www.babyrock.ai/es/guides/solo-founder-social-media-workflow/)
-- [Una agencia web en tu bolsillo para pequeños negocios | BabyRock](https://www.babyrock.ai/es/guides/web-agency-in-your-pocket/)
-- [Cuidado web que mantiene al día la web de tu negocio | BabyRock](https://www.babyrock.ai/es/guides/website-care-service/)
-- [Un rediseño web que pone tu negocio al día | BabyRock](https://www.babyrock.ai/es/guides/website-redesign-service/)
-- [Actualizaciones de tu web con un proceso claro de aprobación | BabyRock](https://www.babyrock.ai/es/guides/website-update-service/)
-- [BabyRock: WhatsApp del propietario para comentarios, mensajes y marca](https://www.babyrock.ai/es/guides/whatsapp-ai-tools-small-business/)
-- [Du commentaire au message privé : des réponses publiques qui invitent à poursuivre en privé | BabyRock](https://www.babyrock.ai/fr/guides/comment-to-dm-automation/)
-- [Un community manager dans votre poche pour votre communauté au quotidien | BabyRock](https://www.babyrock.ai/fr/guides/community-manager-in-your-pocket/)
-- [Content 12 : 12 publications sociales par mois | BabyRock](https://www.babyrock.ai/fr/guides/content-12-posts-per-month/)
-- [Gestion de communauté pour créateurs : préservez votre voix | BabyRock](https://www.babyrock.ai/fr/guides/creator-community-management/)
-- [Qualification des prospects par message privé sur les réseaux sociaux | BabyRock](https://www.babyrock.ai/fr/guides/dm-lead-qualification/)
-- [Gestion des commentaires Facebook qui protège votre réputation | BabyRock](https://www.babyrock.ai/fr/guides/facebook-comment-management/)
-- [Automatisation de Facebook Messenger pour les petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/facebook-messenger-automation/)
-- [Service de publication Facebook pour pages de petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/facebook-posting-service/)
-- [Réponses gratuites aux avis Google dans votre ton | BabyRock](https://www.babyrock.ai/fr/guides/free-google-review-tools/)
-- [Réponses gratuites aux commentaires Instagram | BabyRock](https://www.babyrock.ai/fr/guides/free-instagram-comment-tools/)
-- [Automatisation des messages privés Instagram : répondez pendant que vous travaillez | BabyRock](https://www.babyrock.ai/fr/guides/instagram-dm-automation/)
-- [Service de publication Instagram, des photos aux publications validées | BabyRock](https://www.babyrock.ai/fr/guides/instagram-posting-service/)
-- [Un centre de commande WhatsApp pour les décisions du propriétaire | BabyRock](https://www.babyrock.ai/fr/guides/owner-whatsapp-command-center/)
-- [Création de site pour petite entreprise | BabyRock](https://www.babyrock.ai/fr/guides/small-business-website-build/)
-- [Réutilisation de contenus sociaux pour les petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/social-content-repurposing/)
-- [Gestion des commentaires sur les réseaux sociaux qui vous ressemble | BabyRock](https://www.babyrock.ai/fr/guides/social-media-comment-management/)
-- [Calendrier de contenu pour les réseaux sociaux des petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/social-media-content-calendar/)
-- [Service client sur les réseaux sociaux pour les petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/social-media-customer-service/)
-- [Gestion des réseaux sociaux pour les créateurs et les influenceurs | BabyRock](https://www.babyrock.ai/fr/guides/social-media-management-for-creators/)
-- [Gestion des réseaux sociaux pour les petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/social-media-management-for-small-business/)
-- [Modération des réseaux sociaux avec un contrôle serein et clair du dirigeant | BabyRock](https://www.babyrock.ai/fr/guides/social-media-moderation/)
-- [Flux de travail pour les réseaux sociaux d'un fondateur solo | BabyRock](https://www.babyrock.ai/fr/guides/solo-founder-social-media-workflow/)
-- [Une agence web dans votre poche pour les petites entreprises | BabyRock](https://www.babyrock.ai/fr/guides/web-agency-in-your-pocket/)
-- [Une maintenance web qui garde le site de votre entreprise à jour | BabyRock](https://www.babyrock.ai/fr/guides/website-care-service/)
-- [Une refonte de site qui remet votre entreprise au goût du jour | BabyRock](https://www.babyrock.ai/fr/guides/website-redesign-service/)
-- [Des mises à jour de site avec un circuit de validation clair | BabyRock](https://www.babyrock.ai/fr/guides/website-update-service/)
-- [BabyRock : WhatsApp du propriétaire pour commentaires, messages privés et image de marque](https://www.babyrock.ai/fr/guides/whatsapp-ai-tools-small-business/)
-### Business workflows
-
-- [BabyRock for your business | Free plan and Grow plan](https://www.babyrock.ai/for/)
-- [Restaurant social media management with owner control | BabyRock](https://www.babyrock.ai/for/restaurants-food-beverage/)
-- [Social media management for salons and beauty professionals | BabyRock](https://www.babyrock.ai/for/hairdressers-beauty/)
-- [Instagram and Facebook management for influencers | BabyRock](https://www.babyrock.ai/for/influencers/)
-- [Social media help for content creators | BabyRock](https://www.babyrock.ai/for/content-creators/)
-- [Architect portfolio workflow: posts, case studies, enquiries | BabyRock](https://www.babyrock.ai/for/architects/)
-- [Social media management for health professionals | BabyRock](https://www.babyrock.ai/for/health-professionals/)
-- [BabyRock para tu negocio | Plan gratuito y Plan Grow](https://www.babyrock.ai/es/for/)
-- [Gestión de redes sociales para restaurantes con control del propietario | BabyRock](https://www.babyrock.ai/es/for/restaurants-food-beverage/)
-- [Redes sociales para peluquerías, barberías y belleza | BabyRock](https://www.babyrock.ai/es/for/hairdressers-beauty/)
-- [Gestión de Instagram y Facebook para influencers | BabyRock](https://www.babyrock.ai/es/for/influencers/)
-- [Gestión de redes sociales para creadores de contenido | BabyRock](https://www.babyrock.ai/es/for/content-creators/)
-- [Porfolio de arquitectura: publicaciones, casos web y consultas | BabyRock](https://www.babyrock.ai/es/for/architects/)
-- [Gestión de redes sociales para profesionales de la salud | BabyRock](https://www.babyrock.ai/es/for/health-professionals/)
-- [BabyRock pour votre activité | Offre gratuite et Offre Grow](https://www.babyrock.ai/fr/for/)
-- [Gestion des réseaux sociaux pour restaurants, sous contrôle du gérant | BabyRock](https://www.babyrock.ai/fr/for/restaurants-food-beverage/)
-- [Réseaux sociaux pour salons de coiffure et beauté | BabyRock](https://www.babyrock.ai/fr/for/hairdressers-beauty/)
-- [Gestion Instagram et Facebook pour influenceurs | BabyRock](https://www.babyrock.ai/fr/for/influencers/)
-- [Gestion des réseaux sociaux pour créateurs de contenu | BabyRock](https://www.babyrock.ai/fr/for/content-creators/)
-- [Portfolio d'architecture : publications, études de cas et demandes | BabyRock](https://www.babyrock.ai/fr/for/architects/)
-- [Gestion des réseaux sociaux pour les professionnels de santé | BabyRock](https://www.babyrock.ai/fr/for/health-professionals/)
-<!-- BR-GENERATED-LLMS:END -->
-<!-- BR-DEMO-LLMS:START -->
-## BabyRock video demos
-
-### EN
-- [See BabyRock in action](https://www.babyrock.ai/demos/)
-- [Reply to Google reviews from WhatsApp](https://www.babyrock.ai/demos/google-review-replies/)
-- [Create Instagram posts and answer comments from WhatsApp](https://www.babyrock.ai/demos/instagram-posts-comments/)
-- [Confirm Instagram table bookings from WhatsApp](https://www.babyrock.ai/demos/instagram-dm-reservations/)
-- [Review weekly content insights and brand enquiries from WhatsApp](https://www.babyrock.ai/demos/creator-coaching-brand-deals/)
-- [Update your architecture portfolio and Instagram from WhatsApp](https://www.babyrock.ai/demos/website-updates-whatsapp/)
-- [Turn a Christmas preorder post into an order notification](https://www.babyrock.ai/demos/instagram-orders-preorders/)
-- [Turn product photos into Instagram posts from WhatsApp](https://www.babyrock.ai/demos/product-photo-cleanup/)
-- [Capture after-hours salon enquiries on Instagram](https://www.babyrock.ai/demos/after-hours-salon-enquiries/)
-- [Turn brand DMs into complete creator briefs](https://www.babyrock.ai/demos/creator-brand-deal-briefs/)
-- [Take a day off while BabyRock handles routine messages](https://www.babyrock.ai/demos/business-messages-whatsapp/)
-- [Reply to Instagram comments in your own voice](https://www.babyrock.ai/demos/replies-in-your-brand-voice/)
-- [Update your website and Google opening hours from WhatsApp](https://www.babyrock.ai/demos/website-opening-hours-update/)
-
-### ES
-- [Mira BabyRock en acción](https://www.babyrock.ai/es/demos/)
-- [Responde a reseñas de Google desde WhatsApp](https://www.babyrock.ai/es/demos/google-review-replies/)
-- [Crea publicaciones de Instagram y responde a comentarios desde WhatsApp](https://www.babyrock.ai/es/demos/instagram-posts-comments/)
-- [Confirma reservas de Instagram desde WhatsApp](https://www.babyrock.ai/es/demos/instagram-dm-reservations/)
-- [Revisa consejos semanales y consultas de marcas desde WhatsApp](https://www.babyrock.ai/es/demos/creator-coaching-brand-deals/)
-- [Actualiza tu porfolio de arquitectura e Instagram desde WhatsApp](https://www.babyrock.ai/es/demos/website-updates-whatsapp/)
-- [Convierte una publicación de preventa navideña en un aviso de pedido](https://www.babyrock.ai/es/demos/instagram-orders-preorders/)
-- [Convierte fotos de producto en publicaciones de Instagram desde WhatsApp](https://www.babyrock.ai/es/demos/product-photo-cleanup/)
-- [Atiende consultas de peluquería fuera de horario en Instagram](https://www.babyrock.ai/es/demos/after-hours-salon-enquiries/)
-- [Convierte los DM de marcas en briefs completos para creadores](https://www.babyrock.ai/es/demos/creator-brand-deal-briefs/)
-- [Tómate un día libre mientras BabyRock gestiona los mensajes habituales](https://www.babyrock.ai/es/demos/business-messages-whatsapp/)
-- [Responde a los comentarios de Instagram con tu propio estilo](https://www.babyrock.ai/es/demos/replies-in-your-brand-voice/)
-- [Actualiza el horario de tu web y de Google desde WhatsApp](https://www.babyrock.ai/es/demos/website-opening-hours-update/)
-
-### FR
-- [BabyRock en action](https://www.babyrock.ai/fr/demos/)
-- [Répondez aux avis Google depuis WhatsApp](https://www.babyrock.ai/fr/demos/google-review-replies/)
-- [Créez des publications Instagram et répondez aux commentaires depuis WhatsApp](https://www.babyrock.ai/fr/demos/instagram-posts-comments/)
-- [Confirmez les réservations Instagram depuis WhatsApp](https://www.babyrock.ai/fr/demos/instagram-dm-reservations/)
-- [Analysez les conseils hebdomadaires et les demandes de marques depuis WhatsApp](https://www.babyrock.ai/fr/demos/creator-coaching-brand-deals/)
-- [Mettez à jour votre portfolio d'architecture et Instagram depuis WhatsApp](https://www.babyrock.ai/fr/demos/website-updates-whatsapp/)
-- [Transformez une publication de précommande de Noël en notification de commande](https://www.babyrock.ai/fr/demos/instagram-orders-preorders/)
-- [Transformez des photos produit en publications Instagram depuis WhatsApp](https://www.babyrock.ai/fr/demos/product-photo-cleanup/)
-- [Recevez les demandes de rendez-vous hors horaires sur Instagram](https://www.babyrock.ai/fr/demos/after-hours-salon-enquiries/)
-- [Transformez les DM de marques en briefs complets pour créateurs](https://www.babyrock.ai/fr/demos/creator-brand-deal-briefs/)
-- [Prenez un jour de repos pendant que BabyRock gère les messages courants](https://www.babyrock.ai/fr/demos/business-messages-whatsapp/)
-- [Répondez aux commentaires Instagram dans votre style](https://www.babyrock.ai/fr/demos/replies-in-your-brand-voice/)
-- [Mettez à jour les horaires de votre site et de Google depuis WhatsApp](https://www.babyrock.ai/fr/demos/website-opening-hours-update/)
-
-- [BabyRock in action](https://www.babyrock.ai/investors/demos/)
-<!-- BR-DEMO-LLMS:END -->
+## Company
+- BabyRock is a product of BabyFactory LTD, a company registered in the United Kingdom (company number 17523851).
+- Founder: Benjamin Pommeraud.
+- Contact: contact@babyrock.ai
+- Legal pages: [Terms](https://www.babyrock.ai/terms/), [Privacy](https://www.babyrock.ai/privacy/), [Cookies](https://www.babyrock.ai/cookies/), [Data processing agreement](https://www.babyrock.ai/dpa/)
