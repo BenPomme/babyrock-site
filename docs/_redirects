@@ -1,3 +1,12 @@
+# Legal pages: the approved terms and privacy live in the app (Ben, 25 Nov 2026)
+/terms https://app.babyrock.ai/legal/terms 301
+/terms/ https://app.babyrock.ai/legal/terms 301
+/es/terms https://app.babyrock.ai/legal/terms?lang=es 301
+/es/terms/ https://app.babyrock.ai/legal/terms?lang=es 301
+/privacy https://app.babyrock.ai/legal/privacy 301
+/privacy/ https://app.babyrock.ai/legal/privacy 301
+/es/privacy https://app.babyrock.ai/legal/privacy?lang=es 301
+/es/privacy/ https://app.babyrock.ai/legal/privacy?lang=es 301
 /compare / 301
 /compare/ / 301
 /compare/aisensy / 301
