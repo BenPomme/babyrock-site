@@ -18,10 +18,11 @@
 
   // The choice is shared with app.babyrock.ai through a first-party cookie on .babyrock.ai (br_consent=state|v1|unix time),
   // so the app's Consent Mode reads the same answer. localStorage keeps the site's own copy.
-  function writeCookie(state) {
+  // The same time stamp goes into localStorage (br-consent-at) and the cookie, so the head resolver can tell which choice is newer.
+  function writeCookie(state, at) {
     try {
       var host = location.hostname, domain = /(^|\.)babyrock\.ai$/.test(host) ? "; Domain=.babyrock.ai" : "";
-      document.cookie = "br_consent=" + state + "|v1|" + Math.floor(Date.now() / 1000) + domain + "; Path=/; Max-Age=31536000; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
+      document.cookie = "br_consent=" + state + "|v1|" + at + domain + "; Path=/; Max-Age=31536000; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
     } catch (e) {}
   }
   function readCookie() {
@@ -29,10 +30,18 @@
     return m ? m[1] : null;
   }
   function rememberChoice(state) {
+    var at = Math.floor(Date.now() / 1000);
     try {
       localStorage.setItem(CONSENT_KEY, state);
+      localStorage.setItem("br-consent-at", String(at));
+      localStorage.setItem("br-consent-meta", "1");
     } catch (e) {}
-    writeCookie(state);
+    writeCookie(state, at);
+  }
+  // Newest choice across localStorage and the shared cookie (resolver defined in the page head). Falls back to the cookie alone.
+  function resolve() {
+    if (typeof window.brConsentResolve === "function") { try { return window.brConsentResolve(); } catch (e) {} }
+    return readChoice() || readCookie();
   }
 
   function clearAnalyticsCookies() {
@@ -85,16 +94,24 @@
 
   window.addEventListener("storage", function (event) {
     if (event.key !== CONSENT_KEY) return;
+    if (event.newValue === "granted" || event.newValue === "denied") stored = event.newValue;
     if (event.newValue === "granted") updateConsent("granted");
     if (event.newValue === "denied") updateConsent("denied");
     banner.hidden = event.newValue === "granted" || event.newValue === "denied";
   });
 
-  var stored = readChoice();
-  // Keep the shared cookie in step: an answer given before the cookie existed is copied over; an answer given on the app is used here.
-  if (stored === "granted" || stored === "denied") { if (readCookie() !== stored) writeCookie(stored); }
-  else { stored = readCookie(); if (stored) { try { localStorage.setItem(CONSENT_KEY, stored); } catch (e) {} } }
+  var stored = resolve();
   if (navigator.globalPrivacyControl && stored === "granted") updateConsent("denied");
   if (stored === "denied") clearAnalyticsCookies();
   banner.hidden = stored === "granted" || stored === "denied";
+
+  // A choice made in the app while this tab was open applies when the visitor comes back to it.
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState !== "visible") return;
+    var now = resolve();
+    if (now === stored || (now !== "granted" && now !== "denied")) return;
+    stored = now;
+    updateConsent(now);
+    banner.hidden = true;
+  });
 })();
