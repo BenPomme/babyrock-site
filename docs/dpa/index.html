@@ -401,7 +401,7 @@ window.gtag = gtag;
 gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
 // Mexico and US: ad and analytics signals on by default (Ben, 17 Nov 2026), unless the browser sends Global Privacy Control.
 if (!navigator.globalPrivacyControl) gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted', region: ['MX', 'US'] });
-try { var brc = localStorage.getItem('br-consent'); if (brc === 'granted' || brc === 'denied') gtag('consent', 'update', { ad_storage: brc, ad_user_data: brc, ad_personalization: brc, analytics_storage: brc }); } catch (e) {}
+try { var brc = null; try { brc = localStorage.getItem('br-consent'); } catch (e) {} if (brc !== 'granted' && brc !== 'denied') { var brm = /(?:^|; )br_consent=(granted|denied)/.exec(document.cookie); brc = brm ? brm[1] : null; } if (navigator.globalPrivacyControl) brc = 'denied'; if (brc === 'granted' || brc === 'denied') gtag('consent', 'update', { ad_storage: brc, ad_user_data: brc, ad_personalization: brc, analytics_storage: brc }); } catch (e) {}
 gtag('js', new Date());
 gtag('config', 'G-252L7M2L2P', { anonymize_ip: true });
 </script>
@@ -554,11 +554,11 @@ fbq('init','2978994959128371');fbq('track','PageView');}
 function clear(){var past='=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';['_fbp','_fbc'].forEach(function(n){try{document.cookie=n+past;document.cookie=n+past+'; domain=.babyrock.ai'}catch(e){}})}
 var c=null;
 try{c=localStorage.getItem('br-consent');if(c!==null&&localStorage.getItem('br-consent-meta')!=='1'){localStorage.removeItem('br-consent');c=null}}catch(e){}
-if(c==='granted')load();else if(c==='denied')clear();else if(!navigator.globalPrivacyControl){var g=/[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);var on=function(cc){if(cc==='MX'||cc==='US')load();};if(g)on(g[1].toUpperCase());else if(window.fetch)fetch('/cdn-cgi/trace').then(function(r){return r.ok?r.text():''}).then(function(t){var m=/^loc=([A-Z]{2})$/m.exec(t);if(m)on(m[1]);}).catch(function(){});}
+if(c==='granted'&&!navigator.globalPrivacyControl)load();else if(c==='denied')clear();else if(!navigator.globalPrivacyControl){var g=/[?&]geo=([A-Za-z]{2})(&|$)/.exec(location.search);var on=function(cc){if(cc==='MX'||cc==='US')load();};if(g)on(g[1].toUpperCase());else if(window.fetch)fetch('/cdn-cgi/trace').then(function(r){return r.ok?r.text():''}).then(function(t){var m=/^loc=([A-Z]{2})$/m.exec(t);if(m)on(m[1]);}).catch(function(){});}
 document.addEventListener('click',function(ev){var el=ev.target;if(!el||!el.closest)return;
 var a=el.closest('[data-br-ga-consent-accept]'),r=el.closest('[data-br-ga-consent-refuse]');if(!a&&!r)return;
 try{localStorage.setItem('br-consent-meta','1')}catch(e){}
-if(a)load();else clear();});
+if(a&&!navigator.globalPrivacyControl)load();else clear();});
 })();
 </script>
 <script src="/js/br-ga-coverage.js" defer></script>
